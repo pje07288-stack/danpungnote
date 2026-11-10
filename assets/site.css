@@ -78,7 +78,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 @keyframes leaf-sway{0%{transform:rotate(-35deg) translateX(-10px)}100%{transform:rotate(55deg) translateX(14px)}}
 
 /* ── 도구 바로가기 ── */
-.tool-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:-80px}
+.tool-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:-80px}
 .tool-card{position:relative;display:grid;gap:4px;align-content:start;padding:18px;border-radius:18px;background:var(--card);border:2px solid var(--border);box-shadow:var(--shadow);color:var(--text);text-decoration:none;transition:transform .18s ease,border-color .18s,box-shadow .18s}
 a.tool-card:hover{transform:translateY(-4px);border-color:var(--accent-hi);box-shadow:0 8px 0 var(--edge),0 22px 40px -24px rgba(90,55,20,.6)}
 a.tool-card:active{transform:translateY(0)}
@@ -614,3 +614,11 @@ body:has(#buffPill:checked) .buff-included,body:has(#buffBless:checked) .buff-in
 .not-found-body .chip-row{justify-content:center;margin-top:18px}
 /* 몬스터 그림: 큰 그림은 부드럽게 줄이고, 작은 그림은 원래 크기 또는 정확히 2·3배로 (assets/sprite.js) */
 .search-hit img{object-fit:scale-down}
+/* 스공 계산기 (stat/index.html) */
+.stat-sub{margin:22px 0 4px;font-size:16px}
+.stat-eff{display:grid;gap:8px;margin-top:8px}
+.stat-eff p{margin:0;padding:12px 14px;border-radius:12px;background:var(--sunken);font-size:16px;font-weight:600}
+.stat-eff b{font-size:20px;font-weight:800;color:var(--accent-ink)}
+.stat-eff small{display:block;margin-top:2px;color:var(--text-sub);font-size:14px;font-weight:600}
+.dex-value.is-up{color:var(--success)}.dex-value.is-down{color:var(--danger)}
+.stat-table td,.stat-table th{white-space:nowrap}
