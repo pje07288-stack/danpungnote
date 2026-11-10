@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 단풍수첩 파비콘: 작은 크기용으로 단순화한 수첩 로고 -->
+  <rect x="15" y="7" width="45" height="55" rx="8" fill="#FFF4E2" stroke="#C9A56F" stroke-width="2"/>
+  <rect x="9" y="2" width="46" height="56" rx="8" fill="#F08A1C"/>
+  <path d="M17 2h4v56h-4a8 8 0 0 1-8-8V10a8 8 0 0 1 8-8z" fill="#C8650C"/>
+  <g fill="#FFF4E2" stroke="#6A4320" stroke-width="2">
+    <rect x="4" y="12" width="11" height="6" rx="3"/>
+    <rect x="4" y="27" width="11" height="6" rx="3"/>
+    <rect x="4" y="42" width="11" height="6" rx="3"/>
+  </g>
+  <path transform="translate(37.5 30) scale(.5) translate(-32 -32)" fill="#FFFFFF" d="M32 3l6 14 8-6-1 12 13-2-6 10 8 4-15 8 3 11-13-4-3 11-3-11-13 4 3-11L4 35l8-4-6-10 13 2-1-12 8 6z"/>
+</svg>
