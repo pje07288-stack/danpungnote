@@ -645,3 +645,5 @@ body:has(#buffPill:checked) .buff-included,body:has(#buffBless:checked) .buff-in
 .kill-list .kill-none{justify-content:center;color:var(--text-sub)}
 .skill-field{grid-column:1/-1}
 @media (min-width:641px){.skill-field{grid-column:auto / span 1}.field-grid .skill-field{grid-column:1/2}.field-grid .skill-lv-field{grid-column:2/3}}
+.kp-row.is-mid span:first-child,.kp-row.is-mid b{color:var(--accent-ink)}
+.kill-verdict span{line-height:1.5}

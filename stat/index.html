@@ -19,9 +19,9 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=17">
-<script src="../assets/search.js?v=mwb63kji" defer></script>
-<script src="../assets/sprite.js?v=mwb63kji" defer></script>
+<link rel="stylesheet" href="../assets/site.css?v=18">
+<script src="../assets/search.js?v=mwb6d7ww" defer></script>
+<script src="../assets/sprite.js?v=mwb6d7ww" defer></script>
 <!-- page: stat/index.html -->
 </head>
 <body>
@@ -199,7 +199,7 @@
   }
   // N번 안에 잡을 확률: 한 타 데미지를 최소~최대에서 고르게 뽑아 여러 번 해 본다
   function chances(o,hp,maxN){
-    var T=6000,cnt=[],i,k,h,left,d;
+    var T=4000,cnt=[],i,k,h,left,d;
     for(i=0;i<=maxN;i++)cnt[i]=0;
     for(var t=0;t<T;t++){
       left=hp;
@@ -222,33 +222,34 @@
     var m=pickMob(false);$('killMob').textContent=m?m[1]:'';
     if(hp>0){
       var o=f(hp,n('mobLevel'),Math.max(0,n('mobDef')),parseFloat($('element').value)),unit=o.hits>1||o.sp?'번':'방';
-      $('killSure').textContent=o.sure>999?'999'+unit+' 이상':'확정 '+o.sure+unit;
-      $('killLucky').textContent=o.lucky<o.sure?'운 좋으면 '+o.lucky+unit:'항상 '+o.sure+unit+'에 잡아요';
+      // 확정(전부 최소·크리 없음)과 운 좋으면(전부 최대·크리)은 거의 안 나오는 끝값이라,
+      // 머리글은 시뮬레이션의 중간값(보통)과 90% 지점으로 보여준다
+      var cap=Math.min(o.sure,200),pr=chances(o,hp,cap),at=function(q){for(var i=0;i<pr.length;i++)if(pr[i][1]>=q)return pr[i][0];return o.sure};
+      var k50=at(0.5),k90=at(0.9),k99=at(0.99);
+      if(o.sure===o.lucky){$('killSure').textContent=o.sure+unit+' 컷';$('killLucky').textContent='항상 '+o.sure+unit+'에 잡아요'}
+      else{$('killSure').textContent='보통 '+k50+unit;$('killLucky').textContent='90%는 '+k90+unit+' 안에 · 운 좋으면 '+o.lucky+unit+' · 최악 '+(o.sure>999?'999'+unit+' 이상':o.sure+unit)}
       $('killHit').textContent=loc(o.lo)+' ~ '+loc(o.hi);
       $('killCritRow').hidden=!(o.cp>0);$('killCrit').textContent=loc(o.cLo)+' ~ '+loc(o.cHi)+' ('+Math.round(o.cp*100)+'%)';
       $('killUseRow').hidden=o.hits===1&&!o.sp;$('killHitsLabel').textContent='한 번 사용 ('+o.hits+'타'+(o.sp?' + 쉐도우 파트너':'')+')';
       $('killUse').textContent=loc(o.useLo)+' ~ '+loc(o.useHi);
       $('killAvg').textContent=o.mean+unit+' 정도';
-      if(o.sure>1&&o.sure<=999){var needLo=Math.ceil(hp/(o.sure-1)/o.hits/(o.sp?1.5:1));$('killNextRow').hidden=false;$('killNext').textContent='한 타 최소 '+loc(needLo)+' (+'+loc(Math.max(0,needLo-o.lo))+')'}
+      if(k50>1){var needAvg=Math.ceil(hp/(k50-1)/o.hits/(o.sp?1.5:1)),avgHit=Math.round(((o.lo+o.hi)/2)*(1-o.cp)+((o.cLo+o.cHi)/2)*o.cp);$('killNextRow').hidden=false;$('killNext').textContent='평균 한 타 '+loc(needAvg)+' (+'+loc(Math.max(0,needAvg-avgHit))+')'}
       else $('killNextRow').hidden=true;
-      // 확률표: 운 좋은 경우부터, 99.9%가 될 때까지 (최대 8칸)
-      var html='';
-      if(o.sure<=999){
-        var from=Math.max(1,o.lucky),to=Math.min(o.sure,from+7),pr=chances(o,hp,to),done=false;
-        pr.forEach(function(x){if(x[0]<from||done)return;var pc=x[0]>=o.sure?100:Math.min(99.9,Math.round(x[1]*1000)/10);
-          html+='<div class="kp-row"><span>'+x[0]+unit+' 안에</span><span class="kp-bar"><i style="width:'+pc+'%"></i></span><b>'+pc+'%</b></div>';if(pc>=99.9)done=true});
-        if(done&&pr[pr.length-1][0]<o.sure||to<o.sure)html+='<p class="notice">'+o.sure+unit+'이면 100%예요.</p>';
-      }
+      // 확률표: 1% 이상 나오는 구간부터 99%까지 (최대 8칸)
+      var html='',rows=pr.filter(function(x){return x[1]>=0.01}),start=rows.length?rows[0][0]:o.lucky,end=Math.min(k99,start+7);
+      pr.forEach(function(x){if(x[0]<start||x[0]>end)return;var pc=x[0]>=o.sure?100:Math.min(99.9,Math.round(x[1]*1000)/10);
+        html+='<div class="kp-row'+(x[0]===k50?' is-mid':'')+'"><span>'+x[0]+unit+' 안에</span><span class="kp-bar"><i style="width:'+pc+'%"></i></span><b>'+pc+'%</b></div>'});
+      if(o.sure>end)html+='<p class="notice">최악(전부 최소 데미지)이면 '+(o.sure>999?'999'+unit+' 이상':o.sure+unit)+'이에요. 거의 나오지 않아요.</p>';
       $('killProb').innerHTML=html;
     }
     // 잘 잡히는 몬스터 목록 (사냥 몬스터만: 출현 맵 있음, 경험치 있음)
     var myLv=n('myLevel'),list=[],all=[];
-    MOBS.forEach(function(mb){if(!mb[6]||!(mb[5]>0)||mb[2]<myLv-20)return;var o2=f(mb[3],mb[2],mb[4],1);all.push([mb,o2.sure]);if(o2.sure<=killN)list.push([mb,o2.sure])});
+    MOBS.forEach(function(mb){if(!mb[6]||!(mb[5]>0)||mb[2]<myLv-20)return;var o2=f(mb[3],mb[2],mb[4],1);all.push([mb,o2.mean]);if(o2.mean<=killN)list.push([mb,o2.mean])});
     var fallback=!list.length&&all.length;
     if(fallback){list=all.sort(function(x,y){return x[1]-y[1]||(y[0][5]||0)-(x[0][5]||0)}).slice(0,10)}
     else list.sort(function(x,y){return (y[0][5]||0)-(x[0][5]||0)||y[0][2]-x[0][2]});
-    $('killList').innerHTML=list.slice(0,20).map(function(x){var mb=x[0];return '<li><a href="../mob/'+mb[0]+'.html">'+mb[1].replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</a><span>확정 '+x[1]+'방 · 경험치 '+loc(mb[5]||0)+'</span></li>'}).join('')||'<li class="kill-none">조건에 맞는 몬스터가 없어요.</li>';
-    $('killListNote').textContent=(fallback?'이 조건에 맞는 몬스터가 없어서, 가장 빨리 잡히는 몬스터를 보여줘요. ':'')+(list.length>20?'상위 20종만 보여줘요 (전체 '+list.length+'종). ':'')+'지금 고른 스킬·추가 효과로 계산하고, 속성은 보통으로 봐요. 명중은 따로 확인해 주세요.';
+    $('killList').innerHTML=list.slice(0,20).map(function(x){var mb=x[0];return '<li><a href="../mob/'+mb[0]+'.html">'+mb[1].replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</a><span>보통 '+x[1]+'방 · 경험치 '+loc(mb[5]||0)+'</span></li>'}).join('')||'<li class="kill-none">조건에 맞는 몬스터가 없어요.</li>';
+    $('killListNote').textContent=(fallback?'이 조건에 맞는 몬스터가 없어서, 가장 빨리 잡히는 몬스터를 보여줘요. ':'')+(list.length>20?'상위 20종만 보여줘요 (전체 '+list.length+'종). ':'')+'평균 데미지 기준 방 수예요. 지금 고른 스킬·추가 효과로 계산하고, 속성은 보통으로 봐요. 명중은 따로 확인해 주세요.';
   }
   function eff(r,w,p,s,a,m){
     ['primary','addPrimary'].forEach(function(id){$(id+'Unit').textContent=w.p});
