@@ -630,3 +630,16 @@ body:has(#buffPill:checked) .buff-included,body:has(#buffBless:checked) .buff-in
 .kill-verdict span{font-size:15px;font-weight:700;color:var(--text-sub)}
 .kill-opts{margin-top:16px}
 .kill-opts .check-chip[hidden]{display:none}
+.stat-buffs{margin-top:12px}
+.kill-prob{display:grid;gap:6px;margin-top:8px}
+.kp-row{display:grid;grid-template-columns:84px minmax(0,1fr) 56px;align-items:center;gap:10px;font-size:15px;font-weight:700}
+.kp-bar{height:12px;border-radius:999px;background:var(--meter-track);overflow:hidden}
+.kp-bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--accent-hi),var(--accent))}
+.kp-row b{text-align:right;font-variant-numeric:tabular-nums}
+.kill-list-box{margin-top:18px;padding-top:6px;border-top:2px dashed var(--border)}
+.kill-list{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.kill-list li{display:flex;justify-content:space-between;gap:10px;padding:9px 12px;border-radius:10px;background:var(--sunken);font-size:15px}
+.kill-list a{font-weight:800;color:var(--text);text-decoration:none}
+.kill-list a:hover{color:var(--accent-ink)}
+.kill-list span{flex:none;color:var(--text-sub);font-weight:600;font-size:14px}
+.kill-list .kill-none{justify-content:center;color:var(--text-sub)}
