@@ -9,9 +9,9 @@
 
   var GROUPS = [
     { type: 't', title: '도구·메뉴', more: '' },
-    { type: 'm', title: '몬스터', more: 'mob/index.html' },
-    { type: 'p', title: '맵', more: 'map/index.html' },
-    { type: 'i', title: '아이템', more: 'item/index.html' },
+    { type: 'm', title: '몬스터', more: 'mob/' },
+    { type: 'p', title: '맵', more: 'map/' },
+    { type: 'i', title: '아이템', more: 'item/' },
   ];
   var PER_GROUP = 6;
   var CHO = 'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ';
@@ -80,7 +80,7 @@
   }
   function hrefOf(r) {
     if (r.type === 't') return base + r.id;
-    return base + { m: 'mob/', p: 'map/', i: 'item/' }[r.type] + r.id + '.html';
+    return base + { m: 'mob/', p: 'map/', i: 'item/' }[r.type] + r.id;
   }
   function imgOf(r) {
     if (r.type === 't' || !r.img) return '';

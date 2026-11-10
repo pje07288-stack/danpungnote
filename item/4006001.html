@@ -19,25 +19,34 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=18">
-<script src="../assets/search.js?v=mwb6d7ww" defer></script>
-<script src="../assets/sprite.js?v=mwb6d7ww" defer></script>
+<link rel="stylesheet" href="../assets/site.css?v=a537f24b">
+<script src="../assets/search.js?v=a134e2aa" defer></script>
+<script src="../assets/sprite.js?v=a134e2aa" defer></script>
+<script src="../assets/nav.js?v=a134e2aa" defer></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5994680292902637" crossorigin="anonymous"></script>
 <!-- page: item/4006001.html -->
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="leaf" viewBox="0 0 64 64"><path d="M32 3l6 14 8-6-1 12 13-2-6 10 8 4-15 8 3 11-13-4-3 11-3-11-13 4 3-11L4 35l8-4-6-10 13 2-1-12 8 6z"/></symbol></svg>
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="../index.html" aria-label="단풍수첩 처음으로">
+    <a class="brand" href="../" aria-label="단풍수첩 처음으로">
       <img class="brand-logo" src="../brand/logo.svg" alt="" width="42" height="42">
       <span class="brand-text"><span class="brand-name"><em>단풍</em>수첩</span><span class="brand-sub">메이플랜드 모험 수첩</span></span>
     </a>
     <nav class="main-nav" aria-label="주 메뉴">
-      <a href="../index.html#calculator"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>명중<span class="nav-long"> 계산기</span></a>
-      <a href="../index.html#monpa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v13H4zM8 3v6m8-6v6M4 10h16"/></svg>몬파<span class="nav-long"> 계산기</span></a>
-      <a href="../mob/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg>도감</a>
-      <a href="../item/index.html" aria-current="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>아이템</a>
-      <a href="../map/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg>맵</a>
+      <div class="nav-menu">
+        <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="calcMenu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2m3 0h2M8 15h2m3 0h2"/></svg>계산기<svg class="icon nav-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav-pop" id="calcMenu" hidden>
+          <a href="../#calculator">명중 계산기</a>
+          <a href="../#monpa">몬파·주차 계산기</a>
+          <a href="../stat/">효율 계산기</a>
+          <a href="../kill/">N방컷 계산기</a>
+        </div>
+      </div>
+      <a href="../mob/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg>도감</a>
+      <a href="../item/" aria-current="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>아이템</a>
+      <a href="../map/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg>맵</a>
     </nav>
     <button type="button" class="search-open" id="searchOpen" aria-label="통합 검색 (단축키 /)" aria-haspopup="dialog"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>검색</span><kbd>/</kbd></button>
     <button type="button" class="theme-toggle" id="themeToggle" aria-label="다크 모드로 전환" title="낮/밤 바꾸기">
@@ -48,7 +57,7 @@
 </header>
 
 <main class="container page-main">
-  <nav class="breadcrumb" aria-label="현재 위치"><a href="../index.html">홈</a><span aria-hidden="true">›</span><a href="index.html">아이템</a><span aria-hidden="true">›</span><span>소환의 돌</span></nav>
+  <nav class="breadcrumb" aria-label="현재 위치"><a href="../">홈</a><span aria-hidden="true">›</span><a href="./">아이템</a><span aria-hidden="true">›</span><span>소환의 돌</span></nav>
   <section class="card" aria-labelledby="itemName">
     <div class="win-bar is-result"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3>아이템 정보</h3></div>
     <div class="mob-hero">
@@ -63,75 +72,75 @@
     <h2 class="sub-title" id="dropperTitle">이 아이템을 주는 몬스터 <small>69종</small></h2>
     <p class="drop-legend"><b class="drop-uncertain">확인 필요</b>·<b class="drop-uncertain">미출시</b> 표시가 있는 몬스터는 메이플랜드에서 이 아이템을 안 줄 수도 있어요.</p>
     <div class="dex-grid">
-<a class="mob-card" href="../mob/2130100.html"><img src="../images/mob/icon/2130100.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 엑스텀프</strong><span>Lv.22 · 회피 7</span><span class="mob-sub">동쪽바위산5</span></span></a>
-<a class="mob-card" href="../mob/2230108.html"><img src="../images/mob/icon/2230108.png" alt="" loading="lazy" width="40" height="40"><span><strong>핀붐</strong><span>Lv.22 · 회피 7</span><span class="mob-sub">뾰족한 사각지대</span></span></a>
-<a class="mob-card" href="../mob/2100105.html"><img src="../images/mob/icon/2100105.png" alt="" loading="lazy" width="40" height="40"><span><strong>벨라모아</strong><span>Lv.23 · 회피 9</span><span class="mob-sub">벨라모아의 굴</span></span></a>
-<a class="mob-card" href="../mob/3230400.html"><img src="../images/mob/icon/3230400.png" alt="" loading="lazy" width="40" height="40"><span><strong>북치는 토끼</strong><span>Lv.30 · 회피 12</span><span class="mob-sub">바람테라스1</span></span></a>
-<a class="mob-card" href="../mob/5200001.html"><img src="../images/mob/icon/5200001.png" alt="" loading="lazy" width="40" height="40"><span><strong>아이스 스톤볼</strong><span>Lv.30 · 회피 12</span><span class="mob-sub">오르비스탑&lt;13층&gt;</span></span></a>
-<a class="mob-card" href="../mob/5300000.html"><img src="../images/mob/icon/5300000.png" alt="" loading="lazy" width="40" height="40"><span><strong>리티</strong><span>Lv.32 · 회피 13</span><span class="mob-sub">눈 덮인 언덕</span></span></a>
-<a class="mob-card" href="../mob/5300001.html"><img src="../images/mob/icon/5300001.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 리티</strong><span>Lv.33 · 회피 15</span><span class="mob-sub">오르비스탑&lt;3층&gt;</span></span></a>
-<a class="mob-card" href="../mob/3210201.html"><img src="../images/mob/icon/3210201.png" alt="" loading="lazy" width="40" height="40"><span><strong>주니어 라이오너</strong><span>Lv.33 · 회피 15</span><span class="mob-sub">노란빛의정원1</span></span></a>
-<a class="mob-card" href="../mob/3230102.html"><img src="../images/mob/icon/3230102.png" alt="" loading="lazy" width="40" height="40"><span><strong>로랑</strong><span>Lv.37 · 회피 18</span><span class="mob-sub">해변가원두막</span></span></a>
-<a class="mob-card" href="../mob/9420501.html"><img src="../images/mob/icon/9420501.png" alt="" loading="lazy" width="40" height="40"><span><strong>프리저</strong><span>Lv.38 · 회피 18</span><span class="mob-sub">교외 지역 1</span></span></a>
-<a class="mob-card" href="../mob/4230600.html"><img src="../images/mob/icon/4230600.png" alt="" loading="lazy" width="40" height="40"><span><strong>모래거인</strong><span>Lv.40 · 회피 17</span><span class="mob-sub">석양의 거인</span></span></a>
-<a class="mob-card" href="../mob/4230120.html"><img src="../images/mob/icon/4230120.png" alt="" loading="lazy" width="40" height="40"><span><strong>플라티안</strong><span>Lv.44 · 회피 18</span><span class="mob-sub">로스웰초원2</span></span></a>
-<a class="mob-card" href="../mob/4130100.html"><img src="../images/mob/icon/4130100.png" alt="" loading="lazy" width="40" height="40"><span><strong>카파 드레이크</strong><span>Lv.45 · 회피 18</span><span class="mob-sub">빛을잃은동굴1</span></span></a>
-<a class="mob-card" href="../mob/4230115.html"><img src="../images/mob/icon/4230115.png" alt="" loading="lazy" width="40" height="40"><span><strong>마스터 크로노스 <small>시간의길&lt;4&gt;</small></strong><span>Lv.46 · 회피 24</span><span class="mob-sub">잃어버린시간&lt;2&gt;</span></span></a>
-<a class="mob-card" href="../mob/4130102.html"><img src="../images/mob/icon/4130102.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 네펜데스</strong><span>Lv.47 · 회피 15</span><span class="mob-sub">버려진화원</span></span></a>
-<a class="mob-card" href="../mob/4230505.html"><img src="../images/mob/icon/4230505.png" alt="" loading="lazy" width="40" height="40"><span><strong>단지</strong><span>Lv.47 · 회피 18</span><span class="mob-sub">10년 된 약초밭</span></span></a>
-<a class="mob-card" href="../mob/4230126.html"><img src="../images/mob/icon/4230126.png" alt="" loading="lazy" width="40" height="40"><span><strong>머미독</strong><span>Lv.47 · 회피 18</span><span class="mob-sub">유적의 무덤3</span></span></a>
-<a class="mob-card" href="../mob/4110302.html"><img src="../images/mob/icon/4110302.png" alt="" loading="lazy" width="40" height="40"><span><strong>미스릴 뮤테</strong><span>Lv.47 · 회피 18</span><span class="mob-sub">연구소 B-1 구역</span></span></a>
-<a class="mob-card" href="../mob/4230102.html"><img src="../images/mob/icon/4230102.png" alt="" loading="lazy" width="40" height="40"><span><strong>레이스</strong><span>Lv.48 · 회피 20</span><span class="mob-sub">2호선&lt;3구역&gt;</span></span></a>
-<a class="mob-card" href="../mob/4230506.html"><img src="../images/mob/icon/4230506.png" alt="" loading="lazy" width="40" height="40"><span><strong>삼단지</strong><span>Lv.48 · 회피 20</span><span class="mob-sub">50년 된 약초밭</span></span></a>
-<a class="mob-card" href="../mob/4240000.html"><img src="../images/mob/icon/4240000.png" alt="" loading="lazy" width="40" height="40"><span><strong>원로 그레이</strong><span>Lv.49 · 회피 25</span><span class="mob-sub">바나드의 초원</span></span></a>
-<a class="mob-card" href="../mob/9420504.html"><img src="../images/mob/icon/9420504.png" alt="" loading="lazy" width="40" height="40"><span><strong>티포 레드</strong><span>Lv.50 · 회피 20</span><span class="mob-sub">신비한 길 1</span></span></a>
-<a class="mob-card" href="../mob/5120504.html"><img src="../images/mob/icon/5120504.png" alt="" loading="lazy" width="40" height="40"><span><strong>훈련용 나무인형</strong><span>Lv.51 · 회피 18</span><span class="mob-sub">상급 수련장</span></span></a>
-<a class="mob-card" href="../mob/9420529.html"><img src="../images/mob/icon/9420529.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 피션</strong><span>Lv.52 · 회피 20</span><span class="mob-sub">진흙 강둑 1</span></span></a>
-<a class="mob-card" href="../mob/5120000.html"><img src="../images/mob/icon/5120000.png" alt="" loading="lazy" width="40" height="40"><span><strong>러스터픽시</strong><span>Lv.52 · 회피 22</span><span class="mob-sub">구름공원6</span></span></a>
-<a class="mob-card" href="../mob/5120002.html"><img src="../images/mob/icon/5120002.png" alt="" loading="lazy" width="40" height="40"><span><strong>라이오너</strong><span>Lv.53 · 회피 25</span><span class="mob-sub">노란빛의정원2</span></span></a>
-<a class="mob-card" href="../mob/5140000.html"><img src="../images/mob/icon/5140000.png" alt="" loading="lazy" width="40" height="40"><span><strong>화이트팽</strong><span>Lv.58 · 회피 25</span><span class="mob-sub">차디찬벌판</span></span></a>
-<a class="mob-card is-uncertain" href="../mob/9400003.html"><img src="../images/mob/icon/9400003.png" alt="" loading="lazy" width="40" height="40"><span><strong>망령</strong><span>Lv.60 · 회피 25</span><span class="mob-sub">적막한 묘지</span><span class="mob-flags"><b class="drop-uncertain">확인 필요</b></span></span></a>
-<a class="mob-card" href="../mob/7130400.html"><img src="../images/mob/icon/7130400.png" alt="" loading="lazy" width="40" height="40"><span><strong>노란 왕도깨비</strong><span>Lv.70 · 회피 15</span><span class="mob-sub">깊은 산 흉가</span></span></a>
-<a class="mob-card" href="../mob/7130500.html"><img src="../images/mob/icon/7130500.png" alt="" loading="lazy" width="40" height="40"><span><strong>레쉬</strong><span>Lv.70 · 회피 25</span><span class="mob-sub">리프레 서쪽 숲</span></span></a>
-<a class="mob-card" href="../mob/7130104.html"><img src="../images/mob/icon/7130104.png" alt="" loading="lazy" width="40" height="40"><span><strong>캡틴</strong><span>Lv.70 · 회피 26</span><span class="mob-sub">보물섬의 약탈</span></span></a>
-<a class="mob-card" href="../mob/8140200.html"><img src="../images/mob/icon/8140200.png" alt="" loading="lazy" width="40" height="40"><span><strong>클라크</strong><span>Lv.70 · 회피 26</span><span class="mob-sub">잊혀진 시간의 길&lt;2&gt;</span></span></a>
-<a class="mob-card" href="../mob/7130401.html"><img src="../images/mob/icon/7130401.png" alt="" loading="lazy" width="40" height="40"><span><strong>파란 왕도깨비</strong><span>Lv.70 · 회피 15</span><span class="mob-sub">깊은 산 흉가</span></span></a>
-<a class="mob-card" href="../mob/7130600.html"><img src="../images/mob/icon/7130600.png" alt="" loading="lazy" width="40" height="40"><span><strong>호브</strong><span>Lv.72 · 회피 25</span><span class="mob-sub">심술쟁이의 숲</span></span></a>
-<a class="mob-card" href="../mob/7130000.html"><img src="../images/mob/icon/7130000.png" alt="" loading="lazy" width="40" height="40"><span><strong>루이넬</strong><span>Lv.73 · 회피 28</span><span class="mob-sub">검은빛의정원2</span></span></a>
-<a class="mob-card" href="../mob/7130103.html"><img src="../images/mob/icon/7130103.png" alt="" loading="lazy" width="40" height="40"><span><strong>스켈레톤 지휘관</strong><span>Lv.73 · 회피 32</span><span class="mob-sub">유적의 낭떠러지</span></span></a>
-<a class="mob-card" href="../mob/7130501.html"><img src="../images/mob/icon/7130501.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 레쉬</strong><span>Lv.74 · 회피 27</span><span class="mob-sub">털복숭이의 숲</span></span></a>
-<a class="mob-card" href="../mob/7130101.html"><img src="../images/mob/icon/7130101.png" alt="" loading="lazy" width="40" height="40"><span><strong>타우로스피어</strong><span>Lv.75 · 회피 30</span><span class="mob-sub">신전의입구4</span></span></a>
-<a class="mob-card" href="../mob/7130004.html"><img src="../images/mob/icon/7130004.png" alt="" loading="lazy" width="40" height="40"><span><strong>헹키</strong><span>Lv.78 · 회피 30</span><span class="mob-sub">가파른 언덕</span></span></a>
-<a class="mob-card" href="../mob/8140000.html"><img src="../images/mob/icon/8140000.png" alt="" loading="lazy" width="40" height="40"><span><strong>라이칸스로프</strong><span>Lv.80 · 회피 28</span><span class="mob-sub">늑대의영역1</span></span></a>
-<a class="mob-card" href="../mob/9400581.html"><img src="../images/mob/icon/9400581.png" alt="" loading="lazy" width="40" height="40"><span><strong>스톰브레이커</strong><span>Lv.80 · 회피 30</span><span class="mob-sub">Mage Mastery Room</span></span></a>
-<a class="mob-card" href="../mob/8140002.html"><img src="../images/mob/icon/8140002.png" alt="" loading="lazy" width="40" height="40"><span><strong>블러드 하프</strong><span>Lv.83 · 회피 27</span><span class="mob-sub">하늘 둥지2</span></span></a>
-<a class="mob-card" href="../mob/7130010.html"><img src="../images/mob/icon/7130010.png" alt="" loading="lazy" width="40" height="40"><span><strong>데스테니</strong><span>Lv.85 · 회피 27</span><span class="mob-sub">잊혀진 시간의 길&lt;3&gt;</span></span></a>
-<a class="mob-card" href="../mob/7160000.html"><img src="../images/mob/icon/7160000.png" alt="" loading="lazy" width="40" height="40"><span><strong>듀얼 파이렛</strong><span>Lv.87 · 회피 28</span><span class="mob-sub">삐뚤어진 시간</span></span></a>
-<a class="mob-card" href="../mob/9420539.html"><img src="../images/mob/icon/9420539.png" alt="" loading="lazy" width="40" height="40"><span><strong>바이크롤라</strong><span>Lv.87 · 회피 26</span><span class="mob-sub">판타지 테마파크 3</span></span></a>
-<a class="mob-card" href="../mob/8140101.html"><img src="../images/mob/icon/8140101.png" alt="" loading="lazy" width="40" height="40"><span><strong>검은 켄타우로스</strong><span>Lv.88 · 회피 28</span><span class="mob-sub">검은 켄타우로스의 영역</span></span></a>
-<a class="mob-card" href="../mob/8140111.html"><img src="../images/mob/icon/8140111.png" alt="" loading="lazy" width="40" height="40"><span><strong>듀얼 버크</strong><span>Lv.88 · 회피 28</span><span class="mob-sub">산양의 골짜기1</span></span></a>
-<a class="mob-card" href="../mob/7130300.html"><img src="../images/mob/icon/7130300.png" alt="" loading="lazy" width="40" height="40"><span><strong>마스터 데스테니</strong><span>Lv.89 · 회피 28</span><span class="mob-sub">사라진 시간</span></span></a>
-<a class="mob-card" href="../mob/8140600.html"><img src="../images/mob/icon/8140600.png" alt="" loading="lazy" width="40" height="40"><span><strong>본피쉬</strong><span>Lv.92 · 회피 38</span><span class="mob-sub">깊은 바다 협곡1</span></span></a>
-<a class="mob-card" href="../mob/9420540.html"><img src="../images/mob/icon/9420540.png" alt="" loading="lazy" width="40" height="40"><span><strong>갤러페라</strong><span>Lv.94 · 회피 37</span><span class="mob-sub">스푸키 월드 입구</span></span></a>
-<a class="mob-card" href="../mob/8150300.html"><img src="../images/mob/icon/8150300.png" alt="" loading="lazy" width="40" height="40"><span><strong>레드 와이번</strong><span>Lv.97 · 회피 37</span><span class="mob-sub">레드 와이번의 둥지</span></span></a>
-<a class="mob-card" href="../mob/8142100.html"><img src="../images/mob/icon/8142100.png" alt="" loading="lazy" width="40" height="40"><span><strong>리셀스퀴드</strong><span>Lv.97 · 회피 37</span><span class="mob-sub">위험한 바다 협곡2</span></span></a>
-<a class="mob-card" href="../mob/8141100.html"><img src="../images/mob/icon/8141100.png" alt="" loading="lazy" width="40" height="40"><span><strong>기간틱 바이킹</strong><span>Lv.98 · 회피 38</span><span class="mob-sub">꼬여버린 시간</span></span></a>
-<a class="mob-card" href="../mob/8143000.html"><img src="../images/mob/icon/8143000.png" alt="" loading="lazy" width="40" height="40"><span><strong>G.팬텀워치</strong><span>Lv.99 · 회피 38</span><span class="mob-sub">금지된 시간</span></span></a>
-<a class="mob-card" href="../mob/9400579.html"><img src="../images/mob/icon/9400579.png" alt="" loading="lazy" width="40" height="40"><span><strong>나이트섀도우</strong><span>Lv.100 · 회피 45</span><span class="mob-sub">The Wrath of Night</span></span></a>
-<a class="mob-card" href="../mob/8150100.html"><img src="../images/mob/icon/8150100.png" alt="" loading="lazy" width="40" height="40"><span><strong>샤크 <small>난파선의 무덤</small></strong><span>Lv.100 · 회피 38</span><span class="mob-sub">난파선의 무덤</span></span></a>
-<a class="mob-card" href="../mob/8150101.html"><img src="../images/mob/icon/8150101.png" alt="" loading="lazy" width="40" height="40"><span><strong>콜드샤크</strong><span>Lv.102 · 회피 38</span><span class="mob-sub">난파선의 무덤</span></span></a>
-<a class="mob-card" href="../mob/8150302.html"><img src="../images/mob/icon/8150302.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 와이번</strong><span>Lv.103 · 회피 38</span><span class="mob-sub">협곡의 서쪽길</span></span></a>
-<a class="mob-card" href="../mob/8190000.html"><img src="../images/mob/icon/8190000.png" alt="" loading="lazy" width="40" height="40"><span><strong>뉴트주니어</strong><span>Lv.105 · 회피 38</span><span class="mob-sub">망가진 용의 둥지</span></span></a>
-<a class="mob-card" href="../mob/8170000.html"><img src="../images/mob/icon/8170000.png" alt="" loading="lazy" width="40" height="40"><span><strong>타나토스</strong><span>Lv.108 · 회피 38</span><span class="mob-sub">잊혀진 회랑</span></span></a>
-<a class="mob-card is-uncertain" href="../mob/8190005.html"><img src="../images/mob/icon/8190005.png" alt="" loading="lazy" width="40" height="40"><span><strong>네스트골렘</strong><span>Lv.110 · 회피 38</span><span class="mob-sub">위험한 용의 둥지</span><span class="mob-flags"><b class="drop-uncertain">확인 필요</b></span></span></a>
-<a class="mob-card" href="../mob/8190002.html"><img src="../images/mob/icon/8190002.png" alt="" loading="lazy" width="40" height="40"><span><strong>네스트골렘 (변신)</strong><span>Lv.110 · 회피 38</span><span class="mob-sub">망가진 용의 둥지</span></span></a>
-<a class="mob-card" href="../mob/8190003.html"><img src="../images/mob/icon/8190003.png" alt="" loading="lazy" width="40" height="40"><span><strong>스켈레곤</strong><span>Lv.110 · 회피 38</span><span class="mob-sub">죽은 용의 둥지</span></span></a>
-<a class="mob-card" href="../mob/8190004.html"><img src="../images/mob/icon/8190004.png" alt="" loading="lazy" width="40" height="40"><span><strong>스켈로스</strong><span>Lv.113 · 회피 38</span><span class="mob-sub">남겨진 용의 둥지1</span></span></a>
-<a class="mob-card" href="../mob/8220003.html"><img src="../images/mob/icon/8220003.png" alt="" loading="lazy" width="40" height="40"><span><strong>레비아탄 <small>레비아탄의 협곡</small></strong><span>Lv.120 · 회피 41</span><span class="mob-sub">레비아탄의 협곡</span></span></a>
-<a class="mob-card" href="../mob/8220004.html"><img src="../images/mob/icon/8220004.png" alt="" loading="lazy" width="40" height="40"><span><strong>도도</strong><span>Lv.121 · 회피 42</span><span class="mob-sub">추억의 길5</span></span></a>
-<a class="mob-card" href="../mob/8220005.html"><img src="../images/mob/icon/8220005.png" alt="" loading="lazy" width="40" height="40"><span><strong>릴리노흐</strong><span>Lv.131 · 회피 47</span><span class="mob-sub">후회의 길5</span></span></a>
-<a class="mob-card" href="../mob/8800002.html"><img src="../images/mob/icon/8800002.png" alt="" loading="lazy" width="40" height="40"><span><strong>자쿰3</strong><span>Lv.140 · 회피 16</span><span class="mob-sub">카오스자쿰의제단</span></span></a>
-<a class="mob-card" href="../mob/8220006.html"><img src="../images/mob/icon/8220006.png" alt="" loading="lazy" width="40" height="40"><span><strong>라이카</strong><span>Lv.141 · 회피 49</span><span class="mob-sub">망각의 길5</span></span></a>
+<a class="mob-card" href="../mob/2130100"><img src="../images/mob/icon/2130100.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 엑스텀프</strong><span>Lv.22 · 회피 7</span><span class="mob-sub">동쪽바위산5</span></span></a>
+<a class="mob-card" href="../mob/2230108"><img src="../images/mob/icon/2230108.png" alt="" loading="lazy" width="40" height="40"><span><strong>핀붐</strong><span>Lv.22 · 회피 7</span><span class="mob-sub">뾰족한 사각지대</span></span></a>
+<a class="mob-card" href="../mob/2100105"><img src="../images/mob/icon/2100105.png" alt="" loading="lazy" width="40" height="40"><span><strong>벨라모아</strong><span>Lv.23 · 회피 9</span><span class="mob-sub">벨라모아의 굴</span></span></a>
+<a class="mob-card" href="../mob/3230400"><img src="../images/mob/icon/3230400.png" alt="" loading="lazy" width="40" height="40"><span><strong>북치는 토끼</strong><span>Lv.30 · 회피 12</span><span class="mob-sub">바람테라스1</span></span></a>
+<a class="mob-card" href="../mob/5200001"><img src="../images/mob/icon/5200001.png" alt="" loading="lazy" width="40" height="40"><span><strong>아이스 스톤볼</strong><span>Lv.30 · 회피 12</span><span class="mob-sub">오르비스탑&lt;13층&gt;</span></span></a>
+<a class="mob-card" href="../mob/5300000"><img src="../images/mob/icon/5300000.png" alt="" loading="lazy" width="40" height="40"><span><strong>리티</strong><span>Lv.32 · 회피 13</span><span class="mob-sub">눈 덮인 언덕</span></span></a>
+<a class="mob-card" href="../mob/5300001"><img src="../images/mob/icon/5300001.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 리티</strong><span>Lv.33 · 회피 15</span><span class="mob-sub">오르비스탑&lt;3층&gt;</span></span></a>
+<a class="mob-card" href="../mob/3210201"><img src="../images/mob/icon/3210201.png" alt="" loading="lazy" width="40" height="40"><span><strong>주니어 라이오너</strong><span>Lv.33 · 회피 15</span><span class="mob-sub">노란빛의정원1</span></span></a>
+<a class="mob-card" href="../mob/3230102"><img src="../images/mob/icon/3230102.png" alt="" loading="lazy" width="40" height="40"><span><strong>로랑</strong><span>Lv.37 · 회피 18</span><span class="mob-sub">해변가원두막</span></span></a>
+<a class="mob-card" href="../mob/9420501"><img src="../images/mob/icon/9420501.png" alt="" loading="lazy" width="40" height="40"><span><strong>프리저</strong><span>Lv.38 · 회피 18</span><span class="mob-sub">교외 지역 1</span></span></a>
+<a class="mob-card" href="../mob/4230600"><img src="../images/mob/icon/4230600.png" alt="" loading="lazy" width="40" height="40"><span><strong>모래거인</strong><span>Lv.40 · 회피 17</span><span class="mob-sub">석양의 거인</span></span></a>
+<a class="mob-card" href="../mob/4230120"><img src="../images/mob/icon/4230120.png" alt="" loading="lazy" width="40" height="40"><span><strong>플라티안</strong><span>Lv.44 · 회피 18</span><span class="mob-sub">로스웰초원2</span></span></a>
+<a class="mob-card" href="../mob/4130100"><img src="../images/mob/icon/4130100.png" alt="" loading="lazy" width="40" height="40"><span><strong>카파 드레이크</strong><span>Lv.45 · 회피 18</span><span class="mob-sub">빛을잃은동굴1</span></span></a>
+<a class="mob-card" href="../mob/4230115"><img src="../images/mob/icon/4230115.png" alt="" loading="lazy" width="40" height="40"><span><strong>마스터 크로노스 <small>시간의길&lt;4&gt;</small></strong><span>Lv.46 · 회피 24</span><span class="mob-sub">잃어버린시간&lt;2&gt;</span></span></a>
+<a class="mob-card" href="../mob/4130102"><img src="../images/mob/icon/4130102.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 네펜데스</strong><span>Lv.47 · 회피 15</span><span class="mob-sub">버려진화원</span></span></a>
+<a class="mob-card" href="../mob/4230505"><img src="../images/mob/icon/4230505.png" alt="" loading="lazy" width="40" height="40"><span><strong>단지</strong><span>Lv.47 · 회피 18</span><span class="mob-sub">10년 된 약초밭</span></span></a>
+<a class="mob-card" href="../mob/4230126"><img src="../images/mob/icon/4230126.png" alt="" loading="lazy" width="40" height="40"><span><strong>머미독</strong><span>Lv.47 · 회피 18</span><span class="mob-sub">유적의 무덤3</span></span></a>
+<a class="mob-card" href="../mob/4110302"><img src="../images/mob/icon/4110302.png" alt="" loading="lazy" width="40" height="40"><span><strong>미스릴 뮤테</strong><span>Lv.47 · 회피 18</span><span class="mob-sub">연구소 B-1 구역</span></span></a>
+<a class="mob-card" href="../mob/4230102"><img src="../images/mob/icon/4230102.png" alt="" loading="lazy" width="40" height="40"><span><strong>레이스</strong><span>Lv.48 · 회피 20</span><span class="mob-sub">2호선&lt;3구역&gt;</span></span></a>
+<a class="mob-card" href="../mob/4230506"><img src="../images/mob/icon/4230506.png" alt="" loading="lazy" width="40" height="40"><span><strong>삼단지</strong><span>Lv.48 · 회피 20</span><span class="mob-sub">50년 된 약초밭</span></span></a>
+<a class="mob-card" href="../mob/4240000"><img src="../images/mob/icon/4240000.png" alt="" loading="lazy" width="40" height="40"><span><strong>원로 그레이</strong><span>Lv.49 · 회피 25</span><span class="mob-sub">바나드의 초원</span></span></a>
+<a class="mob-card" href="../mob/9420504"><img src="../images/mob/icon/9420504.png" alt="" loading="lazy" width="40" height="40"><span><strong>티포 레드</strong><span>Lv.50 · 회피 20</span><span class="mob-sub">신비한 길 1</span></span></a>
+<a class="mob-card" href="../mob/5120504"><img src="../images/mob/icon/5120504.png" alt="" loading="lazy" width="40" height="40"><span><strong>훈련용 나무인형</strong><span>Lv.51 · 회피 18</span><span class="mob-sub">상급 수련장</span></span></a>
+<a class="mob-card" href="../mob/9420529"><img src="../images/mob/icon/9420529.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 피션</strong><span>Lv.52 · 회피 20</span><span class="mob-sub">진흙 강둑 1</span></span></a>
+<a class="mob-card" href="../mob/5120000"><img src="../images/mob/icon/5120000.png" alt="" loading="lazy" width="40" height="40"><span><strong>러스터픽시</strong><span>Lv.52 · 회피 22</span><span class="mob-sub">구름공원6</span></span></a>
+<a class="mob-card" href="../mob/5120002"><img src="../images/mob/icon/5120002.png" alt="" loading="lazy" width="40" height="40"><span><strong>라이오너</strong><span>Lv.53 · 회피 25</span><span class="mob-sub">노란빛의정원2</span></span></a>
+<a class="mob-card" href="../mob/5140000"><img src="../images/mob/icon/5140000.png" alt="" loading="lazy" width="40" height="40"><span><strong>화이트팽</strong><span>Lv.58 · 회피 25</span><span class="mob-sub">차디찬벌판</span></span></a>
+<a class="mob-card is-uncertain" href="../mob/9400003"><img src="../images/mob/icon/9400003.png" alt="" loading="lazy" width="40" height="40"><span><strong>망령</strong><span>Lv.60 · 회피 25</span><span class="mob-sub">적막한 묘지</span><span class="mob-flags"><b class="drop-uncertain">확인 필요</b></span></span></a>
+<a class="mob-card" href="../mob/7130400"><img src="../images/mob/icon/7130400.png" alt="" loading="lazy" width="40" height="40"><span><strong>노란 왕도깨비</strong><span>Lv.70 · 회피 15</span><span class="mob-sub">깊은 산 흉가</span></span></a>
+<a class="mob-card" href="../mob/7130500"><img src="../images/mob/icon/7130500.png" alt="" loading="lazy" width="40" height="40"><span><strong>레쉬</strong><span>Lv.70 · 회피 25</span><span class="mob-sub">리프레 서쪽 숲</span></span></a>
+<a class="mob-card" href="../mob/7130104"><img src="../images/mob/icon/7130104.png" alt="" loading="lazy" width="40" height="40"><span><strong>캡틴</strong><span>Lv.70 · 회피 26</span><span class="mob-sub">보물섬의 약탈</span></span></a>
+<a class="mob-card" href="../mob/8140200"><img src="../images/mob/icon/8140200.png" alt="" loading="lazy" width="40" height="40"><span><strong>클라크</strong><span>Lv.70 · 회피 26</span><span class="mob-sub">잊혀진 시간의 길&lt;2&gt;</span></span></a>
+<a class="mob-card" href="../mob/7130401"><img src="../images/mob/icon/7130401.png" alt="" loading="lazy" width="40" height="40"><span><strong>파란 왕도깨비</strong><span>Lv.70 · 회피 15</span><span class="mob-sub">깊은 산 흉가</span></span></a>
+<a class="mob-card" href="../mob/7130600"><img src="../images/mob/icon/7130600.png" alt="" loading="lazy" width="40" height="40"><span><strong>호브</strong><span>Lv.72 · 회피 25</span><span class="mob-sub">심술쟁이의 숲</span></span></a>
+<a class="mob-card" href="../mob/7130000"><img src="../images/mob/icon/7130000.png" alt="" loading="lazy" width="40" height="40"><span><strong>루이넬</strong><span>Lv.73 · 회피 28</span><span class="mob-sub">검은빛의정원2</span></span></a>
+<a class="mob-card" href="../mob/7130103"><img src="../images/mob/icon/7130103.png" alt="" loading="lazy" width="40" height="40"><span><strong>스켈레톤 지휘관</strong><span>Lv.73 · 회피 32</span><span class="mob-sub">유적의 낭떠러지</span></span></a>
+<a class="mob-card" href="../mob/7130501"><img src="../images/mob/icon/7130501.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 레쉬</strong><span>Lv.74 · 회피 27</span><span class="mob-sub">털복숭이의 숲</span></span></a>
+<a class="mob-card" href="../mob/7130101"><img src="../images/mob/icon/7130101.png" alt="" loading="lazy" width="40" height="40"><span><strong>타우로스피어</strong><span>Lv.75 · 회피 30</span><span class="mob-sub">신전의입구4</span></span></a>
+<a class="mob-card" href="../mob/7130004"><img src="../images/mob/icon/7130004.png" alt="" loading="lazy" width="40" height="40"><span><strong>헹키</strong><span>Lv.78 · 회피 30</span><span class="mob-sub">가파른 언덕</span></span></a>
+<a class="mob-card" href="../mob/8140000"><img src="../images/mob/icon/8140000.png" alt="" loading="lazy" width="40" height="40"><span><strong>라이칸스로프</strong><span>Lv.80 · 회피 28</span><span class="mob-sub">늑대의영역1</span></span></a>
+<a class="mob-card" href="../mob/9400581"><img src="../images/mob/icon/9400581.png" alt="" loading="lazy" width="40" height="40"><span><strong>스톰브레이커</strong><span>Lv.80 · 회피 30</span><span class="mob-sub">Mage Mastery Room</span></span></a>
+<a class="mob-card" href="../mob/8140002"><img src="../images/mob/icon/8140002.png" alt="" loading="lazy" width="40" height="40"><span><strong>블러드 하프</strong><span>Lv.83 · 회피 27</span><span class="mob-sub">하늘 둥지2</span></span></a>
+<a class="mob-card" href="../mob/7130010"><img src="../images/mob/icon/7130010.png" alt="" loading="lazy" width="40" height="40"><span><strong>데스테니</strong><span>Lv.85 · 회피 27</span><span class="mob-sub">잊혀진 시간의 길&lt;3&gt;</span></span></a>
+<a class="mob-card" href="../mob/7160000"><img src="../images/mob/icon/7160000.png" alt="" loading="lazy" width="40" height="40"><span><strong>듀얼 파이렛</strong><span>Lv.87 · 회피 28</span><span class="mob-sub">삐뚤어진 시간</span></span></a>
+<a class="mob-card" href="../mob/9420539"><img src="../images/mob/icon/9420539.png" alt="" loading="lazy" width="40" height="40"><span><strong>바이크롤라</strong><span>Lv.87 · 회피 26</span><span class="mob-sub">판타지 테마파크 3</span></span></a>
+<a class="mob-card" href="../mob/8140101"><img src="../images/mob/icon/8140101.png" alt="" loading="lazy" width="40" height="40"><span><strong>검은 켄타우로스</strong><span>Lv.88 · 회피 28</span><span class="mob-sub">검은 켄타우로스의 영역</span></span></a>
+<a class="mob-card" href="../mob/8140111"><img src="../images/mob/icon/8140111.png" alt="" loading="lazy" width="40" height="40"><span><strong>듀얼 버크</strong><span>Lv.88 · 회피 28</span><span class="mob-sub">산양의 골짜기1</span></span></a>
+<a class="mob-card" href="../mob/7130300"><img src="../images/mob/icon/7130300.png" alt="" loading="lazy" width="40" height="40"><span><strong>마스터 데스테니</strong><span>Lv.89 · 회피 28</span><span class="mob-sub">사라진 시간</span></span></a>
+<a class="mob-card" href="../mob/8140600"><img src="../images/mob/icon/8140600.png" alt="" loading="lazy" width="40" height="40"><span><strong>본피쉬</strong><span>Lv.92 · 회피 38</span><span class="mob-sub">깊은 바다 협곡1</span></span></a>
+<a class="mob-card" href="../mob/9420540"><img src="../images/mob/icon/9420540.png" alt="" loading="lazy" width="40" height="40"><span><strong>갤러페라</strong><span>Lv.94 · 회피 37</span><span class="mob-sub">스푸키 월드 입구</span></span></a>
+<a class="mob-card" href="../mob/8150300"><img src="../images/mob/icon/8150300.png" alt="" loading="lazy" width="40" height="40"><span><strong>레드 와이번</strong><span>Lv.97 · 회피 37</span><span class="mob-sub">레드 와이번의 둥지</span></span></a>
+<a class="mob-card" href="../mob/8142100"><img src="../images/mob/icon/8142100.png" alt="" loading="lazy" width="40" height="40"><span><strong>리셀스퀴드</strong><span>Lv.97 · 회피 37</span><span class="mob-sub">위험한 바다 협곡2</span></span></a>
+<a class="mob-card" href="../mob/8141100"><img src="../images/mob/icon/8141100.png" alt="" loading="lazy" width="40" height="40"><span><strong>기간틱 바이킹</strong><span>Lv.98 · 회피 38</span><span class="mob-sub">꼬여버린 시간</span></span></a>
+<a class="mob-card" href="../mob/8143000"><img src="../images/mob/icon/8143000.png" alt="" loading="lazy" width="40" height="40"><span><strong>G.팬텀워치</strong><span>Lv.99 · 회피 38</span><span class="mob-sub">금지된 시간</span></span></a>
+<a class="mob-card" href="../mob/9400579"><img src="../images/mob/icon/9400579.png" alt="" loading="lazy" width="40" height="40"><span><strong>나이트섀도우</strong><span>Lv.100 · 회피 45</span><span class="mob-sub">The Wrath of Night</span></span></a>
+<a class="mob-card" href="../mob/8150100"><img src="../images/mob/icon/8150100.png" alt="" loading="lazy" width="40" height="40"><span><strong>샤크 <small>난파선의 무덤</small></strong><span>Lv.100 · 회피 38</span><span class="mob-sub">난파선의 무덤</span></span></a>
+<a class="mob-card" href="../mob/8150101"><img src="../images/mob/icon/8150101.png" alt="" loading="lazy" width="40" height="40"><span><strong>콜드샤크</strong><span>Lv.102 · 회피 38</span><span class="mob-sub">난파선의 무덤</span></span></a>
+<a class="mob-card" href="../mob/8150302"><img src="../images/mob/icon/8150302.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 와이번</strong><span>Lv.103 · 회피 38</span><span class="mob-sub">협곡의 서쪽길</span></span></a>
+<a class="mob-card" href="../mob/8190000"><img src="../images/mob/icon/8190000.png" alt="" loading="lazy" width="40" height="40"><span><strong>뉴트주니어</strong><span>Lv.105 · 회피 38</span><span class="mob-sub">망가진 용의 둥지</span></span></a>
+<a class="mob-card" href="../mob/8170000"><img src="../images/mob/icon/8170000.png" alt="" loading="lazy" width="40" height="40"><span><strong>타나토스</strong><span>Lv.108 · 회피 38</span><span class="mob-sub">잊혀진 회랑</span></span></a>
+<a class="mob-card is-uncertain" href="../mob/8190005"><img src="../images/mob/icon/8190005.png" alt="" loading="lazy" width="40" height="40"><span><strong>네스트골렘</strong><span>Lv.110 · 회피 38</span><span class="mob-sub">위험한 용의 둥지</span><span class="mob-flags"><b class="drop-uncertain">확인 필요</b></span></span></a>
+<a class="mob-card" href="../mob/8190002"><img src="../images/mob/icon/8190002.png" alt="" loading="lazy" width="40" height="40"><span><strong>네스트골렘 (변신)</strong><span>Lv.110 · 회피 38</span><span class="mob-sub">망가진 용의 둥지</span></span></a>
+<a class="mob-card" href="../mob/8190003"><img src="../images/mob/icon/8190003.png" alt="" loading="lazy" width="40" height="40"><span><strong>스켈레곤</strong><span>Lv.110 · 회피 38</span><span class="mob-sub">죽은 용의 둥지</span></span></a>
+<a class="mob-card" href="../mob/8190004"><img src="../images/mob/icon/8190004.png" alt="" loading="lazy" width="40" height="40"><span><strong>스켈로스</strong><span>Lv.113 · 회피 38</span><span class="mob-sub">남겨진 용의 둥지1</span></span></a>
+<a class="mob-card" href="../mob/8220003"><img src="../images/mob/icon/8220003.png" alt="" loading="lazy" width="40" height="40"><span><strong>레비아탄 <small>레비아탄의 협곡</small></strong><span>Lv.120 · 회피 41</span><span class="mob-sub">레비아탄의 협곡</span></span></a>
+<a class="mob-card" href="../mob/8220004"><img src="../images/mob/icon/8220004.png" alt="" loading="lazy" width="40" height="40"><span><strong>도도</strong><span>Lv.121 · 회피 42</span><span class="mob-sub">추억의 길5</span></span></a>
+<a class="mob-card" href="../mob/8220005"><img src="../images/mob/icon/8220005.png" alt="" loading="lazy" width="40" height="40"><span><strong>릴리노흐</strong><span>Lv.131 · 회피 47</span><span class="mob-sub">후회의 길5</span></span></a>
+<a class="mob-card" href="../mob/8800002"><img src="../images/mob/icon/8800002.png" alt="" loading="lazy" width="40" height="40"><span><strong>자쿰3</strong><span>Lv.140 · 회피 16</span><span class="mob-sub">카오스자쿰의제단</span></span></a>
+<a class="mob-card" href="../mob/8220006"><img src="../images/mob/icon/8220006.png" alt="" loading="lazy" width="40" height="40"><span><strong>라이카</strong><span>Lv.141 · 회피 49</span><span class="mob-sub">망각의 길5</span></span></a>
     </div>
     <p class="notice">드랍 정보는 고전 메이플 서버 데이터(Cosmic, AGPL-3.0) 기준 참고용이고 일부는 메이플랜드 자료로 확인했어요. 드랍률은 넣지 않았어요.</p>
   </section>

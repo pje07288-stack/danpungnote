@@ -19,25 +19,34 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=18">
-<script src="../assets/search.js?v=mwb6d7ww" defer></script>
-<script src="../assets/sprite.js?v=mwb6d7ww" defer></script>
+<link rel="stylesheet" href="../assets/site.css?v=a537f24b">
+<script src="../assets/search.js?v=a134e2aa" defer></script>
+<script src="../assets/sprite.js?v=a134e2aa" defer></script>
+<script src="../assets/nav.js?v=a134e2aa" defer></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5994680292902637" crossorigin="anonymous"></script>
 <!-- page: item/1432007.html -->
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="leaf" viewBox="0 0 64 64"><path d="M32 3l6 14 8-6-1 12 13-2-6 10 8 4-15 8 3 11-13-4-3 11-3-11-13 4 3-11L4 35l8-4-6-10 13 2-1-12 8 6z"/></symbol></svg>
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="../index.html" aria-label="단풍수첩 처음으로">
+    <a class="brand" href="../" aria-label="단풍수첩 처음으로">
       <img class="brand-logo" src="../brand/logo.svg" alt="" width="42" height="42">
       <span class="brand-text"><span class="brand-name"><em>단풍</em>수첩</span><span class="brand-sub">메이플랜드 모험 수첩</span></span>
     </a>
     <nav class="main-nav" aria-label="주 메뉴">
-      <a href="../index.html#calculator"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>명중<span class="nav-long"> 계산기</span></a>
-      <a href="../index.html#monpa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v13H4zM8 3v6m8-6v6M4 10h16"/></svg>몬파<span class="nav-long"> 계산기</span></a>
-      <a href="../mob/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg>도감</a>
-      <a href="../item/index.html" aria-current="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>아이템</a>
-      <a href="../map/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg>맵</a>
+      <div class="nav-menu">
+        <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="calcMenu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2m3 0h2M8 15h2m3 0h2"/></svg>계산기<svg class="icon nav-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav-pop" id="calcMenu" hidden>
+          <a href="../#calculator">명중 계산기</a>
+          <a href="../#monpa">몬파·주차 계산기</a>
+          <a href="../stat/">효율 계산기</a>
+          <a href="../kill/">N방컷 계산기</a>
+        </div>
+      </div>
+      <a href="../mob/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg>도감</a>
+      <a href="../item/" aria-current="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>아이템</a>
+      <a href="../map/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg>맵</a>
     </nav>
     <button type="button" class="search-open" id="searchOpen" aria-label="통합 검색 (단축키 /)" aria-haspopup="dialog"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>검색</span><kbd>/</kbd></button>
     <button type="button" class="theme-toggle" id="themeToggle" aria-label="다크 모드로 전환" title="낮/밤 바꾸기">
@@ -48,7 +57,7 @@
 </header>
 
 <main class="container page-main">
-  <nav class="breadcrumb" aria-label="현재 위치"><a href="../index.html">홈</a><span aria-hidden="true">›</span><a href="index.html">아이템</a><span aria-hidden="true">›</span><span>스페판</span></nav>
+  <nav class="breadcrumb" aria-label="현재 위치"><a href="../">홈</a><span aria-hidden="true">›</span><a href="./">아이템</a><span aria-hidden="true">›</span><span>스페판</span></nav>
   <section class="card" aria-labelledby="itemName">
     <div class="win-bar is-result"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3>아이템 정보</h3></div>
     <div class="mob-hero">
@@ -63,21 +72,21 @@
     <h2 class="sub-title" id="dropperTitle">이 아이템을 주는 몬스터 <small>15종</small></h2>
     
     <div class="dex-grid">
-<a class="mob-card" href="../mob/9420533.html"><img src="../images/mob/icon/9420533.png" alt="" loading="lazy" width="40" height="40"><span><strong>로데오</strong><span>Lv.61 · 회피 28</span><span class="mob-sub">진흙 강둑 2</span></span></a>
-<a class="mob-card" href="../mob/6220000.html"><img src="../images/mob/icon/6220000.png" alt="" loading="lazy" width="40" height="40"><span><strong>다일 <small>위험한크로코1</small></strong><span>Lv.65 · 회피 30</span><span class="mob-sub">위험한크로코1</span></span></a>
-<a class="mob-card" href="../mob/6300000.html"><img src="../images/mob/icon/6300000.png" alt="" loading="lazy" width="40" height="40"><span><strong>예티</strong><span>Lv.65 · 회피 24</span><span class="mob-sub">얼음골짜기1</span></span></a>
-<a class="mob-card" href="../mob/6300001.html"><img src="../images/mob/icon/6300001.png" alt="" loading="lazy" width="40" height="40"><span><strong>예티 (변신)</strong><span>Lv.65 · 회피 24</span></span></a>
-<a class="mob-card" href="../mob/6300002.html"><img src="../images/mob/icon/6300002.png" alt="" loading="lazy" width="40" height="40"><span><strong>예티 (분리)</strong><span>Lv.65 · 회피 24</span></span></a>
-<a class="mob-card" href="../mob/6230300.html"><img src="../images/mob/icon/6230300.png" alt="" loading="lazy" width="40" height="40"><span><strong>레이지 버피</strong><span>Lv.66 · 회피 26</span><span class="mob-sub">뒤틀린 시간의 길&lt;1&gt;</span></span></a>
-<a class="mob-card" href="../mob/6230601.html"><img src="../images/mob/icon/6230601.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 드레이크</strong><span>Lv.68 · 회피 27</span><span class="mob-sub">차가운 요람</span></span></a>
-<a class="mob-card" href="../mob/7220000.html"><img src="../images/mob/icon/7220000.png" alt="" loading="lazy" width="40" height="40"><span><strong>태륜 <small>떠돌이곰의 영토</small></strong><span>Lv.71 · 회피 30</span><span class="mob-sub">떠돌이곰의 영토</span></span></a>
-<a class="mob-card" href="../mob/7130003.html"><img src="../images/mob/icon/7130003.png" alt="" loading="lazy" width="40" height="40"><span><strong>듀얼 비틀</strong><span>Lv.76 · 회피 27</span><span class="mob-sub">미나르숲 동쪽 경계</span></span></a>
-<a class="mob-card" href="../mob/8130100.html"><img src="../images/mob/icon/8130100.png" alt="" loading="lazy" width="40" height="40"><span><strong>주니어 발록</strong><span>Lv.80 · 회피 30</span><span class="mob-sub">저주받은신전</span></span></a>
-<a class="mob-card" href="../mob/9410014.html"><img src="../images/mob/icon/9410014.png" alt="" loading="lazy" width="40" height="40"><span><strong>포장마차 <small>한적한 야시장 뒷골목</small></strong><span>Lv.85 · 회피 10</span></span></a>
-<a class="mob-card" href="../mob/9410015.html"><img src="../images/mob/icon/9410015.png" alt="" loading="lazy" width="40" height="40"><span><strong>포장마차 <small>한적한 야시장 뒷골목</small></strong><span>Lv.85 · 회피 40</span></span></a>
-<a class="mob-card" href="../mob/9400205.html"><img src="../images/mob/icon/9400205.png" alt="" loading="lazy" width="40" height="40"><span><strong>블루머쉬맘 <small>버섯의 전당</small></strong><span>Lv.90 · 회피 64</span><span class="mob-sub">버섯의 전당</span></span></a>
-<a class="mob-card" href="../mob/8141300.html"><img src="../images/mob/icon/8141300.png" alt="" loading="lazy" width="40" height="40"><span><strong>스퀴드 <small>위험한 바다 협곡1</small></strong><span>Lv.94 · 회피 37</span><span class="mob-sub">위험한 바다 협곡1</span></span></a>
-<a class="mob-card" href="../mob/8142000.html"><img src="../images/mob/icon/8142000.png" alt="" loading="lazy" width="40" height="40"><span><strong>팬텀워치</strong><span>Lv.95 · 회피 37</span><span class="mob-sub">잊혀진 시간의 길&lt;4&gt;</span></span></a>
+<a class="mob-card" href="../mob/9420533"><img src="../images/mob/icon/9420533.png" alt="" loading="lazy" width="40" height="40"><span><strong>로데오</strong><span>Lv.61 · 회피 28</span><span class="mob-sub">진흙 강둑 2</span></span></a>
+<a class="mob-card" href="../mob/6220000"><img src="../images/mob/icon/6220000.png" alt="" loading="lazy" width="40" height="40"><span><strong>다일 <small>위험한크로코1</small></strong><span>Lv.65 · 회피 30</span><span class="mob-sub">위험한크로코1</span></span></a>
+<a class="mob-card" href="../mob/6300000"><img src="../images/mob/icon/6300000.png" alt="" loading="lazy" width="40" height="40"><span><strong>예티</strong><span>Lv.65 · 회피 24</span><span class="mob-sub">얼음골짜기1</span></span></a>
+<a class="mob-card" href="../mob/6300001"><img src="../images/mob/icon/6300001.png" alt="" loading="lazy" width="40" height="40"><span><strong>예티 (변신)</strong><span>Lv.65 · 회피 24</span></span></a>
+<a class="mob-card" href="../mob/6300002"><img src="../images/mob/icon/6300002.png" alt="" loading="lazy" width="40" height="40"><span><strong>예티 (분리)</strong><span>Lv.65 · 회피 24</span></span></a>
+<a class="mob-card" href="../mob/6230300"><img src="../images/mob/icon/6230300.png" alt="" loading="lazy" width="40" height="40"><span><strong>레이지 버피</strong><span>Lv.66 · 회피 26</span><span class="mob-sub">뒤틀린 시간의 길&lt;1&gt;</span></span></a>
+<a class="mob-card" href="../mob/6230601"><img src="../images/mob/icon/6230601.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 드레이크</strong><span>Lv.68 · 회피 27</span><span class="mob-sub">차가운 요람</span></span></a>
+<a class="mob-card" href="../mob/7220000"><img src="../images/mob/icon/7220000.png" alt="" loading="lazy" width="40" height="40"><span><strong>태륜 <small>떠돌이곰의 영토</small></strong><span>Lv.71 · 회피 30</span><span class="mob-sub">떠돌이곰의 영토</span></span></a>
+<a class="mob-card" href="../mob/7130003"><img src="../images/mob/icon/7130003.png" alt="" loading="lazy" width="40" height="40"><span><strong>듀얼 비틀</strong><span>Lv.76 · 회피 27</span><span class="mob-sub">미나르숲 동쪽 경계</span></span></a>
+<a class="mob-card" href="../mob/8130100"><img src="../images/mob/icon/8130100.png" alt="" loading="lazy" width="40" height="40"><span><strong>주니어 발록</strong><span>Lv.80 · 회피 30</span><span class="mob-sub">저주받은신전</span></span></a>
+<a class="mob-card" href="../mob/9410014"><img src="../images/mob/icon/9410014.png" alt="" loading="lazy" width="40" height="40"><span><strong>포장마차 <small>한적한 야시장 뒷골목</small></strong><span>Lv.85 · 회피 10</span></span></a>
+<a class="mob-card" href="../mob/9410015"><img src="../images/mob/icon/9410015.png" alt="" loading="lazy" width="40" height="40"><span><strong>포장마차 <small>한적한 야시장 뒷골목</small></strong><span>Lv.85 · 회피 40</span></span></a>
+<a class="mob-card" href="../mob/9400205"><img src="../images/mob/icon/9400205.png" alt="" loading="lazy" width="40" height="40"><span><strong>블루머쉬맘 <small>버섯의 전당</small></strong><span>Lv.90 · 회피 64</span><span class="mob-sub">버섯의 전당</span></span></a>
+<a class="mob-card" href="../mob/8141300"><img src="../images/mob/icon/8141300.png" alt="" loading="lazy" width="40" height="40"><span><strong>스퀴드 <small>위험한 바다 협곡1</small></strong><span>Lv.94 · 회피 37</span><span class="mob-sub">위험한 바다 협곡1</span></span></a>
+<a class="mob-card" href="../mob/8142000"><img src="../images/mob/icon/8142000.png" alt="" loading="lazy" width="40" height="40"><span><strong>팬텀워치</strong><span>Lv.95 · 회피 37</span><span class="mob-sub">잊혀진 시간의 길&lt;4&gt;</span></span></a>
     </div>
     <p class="notice">드랍 정보는 고전 메이플 서버 데이터(Cosmic, AGPL-3.0) 기준 참고용이고 일부는 메이플랜드 자료로 확인했어요. 드랍률은 넣지 않았어요.</p>
   </section>

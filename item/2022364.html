@@ -19,25 +19,34 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=18">
-<script src="../assets/search.js?v=mwb6d7ww" defer></script>
-<script src="../assets/sprite.js?v=mwb6d7ww" defer></script>
+<link rel="stylesheet" href="../assets/site.css?v=a537f24b">
+<script src="../assets/search.js?v=a134e2aa" defer></script>
+<script src="../assets/sprite.js?v=a134e2aa" defer></script>
+<script src="../assets/nav.js?v=a134e2aa" defer></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5994680292902637" crossorigin="anonymous"></script>
 <!-- page: item/2022364.html -->
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="leaf" viewBox="0 0 64 64"><path d="M32 3l6 14 8-6-1 12 13-2-6 10 8 4-15 8 3 11-13-4-3 11-3-11-13 4 3-11L4 35l8-4-6-10 13 2-1-12 8 6z"/></symbol></svg>
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="../index.html" aria-label="단풍수첩 처음으로">
+    <a class="brand" href="../" aria-label="단풍수첩 처음으로">
       <img class="brand-logo" src="../brand/logo.svg" alt="" width="42" height="42">
       <span class="brand-text"><span class="brand-name"><em>단풍</em>수첩</span><span class="brand-sub">메이플랜드 모험 수첩</span></span>
     </a>
     <nav class="main-nav" aria-label="주 메뉴">
-      <a href="../index.html#calculator"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>명중<span class="nav-long"> 계산기</span></a>
-      <a href="../index.html#monpa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v13H4zM8 3v6m8-6v6M4 10h16"/></svg>몬파<span class="nav-long"> 계산기</span></a>
-      <a href="../mob/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg>도감</a>
-      <a href="../item/index.html" aria-current="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>아이템</a>
-      <a href="../map/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg>맵</a>
+      <div class="nav-menu">
+        <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="calcMenu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2m3 0h2M8 15h2m3 0h2"/></svg>계산기<svg class="icon nav-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav-pop" id="calcMenu" hidden>
+          <a href="../#calculator">명중 계산기</a>
+          <a href="../#monpa">몬파·주차 계산기</a>
+          <a href="../stat/">효율 계산기</a>
+          <a href="../kill/">N방컷 계산기</a>
+        </div>
+      </div>
+      <a href="../mob/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg>도감</a>
+      <a href="../item/" aria-current="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>아이템</a>
+      <a href="../map/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg>맵</a>
     </nav>
     <button type="button" class="search-open" id="searchOpen" aria-label="통합 검색 (단축키 /)" aria-haspopup="dialog"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>검색</span><kbd>/</kbd></button>
     <button type="button" class="theme-toggle" id="themeToggle" aria-label="다크 모드로 전환" title="낮/밤 바꾸기">
@@ -48,7 +57,7 @@
 </header>
 
 <main class="container page-main">
-  <nav class="breadcrumb" aria-label="현재 위치"><a href="../index.html">홈</a><span aria-hidden="true">›</span><a href="index.html">아이템</a><span aria-hidden="true">›</span><span>회피치 상승</span></nav>
+  <nav class="breadcrumb" aria-label="현재 위치"><a href="../">홈</a><span aria-hidden="true">›</span><a href="./">아이템</a><span aria-hidden="true">›</span><span>회피치 상승</span></nav>
   <section class="card" aria-labelledby="itemName">
     <div class="win-bar is-result"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3>아이템 정보</h3></div>
     <div class="mob-hero">
@@ -63,11 +72,11 @@
     <h2 class="sub-title" id="dropperTitle">이 아이템을 주는 몬스터 <small>5종</small></h2>
     
     <div class="dex-grid">
-<a class="mob-card" href="../mob/9300184.html"><img src="../images/mob/icon/9300184.png" alt="" loading="lazy" width="40" height="40"><span><strong>마노 <small>무릉도장 1층</small></strong><span>Lv.20 · 회피 8</span></span></a>
-<a class="mob-card" href="../mob/9300185.html"><img src="../images/mob/icon/9300185.png" alt="" loading="lazy" width="40" height="40"><span><strong>스텀피 <small>무릉도장 2층</small></strong><span>Lv.35 · 회피 12</span></span></a>
-<a class="mob-card" href="../mob/9300186.html"><img src="../images/mob/icon/9300186.png" alt="" loading="lazy" width="40" height="40"><span><strong>데우 <small>무릉도장 3층</small></strong><span>Lv.38 · 회피 18</span></span></a>
-<a class="mob-card" href="../mob/9300187.html"><img src="../images/mob/icon/9300187.png" alt="" loading="lazy" width="40" height="40"><span><strong>킹슬라임 <small>무릉도장 4층</small></strong><span>Lv.40 · 회피 10</span></span></a>
-<a class="mob-card" href="../mob/9300188.html"><img src="../images/mob/icon/9300188.png" alt="" loading="lazy" width="40" height="40"><span><strong>대왕지네 <small>무릉도장 5층</small></strong><span>Lv.50 · 회피 27</span></span></a>
+<a class="mob-card" href="../mob/9300184"><img src="../images/mob/icon/9300184.png" alt="" loading="lazy" width="40" height="40"><span><strong>마노 <small>무릉도장 1층</small></strong><span>Lv.20 · 회피 8</span></span></a>
+<a class="mob-card" href="../mob/9300185"><img src="../images/mob/icon/9300185.png" alt="" loading="lazy" width="40" height="40"><span><strong>스텀피 <small>무릉도장 2층</small></strong><span>Lv.35 · 회피 12</span></span></a>
+<a class="mob-card" href="../mob/9300186"><img src="../images/mob/icon/9300186.png" alt="" loading="lazy" width="40" height="40"><span><strong>데우 <small>무릉도장 3층</small></strong><span>Lv.38 · 회피 18</span></span></a>
+<a class="mob-card" href="../mob/9300187"><img src="../images/mob/icon/9300187.png" alt="" loading="lazy" width="40" height="40"><span><strong>킹슬라임 <small>무릉도장 4층</small></strong><span>Lv.40 · 회피 10</span></span></a>
+<a class="mob-card" href="../mob/9300188"><img src="../images/mob/icon/9300188.png" alt="" loading="lazy" width="40" height="40"><span><strong>대왕지네 <small>무릉도장 5층</small></strong><span>Lv.50 · 회피 27</span></span></a>
     </div>
     <p class="notice">드랍 정보는 고전 메이플 서버 데이터(Cosmic, AGPL-3.0) 기준 참고용이고 일부는 메이플랜드 자료로 확인했어요. 드랍률은 넣지 않았어요.</p>
   </section>

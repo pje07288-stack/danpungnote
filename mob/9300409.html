@@ -19,25 +19,34 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=18">
-<script src="../assets/search.js?v=mwb6d7ww" defer></script>
-<script src="../assets/sprite.js?v=mwb6d7ww" defer></script>
+<link rel="stylesheet" href="../assets/site.css?v=a537f24b">
+<script src="../assets/search.js?v=a134e2aa" defer></script>
+<script src="../assets/sprite.js?v=a134e2aa" defer></script>
+<script src="../assets/nav.js?v=a134e2aa" defer></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5994680292902637" crossorigin="anonymous"></script>
 <!-- page: mob/9300409.html -->
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="leaf" viewBox="0 0 64 64"><path d="M32 3l6 14 8-6-1 12 13-2-6 10 8 4-15 8 3 11-13-4-3 11-3-11-13 4 3-11L4 35l8-4-6-10 13 2-1-12 8 6z"/></symbol></svg>
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="../index.html" aria-label="단풍수첩 처음으로">
+    <a class="brand" href="../" aria-label="단풍수첩 처음으로">
       <img class="brand-logo" src="../brand/logo.svg" alt="" width="42" height="42">
       <span class="brand-text"><span class="brand-name"><em>단풍</em>수첩</span><span class="brand-sub">메이플랜드 모험 수첩</span></span>
     </a>
     <nav class="main-nav" aria-label="주 메뉴">
-      <a href="../index.html#calculator"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>명중<span class="nav-long"> 계산기</span></a>
-      <a href="../index.html#monpa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v13H4zM8 3v6m8-6v6M4 10h16"/></svg>몬파<span class="nav-long"> 계산기</span></a>
-      <a href="../mob/index.html" aria-current="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg>도감</a>
-      <a href="../item/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>아이템</a>
-      <a href="../map/index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg>맵</a>
+      <div class="nav-menu">
+        <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="calcMenu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2m3 0h2M8 15h2m3 0h2"/></svg>계산기<svg class="icon nav-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav-pop" id="calcMenu" hidden>
+          <a href="../#calculator">명중 계산기</a>
+          <a href="../#monpa">몬파·주차 계산기</a>
+          <a href="../stat/">효율 계산기</a>
+          <a href="../kill/">N방컷 계산기</a>
+        </div>
+      </div>
+      <a href="../mob/" aria-current="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg>도감</a>
+      <a href="../item/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>아이템</a>
+      <a href="../map/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg>맵</a>
     </nav>
     <button type="button" class="search-open" id="searchOpen" aria-label="통합 검색 (단축키 /)" aria-haspopup="dialog"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>검색</span><kbd>/</kbd></button>
     <button type="button" class="theme-toggle" id="themeToggle" aria-label="다크 모드로 전환" title="낮/밤 바꾸기">
@@ -48,7 +57,7 @@
 </header>
 
 <main class="container page-main">
-  <nav class="breadcrumb" aria-label="현재 위치"><a href="../index.html">홈</a><span aria-hidden="true">›</span><a href="index.html">몬스터 도감</a><span aria-hidden="true">›</span><span>훈련로봇A</span></nav>
+  <nav class="breadcrumb" aria-label="현재 위치"><a href="../">홈</a><span aria-hidden="true">›</span><a href="./">몬스터 도감</a><span aria-hidden="true">›</span><span>훈련로봇A</span></nav>
 
   <section class="card" aria-labelledby="mobName">
     <div class="win-bar is-result"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3>몬스터 정보</h3></div>
@@ -57,7 +66,7 @@
       <div class="mob-hero-copy">
         <h1 class="mob-title" id="mobName">훈련로봇A</h1>
         <div class="tag-row"><span class="tag lv">Lv.10</span><span class="tag">회피 0</span></div>
-        <div class="btn-row"><a class="btn" href="../index.html?mob=9300409#calculator">명중 계산기에서 열기 →</a></div>
+        <div class="btn-row"><a class="btn" href="../?mob=9300409#calculator">명중 계산기에서 열기 →</a></div>
       </div>
     </div>
   </section>
@@ -105,14 +114,14 @@
   <section class="related-block" aria-labelledby="relTitle">
     <h2 class="sub-title" id="relTitle">비슷한 레벨의 몬스터</h2>
     <div class="related">
-<a class="mob-card" href="../mob/1110101.html"><img src="../images/mob/icon/1110101.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 스텀프</strong><span>Lv.10 · 회피 0</span></span></a>
-<a class="mob-card" href="../mob/1210101.html"><img src="../images/mob/icon/1210101.png" alt="" loading="lazy" width="40" height="40"><span><strong>리본 돼지</strong><span>Lv.10 · 회피 2</span></span></a>
-<a class="mob-card" href="../mob/9400573.html"><img src="../images/mob/icon/9400573.png" alt="" loading="lazy" width="40" height="40"><span><strong>아기 티폰</strong><span>Lv.10 · 회피 0</span></span></a>
-<a class="mob-card" href="../mob/9400506.html"><img src="../images/mob/icon/9400506.png" alt="" loading="lazy" width="40" height="40"><span><strong>웨딩캔들</strong><span>Lv.10 · 회피 7</span></span></a>
-<a class="mob-card" href="../mob/100124.html"><img src="../images/mob/icon/100124.png" alt="" loading="lazy" width="40" height="40"><span><strong>티구르</strong><span>Lv.9 · 회피 1</span></span></a>
-<a class="mob-card" href="../mob/9300064.html"><img src="../images/mob/icon/9300064.png" alt="" loading="lazy" width="40" height="40"><span><strong>도깨비불</strong><span>Lv.11 · 회피 3</span></span></a>
-<a class="mob-card" href="../mob/9420001.html"><img src="../images/mob/icon/9420001.png" alt="" loading="lazy" width="40" height="40"><span><strong>개구리</strong><span>Lv.8 · 회피 1</span></span></a>
-<a class="mob-card" href="../mob/9300274.html"><img src="../images/mob/icon/9300274.png" alt="" loading="lazy" width="40" height="40"><span><strong>시니컬한 주황버섯</strong><span>Lv.8 · 회피 0</span></span></a>
+<a class="mob-card" href="../mob/1110101"><img src="../images/mob/icon/1110101.png" alt="" loading="lazy" width="40" height="40"><span><strong>다크 스텀프</strong><span>Lv.10 · 회피 0</span></span></a>
+<a class="mob-card" href="../mob/1210101"><img src="../images/mob/icon/1210101.png" alt="" loading="lazy" width="40" height="40"><span><strong>리본 돼지</strong><span>Lv.10 · 회피 2</span></span></a>
+<a class="mob-card" href="../mob/9400573"><img src="../images/mob/icon/9400573.png" alt="" loading="lazy" width="40" height="40"><span><strong>아기 티폰</strong><span>Lv.10 · 회피 0</span></span></a>
+<a class="mob-card" href="../mob/9400506"><img src="../images/mob/icon/9400506.png" alt="" loading="lazy" width="40" height="40"><span><strong>웨딩캔들</strong><span>Lv.10 · 회피 7</span></span></a>
+<a class="mob-card" href="../mob/100124"><img src="../images/mob/icon/100124.png" alt="" loading="lazy" width="40" height="40"><span><strong>티구르</strong><span>Lv.9 · 회피 1</span></span></a>
+<a class="mob-card" href="../mob/9300064"><img src="../images/mob/icon/9300064.png" alt="" loading="lazy" width="40" height="40"><span><strong>도깨비불</strong><span>Lv.11 · 회피 3</span></span></a>
+<a class="mob-card" href="../mob/9420001"><img src="../images/mob/icon/9420001.png" alt="" loading="lazy" width="40" height="40"><span><strong>개구리</strong><span>Lv.8 · 회피 1</span></span></a>
+<a class="mob-card" href="../mob/9300274"><img src="../images/mob/icon/9300274.png" alt="" loading="lazy" width="40" height="40"><span><strong>시니컬한 주황버섯</strong><span>Lv.8 · 회피 0</span></span></a>
     </div>
   </section>
 </main>
