@@ -628,3 +628,5 @@ body:has(#buffPill:checked) .buff-included,body:has(#buffBless:checked) .buff-in
 .kill-verdict{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-top:8px;padding:14px 16px;border-radius:14px;background:var(--accent-soft)}
 .kill-verdict strong{font-family:var(--font-game);font-size:32px;line-height:1.2;color:var(--accent-ink)}
 .kill-verdict span{font-size:15px;font-weight:700;color:var(--text-sub)}
+.kill-opts{margin-top:16px}
+.kill-opts .check-chip[hidden]{display:none}
