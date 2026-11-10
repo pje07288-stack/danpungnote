@@ -189,7 +189,7 @@ legend{padding:0}
 .kbd-hint{margin-right:auto;color:var(--text-faint)}
 .kbd-hint kbd{display:inline-block;min-width:20px;padding:0 5px;border-radius:5px;border:1.5px solid var(--border-strong);border-bottom-width:3px;background:var(--card);font:inherit;font-size:11px;font-weight:800;text-align:center;color:var(--text-sub)}
 @media (hover:none){.kbd-hint{display:none!important}}
-.mob-icon{width:42px;height:42px;flex:0 0 42px;object-fit:contain;image-rendering:pixelated;transition:transform .15s}
+.mob-icon{width:42px;height:42px;flex:0 0 42px;object-fit:scale-down;image-rendering:auto;transition:transform .15s}
 .mob-content{display:flex;flex:1;min-width:0;flex-direction:column;align-items:flex-start;gap:4px}
 .mob-content strong{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:15px;font-weight:700}
 .mob-location{font-size:12px;font-weight:500;color:var(--text-sub)}
@@ -207,9 +207,8 @@ legend{padding:0}
 
 /* ── 명중 결과 ── */
 .target-card{display:flex;align-items:center;gap:16px;padding:14px;border-radius:16px;background:var(--sunken);border:2px solid var(--border);min-width:0}
-.target-stage{position:relative;display:grid;place-items:center;width:100px;height:100px;flex:none;border-radius:14px;border:2px solid var(--border);background:radial-gradient(ellipse at 50% 88%,rgba(90,55,20,.22) 0 18%,transparent 19%),linear-gradient(180deg,#CFE8FF 0%,#EAF5FF 62%,#B9DE8E 63%,#9CCB6C 100%);overflow:hidden}
-[data-theme="dark"] .target-stage{background:radial-gradient(ellipse at 50% 88%,rgba(0,0,0,.35) 0 18%,transparent 19%),linear-gradient(180deg,#1E2A44 0%,#2B3A58 62%,#3C5A2E 63%,#2E4724 100%)}
-.target-stage img{position:relative;width:86px;height:86px;object-fit:contain;object-position:center bottom;image-rendering:pixelated}
+.target-stage{position:relative;display:grid;place-items:center;width:100px;height:100px;flex:none;border-radius:14px;border:2px solid var(--border);background:var(--sunken);overflow:hidden}
+.target-stage img{position:relative;width:86px;height:86px;object-fit:scale-down;image-rendering:auto}
 .target-copy{display:grid;gap:4px;min-width:0}
 .target-label{font-size:12px;font-weight:700;color:var(--text-sub)}
 .target-copy strong{font-size:20px;font-weight:800;line-height:1.3;letter-spacing:-.02em}
@@ -472,7 +471,7 @@ body:has(#buffPill:checked) .buff-included,body:has(#buffBless:checked) .buff-in
 .related{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
 .mob-card{display:flex;align-items:center;gap:10px;min-width:0;padding:10px 12px;border-radius:14px;border:2px solid var(--border);background:var(--card);color:var(--text);text-decoration:none;transition:transform .15s,border-color .15s}
 .mob-card:hover{transform:translateY(-2px);border-color:var(--accent-hi)}
-.mob-card img{width:40px;height:40px;flex:none;object-fit:contain;image-rendering:pixelated}
+.mob-card img{width:40px;height:40px;flex:none;object-fit:scale-down;image-rendering:auto}
 .mob-card>span{display:grid;min-width:0}
 .mob-card strong{overflow:hidden;font-size:15px;font-weight:700;white-space:nowrap;text-overflow:ellipsis}
 .mob-card strong small{font-size:12px;font-weight:500;color:var(--text-sub)}
@@ -503,7 +502,7 @@ body:has(#buffPill:checked) .buff-included,body:has(#buffBless:checked) .buff-in
 .drop-quest{flex:none;padding:1px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink);font-size:12px;font-weight:800}
 @media (min-width:641px){.drop-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .drop-list li{align-items:center;justify-content:flex-start}
-.drop-list li img,.drop-noicon{width:28px;height:28px;flex:none;object-fit:contain;image-rendering:pixelated}
+.drop-list li img,.drop-noicon{width:32px;height:32px;flex:none;object-fit:scale-down;image-rendering:auto}
 .drop-list li>span{flex:1;min-width:0}
 .drop-hint{margin-left:4px;font-size:12px;font-weight:600;color:var(--text-faint)}
 .drop-list li.is-uncertain{background:transparent;border:1.5px dashed var(--border-strong)}
@@ -530,9 +529,9 @@ body:has(#buffPill:checked) .buff-included,body:has(#buffBless:checked) .buff-in
 .drop-list li>a>span{flex:1;min-width:0}
 .drop-list li.is-uncertain a>img,.drop-list li.is-uncertain a>span{opacity:.6}
 .item-stage{display:grid;place-items:center}
-.item-stage img{width:64px!important;height:64px!important}
+.item-stage img{width:64px;height:64px;object-fit:scale-down;image-rendering:auto}
 .item-title{font-size:34px}
-.item-card img{width:36px;height:36px;flex:none;object-fit:contain;image-rendering:pixelated}
+.item-card img{width:36px;height:36px;flex:none;object-fit:scale-down;image-rendering:auto}
 .sub-title small{font-size:14px;font-weight:600;color:var(--text-sub)}
 .map-list .map-name{font-size:15px;font-weight:700;color:var(--text)}
 @media (max-width:640px){.dex-filter-row .field{width:calc(50% - 5px)}.item-title{font-size:28px}}
@@ -613,3 +612,5 @@ body:has(#buffPill:checked) .buff-included,body:has(#buffBless:checked) .buff-in
 .not-found-body{padding:28px 24px 30px;text-align:center}
 .not-found-body p{color:var(--text-sub)}
 .not-found-body .chip-row{justify-content:center;margin-top:18px}
+/* 몬스터 그림: 큰 그림은 부드럽게 줄이고, 작은 그림은 원래 크기 또는 정확히 2·3배로 (assets/sprite.js) */
+.search-hit img{object-fit:scale-down}
