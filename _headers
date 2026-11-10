@@ -1,0 +1,4 @@
+# Cloudflare Pages 응답 헤더
+# 검색 목록은 주소에 버전을 안 붙이므로, 브라우저가 매번 바뀌었는지 확인하게 한다 (안 바뀌면 304로 가볍게)
+/assets/search-index.js
+  Cache-Control: no-cache

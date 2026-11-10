@@ -51,7 +51,7 @@
     loading = true;
     box.innerHTML = '<p class="search-empty">검색 목록을 불러오는 중…</p>';
     var s = document.createElement('script');
-    s.src = base + 'assets/search-index.js' + (ver ? '?v=' + ver : '');
+    s.src = base + 'assets/search-index.js'; // 버전 없이: _headers의 no-cache로 매번 새로 확인
     s.onload = function () {
       rows = (window.DANPUNG_SEARCH || []).map(function (r) {
         var n = norm(r[2]);
