@@ -681,46 +681,6 @@ body:has(#buffPill:checked) .buff-included,body:has(#buffBless:checked) .buff-in
 .dex-filter-box>summary small{color:var(--text-sub);font-weight:600;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .dex-filter-box .dex-filters{margin-top:8px}
 
-/* ── 첫 화면 벤토 그리드 (assets/home.js) ── */
-.bento{position:relative;z-index:2;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px;margin-top:-80px}
-.bento-tile{margin:0;min-width:0}
-.bento-hunt{grid-column:span 6;grid-row:span 2}
-.bento-today{grid-column:span 3;grid-row:span 2}
-.bento-monpa,.bento-search{grid-column:span 3}
-.bento-small{grid-column:span 4}
-.bento-body{padding:16px 18px 18px}
-a.bento-tile,button.bento-tile{display:flex;flex-direction:column;color:var(--text);text-decoration:none;text-align:left;font:inherit;cursor:pointer;transition:transform .18s,border-color .18s,box-shadow .18s}
-a.bento-tile:hover,button.bento-tile:hover{transform:translateY(-3px);border-color:var(--accent-hi)}
-.bento-monpa,.bento-search{justify-content:center;gap:6px;padding:18px 20px}
-.bento-label{font-size:14px;font-weight:800;color:var(--text-sub)}
-.bento-big{font-family:var(--font-game);font-size:44px;line-height:1.1;color:var(--accent-ink)}
-.bento-note{font-size:14px;font-weight:600;color:var(--text-sub)}
-.bento-search-box{display:flex;align-items:center;gap:8px;height:46px;padding:0 14px;border-radius:12px;border:2px solid var(--border);background:var(--input);color:var(--text-faint);font-size:16px;font-weight:600}
-.bento-search-box .icon{width:18px;height:18px;color:var(--accent-ink)}
-.hunt-inputs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.hunt-list{display:grid;gap:6px;margin:12px 0 0;padding:0;list-style:none}
-.hunt-list a{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:12px;background:var(--sunken);color:var(--text);text-decoration:none}
-.hunt-list a:hover{background:var(--accent-soft)}
-.hunt-list img{width:36px;height:36px;flex:none;object-fit:scale-down}
-.hunt-name{display:grid;min-width:0;flex:1}
-.hunt-name strong{font-size:15px;font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.hunt-name small{font-size:13px;color:var(--text-sub);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.hunt-need{flex:none;padding:3px 9px;border-radius:9px;background:var(--card);font-size:13px;font-weight:800;color:var(--text-sub)}
-.hunt-need.ok{background:var(--success-soft);color:var(--success)}
-.hunt-need.short{background:var(--danger-soft);color:var(--danger)}
-.hunt-empty{padding:18px 12px;border-radius:12px;background:var(--sunken);color:var(--text-sub);font-size:15px;text-align:center}
-.bento-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;margin:10px 0 0;font-size:13px;font-weight:600;color:var(--text-faint)}
-.bento-foot a{color:var(--accent-ink);font-weight:800;text-decoration:none}
-.today-body{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;flex:1}
-.today-stage{width:150px;height:150px}
-.today-stage img{width:130px;height:130px}
-.today-name{font-size:20px;font-weight:800}
-.today-body .tag-row{justify-content:center}
-.bento-link{margin-top:auto;font-size:14px;font-weight:800;color:var(--accent-ink)}
-@media (max-width:960px){.bento{grid-template-columns:repeat(6,minmax(0,1fr))}.bento-hunt{grid-column:span 6;grid-row:auto}.bento-today{grid-column:span 3}.bento-monpa,.bento-search{grid-column:span 3}.bento-small{grid-column:span 2}}
-@media (max-width:640px){.bento{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:-68px}.bento-hunt,.bento-today{grid-column:span 2}.bento-monpa,.bento-search,.bento-small{grid-column:span 1}.bento-big{font-size:34px}.bento-monpa,.bento-search{padding:14px}.bento-search-box{height:40px;font-size:14px}.today-stage{width:120px;height:120px}.today-stage img{width:100px;height:100px}}
-@media (prefers-reduced-motion:reduce){a.bento-tile:hover,button.bento-tile:hover{transform:none}}
-
 /* ── 몬스터 카드: 레벨대 색과 상태 막대 ── */
 .tier-1{--tier:#4FA83D}.tier-2{--tier:#3D84D6}.tier-3{--tier:#8E5BD6}.tier-4{--tier:#E08A1E}.tier-5{--tier:#D6453D}.tier-boss{--tier:#C9A227}
 .mob-card[class*="tier-"]{border-left:5px solid var(--tier)}

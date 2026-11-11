@@ -25,11 +25,9 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <!-- Pretendard: 쓰는 글자 조각만 받는 공식 가변 폰트 (OFL) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/site.css?v=5dbe75b5">
+<link rel="stylesheet" href="assets/site.css?v=31683375">
 <script src="assets/search.js?v=f9609323" defer></script>
 <script src="assets/nav.js?v=f9609323" defer></script>
-<script src="assets/home-data.js?v=e9bd94b8" defer></script>
-<script src="assets/home.js?v=e9bd94b8" defer></script>
 <script src="assets/sprite.js?v=f9609323" defer></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5994680292902637" crossorigin="anonymous"></script>
 </head>
@@ -76,79 +74,44 @@
 
 <main id="main">
   <div class="container">
-    <!-- 벤토 그리드: 바로 쓰는 타일 + 바로가기 (assets/home.js) -->
-    <section class="bento" aria-label="바로 쓰기">
-      <section class="card bento-tile bento-hunt" aria-labelledby="huntTitle">
-        <div class="win-bar is-result"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="huntTitle">지금 잡기 좋은 몬스터</h3></div>
-        <div class="bento-body">
-          <div class="hunt-inputs">
-            <label class="field"><span class="sr-only">내 레벨</span><span class="unit-input"><input class="input" id="huntLevel" type="number" inputmode="numeric" min="1" max="200" placeholder="내 레벨"><span>Lv.</span></span></label>
-            <label class="field"><span class="sr-only">내 명중 (선택)</span><span class="unit-input"><input class="input" id="huntAcc" type="number" inputmode="decimal" min="0" placeholder="명중 (선택)"><span>명중</span></span></label>
-          </div>
-          <ol class="hunt-list" id="huntList"><li class="hunt-empty">내 레벨을 넣으면 경험치 효율 좋은 몬스터를 골라 드려요.</li></ol>
-          <p class="bento-foot"><span>내 레벨 −10 ~ +5 · HP 100당 경험치 순</span><a href="mob/">도감에서 더 보기 →</a></p>
-        </div>
-      </section>
-
-      <a class="card bento-tile bento-today" id="todayMob" href="mob/">
-        <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3>오늘의 몬스터</h3></div>
-        <div class="bento-body today-body">
-          <div class="target-stage today-stage"><img id="todayImg" src="images/mob-placeholder.svg" alt=""></div>
-          <strong class="today-name" id="todayName">—</strong>
-          <div class="tag-row" id="todayStats"></div>
-          <span class="bento-link">자세히 보기 →</span>
-        </div>
-      </a>
-
-      <a class="card bento-tile bento-monpa" href="#monpa">
-        <span class="bento-label">몬스터파크 이벤트</span>
-        <strong class="bento-big" id="bentoMonpaDay">D-?</strong>
-        <span class="bento-note" id="bentoMonpaNote">몬파 계산하기 →</span>
-      </a>
-
-      <button type="button" class="card bento-tile bento-search" id="bentoSearch">
-        <span class="bento-label">통합 검색</span>
-        <span class="bento-search-box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>몬스터·맵·아이템</span>
-        <span class="bento-note">초성으로도 찾아요 (ㅁㄷㅇ → 망둥이)</span>
-      </button>
-
-      <a class="tool-card bento-small" href="#calculator">
+    <nav class="tool-grid" aria-label="도구 바로가기">
+      <a class="tool-card" href="#calculator">
         <span class="tool-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></span>
         <span class="tool-title">명중 계산기</span>
         <span class="tool-desc">몬스터 743종의 필요 명중</span>
         <svg class="icon tool-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
-      <a class="tool-card bento-small" href="stat/">
+      <a class="tool-card" href="#monpa">
+        <span class="tool-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v13H4zM8 3v6m8-6v6M4 10h16"/></svg></span>
+        <span class="tool-title">몬파 계산기</span>
+        <span class="tool-desc">예상 레벨 · 주차 시작 조건</span>
+        <svg class="icon tool-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+      <a class="tool-card" href="stat/">
         <span class="tool-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4l6 6-9 9H5v-6zM12 6l6 6"/></svg></span>
         <span class="tool-title">효율 계산기</span>
         <span class="tool-desc">스공 · 주스탯·공격력 1당 효율</span>
         <svg class="icon tool-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
-      <a class="tool-card bento-small" href="kill/">
+      <a class="tool-card" href="kill/">
         <span class="tool-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4m0 10v4M3 12h4m10 0h4"/><circle cx="12" cy="12" r="5"/></svg></span>
         <span class="tool-title">N방컷 계산기</span>
         <span class="tool-desc">몇 방에 잡을까 · 잘 잡히는 몬스터</span>
         <svg class="icon tool-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
-      <a class="tool-card bento-small" href="mob/">
+      <a class="tool-card" href="mob/">
         <span class="tool-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg></span>
         <span class="tool-title">몬스터 도감</span>
-        <span class="tool-desc">능력치 · 필요 명중 · 드랍</span>
+        <span class="tool-desc">능력치 · 레벨별 필요 명중 · 출현 맵</span>
         <svg class="icon tool-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
-      <a class="tool-card bento-small" href="item/">
-        <span class="tool-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
-        <span class="tool-title">아이템</span>
-        <span class="tool-desc">드랍 몬스터 찾기</span>
-        <svg class="icon tool-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
-      </a>
-      <a class="tool-card bento-small" href="map/">
+      <a class="tool-card" href="map/">
         <span class="tool-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg></span>
         <span class="tool-title">맵 정보</span>
         <span class="tool-desc">맵별 몬스터 · 필요 명중 · 드랍</span>
         <svg class="icon tool-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
-    </section>
+    </nav>
 
     <!-- 명중 계산기 -->
     <section id="calculator" class="tool-section" aria-labelledby="calcTitle">
