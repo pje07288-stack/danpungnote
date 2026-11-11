@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=a537f24b">
+<link rel="stylesheet" href="../assets/site.css?v=803eeb8a">
 <script src="../assets/search.js?v=f9609323" defer></script>
 <script src="../assets/sprite.js?v=f9609323" defer></script>
 <script src="../assets/nav.js?v=f9609323" defer></script>
@@ -105,7 +105,7 @@
       <p class="notice">숙련도는 마스터리 스킬을 안 찍었으면 10%, 마스터 하면 보통 60%예요. 숙련도는 최소 스공에만 영향을 줘요.</p>
     </section>
 
-    <section class="card sticky-col" aria-live="polite" aria-labelledby="statOutTitle">
+    <section class="card sticky-col" id="resultCard" aria-live="polite" aria-labelledby="statOutTitle">
       <div class="win-bar is-result"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="statOutTitle">계산 결과</h3></div>
       <div class="stat-pair">
         <div class="stat"><span class="stat-label">최소 스공</span><strong class="number" id="outMin">—</strong></div>
@@ -149,6 +149,11 @@
     </section>
   </div>
 </main>
+<div class="quick-bar" id="quickBar" aria-hidden="true">
+  <span class="qb-dot" aria-hidden="true"></span>
+  <span class="qb-text"><span class="qb-name" id="qbName">—</span><span class="qb-status" id="qbStatus">—</span></span>
+  <button type="button" id="qbGo">결과 보기</button>
+</div>
 <script>
 (function(){
   var MODE='kill';
@@ -320,11 +325,29 @@
     var r=range(w,p,s,a,m);
     $('outMin').textContent=Math.floor(r.min).toLocaleString('ko-KR');$('outMax').textContent=Math.floor(r.max).toLocaleString('ko-KR');
     if(MODE==='kill')kill(r,w,p,a);else eff(r,w,p,s,a,m);
+    qbUpdate(r,w,a);
     save();
   }
   ids.forEach(function(id){$(id).addEventListener($(id).type==='checkbox'?'change':'input',update)});
   document.querySelectorAll('[data-kn]').forEach(function(bt){bt.addEventListener('click',function(){killN=+bt.dataset.kn;document.querySelectorAll('[data-kn]').forEach(function(x){var on=x===bt;x.classList.toggle('active',on);x.setAttribute('aria-pressed',String(on))});update()})});
+  // 휴대폰: 결과 칸이 화면에 없을 때 아래에 요약 바를 띄운다 (명중 계산기와 같은 방식)
+  var resultSeen=false,narrow=matchMedia('(max-width:860px)'),bar=$('quickBar');
+  function qbShow(){var show=narrow.matches&&!resultSeen;bar.classList.toggle('show',show);bar.setAttribute('aria-hidden',String(!show))}
+  function qbUpdate(r,w,a){
+    if(MODE==='kill'){
+      var m=pickMob(false),has=n('mobHp')>0;
+      $('qbName').textContent=m?m[1]:(has?'몬스터 HP '+loc(n('mobHp')):'N방컷');
+      $('qbStatus').textContent=has?$('killSure').textContent+' · '+$('killLucky').textContent.split(' · ')[0]:'몬스터를 골라 주세요';
+    }else{
+      $('qbName').textContent='스공 '+Math.floor(r.min).toLocaleString('ko-KR')+' ~ '+Math.floor(r.max).toLocaleString('ko-KR');
+      $('qbStatus').textContent=$('effAttack').textContent.split(' (')[0]||'—';
+    }
+    qbShow();
+  }
   update();
+  if('IntersectionObserver' in window)new IntersectionObserver(function(e){resultSeen=e[0].isIntersecting;qbShow()},{threshold:.15}).observe($('resultCard'));
+  narrow.addEventListener('change',qbShow);
+  $('qbGo').addEventListener('click',function(){$(MODE==='kill'?'killBox':'resultCard').scrollIntoView({behavior:'smooth',block:'start'})});
   if(qm&&location.hash==='#kill')$('kill').scrollIntoView();
 })();
 </script>
@@ -336,7 +359,7 @@
     <p>능력치·출현 맵: <a href="https://maplestory.io/" target="_blank" rel="noopener">MapleStory.io</a> 원본 게임 데이터 (GMS 83, 맵 이름 KMS)</p>
     <p>몬스터·아이템·맵 이미지: <a href="https://maplestory.io/" target="_blank" rel="noopener">MapleStory.io</a> · 메이플스토리 서체 · ⓒ NEXON</p>
     <p>단풍노트의 데이터, 안내 문구, 화면 구성의 무단 복제를 금지합니다.</p>
-    <p>이메일: <a href="mailto:dangpungnote@gmail.com">dangpungnote@gmail.com</a></p>
+    <p>이메일: <a href="mailto:dangpungnote@gmail.com">dangpungnote@gmail.com</a> · <a href="../privacy/">개인정보처리방침</a></p>
   </div>
 </footer>
 <script>

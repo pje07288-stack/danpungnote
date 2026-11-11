@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=a537f24b">
+<link rel="stylesheet" href="../assets/site.css?v=803eeb8a">
 <script src="../assets/search.js?v=f9609323" defer></script>
 <script src="../assets/sprite.js?v=f9609323" defer></script>
 <script src="../assets/nav.js?v=f9609323" defer></script>
@@ -76,6 +76,7 @@
     </div>
     <span class="count" id="dexCount">743종</span>
   </div>
+  <details class="dex-filter-box" id="dexFilterBox"><summary>필터 · 정렬 <small>내 레벨·명중, 경험치 효율, 선공, 약점</small></summary>
   <section class="dex-filters" aria-label="자세한 필터">
     <div class="dex-filter-group">
       <span class="field-label">내 캐릭터로 잡을 수 있는 몬스터</span>
@@ -95,6 +96,9 @@
     </div>
     <p class="notice">경험치 효율 = HP 100당 경험치. 효율·경험치·HP 정렬은 사냥터 몬스터만 보여줘요 (파티퀘스트·무릉도장·이벤트 몬스터와 출현 맵이 없는 몬스터 제외, 내 레벨을 넣으면 내 레벨 −20 이상). 필요 명중은 ⌈(51 + 2 × 레벨 차이) × 회피율 ÷ 14⌉로 계산해요.</p>
   </section>
+  </details>
+  <script>(function(){var d=document.getElementById('dexFilterBox'),st={};try{st=JSON.parse(localStorage.getItem('maple_dex_state_v1')||'{}')}catch(e){}
+    if(matchMedia('(min-width:861px)').matches||st.level||st.acc||st.hitOnly)d.open=true})();</script>
   <div class="dex-grid" id="dexGrid">
 <a class="mob-card" href="100100" data-name="달팽이" data-level="1" data-avoid="0" data-hp="8" data-exp="3" data-aggro="0" data-weak="" data-hunt="1"><img src="../images/mob/icon/100100.png" alt="" loading="lazy" width="40" height="40"><span><strong>달팽이</strong><span>Lv.1 · 회피 0</span><span class="mob-sub">HP 8 · 경험치 3</span><b class="mob-need" hidden></b></span></a>
 <a class="mob-card" href="9300018" data-name="튜토리얼주니어스톤볼" data-level="1" data-avoid="0" data-hp="8" data-exp="1" data-aggro="0" data-weak="" data-hunt="0"><img src="../images/mob/icon/9300018.png" alt="" loading="lazy" width="40" height="40"><span><strong>튜토리얼 주니어 스톤볼</strong><span>Lv.1 · 회피 0</span><span class="mob-sub">HP 8 · 경험치 1</span><b class="mob-need" hidden></b></span></a>
@@ -885,7 +889,7 @@
     <p>능력치·출현 맵: <a href="https://maplestory.io/" target="_blank" rel="noopener">MapleStory.io</a> 원본 게임 데이터 (GMS 83, 맵 이름 KMS)</p>
     <p>몬스터·아이템·맵 이미지: <a href="https://maplestory.io/" target="_blank" rel="noopener">MapleStory.io</a> · 메이플스토리 서체 · ⓒ NEXON</p>
     <p>단풍노트의 데이터, 안내 문구, 화면 구성의 무단 복제를 금지합니다.</p>
-    <p>이메일: <a href="mailto:dangpungnote@gmail.com">dangpungnote@gmail.com</a></p>
+    <p>이메일: <a href="mailto:dangpungnote@gmail.com">dangpungnote@gmail.com</a> · <a href="../privacy/">개인정보처리방침</a></p>
   </div>
 </footer>
 <script>

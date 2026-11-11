@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=a537f24b">
+<link rel="stylesheet" href="../assets/site.css?v=803eeb8a">
 <script src="../assets/search.js?v=f9609323" defer></script>
 <script src="../assets/sprite.js?v=f9609323" defer></script>
 <script src="../assets/nav.js?v=f9609323" defer></script>
@@ -72,6 +72,20 @@
   </section>
 
   <div class="page-grid">
+    <section class="card" aria-labelledby="dropTitle">
+      <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="dropTitle">드랍 아이템</h3></div>
+      <p class="drop-count">7개 · 아이템을 누르면 이 아이템을 주는 다른 몬스터도 볼 수 있어요</p><h4 class="drop-group">장비 <small>6</small></h4><ul class="drop-list"><li><a href="../item/1002021"><img src="../images/item/1002021.png" alt="" width="28" height="28" loading="lazy"><span>스틸 노르만 헬름</span></a></li><li><a href="../item/1002143"><img src="../images/item/1002143.png" alt="" width="28" height="28" loading="lazy"><span>그린 매티</span></a></li><li><a href="../item/1040076"><img src="../images/item/1040076.png" alt="" width="28" height="28" loading="lazy"><span>브라운 레골러</span></a></li><li><a href="../item/1050036"><img src="../images/item/1050036.png" alt="" width="28" height="28" loading="lazy"><span>레드 스타라이트</span></a></li><li><a href="../item/1060065"><img src="../images/item/1060065.png" alt="" width="28" height="28" loading="lazy"><span>브라운 레골러 바지</span></a></li><li><a href="../item/1092029"><img src="../images/item/1092029.png" alt="" width="28" height="28" loading="lazy"><span>에스터 실드</span></a></li></ul>
+<h4 class="drop-group">기타 <small>1</small></h4><ul class="drop-list"><li><a href="../item/4000018"><img src="../images/item/4000018.png" alt="" width="28" height="28" loading="lazy"><span>장작</span></a></li></ul><p class="notice">드랍 정보: <a href="https://github.com/P0nk/Cosmic" target="_blank" rel="noopener">고전 메이플 서버 데이터 Cosmic(GMS v83) 기준 참고용</a> (AGPL-3.0). 메이플랜드와 다를 수 있어요. 드랍률은 넣지 않았어요.</p>
+    </section>
+
+    <section class="card" aria-labelledby="mapTitle">
+      <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="mapTitle">출현 맵 <small>9곳</small></h3></div>
+      <ul class="map-list"><li><span class="map-name">Hallway - This Again?</span><span>Haunted House · 10마리</span></li><li><span class="map-name">Hallway - Where am I?</span><span>Haunted House · 6마리</span></li><li><span class="map-name">Vanity Room</span><span>Haunted House · 5마리</span></li><li><span class="map-name">Study</span><span>Haunted House · 3마리</span></li><li><span class="map-name">Toy Workshop</span><span>Haunted House · 3마리</span></li><li><span class="map-name">Piano Room</span><span>Haunted House · 1마리</span></li><li><span class="map-name">Hallway - Where are you?</span><span>Haunted House · 1마리</span></li><li><span class="map-name">Sophilia&#39;s Bedroom</span><span>Haunted House · 1마리</span></li><li><span class="map-name">Piano Room</span><span>Haunted House · 1마리</span></li></ul>
+      <p class="notice">맵과 마릿수는 원본 게임 데이터 기준이에요. 메이플랜드에서는 다를 수 있어요.</p>
+    </section>
+  </div>
+
+  <div class="page-grid">
     <section class="card" aria-labelledby="statTitle">
       <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="statTitle">능력치</h3></div>
       <dl class="stat-list">
@@ -96,6 +110,10 @@
 <tr><td>Lv.37</td><td>−3</td><td><strong>74</strong></td><td>103</td></tr>
 <tr><td>Lv.36</td><td>−4</td><td><strong>76</strong></td><td>107</td></tr>
 <tr><td>Lv.35</td><td>−5</td><td><strong>79</strong></td><td>110</td></tr>
+        </tbody>
+      </table></div>
+      <details class="acc-more"><summary>더 낮은 레벨 보기</summary><div class="table-scroll"><table class="acc-table">
+        <tbody>
 <tr><td>Lv.34</td><td>−6</td><td><strong>81</strong></td><td>114</td></tr>
 <tr><td>Lv.33</td><td>−7</td><td><strong>84</strong></td><td>117</td></tr>
 <tr><td>Lv.32</td><td>−8</td><td><strong>87</strong></td><td>121</td></tr>
@@ -107,22 +125,8 @@
 <tr><td>Lv.15</td><td>−25</td><td><strong>130</strong></td><td>182</td></tr>
 <tr><td>Lv.10</td><td>−30</td><td><strong>143</strong></td><td>200</td></tr>
         </tbody>
-      </table></div>
+      </table></div></details>
       <p class="notice">필요 명중 = ⌈(51 + 2 × 레벨 차이) × 회피율 ÷ 14⌉, 법사는 ÷ 10. 내 레벨이 같거나 높으면 레벨 차이는 0이에요.</p>
-    </section>
-  </div>
-
-  <div class="page-grid">
-    <section class="card" aria-labelledby="mapTitle">
-      <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="mapTitle">출현 맵 <small>9곳</small></h3></div>
-      <ul class="map-list"><li><span class="map-name">Hallway - This Again?</span><span>Haunted House · 10마리</span></li><li><span class="map-name">Hallway - Where am I?</span><span>Haunted House · 6마리</span></li><li><span class="map-name">Vanity Room</span><span>Haunted House · 5마리</span></li><li><span class="map-name">Study</span><span>Haunted House · 3마리</span></li><li><span class="map-name">Toy Workshop</span><span>Haunted House · 3마리</span></li><li><span class="map-name">Piano Room</span><span>Haunted House · 1마리</span></li><li><span class="map-name">Hallway - Where are you?</span><span>Haunted House · 1마리</span></li><li><span class="map-name">Sophilia&#39;s Bedroom</span><span>Haunted House · 1마리</span></li><li><span class="map-name">Piano Room</span><span>Haunted House · 1마리</span></li></ul>
-      <p class="notice">맵과 마릿수는 원본 게임 데이터 기준이에요. 메이플랜드에서는 다를 수 있어요.</p>
-    </section>
-
-    <section class="card" aria-labelledby="dropTitle">
-      <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="dropTitle">드랍 아이템</h3></div>
-      <p class="drop-count">7개 · 아이템을 누르면 이 아이템을 주는 다른 몬스터도 볼 수 있어요</p><h4 class="drop-group">장비 <small>6</small></h4><ul class="drop-list"><li><a href="../item/1002021"><img src="../images/item/1002021.png" alt="" width="28" height="28" loading="lazy"><span>스틸 노르만 헬름</span></a></li><li><a href="../item/1002143"><img src="../images/item/1002143.png" alt="" width="28" height="28" loading="lazy"><span>그린 매티</span></a></li><li><a href="../item/1040076"><img src="../images/item/1040076.png" alt="" width="28" height="28" loading="lazy"><span>브라운 레골러</span></a></li><li><a href="../item/1050036"><img src="../images/item/1050036.png" alt="" width="28" height="28" loading="lazy"><span>레드 스타라이트</span></a></li><li><a href="../item/1060065"><img src="../images/item/1060065.png" alt="" width="28" height="28" loading="lazy"><span>브라운 레골러 바지</span></a></li><li><a href="../item/1092029"><img src="../images/item/1092029.png" alt="" width="28" height="28" loading="lazy"><span>에스터 실드</span></a></li></ul>
-<h4 class="drop-group">기타 <small>1</small></h4><ul class="drop-list"><li><a href="../item/4000018"><img src="../images/item/4000018.png" alt="" width="28" height="28" loading="lazy"><span>장작</span></a></li></ul><p class="notice">드랍 정보: <a href="https://github.com/P0nk/Cosmic" target="_blank" rel="noopener">고전 메이플 서버 데이터 Cosmic(GMS v83) 기준 참고용</a> (AGPL-3.0). 메이플랜드와 다를 수 있어요. 드랍률은 넣지 않았어요.</p>
     </section>
   </div>
 
@@ -148,7 +152,7 @@
     <p>능력치·출현 맵: <a href="https://maplestory.io/" target="_blank" rel="noopener">MapleStory.io</a> 원본 게임 데이터 (GMS 83, 맵 이름 KMS)</p>
     <p>몬스터·아이템·맵 이미지: <a href="https://maplestory.io/" target="_blank" rel="noopener">MapleStory.io</a> · 메이플스토리 서체 · ⓒ NEXON</p>
     <p>단풍노트의 데이터, 안내 문구, 화면 구성의 무단 복제를 금지합니다.</p>
-    <p>이메일: <a href="mailto:dangpungnote@gmail.com">dangpungnote@gmail.com</a></p>
+    <p>이메일: <a href="mailto:dangpungnote@gmail.com">dangpungnote@gmail.com</a> · <a href="../privacy/">개인정보처리방침</a></p>
   </div>
 </footer>
 <script>

@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=a537f24b">
+<link rel="stylesheet" href="../assets/site.css?v=803eeb8a">
 <script src="../assets/search.js?v=f9609323" defer></script>
 <script src="../assets/sprite.js?v=f9609323" defer></script>
 <script src="../assets/nav.js?v=f9609323" defer></script>
@@ -72,6 +72,19 @@
   </section>
 
   <div class="page-grid">
+    <section class="card" aria-labelledby="dropTitle">
+      <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="dropTitle">드랍 아이템</h3></div>
+      <div class="weekly-empty"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>드랍 정보는 준비 중이에요.</div>
+    </section>
+
+    <section class="card" aria-labelledby="mapTitle">
+      <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="mapTitle">출현 맵 <small>1곳</small></h3></div>
+      <ul class="map-list"><li><span class="map-name"><a href="../map/930000200">변질된 숲</a></span><span>독안개의 숲 · 2마리</span></li></ul>
+      <p class="notice">맵과 마릿수는 원본 게임 데이터 기준이에요. 메이플랜드에서는 다를 수 있어요.</p>
+    </section>
+  </div>
+
+  <div class="page-grid">
     <section class="card" aria-labelledby="statTitle">
       <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="statTitle">능력치</h3></div>
       <dl class="stat-list">
@@ -96,6 +109,10 @@
 <tr><td>Lv.62</td><td>−3</td><td><strong>0</strong></td><td>0</td></tr>
 <tr><td>Lv.61</td><td>−4</td><td><strong>0</strong></td><td>0</td></tr>
 <tr><td>Lv.60</td><td>−5</td><td><strong>0</strong></td><td>0</td></tr>
+        </tbody>
+      </table></div>
+      <details class="acc-more"><summary>더 낮은 레벨 보기</summary><div class="table-scroll"><table class="acc-table">
+        <tbody>
 <tr><td>Lv.59</td><td>−6</td><td><strong>0</strong></td><td>0</td></tr>
 <tr><td>Lv.58</td><td>−7</td><td><strong>0</strong></td><td>0</td></tr>
 <tr><td>Lv.57</td><td>−8</td><td><strong>0</strong></td><td>0</td></tr>
@@ -107,21 +124,8 @@
 <tr><td>Lv.40</td><td>−25</td><td><strong>0</strong></td><td>0</td></tr>
 <tr><td>Lv.35</td><td>−30</td><td><strong>0</strong></td><td>0</td></tr>
         </tbody>
-      </table></div>
+      </table></div></details>
       <p class="notice">필요 명중 = ⌈(51 + 2 × 레벨 차이) × 회피율 ÷ 14⌉, 법사는 ÷ 10. 내 레벨이 같거나 높으면 레벨 차이는 0이에요.</p>
-    </section>
-  </div>
-
-  <div class="page-grid">
-    <section class="card" aria-labelledby="mapTitle">
-      <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="mapTitle">출현 맵 <small>1곳</small></h3></div>
-      <ul class="map-list"><li><span class="map-name"><a href="../map/930000200">변질된 숲</a></span><span>독안개의 숲 · 2마리</span></li></ul>
-      <p class="notice">맵과 마릿수는 원본 게임 데이터 기준이에요. 메이플랜드에서는 다를 수 있어요.</p>
-    </section>
-
-    <section class="card" aria-labelledby="dropTitle">
-      <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="dropTitle">드랍 아이템</h3></div>
-      <div class="weekly-empty"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>드랍 정보는 준비 중이에요.</div>
     </section>
   </div>
 
@@ -147,7 +151,7 @@
     <p>능력치·출현 맵: <a href="https://maplestory.io/" target="_blank" rel="noopener">MapleStory.io</a> 원본 게임 데이터 (GMS 83, 맵 이름 KMS)</p>
     <p>몬스터·아이템·맵 이미지: <a href="https://maplestory.io/" target="_blank" rel="noopener">MapleStory.io</a> · 메이플스토리 서체 · ⓒ NEXON</p>
     <p>단풍노트의 데이터, 안내 문구, 화면 구성의 무단 복제를 금지합니다.</p>
-    <p>이메일: <a href="mailto:dangpungnote@gmail.com">dangpungnote@gmail.com</a></p>
+    <p>이메일: <a href="mailto:dangpungnote@gmail.com">dangpungnote@gmail.com</a> · <a href="../privacy/">개인정보처리방침</a></p>
   </div>
 </footer>
 <script>
