@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<script>(function(){try{var t=localStorage.getItem("maple-theme");document.documentElement.dataset.theme=(t==="light"||t==="dark")?t:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}})();</script>
+<script>/* maple-old-hash: 예전 주소(#calculator, #monpa, #weekly)는 새 페이지로 */(function(){var h=location.hash,m={"#calculator":"hit/","#kill":"hit/","#monpa":"monpa/","#weekly":"monpa/#weekly"}[h];if(m){var to=m.split("#");location.replace(to[0]+location.search+(to[1]?"#"+to[1]:""))}})();</script>
+<script>(function(){try{var t=localStorage.getItem("maple-theme");document.documentElement.dataset.theme=(t==="light"||t==="dark")?t:("dark")}catch(e){document.documentElement.dataset.theme="dark"}})();</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>단풍수첩: 메이플랜드 계산기와 몬스터 정보</title>
@@ -16,8 +17,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="단풍수첩 · 메이플랜드 모험 수첩 (명중·몬파·효율·N방컷 계산기)">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#FBF4E6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#17120D" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F3F5FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1626" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" as="image" href="autumn-hero.webp" media="(min-width: 769px)">
@@ -25,14 +26,14 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <!-- Pretendard: 쓰는 글자 조각만 받는 공식 가변 폰트 (OFL) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/site.css?v=41036301">
+<link rel="stylesheet" href="assets/site.css?v=bfe5dc02">
 <script src="assets/search.js?v=f9609323" defer></script>
 <script src="assets/nav.js?v=f9609323" defer></script>
 <script src="assets/sprite.js?v=f9609323" defer></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5994680292902637" crossorigin="anonymous"></script>
 </head>
 <body>
-<a class="skip-link" href="#calculator">본문으로 건너뛰기</a>
+<a class="skip-link" href="#tools">본문으로 건너뛰기</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="leaf" viewBox="0 0 64 64"><path d="M32 3l6 14 8-6-1 12 13-2-6 10 8 4-15 8 3 11-13-4-3 11-3-11-13 4 3-11L4 35l8-4-6-10 13 2-1-12 8 6z"/></symbol></svg>
 
 <header class="site-header">
@@ -45,15 +46,15 @@
       <div class="nav-menu">
         <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="calcMenu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2m3 0h2M8 15h2m3 0h2"/></svg>계산기<svg class="icon nav-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
         <div class="nav-pop" id="calcMenu" hidden>
-          <a href="#calculator">명중 계산기</a>
-          <a href="#monpa">몬파·주차 계산기</a>
+          <a href="hit/">명중 계산기</a>
+          <a href="monpa/">몬파·주차 계산기</a>
           <a href="stat/">효율 계산기</a>
-          <a href="kill/">N방컷 계산기</a>
         </div>
       </div>
       <a href="mob/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg>도감</a>
       <a href="item/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>아이템</a>
       <a href="map/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg>맵</a>
+      <a href="quest/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h11a2 2 0 0 1 2 2v1h-4M7 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V7M7 4a2 2 0 0 1 2 2v1M9 11h6M9 15h4"/></svg>퀘스트</a>
     </nav>
     <button type="button" class="search-open" id="searchOpen" aria-label="통합 검색 (단축키 /)" aria-haspopup="dialog"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>검색</span><kbd>/</kbd></button>
     <button type="button" class="theme-toggle" id="themeToggle" aria-label="다크 모드로 전환" title="낮/밤 바꾸기">
@@ -74,14 +75,14 @@
 
 <main id="main">
   <div class="container">
-    <nav class="tool-grid" aria-label="도구 바로가기">
-      <a class="tool-card" href="#calculator">
+    <nav class="tool-grid" id="tools" aria-label="도구 바로가기">
+      <a class="tool-card" href="hit/">
         <span class="tool-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></span>
         <span class="tool-title">명중 계산기</span>
         <span class="tool-desc">몬스터 743종의 필요 명중</span>
         <svg class="icon tool-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
-      <a class="tool-card" href="#monpa">
+      <a class="tool-card" href="monpa/">
         <span class="tool-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v13H4zM8 3v6m8-6v6M4 10h16"/></svg></span>
         <span class="tool-title">몬파 계산기</span>
         <span class="tool-desc">예상 레벨 · 주차 시작 조건</span>
@@ -93,10 +94,10 @@
         <span class="tool-desc">스공 · 주스탯·공격력 1당 효율</span>
         <svg class="icon tool-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
-      <a class="tool-card" href="kill/">
-        <span class="tool-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4m0 10v4M3 12h4m10 0h4"/><circle cx="12" cy="12" r="5"/></svg></span>
-        <span class="tool-title">N방컷 계산기</span>
-        <span class="tool-desc">몇 방에 잡을까 · 잘 잡히는 몬스터</span>
+      <a class="tool-card is-new" href="quest/">
+        <span class="tool-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h11a2 2 0 0 1 2 2v1h-4M7 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V7M7 4a2 2 0 0 1 2 2v1M9 11h6M9 15h4"/></svg></span>
+        <span class="tool-title">돈 되는 퀘스트 <span class="tag-new">NEW</span></span>
+        <span class="tool-desc">주문서 퀘스트 손익 · 추천 · 동선</span>
         <svg class="icon tool-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
       <a class="tool-card" href="mob/">
@@ -111,217 +112,9 @@
         <span class="tool-desc">맵별 몬스터 · 필요 명중 · 드랍</span>
         <svg class="icon tool-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
-      <div class="tool-card is-soon" aria-disabled="true">
-        <span class="tool-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3 4 6l2 4 2-1v12h8V9l2 1 2-4-4-3c-.5 1.7-2 3-4 3S8.5 4.7 8 3z"/></svg></span>
-        <span class="tool-title">코디</span>
-        <span class="tool-desc">장비·코디 미리 입혀 보기</span>
-        <span class="badge">준비 중</span>
-      </div>
-      <div class="tool-card is-soon" aria-disabled="true">
-        <span class="tool-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h10l3 3v13H6zM16 4v3h3M9 11h7M9 15h5"/><circle cx="6" cy="4" r="0"/></svg></span>
-        <span class="tool-title">퀘스트 동선 정리</span>
-        <span class="tool-desc">레벨별 퀘스트 순서와 이동 경로</span>
-        <span class="badge">준비 중</span>
-      </div>
     </nav>
+    <p class="tool-soon"><b>준비 중</b> 코디 미리 입혀 보기 · 퀘스트 동선 정리</p>
 
-    <!-- 명중 계산기 -->
-    <section id="calculator" class="tool-section" aria-labelledby="calcTitle">
-      <div class="section-head">
-        <div>
-          <span class="section-eyebrow"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>도구 01</span>
-          <h2 id="calcTitle">명중 계산기</h2>
-          <p>사냥할 몬스터를 골라 100% 맞히는 데 필요한 명중을 확인해 보세요.</p>
-        </div>
-        <span class="section-pill">몬스터 743종</span>
-      </div>
-
-      <div class="two-col">
-        <section class="card" id="calcInput" aria-labelledby="calcInputTitle">
-          <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="calcInputTitle">캐릭터 · 몬스터 선택</h3></div>
-          <div class="step-head"><span class="step-num">1</span><div><strong>내 캐릭터</strong><span>직업, 레벨, 현재 명중을 입력해요</span></div></div>
-
-          <div class="field-grid">
-            <div class="field" style="grid-column:1/-1">
-              <span class="field-label" id="jobLabel">직업</span>
-              <select id="job" hidden><option value="warrior">전사 / 소마</option><option value="striker">스트라이커</option><option value="viper">바이퍼</option></select>
-              <div class="segmented" role="group" aria-labelledby="jobLabel">
-                <button type="button" class="job-toggle active" data-job="warrior" aria-pressed="true">전사 / 소마</button>
-                <button type="button" class="job-toggle" data-job="striker" aria-pressed="false">스커</button>
-                <button type="button" class="job-toggle" data-job="viper" aria-pressed="false">바이퍼</button>
-              </div>
-            </div>
-            <label class="field"><span class="field-label">캐릭터 레벨</span><span class="unit-input"><input class="input" id="player" type="number" inputmode="numeric" min="1" max="200" value="50"><span>Lv.</span></span></label>
-            <label class="field"><span class="field-label">현재 명중 <small>버프 전</small></span><span class="unit-input"><input class="input" id="accuracy" type="number" inputmode="decimal" min="0" step="any" value="90"><span>명중</span></span></label>
-          </div>
-
-          <fieldset style="margin-top:18px">
-            <legend class="field-label">추가 버프 <small>하나만 선택</small></legend>
-            <div class="chip-row">
-              <label class="check-chip"><input type="checkbox" id="buffPill"><img class="buff-icon" src="images/buffs/marksman-pill.png" alt="">명사수의 알약 <small>+10</small></label>
-              <label class="check-chip"><input type="checkbox" id="buffBless"><img class="buff-icon" src="images/buffs/bless.png" alt="">블레스 <small>+20</small></label>
-            </div>
-          </fieldset>
-
-          <div class="block">
-            <div class="step-head"><span class="step-num">2</span><div><strong>사냥할 몬스터</strong><span>목록의 숫자는 내 레벨 기준 필요 명중이에요</span></div><span class="count" id="count">743종</span></div>
-            <label class="sr-only" for="search">몬스터 검색</label>
-            <div class="search-wrap">
-              <svg class="icon search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-              <input class="input" id="search" type="search" placeholder="이름 또는 ID로 검색" autocomplete="off">
-              <button id="clearSearch" type="button" aria-label="검색어 지우기" hidden>×</button>
-            </div>
-            <div class="level-filters" role="group" aria-label="몬스터 레벨 필터">
-              <button type="button" data-range="all" class="level-chip active" aria-pressed="true">전체</button>
-              <button type="button" data-range="1-30" class="level-chip" aria-pressed="false">Lv.1–30</button>
-              <button type="button" data-range="31-60" class="level-chip" aria-pressed="false">31–60</button>
-              <button type="button" data-range="61-90" class="level-chip" aria-pressed="false">61–90</button>
-              <button type="button" data-range="91-999" class="level-chip" aria-pressed="false">91+</button>
-            </div>
-            <div id="list" class="results" role="listbox" aria-label="몬스터 검색 결과"></div>
-            <div class="list-legend" aria-hidden="true"><span class="kbd-hint"><kbd>↑</kbd><kbd>↓</kbd> 이동 · <kbd>Enter</kbd> 선택</span><span><i class="dot ok"></i>명중 충분</span><span><i class="dot short"></i>명중 부족</span></div>
-          </div>
-          <details class="meta-details" hidden><summary>선택한 몬스터의 데이터 정보</summary><p class="notice" id="source"></p><p class="notice" id="dataState"></p><p class="notice" id="original"></p><p class="notice" id="evidence"></p></details>
-        </section>
-
-        <section class="card sticky-col" id="resultCard" aria-live="polite" aria-labelledby="resultTitle">
-          <div class="win-bar is-result"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="resultTitle">계산 결과</h3></div>
-          <div class="target-card">
-            <div class="target-stage"><img id="targetImage" src="images/mob-placeholder.svg" alt=""></div>
-            <div class="target-copy"><span class="target-label">선택한 몬스터</span><strong id="targetName">—</strong><span id="targetDetails" class="target-chips">—</span><a class="detail-link" id="targetLink" href="mob/" hidden>몬스터 상세 정보 →</a></div>
-          </div>
-          <div class="result-metric" id="resultMetric" data-result="invalid">
-            <div class="verdict">
-              <span class="verdict-icon" aria-hidden="true"><svg class="icon vi-ok" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><svg class="icon vi-short" viewBox="0 0 24 24"><path d="M12 6v8m0 4h.01"/></svg></span>
-              <span class="verdict-copy"><strong id="status" class="result-headline"></strong><span id="surplus" class="surplus"></span></span>
-            </div>
-            <div class="stat-pair">
-              <div class="stat"><span class="stat-label">필요 명중</span><strong id="needed" class="number">—</strong></div>
-              <div class="stat stat-mine"><span class="stat-label">내 명중 <small class="buff-included">버프 포함</small></span><strong id="currentLabel" class="number">—</strong></div>
-            </div>
-            <p id="accuracyHint" class="accuracy-hint">현재 명중을 입력하면 충분한지 알려드려요.</p>
-          </div>
-          <div class="meter" id="resultMeter">
-            <div class="meter-visual">
-              <div class="meter-track" role="progressbar" aria-label="현재 명중" id="meterTrack" aria-valuemin="0" aria-valuemax="100"><div id="meterFill" class="meter-fill"></div></div>
-              <span id="targetMarker" class="meter-marker" aria-hidden="true"></span>
-              <span id="markerCaption" class="meter-caption">필요 <strong id="targetLabel">—</strong></span>
-            </div>
-          </div>
-          <div class="result-rows"><div class="result-row"><span class="row-label">레벨 패널티</span><strong id="penaltyValue" class="dex-value"></strong></div><div class="result-row" id="dexRow"><span class="row-label">추가로 필요한 DEX</span><strong id="dexNeeded" class="dex-value" aria-live="polite"></strong></div></div>
-          <p class="dex-note" id="dexNote">DEX 추정치는 스탯 소수점 처리에 따라 달라질 수 있어요.</p>
-          <details class="info-details">
-            <summary>계산 기준 보기</summary>
-            <span class="formula">필요 명중 = ⌈(51 + 2 × 레벨 차이) × 회피율 ÷ 14⌉</span>
-            <p>레벨 차이는 몬스터 Lv − 내 Lv이고, 내 레벨이 같거나 높으면 0으로 계산해요. 메이플랜드 유저 실험(듀얼 파이렛·파이렛 수천 타)과 원본 클라이언트 코드 분석 결과에 맞는 공식이에요. 넥슨이 공식 발표한 값은 아니에요.</p>
-          </details>
-          <div class="result-extra" hidden><p id="resultState" class="notice"></p><p id="comparison" class="notice"></p><p id="resultError" class="error"></p></div>
-        </section>
-      </div>
-    </section>
-
-    <!-- 몬파 계산기 -->
-    <section id="monpa" class="tool-section" aria-labelledby="monpaTitle">
-      <div class="section-head">
-        <div>
-          <span class="section-eyebrow"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>도구 02</span>
-          <h2 id="monpaTitle">몬파 계산기</h2>
-          <p>사냥 없이 몬파 하루 2판! 목표일 예상 레벨과, 원하는 레벨에 맞춰 끝내는 주차 시작 조건을 계산해요.</p>
-        </div>
-        <span class="section-pill event-pill" id="monpaEventPill">이벤트 진행 중</span>
-      </div>
-      <div class="event-ended-note" role="status"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><span>몬파 이벤트가 <b data-event-end>2026년 11월 30일</b>에 끝났어요. 다음 이벤트 일정이 나오면 다시 열게요!</span></div>
-
-      <div class="two-col">
-        <section class="card" aria-labelledby="monpaInputTitle">
-          <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="monpaInputTitle">내 캐릭터 정보</h3></div>
-          <div class="step-head"><span class="step-num">1</span><div><strong>현재 상태</strong><span>게임에 표시된 레벨과 경험치 %</span></div></div>
-          <div class="field-grid">
-            <label class="field"><span class="field-label">현재 레벨</span><span class="unit-input"><input class="input" id="monpaLevel" type="number" inputmode="numeric" min="50" max="129" step="1" value="51"><span>Lv.</span></span></label>
-            <label class="field"><span class="field-label">현재 경험치</span><span class="unit-input"><input class="input" id="monpaPercent" type="number" inputmode="decimal" min="0" max="99.9999" step="0.01" value="0"><span>%</span></span></label>
-          </div>
-
-          <div class="block">
-            <div class="step-head"><span class="step-num">2</span><div><strong>기간</strong><span>시작일과 목표일을 모두 포함해 매일 2판</span></div></div>
-            <div class="field-grid">
-              <label class="field"><span class="field-label">시작 날짜</span><input class="input" id="monpaStart" type="date"></label>
-              <label class="field"><span class="field-label">목표 날짜</span><input class="input" id="monpaEnd" type="date"></label>
-            </div>
-          </div>
-          <p id="monpaError" class="error" role="alert"></p>
-        </section>
-
-        <section class="card sticky-col" aria-live="polite" aria-labelledby="monpaResultTitle">
-          <div class="win-bar is-result"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="monpaResultTitle">목표일 예상 결과</h3></div>
-          <p class="card-sub" id="monpaRange">기간을 확인해 주세요.</p>
-          <div class="monpa-hero">
-            <div class="monpa-level"><span id="monpaFinal">—</span><span id="monpaFinalPct" class="monpa-pct"></span></div>
-            <span id="monpaGain" class="monpa-gain"></span>
-          </div>
-          <div class="exp-bar" aria-hidden="true"><span class="exp-tag">EXP</span><div class="exp-track"><span class="exp-fill" id="monpaBar"></span></div></div>
-          <p class="monpa-progress" id="monpaFinalExp"></p>
-          <div class="monpa-stats">
-            <div><span>진행 판수</span><strong id="monpaRuns">—</strong></div>
-            <div><span>획득 경험치</span><strong id="monpaTotal">—</strong></div>
-          </div>
-          <div class="park-block">
-            <span class="park-title">입장한 몬파</span>
-            <div class="park-chips" id="monpaParks"></div>
-            <span class="park-rule">레벨에 따라 자동 이동 · ~70 까막산 · 71~100 자경구 · 101~ 용둥</span>
-          </div>
-          <p class="notice" id="monpaNote"></p>
-        </section>
-      </div>
-
-      <details class="disclosure">
-        <summary>날짜별 결과와 몬파 이동 보기</summary>
-        <div class="table-wrap"><table><thead><tr><th>날짜</th><th>입장 몬파</th><th>획득 경험치</th><th>하루 종료</th></tr></thead><tbody id="monpaDays"></tbody></table></div>
-      </details>
-
-      <!-- 주차 계산기: 몬파만으로 원하는 레벨에 맞춰 끝내기 -->
-      <div id="weekly" class="sub-section" aria-labelledby="weeklyTitle">
-        <div class="sub-head">
-          <span class="sub-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4m0 0h11l-2 4 2 4H5"/></svg></span>
-          <div>
-            <h3 id="weeklyTitle">주차 계산기</h3>
-            <p>몬파만 돌려서 목표일에 원하는 레벨로 딱 끝내려면, 시작일에 몇 레벨이어야 할지 거꾸로 계산해요.</p>
-          </div>
-        </div>
-
-      <div class="two-col">
-        <section class="card" aria-labelledby="weeklyInputTitle">
-          <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="weeklyInputTitle">목표 설정</h3></div>
-          <div class="step-head"><span class="step-num">1</span><div><strong>기간</strong><span>몬파를 돌릴 시작일과 목표일</span></div></div>
-          <div class="field-grid">
-            <label class="field"><span class="field-label">시작 날짜</span><input class="input" id="goalStart" type="date"></label>
-            <label class="field"><span class="field-label">목표 날짜</span><input class="input" id="goalEnd" type="date"></label>
-          </div>
-          <p id="weeklyError" class="error" role="alert"></p>
-
-          <div class="block" role="group" aria-labelledby="goalTitle">
-            <div class="step-head"><span class="step-num">2</span><div><strong id="goalTitle">목표 레벨</strong><span>여러 개를 함께 골라 비교할 수 있어요</span></div></div>
-            <div class="chip-row" role="group" aria-label="목표 레벨 선택">
-              <label class="check-chip"><input id="goal100" type="checkbox" value="100">100레벨</label>
-              <label class="check-chip"><input id="goal110" type="checkbox" value="110">110레벨</label>
-              <label class="check-chip"><input id="goal120" type="checkbox" value="120">120레벨</label>
-            </div>
-            <label class="field goal-custom"><span class="field-label">다른 목표 레벨</span><input class="input" id="goalCustom" type="number" inputmode="numeric" min="50" max="129" step="1" placeholder="50~129"></label>
-            <p class="notice">시작 날짜에 필요한 최소 레벨·경험치를 0.01% 단위로 찾아요.</p>
-          </div>
-        </section>
-
-        <section class="card sticky-col" aria-live="polite" aria-labelledby="weeklyResultTitle">
-          <div class="win-bar is-result"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="weeklyResultTitle">필요한 시작 조건</h3></div>
-          <div id="monpaReverse" class="monpa-reverse-results" aria-live="polite"></div>
-          <div class="weekly-empty"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>목표 레벨을 고르면 여기에 시작 조건이 나와요.</div>
-        </section>
-      </div>
-      </div>
-
-      <p class="notice">몬파 이벤트(<span data-event-end>2026년 11월 30일</span>까지) 기준이에요. 1판 경험치: 까막산 418,840 · 자경구 2,898,000 · 용둥 6,289,000. 실제 보상·이벤트에 따라 차이가 날 수 있어요.</p>
-    </section>
-
-    <details class="advanced" hidden><summary>고급 설정</summary><section class="card wide"><details id="editor"><summary>몬스터 정보 수정</summary><div class="details-body"><p class="notice">제공하신 파일에 포함된 ID의 항목을 수정할 수 있습니다. 저장한 값은 이 브라우저에 보관됩니다.</p><div class="fields"><label>몬스터 ID<input id="editId" type="number" min="1" step="1"></label><label>한국어 이름<input id="editName" maxlength="80"></label><label>몬스터 레벨<input id="editLevel" type="number" min="1" max="999" step="1"></label><label>몬스터 회피율<input id="editAvoid" type="number" min="0" max="9999" step="1"></label><label>출처<input id="editSource" placeholder="예: 직접 확인"></label><label>버전 / 확인일<input id="editVersion" placeholder="예: 2026-11-07"></label><label>데이터 검증 상태<select id="editState"><option value="supplied">사용자 제공 자료 (출처·실게임 미검증)</option><option value="gms">원본 GMS 83 데이터</option><option value="external">외부 자료 대조 완료</option><option value="difference">메이플랜드와 수치 차이 확인</option><option value="verified">메이플랜드 실게임 검증 완료</option><option value="modified">메이플랜드 변경 수치 적용</option><option value="review">데이터 확인 필요</option></select></label><label>몬스터 분류<select id="editCategory"><option value="unknown">미확인</option><option value="normal">일반</option><option value="boss">보스</option><option value="event">이벤트</option><option value="special">특수</option></select></label><label>메이플랜드 등장 여부<select id="editPresence"><option value="unknown">미확인</option><option value="present">등장 확인</option><option value="absent">등장하지 않음</option></select></label><label>검증 근거 및 관찰 기록 (선택)<input id="editEvidence" placeholder="예: Lv.50, 명중 99, 100회 관찰"></label></div><div class="actions"><button id="save">저장</button><button id="new" class="secondary">입력 지우기</button><button id="reset" class="secondary">선택한 수정값 되돌리기</button></div><p id="editMessage" class="error" role="status"></p></div></details></section><section class="card wide"><details><summary>MapleStory.io에서 몬스터 불러오기</summary><div class="details-body"><p class="notice">몬스터 ID와 한국어 이름을 입력하면 공개 원본 GMS 83의 레벨과 회피율을 불러와 편집란에 채웁니다. 한국어 이름은 직접 확인해 입력해 주세요. 불러온 뒤 저장을 눌러야 목록에 반영됩니다. 메이플랜드와 수치가 다를 수 있습니다.</p><div class="fields"><label>몬스터 ID<input id="apiId" type="number" min="1" step="1" placeholder="예: 3220001"></label><label>확인한 한국어 이름<input id="apiName" placeholder="예: 데우"></label></div><div class="actions"><button id="fetchMonster">원본에서 불러오기</button></div><p id="apiMessage" class="notice" role="status"></p></div></details></section><section class="card wide"><details><summary>데이터 가져오기 및 내보내기</summary><div class="details-body"><p class="notice">JSON 배열 또는 CSV 파일을 가져옵니다. 제공하신 파일에 포함된 ID만 가져오며, 같은 ID는 가져온 값으로 덮어씁니다. 필수 열: id, name, level, avoid. 선택 열: source, version, evidence, state, category, presence.</p><pre class="example">id,name,level,avoid,source,version\n3220001,데우,38,18,MapleStory.io,GMS 83</pre><div class="actions"><label class="file" style="margin:0">CSV / JSON 가져오기<input id="import" type="file" accept=".csv,.json,application/json,text/csv"></label><button class="secondary" id="export">JSON 내보내기</button></div><p class="notice" id="importMessage" role="status"></p></div></details></section><section class="card wide"><details><summary>출처와 계산 기준</summary><div class="details-body"><p class="notice">사용자 제공 파일에 포함된 몬스터 743종만 표시합니다. 같은 ID의 기존 값은 원본 비교를 위해 보관합니다. 사용자 파일의 원 출처와 실게임 정확도는 확인되지 않았습니다. 데우·타이머·요괴선사·주니어 예티는 별도로 확인했습니다. 레벨과 회피율은 <a href="https://maplestory.io/api/GMS/83/mob" target="_blank" rel="noopener">MapleStory.io GMS 83</a>에서 가져왔으며, 한국어 이름은 KMS 284에서 같은 ID로 연결했습니다. 이름과 수치는 서로 다른 버전에서 가져왔습니다. 이 버전은 메이플랜드 전용 데이터가 아니며 게임과 차이가 있을 수 있습니다. 사용자 수정값은 원본과 별도로 저장됩니다.</p><p class="notice">필요 명중 = ⌈(51 + 2 × max(0, 몬스터 레벨 − 캐릭터 레벨)) × 몬스터 회피율 ÷ 14⌉. 표시값과 실게임 결과가 다르면 몬스터 수치를 수정하여 저장할 수 있습니다.</p></div></details></section></details>
   </div>
 </main>
 
@@ -336,15 +129,6 @@
   </div>
 </footer>
 
-<div class="quick-bar" id="quickBar" data-result="invalid">
-  <span class="qb-dot" aria-hidden="true"></span>
-  <span class="qb-text"><span class="qb-name" id="qbName">—</span><span class="qb-status" id="qbStatus">—</span></span>
-  <button type="button" id="qbGo">결과 보기</button>
-</div>
-
-<script src="mob-locations.js?v=20261110"></script>
-<script src="app.js?v=20261112a"></script>
-<script src="monpa.js?v=20261110e"></script>
 <script>
 (function(){
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -367,40 +151,6 @@
     }
   }
 
-  // 현재 보고 있는 섹션을 메뉴에 표시
-  var links=[].slice.call(document.querySelectorAll('.main-nav a[href^="#"]')); // 다른 페이지로 가는 메뉴(도감·아이템·맵)는 빼고
-  var sections=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
-  function spy(){var y=window.scrollY+120,current=null;sections.forEach(function(s,i){if(s&&s.offsetTop<=y)current=i});links.forEach(function(a,i){if(i===current)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current')})}
-  window.addEventListener('scroll',spy,{passive:true});spy();
-
-  // 숫자가 바뀌면 톡 튀는 효과
-  if(!reduce){
-    ['needed','currentLabel','monpaFinal','status'].forEach(function(id){
-      var el=document.getElementById(id),last=el.textContent;
-      new MutationObserver(function(){if(el.textContent===last)return;last=el.textContent;el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop')}).observe(el,{childList:true,characterData:true,subtree:true});
-    });
-  }
-
-  // 모바일: 입력하는 동안 아래에 결과 요약 표시
-  var bar=document.getElementById('quickBar'),input=document.getElementById('calcInput'),result=document.getElementById('resultCard'),metric=document.getElementById('resultMetric'),targetName=document.getElementById('targetName');
-  var inputSeen=false,resultSeen=false,narrow=matchMedia('(max-width:860px)');
-  function update(){
-    var state=metric.dataset.result,needed=document.getElementById('needed').textContent,status=document.getElementById('status').textContent;
-    document.getElementById('qbName').textContent=(targetName.firstChild&&targetName.firstChild.textContent)||'—';
-    document.getElementById('qbStatus').textContent=(state==='enough'||state==='short')?status+' · 필요 '+needed:state==='empty'?'필요 명중 '+needed:'레벨을 입력해 주세요';
-    bar.dataset.result=state;
-    var show=narrow.matches&&inputSeen&&!resultSeen;
-    bar.classList.toggle('show',show);bar.setAttribute('aria-hidden',String(!show));
-  }
-  if('IntersectionObserver' in window){
-    new IntersectionObserver(function(e){inputSeen=e[0].isIntersecting;update()},{rootMargin:'-80px 0px -40% 0px'}).observe(input);
-    new IntersectionObserver(function(e){resultSeen=e[0].isIntersecting;update()},{threshold:.2}).observe(result);
-  }
-  new MutationObserver(update).observe(metric,{subtree:true,childList:true,characterData:true,attributes:true});
-  new MutationObserver(update).observe(targetName,{subtree:true,childList:true,characterData:true});
-  narrow.addEventListener('change',update);
-  document.getElementById('qbGo').addEventListener('click',function(){result.scrollIntoView({behavior:'smooth',block:'start'})});
-  update();
 })();
 </script>
 </body>

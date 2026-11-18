@@ -1,0 +1,251 @@
+/* 주문서 퀘스트 페이지 (quest/) 전용. 공통 스타일은 site.css */
+.quest-page .pos{color:var(--success)}
+.quest-page .neg{color:var(--danger)}
+.q-label{display:inline-flex;align-items:center;height:24px;padding:0 9px;border-radius:7px;font-size:13px;font-weight:800;line-height:1}
+.q-label.is-rec{background:linear-gradient(180deg,var(--accent-hi),var(--accent));color:#fff;box-shadow:0 2px 0 var(--accent-lo)}
+.q-label.is-con{background:var(--card);color:var(--text-sub);border:2px solid var(--border-strong)}
+
+/* 먼저 읽어 주세요 */
+.q-notice{padding:0}
+.q-notice>summary{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:14px 18px;cursor:pointer;list-style:none}
+.q-notice>summary::-webkit-details-marker{display:none}
+.q-notice>summary::before{content:"▸";color:var(--accent-ink);transition:transform .15s}
+.q-notice[open]>summary::before{transform:rotate(90deg)}
+.q-notice>summary span{font-size:14px;color:var(--text-sub)}
+.q-notice ul{margin:0 18px 16px;padding-left:20px;display:grid;gap:6px;font-size:15px;line-height:1.65;color:var(--text-sub)}
+.q-notice b{color:var(--text)}
+.q-notice .q-label{vertical-align:1px;margin-right:2px}
+
+/* 합계 카드 */
+.q-sums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:18px 0}
+.q-sum p{margin:0}
+.q-sum-k{font-size:14px;font-weight:700;color:var(--text-sub)}
+.q-sum-k small{font-weight:600;color:var(--text-faint)}
+.q-sum-mid{margin:4px 0 2px!important;font-family:var(--font-game);font-size:38px;line-height:1.15;font-variant-numeric:tabular-nums}
+.q-sum-mid small{margin-left:4px;font-family:var(--font-body);font-size:14px;font-weight:700;color:var(--text-sub)}
+.q-sum-range,.q-sum-self{font-size:14px;font-weight:600;color:var(--text-sub);font-variant-numeric:tabular-nums}
+.q-sum-range{display:flex;flex-wrap:wrap;gap:0 12px}
+.q-sum-range span,.q-sum-self span{white-space:nowrap}
+.q-sum-mid{white-space:nowrap}
+@media (min-width:861px) and (max-width:1100px){.q-sum-mid{font-size:32px}}
+.q-sum-self{margin-top:8px!important;padding-top:8px;border-top:2px dashed var(--border)}
+.q-sum-party .win-bar{background:linear-gradient(180deg,#3A4D78,#2B3A5E)}
+
+/* 보기 전환 · 지역 바로가기 */
+.q-controls{position:sticky;top:var(--header-h);z-index:5;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:8px 0 10px;padding:10px 0;background:var(--bg)}
+.q-controls .segmented{flex:none}
+.q-progress{margin:-2px 0 14px;padding:10px 14px;border-radius:12px;border:1.5px solid var(--border);background:var(--sunken);font-size:14.5px;font-weight:600;color:var(--text-sub)}
+.q-progress b{color:var(--text)}
+.q-progress b.pos{color:var(--success)}.q-progress b.neg{color:var(--danger)}
+.q-progress small{font-size:13px;color:var(--text-faint)}
+.q-controls .job-toggle{height:36px;padding:0 14px;flex:none}
+.q-controls .region-jump{margin:0;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;min-width:0;flex:1}
+.q-controls .region-jump::-webkit-scrollbar{display:none}
+.quest-page .only-rec{display:none}
+.quest-page.view-rec .only-rec{display:inline}
+.quest-page.view-rec .only-all{display:none}
+.quest-page.view-rec .q-card[data-label="고려"]{display:none}
+
+/* 지역 */
+.q-region{margin-top:34px;scroll-margin-top:calc(var(--header-h) + 64px)}
+.q-region-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px;margin-bottom:12px}
+.q-region-head .sub-title{margin:0;display:flex;align-items:center;gap:8px;font-family:var(--font-game);font-size:28px}
+.q-region-head .sub-title svg{width:22px;height:22px;fill:var(--accent)}
+.q-region-head .sub-title small{font-family:var(--font-body);font-size:15px;font-weight:700;color:var(--text-sub)}
+.q-tri-range{color:var(--text-faint);font-size:.92em;white-space:nowrap}
+.q-range span,.q-self span{white-space:nowrap}
+.q-range{display:flex;flex-wrap:wrap;justify-content:center;gap:0 10px}
+.q-region-sum{margin:0;font-size:14px;font-weight:600;color:var(--text-sub);font-variant-numeric:tabular-nums}
+.q-area{margin:22px 0 8px;font-size:19px;font-weight:800}
+.q-way{margin:0 0 14px;padding:12px 16px;border-radius:14px;background:var(--sunken);border:2px solid var(--border);font-size:15px;line-height:1.65}
+.q-way p{margin:0 0 4px}
+.q-way b{margin-right:6px;color:var(--accent-ink)}
+
+/* 퀘스트 카드 */
+.q-card{margin-bottom:10px;padding:0 20px;scroll-margin-top:calc(var(--header-h) + 64px)}
+/* 접힌 줄: 추천/고려 · Lv · 이름 · 보상 · 손익 · 펼치기 */
+.q-row{display:grid;grid-template-columns:auto 62px minmax(0,1.3fr) auto minmax(0,1.5fr) auto auto;grid-template-areas:"lb lv nm dn rw pl mo";align-items:center;gap:12px;min-height:60px;padding:10px 0;cursor:pointer;list-style:none}
+.q-row::-webkit-details-marker{display:none}
+.q-row-lv{font-family:var(--font-game);font-size:17px;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.q-row-name{font-size:16px;font-weight:800;line-height:1.35}
+.q-row-rew{font-size:14px;font-weight:600;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.q-row-pl{display:grid;justify-items:end;line-height:1.2;font-variant-numeric:tabular-nums;min-width:84px}
+.q-row-pl b{font-family:var(--font-game);font-size:22px}
+.q-row-pl small{font-size:13px;font-weight:600;color:var(--text-sub)}
+.q-row-more{display:inline-flex;align-items:center;gap:4px;height:32px;padding:0 10px;border-radius:999px;border:2px solid var(--border);background:var(--sunken);font-size:13px;font-weight:800;color:var(--text-sub)}
+.q-row-more svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
+.q-close-t{display:none}
+.q-card[open] .q-open-t{display:none}
+.q-card[open] .q-close-t{display:inline}
+.q-card[open] .q-row-more svg{transform:rotate(180deg)}
+.q-row:hover .q-row-more{border-color:var(--border-strong);color:var(--text)}
+.q-card[open]>.q-row{border-bottom:2px dashed var(--border)}
+.q-body{padding:18px 0 20px}
+.q-all-btn{flex:none}
+.q-head{display:flex;gap:14px;align-items:center}
+.q-npc{flex:none;max-width:140px;height:auto;object-fit:contain}
+.q-npc.is-pixel{image-rendering:pixelated}
+.q-title{min-width:0}
+.q-tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.q-type{font-size:13px;font-weight:700;color:var(--text-sub);padding:3px 8px;border-radius:7px;background:var(--sunken);border:1.5px solid var(--border)}
+.q-title h3{margin:6px 0 2px;font-size:21px;font-weight:800;line-height:1.35}
+.q-lv{font-family:var(--font-game);color:var(--accent-ink);margin-right:4px}
+.q-npcline{margin:0;font-size:14px;font-weight:600;color:var(--text-sub)}
+.q-npcline span{color:var(--text-faint)}
+.q-flow{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) minmax(0,.9fr);gap:12px;margin-top:16px}
+.q-box{padding:12px 14px;border-radius:14px;background:var(--sunken);border:2px solid var(--border)}
+.q-box h4{margin:0 0 8px;font-size:13px;font-weight:800;color:var(--text-sub)}
+.q-items{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.q-items li{display:flex;align-items:center;gap:8px;font-size:14px;line-height:1.4}
+.q-items li img,.q-noicon{flex:none;width:28px;height:28px;object-fit:contain}
+.q-noicon{display:inline-block;border-radius:6px;background:var(--meter-track)}
+.q-items li span{flex:1;min-width:0}
+.q-items li small{display:block;font-size:13px;font-weight:700;color:var(--text-faint)}
+.q-items li em{flex:none;font-style:normal;font-size:13px;font-weight:700;color:var(--text-sub);font-variant-numeric:tabular-nums}
+.q-items a{color:inherit;text-decoration:underline;text-decoration-color:var(--border-strong);text-underline-offset:3px}
+.q-cost{margin:8px 0 0;font-size:13px;font-weight:700;color:var(--text-sub);text-align:right}
+.q-none{margin:0;font-size:14px;color:var(--text-faint)}
+.q-profit{text-align:center;display:flex;flex-direction:column;justify-content:center}
+.q-profit.pos{border-color:color-mix(in srgb,var(--success) 45%,var(--border));background:var(--success-soft)}
+.q-profit.neg{border-color:color-mix(in srgb,var(--danger) 45%,var(--border));background:var(--danger-soft)}
+.q-profit p{margin:0}
+.q-big{font-family:var(--font-game);font-size:34px;line-height:1.15;font-variant-numeric:tabular-nums}
+.q-range{font-size:13px;font-weight:600;color:var(--text-sub);font-variant-numeric:tabular-nums}
+.q-verdict{margin-top:4px!important;font-size:14px;font-weight:800;color:var(--text)}
+.q-self{margin-top:6px!important;font-size:13px;font-weight:600;color:var(--text-sub)}
+.q-guide{margin-top:14px}
+.q-guide h4{margin:0 0 6px;font-size:15px;font-weight:800}
+.q-how{margin:0;padding-left:22px;display:grid;gap:4px;font-size:15px;line-height:1.6}
+.q-tip{margin:10px 0 0;padding:10px 12px;border-radius:12px;background:var(--accent-soft);font-size:14px;font-weight:600;line-height:1.6;color:var(--text)}
+.q-steps,.q-photos,.q-quiz{margin-top:12px;border-top:2px dashed var(--border);padding-top:10px}
+.q-steps summary,.q-photos summary,.q-quiz summary{cursor:pointer;font-size:14px;font-weight:800;color:var(--accent-ink)}
+.q-steps ol{margin:10px 0 0;padding-left:22px;display:grid;gap:8px;font-size:14px;line-height:1.5}
+.q-steps li span{color:var(--text-sub)}
+.q-steps li div{color:var(--text-sub)}
+.q-steps li.is-reward>b::after{content:" 💰"}
+.q-step-rew{font-weight:600}
+.q-photo{margin:10px 0 0}
+.q-photo a{display:block}
+.q-photo.is-wide .q-pan{overflow-x:auto;overflow-y:hidden;border-radius:12px;border:2px solid var(--border);background:var(--sunken);scrollbar-width:thin;cursor:zoom-in}
+.q-photo.is-wide .q-pan img{display:block;max-width:none;border:0;border-radius:0}
+.q-photo figcaption span{font-weight:500;color:var(--text-faint)}
+.q-photo img{display:block;width:auto;max-width:100%;height:auto;border-radius:12px;border:2px solid var(--border)}
+.q-photo figcaption{margin-top:4px;font-size:13px;font-weight:600;color:var(--text-sub)}
+.q-quiz table,.q-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px}
+.q-quiz th,.q-quiz td,.q-table th,.q-table td{padding:8px 10px;border-bottom:1.5px solid var(--border);text-align:left;vertical-align:top}
+.q-quiz th,.q-table th{font-size:13px;color:var(--text-sub)}
+.q-party{padding-top:8px}
+
+/* 체크리스트 */
+.q-check ul{list-style:none;margin:0;padding:16px 0 0;display:grid;gap:2px}
+.q-check label{display:grid;grid-template-columns:auto 56px minmax(0,1fr) auto auto;align-items:center;gap:10px;padding:8px 6px;border-radius:10px;cursor:pointer;font-size:15px}
+.q-check label:hover{background:var(--sunken)}
+.q-check input{width:18px;height:18px;accent-color:var(--accent)}
+.q-ck-lv{font-family:var(--font-game);color:var(--accent-ink)}
+.q-check a{color:var(--text);font-weight:700;text-decoration:none}
+.q-check input:checked~a{text-decoration:line-through;color:var(--text-faint)}
+.q-ck-reg{font-size:13px;font-weight:600;color:var(--text-sub)}
+.q-check b{font-variant-numeric:tabular-nums}
+
+@media (max-width:860px){
+  .q-row{grid-template-columns:auto 56px minmax(0,1fr) auto auto;grid-template-areas:"lb lv nm pl mo" "dn dn rw rw rw"}
+  .q-sums{grid-template-columns:1fr}
+  .q-flow{grid-template-columns:1fr 1fr}
+  .q-profit{grid-column:1 / -1}
+}
+@media (max-width:560px){
+  .q-photo.is-wide .q-pan img{height:220px!important;width:auto!important;aspect-ratio:attr(width) / attr(height)}
+  /* 휴대폰: 1줄 판정·레벨·손익 / 2줄 이름 / 3줄 보상 / 4줄 완료·펼치기 */
+  .q-row{grid-template-columns:auto auto minmax(0,1fr) auto;grid-template-areas:"lb lv . pl" "nm nm nm nm" "rw rw rw rw" "dn . . mo";gap:8px 8px;padding:12px 0}
+  .q-row>.q-label{grid-area:lb}.q-row-lv{grid-area:lv;white-space:nowrap;font-size:16px}.q-row-name{grid-area:nm;font-size:16px;word-break:keep-all}.q-row-rew{grid-area:rw;flex-wrap:wrap;overflow:visible;font-size:13px}.q-row-pl{grid-area:pl;min-width:0}.q-row-more{grid-area:mo;justify-self:end;height:30px;padding:0 10px}
+  .q-row-pl b{font-size:20px}
+  /* 위쪽 버튼 줄: 두 줄로 화면을 덮지 않게 한 줄로 옆으로 밀기 */
+  .q-controls{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:8px;padding:8px 0}
+  .q-controls::-webkit-scrollbar{display:none}
+  .q-controls>*{flex:none}
+  .q-controls .region-jump{flex:none;overflow:visible}
+  .q-flow{grid-template-columns:1fr}
+  .q-title h3{font-size:18px}
+  .q-big{font-size:30px}
+  .q-region-head .sub-title{font-size:24px}
+  .q-check label{grid-template-columns:auto 48px minmax(0,1fr) auto;gap:8px}
+  .q-ck-reg{display:none}
+}
+
+/* 깬 퀘스트 */
+.q-done-box{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:8px 12px;border-radius:12px;border:2px solid var(--border);background:var(--sunken);font-size:14px;font-weight:700;cursor:pointer}
+.q-done-box input{width:18px;height:18px;accent-color:var(--accent)}
+
+.q-card.is-done .q-row-name::before{content:'✓ ';color:var(--success)}
+.quest-page.hide-done .q-card.is-done{display:none}
+.q-all-btn.active{background:linear-gradient(180deg,var(--accent-hi),var(--accent));border-color:var(--accent);color:#fff}
+
+/* 유튜브 영상 */
+.q-video{display:grid;grid-template-columns:240px minmax(0,1fr);gap:20px;align-items:center;margin-top:14px;padding-top:18px}
+.q-video-thumb{position:relative;display:block;border-radius:14px;overflow:hidden;border:2px solid var(--border)}
+.q-video-thumb img{display:block;width:100%;height:auto}
+.q-play{position:absolute;inset:0;display:grid;place-items:center;font-size:40px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.6);background:rgba(0,0,0,.12);transition:background-color .15s}
+.q-video-thumb:hover .q-play{background:rgba(0,0,0,.28)}
+.q-video-body h2{margin:0 0 4px;font-family:var(--font-game);font-size:24px}
+.q-video-body p{margin:0 0 10px;font-size:15px;color:var(--text-sub)}
+.q-chap-box>summary{display:inline-block;margin-top:2px;padding:5px 12px;border-radius:999px;border:2px solid var(--border);background:var(--sunken);font-size:13px;font-weight:800;color:var(--text-sub);cursor:pointer;list-style:none}
+.q-chap-box>summary::-webkit-details-marker{display:none}
+.q-chap-box[open]>summary{margin-bottom:10px;color:var(--text)}
+.q-chapters{display:flex;flex-wrap:wrap;gap:6px}
+.q-chapters a{display:inline-flex;gap:6px;align-items:center;padding:5px 10px;border-radius:999px;border:2px solid var(--border);background:var(--sunken);font-size:13px;font-weight:700;color:var(--text-sub);text-decoration:none}
+.q-chapters a:hover{border-color:var(--border-strong);color:var(--text)}
+.q-chapters b{font-variant-numeric:tabular-nums;color:var(--accent-ink)}
+.q-vlink{display:inline-flex;align-items:center;margin-left:10px;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink);font-family:var(--font-body);font-size:13px;font-weight:800;text-decoration:none;vertical-align:middle}
+.q-vlink:hover{background:var(--accent);color:#fff}
+.q-vline{margin:4px 0 0}
+.q-vline .q-vlink{margin-left:0}
+@media (max-width:640px){.q-video{grid-template-columns:1fr}.q-video-thumb{max-width:420px}}
+/* 보상 그림 (아이콘 + 개수·확률) */
+.q-chips{display:flex;flex-wrap:wrap;gap:4px}
+.q-chip{flex:none;display:inline-flex;align-items:center;gap:3px;height:34px;padding:0 6px 0 3px;border-radius:9px;background:var(--card);border:1.5px solid var(--border)}
+.q-chip img,.q-chip .q-noicon{width:28px;height:28px;object-fit:contain}
+.q-chip b{white-space:nowrap;font-size:13px;font-weight:800;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.q-chip-more,.q-chip-plus{flex:none;white-space:nowrap;align-self:center;font-size:13px;font-weight:800;color:var(--text-sub);font-style:normal;padding:0 2px}
+.q-row-rew{display:flex;flex-wrap:wrap;align-items:center;gap:4px;overflow:visible;white-space:normal;min-width:0}
+.q-row .q-chip{height:32px;background:var(--sunken)}
+.q-rew{display:grid!important;gap:4px}
+.q-rew span{font-size:13px;color:var(--text-sub)}
+
+/* 완료 칸 (퀘스트 이름 옆) */
+.q-row>.q-label{grid-area:lb}.q-row-lv{grid-area:lv}.q-row-name{grid-area:nm}.q-row-done{grid-area:dn}.q-row-rew{grid-area:rw}.q-row-pl{grid-area:pl}.q-row-more{grid-area:mo}
+.q-row-done{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 6px 0 10px;border-radius:8px;border:1.5px solid var(--border);background:var(--sunken);font-size:13px;font-weight:800;color:var(--text-sub);cursor:pointer;white-space:nowrap;justify-self:start}
+.q-row-done input{width:18px;height:18px;margin:0;accent-color:var(--success);cursor:pointer}
+.q-row-done:hover{border-color:var(--border-strong);color:var(--text)}
+.q-card.is-done .q-row-done{border-color:var(--success);color:var(--success);background:var(--success-soft)}
+.q-card.is-done>.q-row>:not(.q-row-done){opacity:.55}
+.q-row .q-chip-plus{display:none}
+/* 접힌 줄의 추천/고려 표시는 글자 너비만큼만 */
+.q-row>.q-label{justify-self:start}
+/* 휴대폰: NPC 그림을 작게 해서 제목이 좁게 꺾이지 않게 */
+@media (max-width:560px){.q-head{align-items:flex-start;gap:10px}.q-npc{max-width:72px;max-height:110px;width:auto!important;height:auto!important}}
+/* 휴대폰: 합계 3칸은 옆으로 밀어 보기 (목록이 빨리 나오게), 영상 칸은 작게, 파티 표는 카드처럼 */
+@media (max-width:560px){
+  .q-sums{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:14px -16px;padding:0 16px 4px}
+  .q-sums::-webkit-scrollbar{display:none}
+  .q-sum{flex:0 0 84%;scroll-snap-align:start}
+  .q-sum-mid{font-size:30px}
+  .q-video{grid-template-columns:132px minmax(0,1fr);gap:12px;align-items:center}
+  .q-video-thumb{max-width:none}
+  .q-video-body h2{font-size:18px}
+  .q-video-body p{display:none}
+  .q-play{font-size:24px}
+  .q-table thead{display:none}
+  .q-table,.q-table tbody{display:block}
+  .q-table tr{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;padding:12px 2px;border-bottom:1.5px solid var(--border)}
+  .q-table tr:last-child{border-bottom:0}
+  .q-table td{display:block;padding:0;border:0}
+  .q-table td:nth-child(1){grid-column:1;font-size:15px}
+  .q-table td:nth-child(2){grid-column:1;grid-row:2;font-size:13px;color:var(--text-sub)}
+  .q-table td:nth-child(3){grid-column:1 / -1;grid-row:3;margin-top:4px;font-size:14px;color:var(--text-sub)}
+  .q-table td:nth-child(4){grid-column:2;grid-row:1 / 3;align-self:center;font-family:var(--font-game);font-size:18px;white-space:nowrap}
+}
+/* 수익 높은 순일 때는 지역 묶음(설명·사진)을 숨기고 카드만 한 줄로 */
+.quest-page.sort-profit .q-region:not(#party){display:none}
+.q-sorted{display:grid;gap:12px;margin-bottom:24px}
+.q-sorted .q-card{margin:0}
+.quest-page.sort-profit .region-jump a:not([href="#party"]){display:none}

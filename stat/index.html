@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<script>(function(){try{var t=localStorage.getItem("maple-theme");document.documentElement.dataset.theme=(t==="light"||t==="dark")?t:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}})();</script>
+<script>(function(){try{var t=localStorage.getItem("maple-theme");document.documentElement.dataset.theme=(t==="light"||t==="dark")?t:("dark")}catch(e){document.documentElement.dataset.theme="dark"}})();</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>효율 계산기 · 메이플랜드 스공·주스탯·공격력 효율 | 단풍수첩</title>
@@ -13,13 +13,13 @@
 <meta property="og:url" content="https://danpungnote.com/stat/">
 <meta property="og:image" content="https://danpungnote.com/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#FBF4E6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#17120D" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F3F5FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1626" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg?v=2">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=41036301">
+<link rel="stylesheet" href="../assets/site.css?v=bfe5dc02">
 <script src="../assets/search.js?v=f9609323" defer></script>
 <script src="../assets/sprite.js?v=f9609323" defer></script>
 <script src="../assets/nav.js?v=f9609323" defer></script>
@@ -38,15 +38,15 @@
       <div class="nav-menu">
         <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="calcMenu" aria-current="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2m3 0h2M8 15h2m3 0h2"/></svg>계산기<svg class="icon nav-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
         <div class="nav-pop" id="calcMenu" hidden>
-          <a href="../#calculator">명중 계산기</a>
-          <a href="../#monpa">몬파·주차 계산기</a>
+          <a href="../hit/">명중 계산기</a>
+          <a href="../monpa/">몬파·주차 계산기</a>
           <a href="../stat/">효율 계산기</a>
-          <a href="../kill/">N방컷 계산기</a>
         </div>
       </div>
       <a href="../mob/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg>도감</a>
       <a href="../item/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>아이템</a>
       <a href="../map/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg>맵</a>
+      <a href="../quest/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h11a2 2 0 0 1 2 2v1h-4M7 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V7M7 4a2 2 0 0 1 2 2v1M9 11h6M9 15h4"/></svg>퀘스트</a>
     </nav>
     <button type="button" class="search-open" id="searchOpen" aria-label="통합 검색 (단축키 /)" aria-haspopup="dialog"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>검색</span><kbd>/</kbd></button>
     <button type="button" class="theme-toggle" id="themeToggle" aria-label="다크 모드로 전환" title="낮/밤 바꾸기">
@@ -62,18 +62,18 @@
     <div>
       <span class="section-eyebrow"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>계산기</span>
       <h1 class="page-title">효율 계산기</h1>
-      <p>스탯 공격력과 주스탯·부스탯·공격력 1당 효율을 알려줘요. <a href="../kill/">N방컷 계산기 →</a></p>
+      <p>스탯 공격력과 주스탯·부스탯·공격력 1당 효율을 알려줘요. </p>
     </div>
   </div>
   <div class="two-col">
     <section class="card" aria-labelledby="statInTitle">
       <div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3 id="statInTitle">내 캐릭터</h3></div>
-      <div class="step-head"><span class="step-num">1</span><div><strong>무기와 스탯</strong><span>장비·버프를 모두 더한 값을 넣어요 · 두 계산기가 같이 써요</span></div></div>
+      <div class="step-head"><span class="step-num">1</span><div><strong>무기와 스탯</strong><span>노버프 기준 · 장비를 모두 낀 상태의 스탯창 값을 넣어요</span></div></div>
       <div class="field-grid">
         <label class="field" style="grid-column:1/-1"><span class="field-label">무기 종류</span><select class="input" id="weapon"><optgroup label="전사"><option value="1hs">한손검</option><option value="2hs">두손검</option><option value="1ha">한손도끼</option><option value="2ha">두손도끼</option><option value="1hb">한손둔기</option><option value="2hb">두손둔기</option><option value="spear">창</option><option value="pole">폴암</option></optgroup><optgroup label="궁수"><option value="bow">활</option><option value="xbow">석궁</option></optgroup><optgroup label="도적"><option value="claw">아대</option><option value="dagger">단검</option></optgroup><optgroup label="해적"><option value="knuckle">너클</option><option value="gun">건</option></optgroup></select></label>
         <label class="field"><span class="field-label" id="primaryLabel">주스탯</span><span class="unit-input"><input class="input" id="primary" type="number" inputmode="numeric" min="0" step="1" value="400"><span id="primaryUnit">STR</span></span></label>
         <label class="field"><span class="field-label" id="secondaryLabel">부스탯</span><span class="unit-input"><input class="input" id="secondary" type="number" inputmode="numeric" min="0" step="1" value="60"><span id="secondaryUnit">DEX</span></span></label>
-        <label class="field"><span class="field-label" id="attackLabel">공격력 <small>무기+장비+버프</small></span><span class="unit-input"><input class="input" id="attack" type="number" inputmode="numeric" min="0" step="1" value="100"><span id="attackUnit">공</span></span></label>
+        <label class="field"><span class="field-label" id="attackLabel">공격력 <small>무기+장비 · 정축 포함</small></span><span class="unit-input"><input class="input" id="attack" type="number" inputmode="numeric" min="0" step="1" value="100"><span id="attackUnit">공</span></span></label>
         <label class="field"><span class="field-label" id="masteryLabel">숙련도 <small>마스터리</small></span><span class="unit-input"><input class="input" id="mastery" type="number" inputmode="numeric" min="0" step="1" value="60" min="10" max="90" step="5"><span id="masteryUnit">%</span></span></label>
         <label class="field" id="ammoWrap" style="grid-column:1/-1"><span class="field-label" id="ammoLabel">표창 <small>공격력에 더해져요</small></span><select class="input" id="ammo"></select></label>
       </div>
@@ -115,7 +115,7 @@
           <div class="result-row"><span class="row-label">최대 스공 변화</span><strong class="dex-value" id="cmpDiff">—</strong></div>
         </div>
       </div>
-      <p class="notice">몬스터를 몇 방에 잡는지는 <a href="../kill/">N방컷 계산기</a>에서 볼 수 있어요. 입력한 캐릭터 정보가 그대로 이어져요.</p>
+      
       <details class="info-details">
         <summary>계산 기준 보기</summary>
         <span class="formula">최대 = (주스탯 × 무기상수 + 부스탯) × 공격력 ÷ 100</span>
@@ -139,7 +139,7 @@
   var W={"1hs":{"max":4,"min":4,"p":"STR","s":"DEX","j":"전사"},"2hs":{"max":4.6,"min":4.6,"p":"STR","s":"DEX","j":"전사"},"1ha":{"max":4.4,"min":3.2,"p":"STR","s":"DEX","j":"전사"},"2ha":{"max":4.8,"min":3.4,"p":"STR","s":"DEX","j":"전사"},"1hb":{"max":4.4,"min":3.2,"p":"STR","s":"DEX","j":"전사"},"2hb":{"max":4.8,"min":3.4,"p":"STR","s":"DEX","j":"전사"},"spear":{"max":5,"min":3,"p":"STR","s":"DEX","j":"전사"},"pole":{"max":5,"min":3,"p":"STR","s":"DEX","j":"전사"},"bow":{"max":3.4,"min":3.4,"p":"DEX","s":"STR","j":"궁수"},"xbow":{"max":3.6,"min":3.6,"p":"DEX","s":"STR","j":"궁수"},"claw":{"max":3.6,"min":3.6,"p":"LUK","s":"STR+DEX","j":"도적"},"dagger":{"max":3.6,"min":3.6,"p":"LUK","s":"STR+DEX","j":"도적"},"knuckle":{"max":4.8,"min":4.8,"p":"STR","s":"DEX","j":"해적"},"gun":{"max":3.6,"min":3.6,"p":"DEX","s":"STR","j":"해적"}};
   var SK=[];
   var MOBS=[];
-  var AM=[["claw","수비 표창",15],["claw","월비 표창",17],["claw","눈덩이",17],["claw","목비 표창",19],["claw","나무팽이",19],["claw","금비 표창",21],["claw","고드름",21],["claw","메이플 표창",21],["claw","토비 표창",23],["claw","뇌전 수리검",25],["claw","일비 표창",27],["claw","화비 표창",27],["claw","크리스탈 일비 표창",29],["claw","절제된 분노",30],["gun","불릿",10],["gun","스플릿 불릿",12],["gun","마이티 불릿",14],["gun","바이탈 불릿",16],["gun","블레이즈·글레이스 캡슐",16],["gun","샤이니 불릿",18],["gun","이터널 불릿",20],["bow xbow","일반 화살",0],["bow xbow","청동 화살",1],["bow xbow","강철 화살",2],["bow xbow","빨간·파란 화살",4],["bow xbow","다이아몬드 화살",4]];
+  var AM=[["claw","수비 표창",15],["claw","월비 표창",17],["claw","눈덩이",17],["claw","목비 표창",19],["claw","나무팽이",19],["claw","금비 표창",21],["claw","고드름",21],["claw","메이플 표창",21],["claw","토비 표창",23],["claw","뇌전 수리검",25],["claw","일비 표창",27],["claw","화비 표창",27],["claw","절제된 분노",29],["gun","불릿",10],["gun","스플릿 불릿",12],["gun","마이티 불릿",14],["gun","바이탈 불릿",16],["gun","블레이즈·글레이스 캡슐",16],["gun","샤이니 불릿",18],["gun","이터널 불릿",20],["bow xbow","일반 화살",0],["bow xbow","청동 화살",1],["bow xbow","강철 화살",2],["bow xbow","빨간·파란 화살",4],["bow xbow","다이아몬드 화살",4]];
   var $=function(id){return document.getElementById(id)};
   // 저장: 캐릭터 입력은 두 계산기가 같이 쓰고, 나머지는 페이지마다 따로
   var CHAR_IDS=['weapon','primary','secondary','attack','mastery','ammo','echoOn'],CHAR_KEY='maple_char_v1';

@@ -1,25 +1,25 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<script>(function(){try{var t=localStorage.getItem("maple-theme");document.documentElement.dataset.theme=(t==="light"||t==="dark")?t:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}})();</script>
+<script>(function(){try{var t=localStorage.getItem("maple-theme");document.documentElement.dataset.theme=(t==="light"||t==="dark")?t:("dark")}catch(e){document.documentElement.dataset.theme="dark"}})();</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>맵 · 메이플랜드 지역별 사냥터·몬스터·필요 명중 | 단풍수첩</title>
-<meta name="description" content="메이플랜드 맵 675곳을 빅토리아 아일랜드, 오시리아, 루디브리엄 등 대륙과 마을별로 묶었어요. 나오는 몬스터, 레벨대, 필요 명중, 드랍 아이템을 확인하세요.">
+<meta name="description" content="메이플랜드 맵 714곳을 빅토리아 아일랜드, 오시리아, 루디브리엄 등 대륙과 마을별로 묶었어요. 나오는 몬스터, 레벨대, 필요 명중, 드랍 아이템을 확인하세요.">
 <meta property="og:site_name" content="단풍수첩">
 <meta property="og:title" content="맵 · 메이플랜드 지역별 사냥터·몬스터·필요 명중 | 단풍수첩">
-<meta property="og:description" content="메이플랜드 맵 675곳을 빅토리아 아일랜드, 오시리아, 루디브리엄 등 대륙과 마을별로 묶었어요. 나오는 몬스터, 레벨대, 필요 명중, 드랍 아이템을 확인하세요.">
+<meta property="og:description" content="메이플랜드 맵 714곳을 빅토리아 아일랜드, 오시리아, 루디브리엄 등 대륙과 마을별로 묶었어요. 나오는 몬스터, 레벨대, 필요 명중, 드랍 아이템을 확인하세요.">
 <link rel="canonical" href="https://danpungnote.com/map/">
 <meta property="og:url" content="https://danpungnote.com/map/">
 <meta property="og:image" content="https://danpungnote.com/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#FBF4E6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#17120D" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F3F5FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1626" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg?v=2">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=41036301">
+<link rel="stylesheet" href="../assets/site.css?v=bfe5dc02">
 <script src="../assets/search.js?v=f9609323" defer></script>
 <script src="../assets/sprite.js?v=f9609323" defer></script>
 <script src="../assets/nav.js?v=f9609323" defer></script>
@@ -38,15 +38,15 @@
       <div class="nav-menu">
         <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="calcMenu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2m3 0h2M8 15h2m3 0h2"/></svg>계산기<svg class="icon nav-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
         <div class="nav-pop" id="calcMenu" hidden>
-          <a href="../#calculator">명중 계산기</a>
-          <a href="../#monpa">몬파·주차 계산기</a>
+          <a href="../hit/">명중 계산기</a>
+          <a href="../monpa/">몬파·주차 계산기</a>
           <a href="../stat/">효율 계산기</a>
-          <a href="../kill/">N방컷 계산기</a>
         </div>
       </div>
       <a href="../mob/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg>도감</a>
       <a href="../item/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>아이템</a>
       <a href="../map/" aria-current="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg>맵</a>
+      <a href="../quest/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h11a2 2 0 0 1 2 2v1h-4M7 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V7M7 4a2 2 0 0 1 2 2v1M9 11h6M9 15h4"/></svg>퀘스트</a>
     </nav>
     <button type="button" class="search-open" id="searchOpen" aria-label="통합 검색 (단축키 /)" aria-haspopup="dialog"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>검색</span><kbd>/</kbd></button>
     <button type="button" class="theme-toggle" id="themeToggle" aria-label="다크 모드로 전환" title="낮/밤 바꾸기">
@@ -62,23 +62,25 @@
     <div>
       <span class="section-eyebrow"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>맵 정보</span>
       <h1 class="page-title">맵</h1>
-      <p>맵 675곳을 대륙과 마을별로 묶었어요. 몬스터, 레벨대, 필요 명중, 얻을 수 있는 아이템을 확인해요.</p>
+      <p>맵 714곳을 대륙과 마을별로 묶었어요. 몬스터, 레벨대, 필요 명중, 얻을 수 있는 아이템을 확인해요.</p>
     </div>
   </div>
   <nav class="region-jump" aria-label="대륙 바로가기">
       <a class="level-chip" href="#region-1">메이플 아일랜드</a>
       <a class="level-chip" href="#region-2">빅토리아 아일랜드</a>
-      <a class="level-chip" href="#region-3">오시리아 대륙</a>
-      <a class="level-chip" href="#region-4">루디브리엄</a>
-      <a class="level-chip" href="#region-5">아쿠아로드</a>
-      <a class="level-chip" href="#region-6">리프레</a>
-      <a class="level-chip" href="#region-7">무릉도원</a>
-      <a class="level-chip" href="#region-8">니할 사막</a>
-      <a class="level-chip" href="#region-9">시간의 신전</a>
-      <a class="level-chip" href="#region-10">엘린 숲</a>
-      <a class="level-chip" href="#region-11">해외 지역</a>
-      <a class="level-chip" href="#region-12">파티퀘스트·특수 지역</a>
-      <a class="level-chip" href="#region-13">기타</a>
+      <a class="level-chip" href="#region-3">에레브</a>
+      <a class="level-chip" href="#region-4">오시리아 대륙</a>
+      <a class="level-chip" href="#region-5">루디브리엄</a>
+      <a class="level-chip" href="#region-6">아쿠아로드</a>
+      <a class="level-chip" href="#region-7">리프레</a>
+      <a class="level-chip" href="#region-8">무릉도원</a>
+      <a class="level-chip" href="#region-9">니할 사막</a>
+      <a class="level-chip" href="#region-10">시간의 신전</a>
+      <a class="level-chip" href="#region-11">엘린 숲</a>
+      <a class="level-chip" href="#region-12">에델슈타인</a>
+      <a class="level-chip" href="#region-13">해외 지역</a>
+      <a class="level-chip" href="#region-14">파티퀘스트·특수 지역</a>
+      <a class="level-chip" href="#region-15">기타</a>
   </nav>
   <div class="dex-toolbar">
     <div class="search-wrap"><svg class="icon search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input class="input" id="mapSearch" type="search" placeholder="맵·마을·몬스터 이름으로 검색 (예: 페리온)" autocomplete="off" aria-label="맵 검색"></div>
@@ -89,13 +91,26 @@
       <button type="button" class="level-chip" data-range="61-90" aria-pressed="false">61–90</button>
       <button type="button" class="level-chip" data-range="91-999" aria-pressed="false">91+</button>
     </div>
-    <span class="count" id="mapCount">675곳</span>
+    <span class="count" id="mapCount">714곳</span>
   </div>
 <section class="continent-group" id="region-1" aria-labelledby="region-1-title">
-    <h2 class="continent-title" id="region-1-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>메이플 아일랜드 <small>6곳</small></h2>
+    <h2 class="continent-title" id="region-1-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>메이플 아일랜드 <small>9곳</small></h2>
     <section class="street-group">
-      <h3 class="sub-title">암허스트 <small>6곳</small></h3>
+      <h3 class="sub-title">버섯마을 <small>1곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="10000" data-name="버섯마을버섯마을메이플아일랜드마을히나세라" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/10000.jpg" alt="" loading="lazy"><span><strong>버섯마을</strong><span><b class="tag-town">마을</b> NPC 2명</span></span></a>
+      </div>
+    </section>
+    <section class="street-group">
+      <h3 class="sub-title">사우스페리 <small>1곳</small></h3>
+      <div class="dex-grid">
+<a class="mob-card map-card is-town" href="60000" data-name="사우스페리사우스페리메이플아일랜드마을빅스바실리폴메이플운영자" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/60000.jpg" alt="" loading="lazy"><span><strong>사우스페리</strong><span><b class="tag-town">마을</b> NPC 4명</span></span></a>
+      </div>
+    </section>
+    <section class="street-group">
+      <h3 class="sub-title">암허스트 <small>7곳</small></h3>
+      <div class="dex-grid">
+<a class="mob-card map-card is-town" href="1000000" data-name="암허스트암허스트메이플아일랜드마을루카스레인피오마리아" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/1000000.jpg" alt="" loading="lazy"><span><strong>암허스트</strong><span><b class="tag-town">마을</b> NPC 4명</span></span></a>
 <a class="mob-card map-card" href="50000" data-name="위험한숲속메이플로드암허스트메이플아일랜드달팽이" data-min="1" data-max="1"><img class="map-thumb" src="../images/map/thumb/50000.jpg" alt="" loading="lazy"><span><strong>위험한숲속</strong><span>Lv.1 · 몬스터 1종</span><span class="mob-sub">달팽이</span></span></a>
 <a class="mob-card map-card" href="1010000" data-name="모험가의수련장입구메이플로드암허스트메이플아일랜드파란달팽이스포아주황버섯" data-min="2" data-max="8"><img class="map-thumb" src="../images/map/thumb/1010000.jpg" alt="" loading="lazy"><span><strong>모험가의 수련장 입구</strong><span>Lv.2~8 · 몬스터 3종</span><span class="mob-sub">파란 달팽이, 스포아, 주황버섯</span></span></a>
 <a class="mob-card map-card" href="1010100" data-name="모험가의수련장1메이플로드암허스트메이플아일랜드스텀프" data-min="4" data-max="4"><img class="map-thumb" src="../images/map/thumb/1010100.jpg" alt="" loading="lazy"><span><strong>모험가의 수련장1</strong><span>Lv.4 · 몬스터 1종</span><span class="mob-sub">스텀프</span></span></a>
@@ -106,10 +121,11 @@
     </section>
   </section>
 <section class="continent-group" id="region-2" aria-labelledby="region-2-title">
-    <h2 class="continent-title" id="region-2-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>빅토리아 아일랜드 <small>172곳</small></h2>
+    <h2 class="continent-title" id="region-2-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>빅토리아 아일랜드 <small>180곳</small></h2>
     <section class="street-group">
-      <h3 class="sub-title">헤네시스 <small>17곳</small></h3>
+      <h3 class="sub-title">헤네시스 <small>18곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="100000000" data-name="헤네시스헤네시스빅토리아아일랜드마을요원e브루스가가카산드라토마스듀이스피넬빅토리아중형택시코코로카차원의거울루니쿠커스벼루리나장로스탄밍밍부인카밀라제이로아메이플운영자" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/100000000.jpg" alt="" loading="lazy"><span><strong>헤네시스</strong><span><b class="tag-town">마을</b> NPC 21명</span></span></a>
 <a class="mob-card map-card" href="100010000" data-name="헤네시스북쪽언덕헤네시스헤네시스빅토리아아일랜드파란달팽이스포아빨간달팽이돼지" data-min="2" data-max="7"><img class="map-thumb" src="../images/map/thumb/100010000.jpg" alt="" loading="lazy"><span><strong>헤네시스 북쪽언덕</strong><span>Lv.2~7 · 몬스터 4종</span><span class="mob-sub">파란 달팽이, 스포아, 빨간 달팽이</span></span></a>
 <a class="mob-card map-card" href="104040000" data-name="헤네시스사냥터1빅토리아로드헤네시스빅토리아아일랜드스포아파란달팽이빨간달팽이돼지" data-min="2" data-max="7"><img class="map-thumb" src="../images/map/thumb/104040000.jpg" alt="" loading="lazy"><span><strong>헤네시스사냥터1</strong><span>Lv.2~7 · 몬스터 4종</span><span class="mob-sub">스포아, 파란 달팽이, 빨간 달팽이</span></span></a>
 <a class="mob-card map-card" href="104030000" data-name="헤네시스서쪽언덕빅토리아로드헤네시스빅토리아아일랜드빨간달팽이슬라임돼지" data-min="4" data-max="7"><img class="map-thumb" src="../images/map/thumb/104030000.jpg" alt="" loading="lazy"><span><strong>헤네시스서쪽언덕</strong><span>Lv.4~7 · 몬스터 3종</span><span class="mob-sub">빨간 달팽이, 슬라임, 돼지</span></span></a>
@@ -130,8 +146,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">엘리니아 <small>31곳</small></h3>
+      <h3 class="sub-title">엘리니아 <small>32곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="101000000" data-name="엘리니아엘리니아빅토리아아일랜드마을요정윙리아나듀이스피넬가가달리어기부함요원e엘리니아중형택시헤르샤차원의거울카산드라루니코코쿠커스에뜨랑요정아르웬요정로웬쉐인엘리니아모범택시박서방베티" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/101000000.jpg" alt="" loading="lazy"><span><strong>엘리니아</strong><span><b class="tag-town">마을</b> NPC 23명</span></span></a>
 <a class="mob-card map-card" href="101010000" data-name="빛나는숲의통로숲으로가는길엘리니아빅토리아아일랜드빨간달팽이슬라임" data-min="4" data-max="6"><img class="map-thumb" src="../images/map/thumb/101010000.jpg" alt="" loading="lazy"><span><strong>빛나는 숲의 통로</strong><span>Lv.4~6 · 몬스터 2종</span><span class="mob-sub">빨간 달팽이, 슬라임</span></span></a>
 <a class="mob-card map-card" href="101010100" data-name="숲이시작하는곳숲으로가는길엘리니아빅토리아아일랜드빨간달팽이슬라임" data-min="4" data-max="6"><img class="map-thumb" src="../images/map/thumb/101010100.jpg" alt="" loading="lazy"><span><strong>숲이 시작하는 곳</strong><span>Lv.4~6 · 몬스터 2종</span><span class="mob-sub">빨간 달팽이, 슬라임</span></span></a>
 <a class="mob-card map-card" href="100050000" data-name="엘리니아남쪽필드빅토리아로드엘리니아빅토리아아일랜드스텀프슬라임초록버섯" data-min="4" data-max="15"><img class="map-thumb" src="../images/map/thumb/100050000.jpg" alt="" loading="lazy"><span><strong>엘리니아남쪽필드</strong><span>Lv.4~15 · 몬스터 3종</span><span class="mob-sub">스텀프, 슬라임, 초록버섯</span></span></a>
@@ -166,8 +183,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">페리온 <small>36곳</small></h3>
+      <h3 class="sub-title">페리온 <small>37곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="102000000" data-name="페리온페리온빅토리아아일랜드마을페리온중형택시듀이명예로운바위스피넬쿠커스카산드라가가달리어기부함돼지와함께춤을요원e열마리의부기차원의거울코코루니만지선더스미스왕서방티아이얀다" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/102000000.jpg" alt="" loading="lazy"><span><strong>페리온</strong><span><b class="tag-town">마을</b> NPC 22명</span></span></a>
 <a class="mob-card map-card" href="101040000" data-name="루팡의숲저주받은숲페리온빅토리아아일랜드파란달팽이스텀프빨간달팽이" data-min="2" data-max="4"><img class="map-thumb" src="../images/map/thumb/101040000.jpg" alt="" loading="lazy"><span><strong>루팡의 숲</strong><span>Lv.2~4 · 몬스터 3종</span><span class="mob-sub">파란 달팽이, 스텀프, 빨간 달팽이</span></span></a>
 <a class="mob-card map-card" href="101030000" data-name="거대한나무북쪽숲페리온빅토리아아일랜드스텀프다크스텀프" data-min="4" data-max="10"><img class="map-thumb" src="../images/map/thumb/101030000.jpg" alt="" loading="lazy"><span><strong>거대한 나무</strong><span>Lv.4~10 · 몬스터 2종</span><span class="mob-sub">스텀프, 다크 스텀프</span></span></a>
 <a class="mob-card map-card" href="101030401" data-name="동쪽바위산2이스트마운틴페리온빅토리아아일랜드스텀프다크스텀프" data-min="4" data-max="10"><img class="map-thumb" src="../images/map/thumb/101030401.jpg" alt="" loading="lazy"><span><strong>동쪽바위산2</strong><span>Lv.4~10 · 몬스터 2종</span><span class="mob-sub">스텀프, 다크 스텀프</span></span></a>
@@ -207,8 +225,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">커닝시티 <small>31곳</small></h3>
+      <h3 class="sub-title">커닝시티 <small>32곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="103000000" data-name="커닝시티커닝시티빅토리아아일랜드마을슈피겔만넬라이카루스라헤라듀이스피넬가가기부함뒷골목의제이엠달리어요원e마티어스코코카산드라루니차원의거울알렉스몽땅따슈미쿠커스커닝시티중형택시홍서방라케리스" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/103000000.jpg" alt="" loading="lazy"><span><strong>커닝시티</strong><span><b class="tag-town">마을</b> NPC 24명</span></span></a>
 <a class="mob-card map-card" href="103010000" data-name="추락주의공사장커닝시티빅토리아아일랜드빨간달팽이슬라임주황버섯옥토퍼스" data-min="4" data-max="12"><img class="map-thumb" src="../images/map/thumb/103010000.jpg" alt="" loading="lazy"><span><strong>추락주의</strong><span>Lv.4~12 · 몬스터 4종</span><span class="mob-sub">빨간 달팽이, 슬라임, 주황버섯</span></span></a>
 <a class="mob-card map-card" href="102050000" data-name="해질녘하늘빅토리아로드커닝시티빅토리아아일랜드빨간달팽이슬라임주황버섯" data-min="4" data-max="8"><img class="map-thumb" src="../images/map/thumb/102050000.jpg" alt="" loading="lazy"><span><strong>해질녘하늘</strong><span>Lv.4~8 · 몬스터 3종</span><span class="mob-sub">빨간 달팽이, 슬라임, 주황버섯</span></span></a>
 <a class="mob-card map-card" href="107000001" data-name="주니어네키의늪히든스트리트커닝시티빅토리아아일랜드슬라임주니어네키" data-min="6" data-max="21"><img class="map-thumb" src="../images/map/thumb/107000001.jpg" alt="" loading="lazy"><span><strong>주니어네키의 늪</strong><span>Lv.6~21 · 몬스터 2종</span><span class="mob-sub">슬라임, 주니어 네키</span></span></a>
@@ -243,8 +262,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">리스항구 <small>7곳</small></h3>
+      <h3 class="sub-title">리스항구 <small>8곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="104000000" data-name="리스항구리스항구빅토리아아일랜드마을필존체프쿤메이플운영자듀이스피넬카산드라테오티앤크리더알가가달리어기부함요원e푸로리스항구중형택시루니제인존의상자쟝바이킨페이슨몽롱할배리스항구모범택시김서방" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/104000000.jpg" alt="" loading="lazy"><span><strong>리스항구</strong><span><b class="tag-town">마을</b> NPC 26명</span></span></a>
 <a class="mob-card map-card" href="104000100" data-name="리스항구외곽포트로드리스항구빅토리아아일랜드달팽이파란달팽이" data-min="1" data-max="2"><img class="map-thumb" src="../images/map/thumb/104000100.jpg" alt="" loading="lazy"><span><strong>리스항구외곽</strong><span>Lv.1~2 · 몬스터 2종</span><span class="mob-sub">달팽이, 파란 달팽이</span></span></a>
 <a class="mob-card map-card" href="104000200" data-name="해안가풀숲1포트로드리스항구빅토리아아일랜드달팽이파란달팽이빨간달팽이" data-min="1" data-max="4"><img class="map-thumb" src="../images/map/thumb/104000200.jpg" alt="" loading="lazy"><span><strong>해안가풀숲1</strong><span>Lv.1~4 · 몬스터 3종</span><span class="mob-sub">달팽이, 파란 달팽이, 빨간 달팽이</span></span></a>
 <a class="mob-card map-card" href="104000300" data-name="해안가풀숲2포트로드리스항구빅토리아아일랜드파란달팽이빨간달팽이" data-min="2" data-max="4"><img class="map-thumb" src="../images/map/thumb/104000300.jpg" alt="" loading="lazy"><span><strong>해안가풀숲2</strong><span>Lv.2~4 · 몬스터 2종</span><span class="mob-sub">파란 달팽이, 빨간 달팽이</span></span></a>
@@ -255,8 +275,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">슬리피우드 <small>43곳</small></h3>
+      <h3 class="sub-title">슬리피우드 <small>44곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="105040300" data-name="슬리피우드슬리피우드빅토리아아일랜드마을크리슈라마기부함달리어요원e차원의거울일지루니사비트라마이상한모양의석상오서방떠돌이연금술사기억하고있는자마카산드라가가" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/105040300.jpg" alt="" loading="lazy"><span><strong>슬리피우드</strong><span><b class="tag-town">마을</b> NPC 15명</span></span></a>
 <a class="mob-card map-card" href="105050400" data-name="어두운통로던전슬리피우드빅토리아아일랜드스티지뿔버섯좀비버섯" data-min="20" data-max="24"><img class="map-thumb" src="../images/map/thumb/105050400.jpg" alt="" loading="lazy"><span><strong>어두운통로</strong><span>Lv.20~24 · 몬스터 3종</span><span class="mob-sub">스티지, 뿔버섯, 좀비버섯</span></span></a>
 <a class="mob-card map-card" href="105060000" data-name="위험한증기던전슬리피우드빅토리아아일랜드스티지뿔버섯좀비버섯" data-min="20" data-max="24"><img class="map-thumb" src="../images/map/thumb/105060000.jpg" alt="" loading="lazy"><span><strong>위험한증기</strong><span>Lv.20~24 · 몬스터 3종</span><span class="mob-sub">스티지, 뿔버섯, 좀비버섯</span></span></a>
 <a class="mob-card map-card" href="105050000" data-name="개미굴1던전슬리피우드빅토리아아일랜드뿔버섯좀비버섯짜증내는좀비버섯" data-min="22" data-max="24"><img class="map-thumb" src="../images/map/thumb/105050000.jpg" alt="" loading="lazy"><span><strong>개미굴1</strong><span>Lv.22~24 · 몬스터 3종</span><span class="mob-sub">뿔버섯, 좀비버섯, 짜증내는 좀비버섯</span></span></a>
@@ -303,8 +324,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">플로리나 비치 <small>6곳</small></h3>
+      <h3 class="sub-title">플로리나 비치 <small>7곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="110000000" data-name="플로리나비치플로리나비치빅토리아아일랜드마을리엘발렌파이슨로엘라엘" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/110000000.jpg" alt="" loading="lazy"><span><strong>플로리나비치</strong><span><b class="tag-town">마을</b> NPC 5명</span></span></a>
 <a class="mob-card map-card" href="110020000" data-name="로랑로랑플로리나로드플로리나비치빅토리아아일랜드로랑루팡" data-min="37" data-max="37"><img class="map-thumb" src="../images/map/thumb/110020000.jpg" alt="" loading="lazy"><span><strong>로랑로랑</strong><span>Lv.37 · 몬스터 2종</span><span class="mob-sub">로랑, 루팡</span></span></a>
 <a class="mob-card map-card" href="110020001" data-name="로랑로랑로랑히든스트리트플로리나비치빅토리아아일랜드로랑" data-min="37" data-max="37"><img class="map-thumb" src="../images/map/thumb/110020001.jpg" alt="" loading="lazy"><span><strong>로랑로랑로랑</strong><span>Lv.37 · 몬스터 1종</span><span class="mob-sub">로랑</span></span></a>
 <a class="mob-card map-card" href="110030000" data-name="로랑앤클랑플로리나로드플로리나비치빅토리아아일랜드로랑클랑" data-min="37" data-max="48"><img class="map-thumb" src="../images/map/thumb/110030000.jpg" alt="" loading="lazy"><span><strong>로랑앤클랑</strong><span>Lv.37~48 · 몬스터 2종</span><span class="mob-sub">로랑, 클랑</span></span></a>
@@ -314,17 +336,28 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">노틸러스 <small>1곳</small></h3>
+      <h3 class="sub-title">노틸러스 <small>2곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="120000000" data-name="노틸러스선착장노틸러스빅토리아아일랜드마을바트달리어기부함요원e루니노틸러스중형택시뿌빠아벨차원의거울" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/120000000.jpg" alt="" loading="lazy"><span><strong>노틸러스 선착장</strong><span><b class="tag-town">마을</b> NPC 9명</span></span></a>
 <a class="mob-card map-card" href="120010000" data-name="돼지방목장방목지노틸러스빅토리아아일랜드돼지" data-min="7" data-max="7"><img class="map-thumb" src="../images/map/thumb/120010000.jpg" alt="" loading="lazy"><span><strong>돼지 방목장</strong><span>Lv.7 · 몬스터 1종</span><span class="mob-sub">돼지</span></span></a>
       </div>
     </section>
   </section>
 <section class="continent-group" id="region-3" aria-labelledby="region-3-title">
-    <h2 class="continent-title" id="region-3-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>오시리아 대륙 <small>73곳</small></h2>
+    <h2 class="continent-title" id="region-3-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>에레브 <small>1곳</small></h2>
     <section class="street-group">
-      <h3 class="sub-title">오르비스 <small>33곳</small></h3>
+      <h3 class="sub-title">에레브 <small>1곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="130000000" data-name="에레브에레브에레브마을시그너스나인하트미하일오즈이리나이카르트호크아이신수" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/130000000.jpg" alt="" loading="lazy"><span><strong>에레브</strong><span><b class="tag-town">마을</b> NPC 8명</span></span></a>
+      </div>
+    </section>
+  </section>
+<section class="continent-group" id="region-4" aria-labelledby="region-4-title">
+    <h2 class="continent-title" id="region-4-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>오시리아 대륙 <small>75곳</small></h2>
+    <section class="street-group">
+      <h3 class="sub-title">오르비스 <small>34곳</small></h3>
+      <div class="dex-grid">
+<a class="mob-card map-card is-town" href="200000000" data-name="오르비스오르비스오시리아대륙마을찰리중사리사스피넬코코카산드라기부함달리어루니마틴쿠커스슈피겔만슈리티니메이플운영자봉달이가가듀이" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/200000000.jpg" alt="" loading="lazy"><span><strong>오르비스</strong><span><b class="tag-town">마을</b> NPC 17명</span></span></a>
 <a class="mob-card map-card" href="200080600" data-name="오르비스탑&lt;16층&gt;오르비스탑오르비스오시리아대륙주니어스톤볼스톤볼" data-min="23" data-max="30"><img class="map-thumb" src="../images/map/thumb/200080600.jpg" alt="" loading="lazy"><span><strong>오르비스탑&lt;16층&gt;</strong><span>Lv.23~30 · 몬스터 2종</span><span class="mob-sub">주니어 스톤볼, 스톤볼</span></span></a>
 <a class="mob-card map-card" href="200080500" data-name="오르비스탑&lt;17층&gt;오르비스탑오르비스오시리아대륙주니어스톤볼스톤볼" data-min="23" data-max="30"><img class="map-thumb" src="../images/map/thumb/200080500.jpg" alt="" loading="lazy"><span><strong>오르비스탑&lt;17층&gt;</strong><span>Lv.23~30 · 몬스터 2종</span><span class="mob-sub">주니어 스톤볼, 스톤볼</span></span></a>
 <a class="mob-card map-card" href="200080400" data-name="오르비스탑&lt;18층&gt;오르비스탑오르비스오시리아대륙주니어스톤볼" data-min="23" data-max="23"><img class="map-thumb" src="../images/map/thumb/200080400.jpg" alt="" loading="lazy"><span><strong>오르비스탑&lt;18층&gt;</strong><span>Lv.23 · 몬스터 1종</span><span class="mob-sub">주니어 스톤볼</span></span></a>
@@ -361,8 +394,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">엘나스 <small>40곳</small></h3>
+      <h3 class="sub-title">엘나스 <small>41곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="211000000" data-name="엘나스엘나스오시리아대륙마을폭스상사제이드카산드라위험지역총알택시가가달리어기부함요원e쿠커스코코차원의거울스카두르떠돌이연금술사루니메이플운영자듀이명예로운바위" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/211000000.jpg" alt="" loading="lazy"><span><strong>엘나스</strong><span><b class="tag-town">마을</b> NPC 17명</span></span></a>
 <a class="mob-card map-card" href="211000200" data-name="눈덮인언덕엘나스산맥엘나스오시리아대륙리티주니어페페" data-min="32" data-max="35"><img class="map-thumb" src="../images/map/thumb/211000200.jpg" alt="" loading="lazy"><span><strong>눈 덮인 언덕</strong><span>Lv.32~35 · 몬스터 2종</span><span class="mob-sub">리티, 주니어 페페</span></span></a>
 <a class="mob-card map-card" href="200081700" data-name="오르비스탑&lt;5층&gt;오르비스탑엘나스오시리아대륙리티다크리티" data-min="32" data-max="33"><img class="map-thumb" src="../images/map/thumb/200081700.jpg" alt="" loading="lazy"><span><strong>오르비스탑&lt;5층&gt;</strong><span>Lv.32~33 · 몬스터 2종</span><span class="mob-sub">리티, 다크 리티</span></span></a>
 <a class="mob-card map-card" href="200081600" data-name="오르비스탑&lt;6층&gt;오르비스탑엘나스오시리아대륙리티" data-min="32" data-max="32"><img class="map-thumb" src="../images/map/thumb/200081600.jpg" alt="" loading="lazy"><span><strong>오르비스탑&lt;6층&gt;</strong><span>Lv.32 · 몬스터 1종</span><span class="mob-sub">리티</span></span></a>
@@ -406,11 +440,12 @@
       </div>
     </section>
   </section>
-<section class="continent-group" id="region-4" aria-labelledby="region-4-title">
-    <h2 class="continent-title" id="region-4-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>루디브리엄 <small>118곳</small></h2>
+<section class="continent-group" id="region-5" aria-labelledby="region-5-title">
+    <h2 class="continent-title" id="region-5-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>루디브리엄 <small>121곳</small></h2>
     <section class="street-group">
-      <h3 class="sub-title">루디브리엄 <small>68곳</small></h3>
+      <h3 class="sub-title">루디브리엄 <small>69곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="220000000" data-name="루디브리엄루디브리엄루디브리엄마을차원의거울토니슈피겔만카산드라가가듀이명예로운바위스피넬마르셀기부함달리어루니위험지역총알택시주인을기다리는늑대쿠커스코코패트리샤지니할리세피나나떠돌이연금술사메이플운영자" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/220000000.jpg" alt="" loading="lazy"><span><strong>루디브리엄</strong><span><b class="tag-town">마을</b> NPC 23명</span></span></a>
 <a class="mob-card map-card" href="221022300" data-name="에오스탑91층에오스탑루디브리엄루디브리엄트릭스터그린트릭스터" data-min="23" data-max="28"><img class="map-thumb" src="../images/map/thumb/221022300.jpg" alt="" loading="lazy"><span><strong>에오스탑 91층</strong><span>Lv.23~28 · 몬스터 2종</span><span class="mob-sub">트릭스터, 그린 트릭스터</span></span></a>
 <a class="mob-card map-card" href="221022900" data-name="에오스탑97층에오스탑루디브리엄루디브리엄트릭스터그린트릭스터" data-min="23" data-max="28"><img class="map-thumb" src="../images/map/thumb/221022900.jpg" alt="" loading="lazy"><span><strong>에오스탑 97층</strong><span>Lv.23~28 · 몬스터 2종</span><span class="mob-sub">트릭스터, 그린 트릭스터</span></span></a>
 <a class="mob-card map-card" href="221023000" data-name="에오스탑98층에오스탑루디브리엄루디브리엄트릭스터" data-min="23" data-max="23"><img class="map-thumb" src="../images/map/thumb/221023000.jpg" alt="" loading="lazy"><span><strong>에오스탑 98층</strong><span>Lv.23 · 몬스터 1종</span><span class="mob-sub">트릭스터</span></span></a>
@@ -482,8 +517,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">지구방위본부 <small>37곳</small></h3>
+      <h3 class="sub-title">지구방위본부 <small>38곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="221000000" data-name="지구방위본부지구방위본부루디브리엄마을병사케빈마에스터장군가가달리어기부함요원e루니코코쿠커스차원의거울부사관메딘의무병라이스요원m듀이메이플운영자카산드라" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/221000000.jpg" alt="" loading="lazy"><span><strong>지구방위본부</strong><span><b class="tag-town">마을</b> NPC 16명</span></span></a>
 <a class="mob-card map-card" href="221021900" data-name="에오스탑68층에오스탑지구방위본부루디브리엄트릭스터블록퍼스" data-min="23" data-max="35"><img class="map-thumb" src="../images/map/thumb/221021900.jpg" alt="" loading="lazy"><span><strong>에오스탑 68층</strong><span>Lv.23~35 · 몬스터 2종</span><span class="mob-sub">트릭스터, 블록퍼스</span></span></a>
 <a class="mob-card map-card" href="221022000" data-name="에오스탑69층에오스탑지구방위본부루디브리엄트릭스터블록퍼스" data-min="23" data-max="35"><img class="map-thumb" src="../images/map/thumb/221022000.jpg" alt="" loading="lazy"><span><strong>에오스탑 69층</strong><span>Lv.23~35 · 몬스터 2종</span><span class="mob-sub">트릭스터, 블록퍼스</span></span></a>
 <a class="mob-card map-card" href="221022100" data-name="에오스탑70층에오스탑지구방위본부루디브리엄트릭스터" data-min="23" data-max="23"><img class="map-thumb" src="../images/map/thumb/221022100.jpg" alt="" loading="lazy"><span><strong>에오스탑 70층</strong><span>Lv.23 · 몬스터 1종</span><span class="mob-sub">트릭스터</span></span></a>
@@ -524,8 +560,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">아랫마을 <small>13곳</small></h3>
+      <h3 class="sub-title">아랫마을 <small>14곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="222000000" data-name="아랫마을아랫마을루디브리엄마을노서방뺑덕어멈콩쥐칠성칠성이네볏짐제비햇님이심봉사카산드라가가기부함먹쇠달리어요원e루니쿠커스코코차원의거울돌쇠박첨지흥부놀부칠남칠남이네볏짐연이할머니" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/222000000.jpg" alt="" loading="lazy"><span><strong>아랫마을</strong><span><b class="tag-town">마을</b> NPC 25명</span></span></a>
 <a class="mob-card map-card" href="222010001" data-name="까막산기슭루더스호수아랫마을루디브리엄다크엑스텀프월묘호돌이" data-min="22" data-max="50"><img class="map-thumb" src="../images/map/thumb/222010001.jpg" alt="" loading="lazy"><span><strong>까막산 기슭</strong><span>Lv.22~50 · 몬스터 3종</span><span class="mob-sub">다크 엑스텀프, 월묘, 호돌이</span></span></a>
 <a class="mob-card map-card" href="222010000" data-name="까막산입구루더스호수아랫마을루디브리엄다크엑스텀프월묘" data-min="22" data-max="45"><img class="map-thumb" src="../images/map/thumb/222010000.jpg" alt="" loading="lazy"><span><strong>까막산 입구</strong><span>Lv.22~45 · 몬스터 2종</span><span class="mob-sub">다크 엑스텀프, 월묘</span></span></a>
 <a class="mob-card map-card" href="222010002" data-name="옹달샘루더스호수아랫마을루디브리엄다크엑스텀프월묘호돌이" data-min="22" data-max="50"><img class="map-thumb" src="../images/map/thumb/222010002.jpg" alt="" loading="lazy"><span><strong>옹달샘</strong><span>Lv.22~50 · 몬스터 3종</span><span class="mob-sub">다크 엑스텀프, 월묘, 호돌이</span></span></a>
@@ -542,11 +579,12 @@
       </div>
     </section>
   </section>
-<section class="continent-group" id="region-5" aria-labelledby="region-5-title">
-    <h2 class="continent-title" id="region-5-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>아쿠아로드 <small>22곳</small></h2>
+<section class="continent-group" id="region-6" aria-labelledby="region-6-title">
+    <h2 class="continent-title" id="region-6-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>아쿠아로드 <small>23곳</small></h2>
     <section class="street-group">
-      <h3 class="sub-title">아쿠아리움 <small>22곳</small></h3>
+      <h3 class="sub-title">아쿠아리움 <small>23곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="230000000" data-name="아쿠아리움아쿠아리움아쿠아로드마을돌고래듀이달리어기부함코코쿠커스차원의거울" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/230000000.jpg" alt="" loading="lazy"><span><strong>아쿠아리움</strong><span><b class="tag-town">마을</b> NPC 7명</span></span></a>
 <a class="mob-card map-card" href="230030100" data-name="버섯산호구릉아쿠아로드아쿠아리움아쿠아로드핀붐씨클크라피" data-min="22" data-max="24"><img class="map-thumb" src="../images/map/thumb/230030100.jpg" alt="" loading="lazy"><span><strong>버섯 산호 구릉</strong><span>Lv.22~24 · 몬스터 3종</span><span class="mob-sub">핀붐, 씨클, 크라피</span></span></a>
 <a class="mob-card map-card" href="230030200" data-name="뾰족한사각지대아쿠아로드아쿠아리움아쿠아로드핀붐씨클" data-min="22" data-max="23"><img class="map-thumb" src="../images/map/thumb/230030200.jpg" alt="" loading="lazy"><span><strong>뾰족한 사각지대</strong><span>Lv.22~23 · 몬스터 2종</span><span class="mob-sub">핀붐, 씨클</span></span></a>
 <a class="mob-card map-card" href="230030001" data-name="물고기쉼터히든스트리트아쿠아리움아쿠아로드씨클씨코" data-min="23" data-max="25"><img class="map-thumb" src="../images/map/thumb/230030001.jpg" alt="" loading="lazy"><span><strong>물고기 쉼터</strong><span>Lv.23~25 · 몬스터 2종</span><span class="mob-sub">씨클, 씨코</span></span></a>
@@ -572,11 +610,12 @@
       </div>
     </section>
   </section>
-<section class="continent-group" id="region-6" aria-labelledby="region-6-title">
-    <h2 class="continent-title" id="region-6-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>리프레 <small>48곳</small></h2>
+<section class="continent-group" id="region-7" aria-labelledby="region-7-title">
+    <h2 class="continent-title" id="region-7-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>리프레 <small>49곳</small></h2>
     <section class="street-group">
-      <h3 class="sub-title">리프레 <small>48곳</small></h3>
+      <h3 class="sub-title">리프레 <small>49곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="240000000" data-name="리프레리프레리프레마을촌장타타모메이플운영자스피넬카산드라가가위험지역총알택시기부함달리어요원e루니명예로운바위코코쿠커스차원의거울코스쿠무디모스맥스떠돌이연금술사듀이" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/240000000.jpg" alt="" loading="lazy"><span><strong>리프레</strong><span><b class="tag-town">마을</b> NPC 20명</span></span></a>
 <a class="mob-card map-card" href="240010000" data-name="리프레서쪽숲미나르숲리프레리프레레쉬다크레쉬" data-min="70" data-max="74"><img class="map-thumb" src="../images/map/thumb/240010000.jpg" alt="" loading="lazy"><span><strong>리프레 서쪽 숲</strong><span>Lv.70~74 · 몬스터 2종</span><span class="mob-sub">레쉬, 다크 레쉬</span></span></a>
 <a class="mob-card map-card" href="240010100" data-name="미나르숲서쪽경계미나르숲리프레리프레레쉬호브다크레쉬핀호브" data-min="70" data-max="76"><img class="map-thumb" src="../images/map/thumb/240010100.jpg" alt="" loading="lazy"><span><strong>미나르숲 서쪽 경계</strong><span>Lv.70~76 · 몬스터 4종</span><span class="mob-sub">레쉬, 호브, 다크 레쉬</span></span></a>
 <a class="mob-card map-card" href="240010101" data-name="털복숭이의숲히든스트리트리프레리프레레쉬다크레쉬" data-min="70" data-max="74"><img class="map-thumb" src="../images/map/thumb/240010101.jpg" alt="" loading="lazy"><span><strong>털복숭이의 숲</strong><span>Lv.70~74 · 몬스터 2종</span><span class="mob-sub">레쉬, 다크 레쉬</span></span></a>
@@ -628,11 +667,12 @@
       </div>
     </section>
   </section>
-<section class="continent-group" id="region-7" aria-labelledby="region-7-title">
-    <h2 class="continent-title" id="region-7-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>무릉도원 <small>31곳</small></h2>
+<section class="continent-group" id="region-8" aria-labelledby="region-8-title">
+    <h2 class="continent-title" id="region-8-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>무릉도원 <small>33곳</small></h2>
     <section class="street-group">
-      <h3 class="sub-title">무릉 <small>20곳</small></h3>
+      <h3 class="sub-title">무릉 <small>21곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="250000000" data-name="무릉무릉무릉도원마을판서방공공카산드라메이플운영자가가달리어기부함요원e루니진진코코비디원쿠커스차원의거울라야나란파타노마도의진스피넬듀이" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/250000000.jpg" alt="" loading="lazy"><span><strong>무릉</strong><span><b class="tag-town">마을</b> NPC 21명</span></span></a>
 <a class="mob-card map-card" href="250010100" data-name="하늘숲오솔길무릉도원무릉무릉도원별다람쥐호저흑저" data-min="40" data-max="43"><img class="map-thumb" src="../images/map/thumb/250010100.jpg" alt="" loading="lazy"><span><strong>하늘 숲 오솔길</strong><span>Lv.40~43 · 몬스터 3종</span><span class="mob-sub">별다람쥐, 호저, 흑저</span></span></a>
 <a class="mob-card map-card" href="250010000" data-name="하늘숲입구무릉도원무릉무릉도원별다람쥐호저" data-min="40" data-max="41"><img class="map-thumb" src="../images/map/thumb/250010000.jpg" alt="" loading="lazy"><span><strong>하늘 숲 입구</strong><span>Lv.40~41 · 몬스터 2종</span><span class="mob-sub">별다람쥐, 호저</span></span></a>
 <a class="mob-card map-card" href="250010200" data-name="하늘숲깊은곳무릉도원무릉무릉도원호저흑저" data-min="41" data-max="43"><img class="map-thumb" src="../images/map/thumb/250010200.jpg" alt="" loading="lazy"><span><strong>하늘 숲 깊은 곳</strong><span>Lv.41~43 · 몬스터 2종</span><span class="mob-sub">호저, 흑저</span></span></a>
@@ -656,8 +696,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">백초마을 <small>11곳</small></h3>
+      <h3 class="sub-title">백초마을 <small>12곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="251000000" data-name="백초마을백초마을무릉도원마을황선장구영감가가기부함달리어요원e루니차원의거울무탄소원기란밍메이플운영자학공서방카산드라" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/251000000.jpg" alt="" loading="lazy"><span><strong>백초마을</strong><span><b class="tag-town">마을</b> NPC 15명</span></span></a>
 <a class="mob-card map-card" href="251010100" data-name="50년된약초밭무릉도원백초마을무릉도원단지삼단지" data-min="47" data-max="48"><img class="map-thumb" src="../images/map/thumb/251010100.jpg" alt="" loading="lazy"><span><strong>50년 된 약초밭</strong><span>Lv.47~48 · 몬스터 2종</span><span class="mob-sub">단지, 삼단지</span></span></a>
 <a class="mob-card map-card" href="251010101" data-name="60년된약초밭히든스트리트백초마을무릉도원삼단지도라지" data-min="48" data-max="53"><img class="map-thumb" src="../images/map/thumb/251010101.jpg" alt="" loading="lazy"><span><strong>60년 된 약초밭</strong><span>Lv.48~53 · 몬스터 2종</span><span class="mob-sub">삼단지, 도라지</span></span></a>
 <a class="mob-card map-card" href="251010102" data-name="80년된약초밭히든스트리트백초마을무릉도원삼단지도라지" data-min="48" data-max="53"><img class="map-thumb" src="../images/map/thumb/251010102.jpg" alt="" loading="lazy"><span><strong>80년 된 약초밭</strong><span>Lv.48~53 · 몬스터 2종</span><span class="mob-sub">삼단지, 도라지</span></span></a>
@@ -672,11 +713,12 @@
       </div>
     </section>
   </section>
-<section class="continent-group" id="region-8" aria-labelledby="region-8-title">
-    <h2 class="continent-title" id="region-8-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>니할 사막 <small>39곳</small></h2>
+<section class="continent-group" id="region-9" aria-labelledby="region-9-title">
+    <h2 class="continent-title" id="region-9-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>니할 사막 <small>41곳</small></h2>
     <section class="street-group">
-      <h3 class="sub-title">아리안트 <small>18곳</small></h3>
+      <h3 class="sub-title">아리안트 <small>19곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="260000000" data-name="아리안트아리안트니할사막마을차원의거울듀이알딘스피넬메이플운영자카산드라가가기부함달리어요원e아흐마드루니쿠커스코코자이드야스민사가티샤티마즈라라일라바드르" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/260000000.jpg" alt="" loading="lazy"><span><strong>아리안트</strong><span><b class="tag-town">마을</b> NPC 21명</span></span></a>
 <a class="mob-card map-card" href="260010700" data-name="아리안트동문밖버닝로드아리안트니할사막흰모래토끼갈색모래토끼" data-min="20" data-max="21"><img class="map-thumb" src="../images/map/thumb/260010700.jpg" alt="" loading="lazy"><span><strong>아리안트 동문 밖</strong><span>Lv.20~21 · 몬스터 2종</span><span class="mob-sub">흰 모래토끼, 갈색 모래토끼</span></span></a>
 <a class="mob-card map-card" href="260010600" data-name="유랑단의텐트버닝로드아리안트니할사막흰모래토끼갈색모래토끼" data-min="20" data-max="21"><img class="map-thumb" src="../images/map/thumb/260010600.jpg" alt="" loading="lazy"><span><strong>유랑단의 텐트</strong><span>Lv.20~21 · 몬스터 2종</span><span class="mob-sub">흰 모래토끼, 갈색 모래토끼</span></span></a>
 <a class="mob-card map-card" href="260010000" data-name="아리안트서문밖버닝로드아리안트니할사막주니어카투스카투스" data-min="22" data-max="25"><img class="map-thumb" src="../images/map/thumb/260010000.jpg" alt="" loading="lazy"><span><strong>아리안트 서문 밖</strong><span>Lv.22~25 · 몬스터 2종</span><span class="mob-sub">주니어 카투스, 카투스</span></span></a>
@@ -698,8 +740,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">마가티아 <small>21곳</small></h3>
+      <h3 class="sub-title">마가티아 <small>22곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="261000000" data-name="마가티아마가티아니할사막마을헤라로슨카산드라기부함달리어요원e루니폴쿠커스코코차원의거울제리휴머노이드a키니필리아브로커한메이플운영자가가듀이" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/261000000.jpg" alt="" loading="lazy"><span><strong>마가티아</strong><span><b class="tag-town">마을</b> NPC 19명</span></span></a>
 <a class="mob-card map-card" href="260020630" data-name="모래바람부는언덕미니던전마가티아니할사막모래두더지" data-min="24" data-max="24"><img class="map-thumb" src="../images/map/thumb/260020630.jpg" alt="" loading="lazy"><span><strong>모래바람 부는 언덕</strong><span>Lv.24 · 몬스터 1종</span><span class="mob-sub">모래 두더지</span></span></a>
 <a class="mob-card map-card" href="260020600" data-name="사헬지대2선셋로드마가티아니할사막모래두더지스콜피언" data-min="24" data-max="29"><img class="map-thumb" src="../images/map/thumb/260020600.jpg" alt="" loading="lazy"><span><strong>사헬지대2</strong><span>Lv.24~29 · 몬스터 2종</span><span class="mob-sub">모래 두더지, 스콜피언</span></span></a>
 <a class="mob-card map-card" href="260020500" data-name="사헬지대3선셋로드마가티아니할사막모래두더지" data-min="24" data-max="24"><img class="map-thumb" src="../images/map/thumb/260020500.jpg" alt="" loading="lazy"><span><strong>사헬지대3</strong><span>Lv.24 · 몬스터 1종</span><span class="mob-sub">모래 두더지</span></span></a>
@@ -724,11 +767,13 @@
       </div>
     </section>
   </section>
-<section class="continent-group" id="region-9" aria-labelledby="region-9-title">
-    <h2 class="continent-title" id="region-9-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>시간의 신전 <small>15곳</small></h2>
+<section class="continent-group" id="region-10" aria-labelledby="region-10-title">
+    <h2 class="continent-title" id="region-10-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>시간의 신전 <small>17곳</small></h2>
     <section class="street-group">
-      <h3 class="sub-title">시간의 신전 <small>15곳</small></h3>
+      <h3 class="sub-title">시간의 신전 <small>17곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="270000000" data-name="세개의문시간의신전시간의신전마을신전관리인" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/270000000.jpg" alt="" loading="lazy"><span><strong>세 개의 문</strong><span><b class="tag-town">마을</b> NPC 1명</span></span></a>
+<a class="mob-card map-card is-town" href="270000100" data-name="시간의신전시간의신전시간의신전마을" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/270000100.jpg" alt="" loading="lazy"><span><strong>시간의 신전</strong><span><b class="tag-town">마을</b></span></span></a>
 <a class="mob-card map-card" href="270030100" data-name="망각의길1타임로드시간의신전시간의신전시간의눈망각의사제" data-min="80" data-max="121"><img class="map-thumb" src="../images/map/thumb/270030100.jpg" alt="" loading="lazy"><span><strong>망각의 길1</strong><span>Lv.80~121 · 몬스터 2종</span><span class="mob-sub">시간의 눈, 망각의 사제</span></span></a>
 <a class="mob-card map-card" href="270030200" data-name="망각의길2타임로드시간의신전시간의신전시간의눈망각의신관" data-min="80" data-max="124"><img class="map-thumb" src="../images/map/thumb/270030200.jpg" alt="" loading="lazy"><span><strong>망각의 길2</strong><span>Lv.80~124 · 몬스터 2종</span><span class="mob-sub">시간의 눈, 망각의 신관</span></span></a>
 <a class="mob-card map-card" href="270030300" data-name="망각의길3타임로드시간의신전시간의신전시간의눈망각의수호병" data-min="80" data-max="128"><img class="map-thumb" src="../images/map/thumb/270030300.jpg" alt="" loading="lazy"><span><strong>망각의 길3</strong><span>Lv.80~128 · 몬스터 2종</span><span class="mob-sub">시간의 눈, 망각의 수호병</span></span></a>
@@ -747,8 +792,8 @@
       </div>
     </section>
   </section>
-<section class="continent-group" id="region-10" aria-labelledby="region-10-title">
-    <h2 class="continent-title" id="region-10-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>엘린 숲 <small>9곳</small></h2>
+<section class="continent-group" id="region-11" aria-labelledby="region-11-title">
+    <h2 class="continent-title" id="region-11-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>엘린 숲 <small>9곳</small></h2>
     <section class="street-group">
       <h3 class="sub-title">엘린 숲 <small>9곳</small></h3>
       <div class="dex-grid">
@@ -764,11 +809,21 @@
       </div>
     </section>
   </section>
-<section class="continent-group" id="region-11" aria-labelledby="region-11-title">
-    <h2 class="continent-title" id="region-11-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>해외 지역 <small>94곳</small></h2>
+<section class="continent-group" id="region-12" aria-labelledby="region-12-title">
+    <h2 class="continent-title" id="region-12-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>에델슈타인 <small>1곳</small></h2>
     <section class="street-group">
-      <h3 class="sub-title">일본 버섯신사 <small>12곳</small></h3>
+      <h3 class="sub-title">에델슈타인 <small>1곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="310000000" data-name="에델슈타인에델슈타인에델슈타인마을택시메이플운영자알베르트안소니준울리카수아르에밀리메이플운영자바반레오나르와니카산드라비비메이플운영자쁘띠자쿰듀이트렁키본야스키메이플운영자까렐위닝택시에델슈타인게시판보톡스웬델린정체불명의마법사차원의거울아이린페르디린몬스터파크셔틀게렉터클라라빅헤드워드플라스틱로이네벨미샤제크일렉스블랙빈미스터뉴네임용잡이ms.어카운트부관mr.판쵸헨리테벨지그문트체키" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/310000000.jpg" alt="" loading="lazy"><span><strong>에델슈타인</strong><span><b class="tag-town">마을</b> NPC 48명</span></span></a>
+      </div>
+    </section>
+  </section>
+<section class="continent-group" id="region-13" aria-labelledby="region-13-title">
+    <h2 class="continent-title" id="region-13-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>해외 지역 <small>107곳</small></h2>
+    <section class="street-group">
+      <h3 class="sub-title">일본 버섯신사 <small>13곳</small></h3>
+      <div class="dex-grid">
+<a class="mob-card map-card is-town" href="800000000" data-name="버섯신사일본버섯신사해외지역마을쟈켄타루루니코코쿠커스차원의거울브론즈진쟈로보키노코노코바스피넬카산드라" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/800000000.jpg" alt="" loading="lazy"><span><strong>버섯신사</strong><span><b class="tag-town">마을</b> NPC 13명</span></span></a>
 <a class="mob-card map-card" href="800010000" data-name="버섯의숲일본일본버섯신사해외지역주황버섯초록버섯파란버섯" data-min="8" data-max="20"><img class="map-thumb" src="../images/map/thumb/800010000.jpg" alt="" loading="lazy"><span><strong>버섯의 숲</strong><span>Lv.8~20 · 몬스터 3종</span><span class="mob-sub">주황버섯, 초록버섯, 파란버섯</span></span></a>
 <a class="mob-card map-card" href="800020100" data-name="묘지로가는길일본일본버섯신사해외지역좀비버섯까마귀다크스톤골렘" data-min="24" data-max="58"><img class="map-thumb" src="../images/map/thumb/800020100.jpg" alt="" loading="lazy"><span><strong>묘지로 가는 길</strong><span>Lv.24~58 · 몬스터 3종</span><span class="mob-sub">좀비버섯, 까마귀, 다크 스톤골렘</span></span></a>
 <a class="mob-card map-card" href="800020000" data-name="까마귀의숲1일본일본버섯신사해외지역까마귀" data-min="25" data-max="25"><img class="map-thumb" src="../images/map/thumb/800020000.jpg" alt="" loading="lazy"><span><strong>까마귀의 숲1</strong><span>Lv.25 · 몬스터 1종</span><span class="mob-sub">까마귀</span></span></a>
@@ -784,8 +839,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">일본 카에데성 <small>17곳</small></h3>
+      <h3 class="sub-title">일본 카에데성 <small>18곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="800040000" data-name="카에데성일본카에데성해외지역마을스트링없음" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/800040000.jpg" alt="" loading="lazy"><span><strong>카에데 성</strong><span><b class="tag-town">마을</b> NPC 1명</span></span></a>
 <a class="mob-card map-card" href="800040200" data-name="성복도1castlecorridor일본일본카에데성해외지역하급닌자" data-min="25" data-max="25"><img class="map-thumb" src="../images/map/thumb/800040200.jpg" alt="" loading="lazy"><span><strong>성 복도 1</strong><span>Lv.25 · 몬스터 1종</span><span class="mob-sub">하급 닌자</span></span></a>
 <a class="mob-card map-card" href="800040201" data-name="성복도2castlecorridor일본일본카에데성해외지역하급닌자아시가루" data-min="25" data-max="30"><img class="map-thumb" src="../images/map/thumb/800040201.jpg" alt="" loading="lazy"><span><strong>성 복도 2</strong><span>Lv.25~30 · 몬스터 2종</span><span class="mob-sub">하급 닌자, 아시가루</span></span></a>
 <a class="mob-card map-card" href="800040204" data-name="성복도5castlecorridor일본일본카에데성해외지역하급닌자중급닌자상급닌자" data-min="25" data-max="80"><img class="map-thumb" src="../images/map/thumb/800040204.jpg" alt="" loading="lazy"><span><strong>성 복도 5</strong><span>Lv.25~80 · 몬스터 3종</span><span class="mob-sub">하급 닌자, 중급 닌자, 상급 닌자</span></span></a>
@@ -806,8 +862,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">일본 쇼와마을 <small>10곳</small></h3>
+      <h3 class="sub-title">일본 쇼와마을 <small>11곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="801000000" data-name="쇼와마을일본쇼와마을해외지역마을히카리쇼와npc쿠커스코코쇼와npc쇼와npc쇼와npc쇼와npc쇼와npc쇼와npc쇼와npc메이플운영자" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/801000000.jpg" alt="" loading="lazy"><span><strong>쇼와 마을</strong><span><b class="tag-town">마을</b> NPC 12명</span></span></a>
 <a class="mob-card map-card" href="801010000" data-name="쇼와거리1showastreet1일본일본쇼와마을해외지역주니어불독수하a수하b" data-min="43" data-max="47"><img class="map-thumb" src="../images/map/thumb/801010000.jpg" alt="" loading="lazy"><span><strong>쇼와 거리 1</strong><span>Lv.43~47 · 몬스터 3종</span><span class="mob-sub">주니어 불독, 수하A, 수하B</span></span></a>
 <a class="mob-card map-card" href="801020000" data-name="쇼와거리2showastreet2일본일본쇼와마을해외지역수하a수하b수하c간부a간부b" data-min="45" data-max="64"><img class="map-thumb" src="../images/map/thumb/801020000.jpg" alt="" loading="lazy"><span><strong>쇼와 거리 2</strong><span>Lv.45~64 · 몬스터 5종</span><span class="mob-sub">수하A, 수하B, 수하C</span></span></a>
 <a class="mob-card map-card" href="801030000" data-name="쇼와거리3showastreet3일본일본쇼와마을해외지역수하a수하b수하c간부a간부b두목" data-min="45" data-max="95"><img class="map-thumb" src="../images/map/thumb/801030000.jpg" alt="" loading="lazy"><span><strong>쇼와 거리 3</strong><span>Lv.45~95 · 몬스터 6종</span><span class="mob-sub">수하A, 수하B, 수하C</span></span></a>
@@ -818,6 +875,24 @@
 <a class="mob-card map-card" href="801040003" data-name="응접실parlor일본일본쇼와마을해외지역간부a간부b수하d여두목" data-min="62" data-max="130"><img class="map-thumb" src="../images/map/thumb/801040003.jpg" alt="" loading="lazy"><span><strong>응접실</strong><span>Lv.62~130 · 몬스터 4종</span><span class="mob-sub">간부A, 간부B, 수하D</span></span></a>
 <a class="mob-card map-card" href="801040001" data-name="주차장parkinglot일본일본쇼와마을해외지역간부b수하d" data-min="64" data-max="72"><img class="map-thumb" src="../images/map/thumb/801040001.jpg" alt="" loading="lazy"><span><strong>주차장</strong><span>Lv.64~72 · 몬스터 2종</span><span class="mob-sub">간부B, 수하D</span></span></a>
 <a class="mob-card map-card" href="801040004" data-name="무기고armory일본일본쇼와마을해외지역파이어독" data-min="90" data-max="90"><img class="map-thumb" src="../images/map/thumb/801040004.jpg" alt="" loading="lazy"><span><strong>무기고</strong><span>Lv.90 · 몬스터 1종</span><span class="mob-sub">파이어독</span></span></a>
+      </div>
+    </section>
+    <section class="street-group">
+      <h3 class="sub-title">대만 서문정 <small>1곳</small></h3>
+      <div class="dex-grid">
+<a class="mob-card map-card is-town" href="740000000" data-name="서문정대만서문정해외지역마을" data-min="1" data-max="999"><span class="map-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg></span><span><strong>서문정</strong><span><b class="tag-town">마을</b></span></span></a>
+      </div>
+    </section>
+    <section class="street-group">
+      <h3 class="sub-title">대만 야시장 <small>1곳</small></h3>
+      <div class="dex-grid">
+<a class="mob-card map-card is-town" href="741000000" data-name="야시장대만야시장해외지역마을" data-min="1" data-max="999"><span class="map-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg></span><span><strong>야시장</strong><span><b class="tag-town">마을</b></span></span></a>
+      </div>
+    </section>
+    <section class="street-group">
+      <h3 class="sub-title">태국 <small>1곳</small></h3>
+      <div class="dex-grid">
+<a class="mob-card map-card is-town" href="500000000" data-name="플로팅마켓태국해외지역마을" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/500000000.jpg" alt="" loading="lazy"><span><strong>플로팅 마켓</strong><span><b class="tag-town">마을</b></span></span></a>
       </div>
     </section>
     <section class="street-group">
@@ -852,8 +927,10 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">말레이시아 <small>11곳</small></h3>
+      <h3 class="sub-title">말레이시아 <small>13곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="551000000" data-name="캄풍마을말레이시아해외지역마을쟝가가" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/551000000.jpg" alt="" loading="lazy"><span><strong>캄풍 마을</strong><span><b class="tag-town">마을</b> NPC 2명</span></span></a>
+<a class="mob-card map-card is-town" href="550000000" data-name="트렌드존메트로폴리스말레이시아해외지역마을루니코코쿠커스듀이가가카산드라메이플운영자" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/550000000.jpg" alt="" loading="lazy"><span><strong>트렌드 존 메트로폴리스</strong><span><b class="tag-town">마을</b> NPC 7명</span></span></a>
 <a class="mob-card map-card" href="550000100" data-name="진흙강둑외곽outskirtsofmuddybanks말레이시아말레이시아해외지역클로로트랩이모슬라임" data-min="45" data-max="47"><img class="map-thumb" src="../images/map/thumb/550000100.jpg" alt="" loading="lazy"><span><strong>진흙 강둑 외곽</strong><span>Lv.45~47 · 몬스터 2종</span><span class="mob-sub">클로로트랩, 이모 슬라임</span></span></a>
 <a class="mob-card map-card" href="550000200" data-name="진흙강둑1muddybanks1말레이시아말레이시아해외지역다크피션올리올리" data-min="52" data-max="56"><img class="map-thumb" src="../images/map/thumb/550000200.jpg" alt="" loading="lazy"><span><strong>진흙 강둑 1</strong><span>Lv.52~56 · 몬스터 2종</span><span class="mob-sub">다크 피션, 올리 올리</span></span></a>
 <a class="mob-card map-card" href="551000200" data-name="히비스커스로드2hibiscusroad2말레이시아말레이시아해외지역라타툴라겁쟁이스칼리온" data-min="59" data-max="59"><img class="map-thumb" src="../images/map/thumb/551000200.jpg" alt="" loading="lazy"><span><strong>히비스커스 로드 2</strong><span>Lv.59 · 몬스터 2종</span><span class="mob-sub">라타툴라, 겁쟁이 스칼리온</span></span></a>
@@ -868,8 +945,15 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">뉴리프시티 <small>12곳</small></h3>
+      <h3 class="sub-title">중국 <small>1곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="701000000" data-name="상해와이탄중국해외지역마을" data-min="1" data-max="999"><span class="map-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg></span><span><strong>상해와이탄</strong><span><b class="tag-town">마을</b></span></span></a>
+      </div>
+    </section>
+    <section class="street-group">
+      <h3 class="sub-title">뉴리프시티 <small>13곳</small></h3>
+      <div class="dex-grid">
+<a class="mob-card map-card is-town" href="600000000" data-name="뉴리프시티뉴리프시티해외지역마을카산드라루니쿠커스코코차원의거울" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/600000000.jpg" alt="" loading="lazy"><span><strong>뉴 리프 시티</strong><span><b class="tag-town">마을</b> NPC 5명</span></span></a>
 <a class="mob-card map-card" href="600010000" data-name="도시지하urbanunderground배드랜드뉴리프시티해외지역길거리슬라임도심가버섯" data-min="19" data-max="21"><img class="map-thumb" src="../images/map/thumb/600010000.jpg" alt="" loading="lazy"><span><strong>도시 지하</strong><span>Lv.19~21 · 몬스터 2종</span><span class="mob-sub">길거리 슬라임, 도심가 버섯</span></span></a>
 <a class="mob-card map-card" href="600010100" data-name="정글공터jungleclearing마스테리아뉴리프시티해외지역길거리슬라임도심가버섯부머" data-min="19" data-max="27"><img class="map-thumb" src="../images/map/thumb/600010100.jpg" alt="" loading="lazy"><span><strong>정글 공터</strong><span>Lv.19~27 · 몬스터 3종</span><span class="mob-sub">길거리 슬라임, 도심가 버섯, 부머</span></span></a>
 <a class="mob-card map-card" href="600010200" data-name="크라키안정글분지krakianjunglebasin마스테리아뉴리프시티해외지역길거리슬라임마이티메이플이터일렉트로펀트" data-min="19" data-max="41"><img class="map-thumb" src="../images/map/thumb/600010200.jpg" alt="" loading="lazy"><span><strong>크라키안 정글 분지</strong><span>Lv.19~41 · 몬스터 3종</span><span class="mob-sub">길거리 슬라임, 마이티 메이플 이터, 일렉트로펀트</span></span></a>
@@ -885,8 +969,9 @@
       </div>
     </section>
     <section class="street-group">
-      <h3 class="sub-title">팬텀포레스트 <small>11곳</small></h3>
+      <h3 class="sub-title">팬텀포레스트 <small>12곳</small></h3>
       <div class="dex-grid">
+<a class="mob-card map-card is-town" href="682000000" data-name="헌티드하우스팬텀포레스트해외지역마을" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/682000000.jpg" alt="" loading="lazy"><span><strong>헌티드하우스</strong><span><b class="tag-town">마을</b></span></span></a>
 <a class="mob-card map-card" href="610010000" data-name="굽은나무benttree팬텀포레스트팬텀포레스트해외지역주니어레이스레프러콘팬텀트리" data-min="35" data-max="50"><img class="map-thumb" src="../images/map/thumb/610010000.jpg" alt="" loading="lazy"><span><strong>굽은 나무</strong><span>Lv.35~50 · 몬스터 3종</span><span class="mob-sub">주니어 레이스, 레프러콘, 팬텀 트리</span></span></a>
 <a class="mob-card map-card" href="610010012" data-name="깨어나는악evilrising팬텀포레스트팬텀포레스트해외지역주니어레이스엘더레이스빅풋" data-min="35" data-max="110"><img class="map-thumb" src="../images/map/thumb/610010012.jpg" alt="" loading="lazy"><span><strong>깨어나는 악</strong><span>Lv.35~110 · 몬스터 3종</span><span class="mob-sub">주니어 레이스, 엘더레이스, 빅풋</span></span></a>
 <a class="mob-card map-card" href="610010002" data-name="늪지대swampbog팬텀포레스트팬텀포레스트해외지역주니어레이스레프러콘팬텀트리" data-min="35" data-max="50"><img class="map-thumb" src="../images/map/thumb/610010002.jpg" alt="" loading="lazy"><span><strong>늪지대</strong><span>Lv.35~50 · 몬스터 3종</span><span class="mob-sub">주니어 레이스, 레프러콘, 팬텀 트리</span></span></a>
@@ -900,9 +985,21 @@
 <a class="mob-card map-card" href="610010003" data-name="팬텀로드phantomroad팬텀포레스트팬텀포레스트해외지역팬텀트리윈드레이더엘더레이스나이트섀도우" data-min="50" data-max="100"><img class="map-thumb" src="../images/map/thumb/610010003.jpg" alt="" loading="lazy"><span><strong>팬텀 로드</strong><span>Lv.50~100 · 몬스터 4종</span><span class="mob-sub">팬텀 트리, 윈드레이더, 엘더레이스</span></span></a>
       </div>
     </section>
+    <section class="street-group">
+      <h3 class="sub-title">아모리아 <small>1곳</small></h3>
+      <div class="dex-grid">
+<a class="mob-card map-card is-town" href="680000000" data-name="웨딩빌리지아모리아해외지역마을알레그로르베르토4세벤안젤리크게리와샤티마슈만스피넬마가렛수녀님문월하토마스클라랜스수녀님필라제이콥" data-min="1" data-max="999"><img class="map-thumb" src="../images/map/thumb/680000000.jpg" alt="" loading="lazy"><span><strong>웨딩빌리지</strong><span><b class="tag-town">마을</b> NPC 13명</span></span></a>
+      </div>
+    </section>
+    <section class="street-group">
+      <h3 class="sub-title">일본 카무나 <small>1곳</small></h3>
+      <div class="dex-grid">
+<a class="mob-card map-card is-town" href="802000101" data-name="카무나일본카무나해외지역마을" data-min="1" data-max="999"><span class="map-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg></span><span><strong>카무나</strong><span><b class="tag-town">마을</b></span></span></a>
+      </div>
+    </section>
   </section>
-<section class="continent-group" id="region-12" aria-labelledby="region-12-title">
-    <h2 class="continent-title" id="region-12-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>파티퀘스트·특수 지역 <small>34곳</small></h2>
+<section class="continent-group" id="region-14" aria-labelledby="region-14-title">
+    <h2 class="continent-title" id="region-14-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>파티퀘스트·특수 지역 <small>34곳</small></h2>
     <section class="street-group">
       <h3 class="sub-title">노틸러스 <small>1곳</small></h3>
       <div class="dex-grid">
@@ -993,8 +1090,8 @@
       </div>
     </section>
   </section>
-<section class="continent-group" id="region-13" aria-labelledby="region-13-title">
-    <h2 class="continent-title" id="region-13-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>기타 <small>14곳</small></h2>
+<section class="continent-group" id="region-15" aria-labelledby="region-15-title">
+    <h2 class="continent-title" id="region-15-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>기타 <small>14곳</small></h2>
     <section class="street-group">
       <h3 class="sub-title">PC방 (프리미엄 로드) <small>14곳</small></h3>
       <div class="dex-grid">

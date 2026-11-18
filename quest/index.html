@@ -1,0 +1,1062 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script>(function(){try{var t=localStorage.getItem("maple-theme");document.documentElement.dataset.theme=(t==="light"||t==="dark")?t:("dark")}catch(e){document.documentElement.dataset.theme="dark"}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>돈 되는 주문서 퀘스트 정리 | 단풍수첩</title>
+<meta name="description" content="메이플랜드에서 주문서를 주는 퀘스트 29묶음을 지역별로 정리했어요. 재료값과 보상 시세로 계산한 손익, 추천·고려, 동선과 NPC 위치.">
+<meta property="og:site_name" content="단풍수첩">
+<meta property="og:title" content="돈 되는 주문서 퀘스트 정리 | 단풍수첩">
+<meta property="og:description" content="메이플랜드에서 주문서를 주는 퀘스트 29묶음을 지역별로 정리했어요. 재료값과 보상 시세로 계산한 손익, 추천·고려, 동선과 NPC 위치.">
+<link rel="canonical" href="https://danpungnote.com/quest/">
+<meta property="og:url" content="https://danpungnote.com/quest/">
+<meta property="og:image" content="https://danpungnote.com/images/quest/og-quest.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F3F5FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1626" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=2">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css?v=bfe5dc02">
+<script src="../assets/search.js?v=f9609323" defer></script>
+<script src="../assets/sprite.js?v=f9609323" defer></script>
+<script src="../assets/nav.js?v=f9609323" defer></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5994680292902637" crossorigin="anonymous"></script>
+<!-- page: quest/index.html -->
+<link rel="stylesheet" href="../assets/quest.css?v=c23859b5">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="leaf" viewBox="0 0 64 64"><path d="M32 3l6 14 8-6-1 12 13-2-6 10 8 4-15 8 3 11-13-4-3 11-3-11-13 4 3-11L4 35l8-4-6-10 13 2-1-12 8 6z"/></symbol></svg>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="../" aria-label="단풍수첩 처음으로">
+      <img class="brand-logo" src="../brand/logo.svg" alt="" width="42" height="42">
+      <span class="brand-text"><span class="brand-name"><em>단풍</em>수첩</span><span class="brand-sub">메이플랜드 모험 수첩</span></span>
+    </a>
+    <nav class="main-nav" aria-label="주 메뉴">
+      <div class="nav-menu">
+        <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="calcMenu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2m3 0h2M8 15h2m3 0h2"/></svg>계산기<svg class="icon nav-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav-pop" id="calcMenu" hidden>
+          <a href="../hit/">명중 계산기</a>
+          <a href="../monpa/">몬파·주차 계산기</a>
+          <a href="../stat/">효율 계산기</a>
+        </div>
+      </div>
+      <a href="../mob/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg>도감</a>
+      <a href="../item/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>아이템</a>
+      <a href="../map/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg>맵</a>
+      <a href="../quest/" aria-current="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h11a2 2 0 0 1 2 2v1h-4M7 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V7M7 4a2 2 0 0 1 2 2v1M9 11h6M9 15h4"/></svg>퀘스트</a>
+    </nav>
+    <button type="button" class="search-open" id="searchOpen" aria-label="통합 검색 (단축키 /)" aria-haspopup="dialog"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>검색</span><kbd>/</kbd></button>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="다크 모드로 전환" title="낮/밤 바꾸기">
+      <svg class="icon moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      <svg class="icon sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="container page-main quest-page">
+  <nav class="breadcrumb" aria-label="현재 위치"><a href="../">홈</a><span aria-hidden="true">›</span><span>주문서 퀘스트</span></nav>
+  <div class="section-head">
+    <div>
+      <span class="section-eyebrow"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>퀘스트</span>
+      <h1 class="page-title">돈 되는 주문서 퀘스트</h1>
+      <p>메이플랜드에서 주문서를 주는 퀘스트를 지역별로 정리했어요. 재료를 경매장에서 사서 깨도 남는지, 얼마나 남는지 계산했어요.</p>
+    </div>
+    <span class="section-pill">11월 14일 새벽 2시 경매장 시세</span>
+  </div>
+
+  <section class="q-sums" aria-label="합계">
+    <div class="card q-sum"><div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3>추천만 <small>22개</small></h3></div><p class="q-sum-k">다 사면 · 보통 <small>재료 약 470.5만메소</small></p><p class="q-sum-mid pos">+2,214.9만<small>메소</small></p><p class="q-sum-range"><span>제일 안 좋게 +1,993만</span> <span>제일 좋게 +4,346.5만</span></p><p class="q-sum-self">직접 모으면 <b>+2,675.9만</b> <span>(+2,454만 ~ +4,807.5만)</span></p></div>
+    <div class="card q-sum"><div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3>추천 + 고려 <small>29개</small></h3></div><p class="q-sum-k">다 사면 · 보통 <small>재료 약 766.5만메소</small></p><p class="q-sum-mid pos">+2,729.7만<small>메소</small></p><p class="q-sum-range"><span>제일 안 좋게 +2,006.4만</span> <span>제일 좋게 +7,391.9만</span></p><p class="q-sum-self">직접 모으면 <b>+3,486.7만</b> <span>(+2,763.4만 ~ +8,148.9만)</span></p></div>
+    <div class="card q-sum q-sum-party"><div class="win-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg><h3>파티 퀘스트 <small>선택 · 따로</small></h3></div><p class="q-sum-k">세 곳 다 하면 · 보통</p><p class="q-sum-mid pos">+489.6만<small>메소</small></p><p class="q-sum-range"><span>제일 안 좋게 +414.4만</span> <span>제일 좋게 +1,059.5만</span></p><p class="q-sum-self"><a href="#party">파티 퀘스트 보기 ↓</a></p></div>
+  </section>
+
+  <details class="card q-notice">
+    <summary><b>먼저 읽어 주세요</b> <span>시세 기준 11월 14일 새벽 2시 경매장 시세 · 손익 계산 방법 · 추천/고려 뜻</span></summary>
+    <ul>
+      <li><b>시세 기준</b> 11월 14일 새벽 2시 경매장 시세. 시세는 계속 바뀌니 참고용으로 봐 주세요.</li>
+      <li><b>손익</b>은 "보상 시세 − 재료값"이에요. 기본은 <b>재료를 경매장에서 다 샀을 때</b>, "직접 모으면"은 기타템을 사냥으로 모으고 포션 같은 상점 물건과 메소만 낸다고 본 값이에요.</li>
+      <li>보상이 랜덤인 퀘스트는 <b>제일 안 좋게 / 보통 / 제일 좋게</b> 세 숫자로 적었어요. 보통은 나올 수 있는 보상 중 가운데 가격이 나왔을 때예요. 실제 확률은 알 수 없어요.</li>
+      <li>직업별 무기 주문서는 직업마다 값이 달라서 5직업 평균으로 계산했어요.</li>
+      <li><b class="q-label is-rec">추천</b> 대부분 남는 퀘스트. <b class="q-label is-con">고려</b> 시간이 오래 걸리거나 보상이 랜덤이라 도박성이 강한 퀘스트예요.</li>
+    </ul>
+  </details>
+
+  <section class="card q-video">
+    <a class="q-video-thumb" href="https://www.youtube.com/watch?v=SthFupti0O8" target="_blank" rel="noopener" aria-label="유튜브에서 영상 보기"><img src="../images/quest/video-thumb.webp" alt="" width="320" height="180" loading="lazy"><span class="q-play" aria-hidden="true">▶</span></a>
+    <div class="q-video-body">
+      <h2>영상으로 보기</h2>
+      <p>이 페이지와 같은 내용을 유튜브 영상으로 정리했어요. 챕터를 누르면 그 부분부터 재생돼요.</p>
+      <details class="q-chap-box"><summary>챕터 14개 보기</summary><div class="q-chapters"><a href="https://www.youtube.com/watch?v=SthFupti0O8" target="_blank" rel="noopener"><b>00:00</b> 시작하기 전에 · 유의사항</a><a href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=45s" target="_blank" rel="noopener"><b>00:45</b> 결론부터 보는 선요약</a><a href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=94s" target="_blank" rel="noopener"><b>01:34</b> 일본</a><a href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=524s" target="_blank" rel="noopener"><b>08:44</b> 빅토리아 아일랜드</a><a href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1004s" target="_blank" rel="noopener"><b>16:44</b> 오르비스</a><a href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1276s" target="_blank" rel="noopener"><b>21:16</b> 엘나스</a><a href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1477s" target="_blank" rel="noopener"><b>24:37</b> 루디브리엄</a><a href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1749s" target="_blank" rel="noopener"><b>29:09</b> 지구방위본부</a><a href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1943s" target="_blank" rel="noopener"><b>32:23</b> 아쿠아리움</a><a href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=2022s" target="_blank" rel="noopener"><b>33:42</b> 무릉</a><a href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=2098s" target="_blank" rel="noopener"><b>34:58</b> 리프레</a><a href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=2154s" target="_blank" rel="noopener"><b>35:54</b> 뉴 리프 시티</a><a href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=2238s" target="_blank" rel="noopener"><b>37:18</b> 파티 퀘스트 (선택)</a><a href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=2284s" target="_blank" rel="noopener"><b>38:04</b> 레벨순 추천 퀘스트 · 마무리</a></div></details>
+    </div>
+  </section>
+
+  <div class="q-controls">
+    <div class="segmented" role="group" aria-label="보기">
+      <button type="button" class="job-toggle active" data-view="all" aria-pressed="true">추천 + 고려</button>
+      <button type="button" class="job-toggle" data-view="rec" aria-pressed="false">추천만</button>
+    </div>
+    <button type="button" class="level-chip q-all-btn" id="qToggleAll" aria-pressed="false">모두 펼치기</button>
+    <button type="button" class="level-chip q-all-btn" id="qSortProfit" aria-pressed="false">수익 높은 순</button>
+    <button type="button" class="level-chip q-all-btn" id="qHideDone" aria-pressed="false">깬 퀘스트 숨기기 <span id="qDoneCount"></span></button>
+    <nav class="region-jump" aria-label="지역 바로가기"><a class="level-chip" href="#japan">일본</a><a class="level-chip" href="#victoria">빅토리아 아일랜드</a><a class="level-chip" href="#orbis">오르비스</a><a class="level-chip" href="#elnath">엘나스</a><a class="level-chip" href="#ludibrium">루디브리엄</a><a class="level-chip" href="#omega">지구방위본부</a><a class="level-chip" href="#aquarium">아쿠아리움</a><a class="level-chip" href="#mureung">무릉</a><a class="level-chip" href="#leafre">리프레</a><a class="level-chip" href="#nlc">뉴 리프 시티</a><a class="level-chip" href="#party">파티 퀘스트</a></nav>
+  </div>
+  <p class="q-progress" id="qProgress" aria-live="polite"></p>
+
+  <div class="q-sorted" id="qSorted" hidden></div>
+  <section class="q-region" id="japan">
+  <div class="q-region-head">
+    <h2 class="sub-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>일본 <small>7개</small><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=94s" target="_blank" rel="noopener">▶ 영상 01:34</a></h2>
+    <p class="q-region-sum"><span class="only-rec">추천 5개 다 사면 보통 <b class="pos">+567.5만</b> <span class="q-tri-range">(+472.5만 ~ +1,121.5만)</span></span><span class="only-all">추천 + 고려 7개 다 사면 보통 <b class="pos">+596.2만</b> <span class="q-tri-range">(+341.2만 ~ +1,529.2만)</span></span></p>
+  </div>
+  <h3 class="q-area">📍 과거 카에데성</h3><div class="q-way"><p><b>가는 법</b> 대부분의 마을에 있는 NPC 스피넬에게 말을 걸어 버섯신사로 가요. 버섯신사의 우물 포탈 → 큰 나무 포탈을 지나서 크리스탈을 클릭하고 &#39;과거 - 카에데성&#39;을 고르면 돼요.</p><p><b>NPC 위치</b> 도착한 카에데성 맵 오른쪽 큰 성문 앞에 카에데야와 아오이가 있어요. 큰 성문으로 들어간 성문 안 맵에는 지붕 꼭대기에 매부리, 오른쪽 아래에 안즈 공주가 있어요.</p><details class="q-photos"><summary>가는 길 · 맵 사진 보기 (5장)</summary><figure class="q-photo"><a href="../images/quest/kaede-well.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/kaede-well.webp" alt="버섯신사 우물 포탈" loading="lazy"></a><figcaption>버섯신사 우물 포탈</figcaption></figure><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/kaede-tree.webp" target="_blank" rel="noopener" data-x="0.534" title="눌러서 원본 크기로 보기"><img src="../images/quest/kaede-tree.webp" alt="큰 나무 포탈" loading="lazy" width="925" height="320" style="width:925px;height:320px"></a><figcaption>큰 나무 포탈 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure><figure class="q-photo"><a href="../images/quest/kaede-crystal.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/kaede-crystal.webp" alt="크리스탈에서 과거 - 카에데성" loading="lazy"></a><figcaption>크리스탈에서 과거 - 카에데성</figcaption></figure><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/kaede-castle.webp" target="_blank" rel="noopener" data-x="0.68" title="눌러서 원본 크기로 보기"><img src="../images/quest/kaede-castle.webp" alt="카에데성: 카에데야 · 아오이" loading="lazy" width="1068" height="320" style="width:1068px;height:320px"></a><figcaption>카에데성: 카에데야 · 아오이 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/kaede-inner.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/kaede-inner.webp" alt="성문 안: 매부리(지붕 꼭대기) · 안즈 공주(오른쪽 아래)" loading="lazy" width="733" height="320" style="width:733px;height:320px"></a><figcaption>성문 안: 매부리(지붕 꼭대기) · 안즈 공주(오른쪽 아래) <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure></details></div><details class="card q-card" data-label="고려" data-mid="310000" id="q-81703">
+  <summary class="q-row">
+    <span class="q-label is-con">고려</span>
+    <span class="q-row-lv">Lv.30</span>
+    <span class="q-row-name">자네도 한 배를 탔군 1 ~ 자네도 한 배를 탔군 2</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="81703"></label>
+    <span class="q-row-rew" title="투구 체력 주문서 10/60/100% 중 1개 + 귀 장식 지력 주문서 10/60/100% 중 1개"><span class="q-chip" title="투구 체력 주문서 10%, 투구 체력 주문서 60%, 투구 체력 주문서 100%"><img src="../images/item/2040005.png" alt="투구 체력 주문서 10%, 투구 체력 주문서 60%, 투구 체력 주문서 100%" width="28" height="28"><b>투체 10·60·100%</b></span><i class="q-chip-plus" aria-hidden="true">+</i><span class="q-chip" title="귀 장식 지력 주문서 10%, 귀 장식 지력 주문서 60%, 귀 장식 지력 주문서 100%"><img src="../images/item/2040302.png" alt="귀 장식 지력 주문서 10%, 귀 장식 지력 주문서 60%, 귀 장식 지력 주문서 100%" width="28" height="28"><b>귀지 10·60·100%</b></span><span class="sr-only">투구 체력 주문서 10/60/100% 중 1개 + 귀 장식 지력 주문서 10/60/100% 중 1개</span></span>
+    <span class="q-row-pl pos"><b>+31만</b><small>−81만 ~ +322만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-kaedeya.png" alt="" loading="lazy" width="90" height="146">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-con">고려</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.30 · 60</span> 자네도 한 배를 탔군 1 → 자네도 한 배를 탔군 2</h3>
+      <p class="q-npcline">카에데야 <span>([일본] 카에데성 성문 밖)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=166s" target="_blank" rel="noopener">▶ 영상에서 보기 02:46</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/quest/item/4000338.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000338">중급닌자의 독침</a> <b>×100</b></span><em>30만</em></li><li><img src="../images/item/4000288.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000288">부러진 사슴 뿔</a> <b>×100</b></span><em>58만</em></li></ul><p class="q-cost">합계 88만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="투구 체력 주문서 10%"><img src="../images/item/2040005.png" alt="투구 체력 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="투구 체력 주문서 60%"><img src="../images/item/2040004.png" alt="투구 체력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="투구 체력 주문서 100%"><img src="../images/item/2040001.png" alt="투구 체력 주문서 100%" width="28" height="28"><b>100%</b></span></div><span><small>자네도 한 배를 탔군 1</small>투구 체력 주문서 10/60/100% 중 1개</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="귀 장식 지력 주문서 10%"><img src="../images/item/2040302.png" alt="귀 장식 지력 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="귀 장식 지력 주문서 60%"><img src="../images/item/2040301.png" alt="귀 장식 지력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="귀 장식 지력 주문서 100%"><img src="../images/item/2040001.png" alt="귀 장식 지력 주문서 100%" width="28" height="28"><b>100%</b></span></div><span><small>자네도 한 배를 탔군 2</small>귀 장식 지력 주문서 10/60/100% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+31만</p><p class="q-range"><span>제일 안 좋게 −81만</span> <span>제일 좋게 +322만</span></p><p class="q-verdict">운에 따라</p><p class="q-self">직접 모으면 보통 <b>+119만</b> <span>(+7만 ~ +410만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>1편 · 2편 모두 카에데야에게 받고 완료해요.</li><li>1편 (Lv.30): 중급닌자의 독침 100개</li><li>2편 (Lv.60): 부러진 사슴 뿔 100개</li></ol><p class="q-tip">1편만 하면 거의 남는 게 없고, 진짜 목표는 귀 장식 지력 주문서를 주는 2편이에요. 100%가 나오면 손해, 10%가 나오면 크게 남아서 도박성이 강해요.</p></div>
+  <details class="q-steps"><summary>단계별 보기 (퀘스트 2개)</summary><ol><li class="is-reward"><b>Lv.30 자네도 한 배를 탔군 1</b> <span>— 카에데야</span><div>재료: <a href="../item/4000338">중급닌자의 독침</a> 100개</div><div class="q-step-rew">보상: 투구 체력 주문서 중 랜덤 1</div></li><li class="is-reward"><b>Lv.60 자네도 한 배를 탔군 2</b> <span>— 카에데야</span><div>재료: <a href="../item/4000288">부러진 사슴 뿔</a> 100개</div><div class="q-step-rew">보상: 귀 장식 지력 주문서 10%, 귀 장식 지력 주문서 60%, 귀 장식 지력 주문서 100%</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="고려" data-mid="-22500" id="q-81704">
+  <summary class="q-row">
+    <span class="q-label is-con">고려</span>
+    <span class="q-row-lv">Lv.50</span>
+    <span class="q-row-name">매부리와 시라누이</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="81704"></label>
+    <span class="q-row-rew" title="전신 갑옷 민첩 주문서 10/60/100% 중 1개"><span class="q-chip" title="전신 갑옷 민첩 주문서 10%, 전신 갑옷 민첩 주문서 60%, 전신 갑옷 민첩 주문서 100%"><img src="../images/item/2040502.png" alt="전신 갑옷 민첩 주문서 10%, 전신 갑옷 민첩 주문서 60%, 전신 갑옷 민첩 주문서 100%" width="28" height="28"><b>전민 10·60·100%</b></span><span class="sr-only">전신 갑옷 민첩 주문서 10/60/100% 중 1개</span></span>
+    <span class="q-row-pl neg"><b>−2.3만</b><small>−50.3만 ~ +85.8만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-maeburi.png" alt="" loading="lazy" width="122" height="164">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-con">고려</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.50</span> 매부리와 시라누이</h3>
+      <p class="q-npcline">매부리 <span>([일본] 카에데성 성문 안)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=221s" target="_blank" rel="noopener">▶ 영상에서 보기 03:41</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000292.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000292">산삼 달인물</a> <b>×50</b></span><em>3.8만</em></li><li><img src="../images/item/4000293.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000293">도라지</a> <b>×50</b></span><em>5,000</em></li><li><img src="../images/quest/item/4000341.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000341">밀짚 나막신</a> <b>×50</b></span><em>50만</em></li></ul><p class="q-cost">합계 54.3만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="전신 갑옷 민첩 주문서 10%"><img src="../images/item/2040502.png" alt="전신 갑옷 민첩 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="전신 갑옷 민첩 주문서 60%"><img src="../images/item/2040501.png" alt="전신 갑옷 민첩 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="전신 갑옷 민첩 주문서 100%"><img src="../images/item/2040001.png" alt="전신 갑옷 민첩 주문서 100%" width="28" height="28"><b>100%</b></span></div><span>전신 갑옷 민첩 주문서 10/60/100% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit neg"><h4>다 사면</h4><p class="q-big">−2.3만</p><p class="q-range"><span>제일 안 좋게 −50.3만</span> <span>제일 좋게 +85.8만</span></p><p class="q-verdict">보통은 손해</p><p class="q-self">직접 모으면 보통 <b>+52만</b> <span>(+4만 ~ +140만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>성문 안 맵 지붕 꼭대기까지 올라가 매부리에게 받고 완료해요.</li><li>재료: 산삼 달인물 · 도라지 · 밀짚 나막신 각 50개</li></ol><p class="q-tip">밀짚 나막신이 비싸서 재료값이 커요. 10%가 나오면 이득이지만 60%·100%는 손해라 셋 중 둘이 손해예요.</p></div>
+  <details class="q-steps"><summary>단계별 보기 (퀘스트 1개)</summary><ol><li class="is-reward"><b>Lv.50 매부리와 시라누이</b> <span>— 매부리</span><div>재료: <a href="../item/4000292">산삼 달인물</a> 50개, <a href="../item/4000293">도라지</a> 50개, <a href="../item/4000341">밀짚 나막신</a> 50개</div><div class="q-step-rew">보상: 전신 갑옷 민첩 주문서 중 랜덤 1</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="추천" data-mid="475000" id="q-81705">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.80</span>
+    <span class="q-row-name">아름다운 공주님의 고민 ~ 성 아래에 핀 그림자 꽃</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="81705"></label>
+    <span class="q-row-rew" title="망토 주문서 10/60/100% 중 1개 + 장갑 공격력 주문서 10/60/100% 중 1개"><span class="q-chip" title="망토 주문서 10%, 망토 주문서 60%, 망토 주문서 100%"><img src="../images/item/2040001.png" alt="망토 주문서 10%, 망토 주문서 60%, 망토 주문서 100%" width="28" height="28"><b>망토 10·60·100%</b></span><i class="q-chip-plus" aria-hidden="true">+</i><span class="q-chip" title="장갑 공격력 주문서 10%, 장갑 공격력 주문서 60%, 장갑 공격력 주문서 100%"><img src="../images/item/2040805.png" alt="장갑 공격력 주문서 10%, 장갑 공격력 주문서 60%, 장갑 공격력 주문서 100%" width="28" height="28"><b>장공 10·60·100%</b></span><span class="sr-only">망토 주문서 10/60/100% 중 1개 + 장갑 공격력 주문서 10/60/100% 중 1개</span></span>
+    <span class="q-row-pl pos"><b>+47.5만</b><small>−45.5만 ~ +596.5만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-anz.png" alt="" loading="lazy" width="103" height="104">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.80 · 100</span> 아름다운 공주님의 고민 → 성 아래에 핀 그림자 꽃</h3>
+      <p class="q-npcline">안즈 공주 <span>([일본] 카에데성 성문 안)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=258s" target="_blank" rel="noopener">▶ 영상에서 보기 04:18</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000226.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000226">레쉬의 털뭉치</a> <b>×500</b></span><em>11.5만</em></li><li><img src="../images/item/4000229.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000229">다크 레쉬의 털뭉치</a> <b>×500</b></span><em>12만</em></li><li><img src="../images/item/4000138.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000138">여두목의 빗</a> <b>×1</b></span><em>80만</em></li></ul><p class="q-cost">합계 103.5만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="망토 주문서 10%"><img src="../images/item/2040001.png" alt="망토 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="망토 주문서 60%"><img src="../images/item/2040001.png" alt="망토 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="망토 주문서 100%"><img src="../images/item/2040001.png" alt="망토 주문서 100%" width="28" height="28"><b>100%</b></span></div><span><small>아름다운 공주님의 고민</small>망토 주문서 10/60/100% 중 1개</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="장갑 공격력 주문서 10%"><img src="../images/item/2040805.png" alt="장갑 공격력 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="장갑 공격력 주문서 60%"><img src="../images/item/2040804.png" alt="장갑 공격력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="장갑 공격력 주문서 100%"><img src="../images/item/2040001.png" alt="장갑 공격력 주문서 100%" width="28" height="28"><b>100%</b></span></div><span><small>성 아래에 핀 그림자 꽃</small>장갑 공격력 주문서 10/60/100% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+47.5만</p><p class="q-range"><span>제일 안 좋게 −45.5만</span> <span>제일 좋게 +596.5만</span></p><p class="q-verdict">운에 따라</p><p class="q-self">직접 모으면 보통 <b>+151만</b> <span>(+58만 ~ +700만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>Lv.80: 성문 안 오른쪽 아래 안즈 공주에게 받기</li><li>카에데성으로 돌아가 카에데야 오른쪽의 아오이에게 완료</li><li>다시 안즈 공주에게 돌아오기</li><li>Lv.100: 이어서 성 아래에 핀 그림자 꽃 (여두목의 빗 1개)</li></ol><p class="q-tip">공주님의 고민은 망토 주문서 중 무엇이 나와도 이득이에요. 그림자 꽃은 장갑 공격력 10%가 나오면 크게 남아요.</p></div>
+  <details class="q-steps"><summary>단계별 보기 (퀘스트 2개)</summary><ol><li class="is-reward"><b>Lv.80 아름다운 공주님의 고민</b> <span>— 안즈 공주</span><div>재료: <a href="../item/4000226">레쉬의 털뭉치</a> 500개, <a href="../item/4000229">다크 레쉬의 털뭉치</a> 500개</div><div class="q-step-rew">보상: 망토 주문서 중 랜덤 1</div></li><li class="is-reward"><b>Lv.100 성 아래에 핀 그림자 꽃</b> <span>— 안즈 공주</span><div>재료: <a href="../item/4000138">여두목의 빗</a> 1개</div><div class="q-step-rew">보상: 장갑 공격력 주문서 중 랜덤 1</div></li></ol></details>  </div>
+</details>
+<h3 class="q-area">📍 쇼와 마을</h3><div class="q-way"><p><b>가는 법</b> 카에데성 퀘스트를 다 깼으면 카에데성에서 과일 우유(경매장 약 800메소)를 마시고 쇼와 마을로 가요. 쇼와 마을에서 버섯신사로 돌아갈 때는 딸기 우유예요.</p><p><b>NPC 위치</b> 사쿠라는 쇼와 마을 왼쪽 첫 건물 앞, 상처투성이 고양이는 가게 옆 계단 위, 두목 고양이는 오른쪽 끝에 있어요.</p><details class="q-photos"><summary>가는 길 · 맵 사진 보기 (1장)</summary><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/showa-npc.webp" target="_blank" rel="noopener" data-x="0.2" title="눌러서 원본 크기로 보기"><img src="../images/quest/showa-npc.webp" alt="쇼와 마을: 사쿠라(왼쪽) · 상처투성이 고양이(계단 위) · 두목 고양이(오른쪽 끝)" loading="lazy" width="2000" height="297" style="width:2000px;height:297px"></a><figcaption>쇼와 마을: 사쿠라(왼쪽) · 상처투성이 고양이(계단 위) · 두목 고양이(오른쪽 끝) <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure></details></div><details class="card q-card" data-label="추천" data-mid="325000" id="q-8060">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.30</span>
+    <span class="q-row-name">사쿠라와 곰 인형</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="8060"></label>
+    <span class="q-row-rew" title="완드, 스태프 마력 주문서 10% or 방어구 방어력 주문서 10% 중 1 랜덤"><span class="q-chip" title="완드 마력 주문서 10%"><img src="../images/item/2043702.png" alt="완드 마력 주문서 10%" width="28" height="28"><b>완드마 10%</b></span><span class="q-chip" title="스태프 마력 주문서 10%"><img src="../images/item/2043802.png" alt="스태프 마력 주문서 10%" width="28" height="28"><b>스태프마 10%</b></span><span class="q-chip" title="하의 방어력 주문서 10%"><img src="../images/item/2040602.png" alt="하의 방어력 주문서 10%" width="28" height="28"><b>하방 10%</b></span><span class="sr-only">완드, 스태프 마력 주문서 10% or 방어구 방어력 주문서 10% 중 1 랜덤</span></span>
+    <span class="q-row-pl pos"><b>+32.5만</b><small>+30.5만 ~ +37.5만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-sakura.png" alt="" loading="lazy" width="154" height="108">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.30</span> 사쿠라와 곰 인형</h3>
+      <p class="q-npcline">사쿠라 <span>([일본] 쇼와 마을)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=313s" target="_blank" rel="noopener">▶ 영상에서 보기 05:13</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000106.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000106">곰인형의 솜뭉치</a> <b>×50</b></span><em>7.5만</em></li></ul><p class="q-cost">합계 7.5만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="완드 마력 주문서 10%"><img src="../images/item/2043702.png" alt="완드 마력 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="스태프 마력 주문서 10%"><img src="../images/item/2043802.png" alt="스태프 마력 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="하의 방어력 주문서 10%"><img src="../images/item/2040602.png" alt="하의 방어력 주문서 10%" width="28" height="28"><b>10%</b></span></div><span>완드, 스태프 마력 주문서 10% or 방어구 방어력 주문서 10% 중 1 랜덤</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+32.5만</p><p class="q-range"><span>제일 안 좋게 +30.5만</span> <span>제일 좋게 +37.5만</span></p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 보통 <b>+40만</b> <span>(+38만 ~ +45만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>쇼와 마을 왼쪽 첫 건물 앞 사쿠라에게 받고 완료해요.</li><li>재료: 곰인형의 솜뭉치 50개</li></ol><p class="q-tip">어떤 보상이 나와도 30만 메소 넘게 남아요. 빅토리아의 &#39;어둠 속의 봉제인형&#39; 연계 선행이라 꼭 깨 두세요.</p></div>
+  <details class="q-steps"><summary>단계별 보기 (퀘스트 1개)</summary><ol><li class="is-reward"><b>Lv.30 사쿠라와 곰 인형</b> <span>— 사쿠라</span><div>재료: <a href="../item/4000106">곰인형의 솜뭉치</a> 50개</div><div class="q-step-rew">보상: 완드, 스태프 마력 주문서 10% or 방어구 방어력 주문서 10% 중 1 랜덤</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="추천" data-mid="818900" id="q-8012">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.40</span>
+    <span class="q-row-name">사쿠라, 고양이 그리고 구슬 (퀴즈 o)</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="8012"></label>
+    <span class="q-row-rew" title="신발 점프력 주문서 60%, 투구 체력 주문서 60%"><span class="q-chip" title="신발 점프력 주문서 60%"><img src="../images/item/2040704.png" alt="신발 점프력 주문서 60%" width="28" height="28"><b>신점 60%</b></span><span class="q-chip" title="투구 체력 주문서 60%"><img src="../images/item/2040004.png" alt="투구 체력 주문서 60%" width="28" height="28"><b>투체 60%</b></span><span class="sr-only">신발 점프력 주문서 60%, 투구 체력 주문서 60%</span></span>
+    <span class="q-row-pl pos"><b>+81.9만</b></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc is-pixel" src="../images/quest/npc-boss-cat.png" alt="" loading="lazy" width="180" height="152">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">보상 고정</span></div>
+      <h3><span class="q-lv">Lv.40</span> 사쿠라, 고양이 그리고 구슬 (퀴즈 o)</h3>
+      <p class="q-npcline">상처투성이 고양이 · 사쿠라 · 두목 고양이 ([일본] 쇼와 마을)</p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=357s" target="_blank" rel="noopener">▶ 영상에서 보기 05:57</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/quest/item/2120000.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/2120000">펫의 먹이</a> <b>×1</b></span><em>100 · 상점</em></li><li><img src="../images/item/2020001.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/2020001">통닭</a> <b>×300</b></span><em>8.1만 · 상점</em></li><li><img src="../images/quest/item/4031064.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031064">비 구슬</a> <b>×1</b></span><em>직접 사냥</em></li></ul><p class="q-cost">합계 8.1만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="신발 점프력 주문서 60%"><img src="../images/item/2040704.png" alt="신발 점프력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="투구 체력 주문서 60%"><img src="../images/item/2040004.png" alt="투구 체력 주문서 60%" width="28" height="28"><b>60%</b></span></div><span>신발 점프력 주문서 60%, 투구 체력 주문서 60%</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+81.9만</p><p class="q-verdict">확정 이득</p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>상처투성이 고양이(가게 옆 계단 위)에게 펫의 먹이 1개 주기</li><li>사쿠라와 대화</li><li>두목 고양이(오른쪽 끝)에게 가기</li><li>다시 상처투성이 고양이에게 가서 고양이어 배우기</li><li>두목 고양이 퀴즈 풀기 → 비 구슬 받기</li><li>사쿠라에게 비 구슬 가져가면 끝</li></ol><p class="q-tip">사냥 없이 쇼와 마을 한 맵에서 끝나요. 퀴즈 때 통닭 300개가 필요하니 미리 사 두세요. 보상은 랜덤이 아니라 둘 다 받아요.</p></div>
+  <details class="q-quiz"><summary>두목 고양이 퀴즈 정답 (14문제)</summary><table><thead><tr><th>문제</th><th>정답</th></tr></thead><tbody><tr><td>수하들이 드롭하지 않는 아이템은?</td><td><b>수하 B의 명찰</b></td></tr><tr><td>버섯신사에서 팔고 있는 공격력을 증가시키는 아이템은?</td><td><b>타코야끼</b></td></tr><tr><td>다음 중 존재하는 아이템은 무엇인가?</td><td><b>여우 꼬리</b></td></tr><tr><td>쇼와마을의 채소가게 주인은 누구인가?</td><td><b>우미</b></td></tr><tr><td>신기에 포함되지 않는 것은?</td><td><b>파리채</b></td></tr><tr><td>메이플 월드에서 버섯신사로 여행을 시켜주는 NPC의 이름은 무엇인가?</td><td><b>스피넬</b></td></tr><tr><td>쇼와 마을 전당포 외관에 적혀 있지 않은 말은?</td><td><b>장사번성(商売繁盛)</b></td></tr><tr><td>쇼와 영화관 앞에 서 있지 않은 NPC는 누구인가?</td><td><b>신타</b></td></tr><tr><td>버섯 신사의 로보가 팔지 않는 라면은?</td><td><b>버섯 특제 미소라멘</b></td></tr><tr><td>다음 중 직업이나 레벨 설명이 잘못 짝지어진 것은?</td><td><b>죽창 - 전사 전용 무기</b></td></tr><tr><td>불너구리의 드롭 아이템이 아닌 것은?</td><td><b>단단한 뿔</b></td></tr><tr><td>버섯 신사에서 &#39;버섯&#39;이라고 히라가나로 쓰여져 있는 곳은 몇 군데?</td><td><b>6군데</b></td></tr><tr><td>버섯신사의 석상의 이름은?</td><td><b>버섯 석상</b></td></tr><tr><td>존재하지 않는 아이템은 무엇인가?</td><td><b>수박맛 소프트완드</b></td></tr></tbody></table></details><details class="q-steps"><summary>단계별 보기 (퀘스트 7개)</summary><ol><li class=""><b>Lv.40 사쿠라, 고양이와 비 구슬</b> <span>— 상처투성이 고양이</span><div>재료: <a href="../item/2120000">펫의 먹이</a> 1개</div></li><li class=""><b>사쿠라와 대화</b> <span>— 상처투성이 고양이 → 사쿠라</span></li><li class=""><b>Lv.40 두목 고양이에게 가기</b> <span>— 사쿠라 → 두목 고양이</span></li><li class=""><b>상처투성이 고양이에게 고양이어 배우기</b> <span>— 두목 고양이 → 상처투성이 고양이</span></li><li class=""><b>두목 고양이에게 고양이어로 말 걸기</b> <span>— 상처투성이 고양이 → 두목 고양이</span></li><li class=""><b>Lv.40 두목 고양이 퀴즈 (통닭 300개)</b> <span>— 두목 고양이</span><div>재료: <a href="../item/2020001">통닭</a> 300개</div></li><li class="is-reward"><b>Lv.40 비 구슬을 사쿠라에게</b> <span>— 두목 고양이 → 사쿠라</span><div>재료: <a href="../item/4031064">비 구슬</a> 1개</div><div class="q-step-rew">보상: 신발 점프력 주문서 60% and 투구 체력 주문서 60%</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="추천" data-mid="3720000" id="q-8049">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.45</span>
+    <span class="q-row-name">사쿠라와 물개 인형</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="8049"></label>
+    <span class="q-row-rew" title="장갑 공격력 주문서 10%"><span class="q-chip" title="장갑 공격력 주문서 10%"><img src="../images/item/2040805.png" alt="장갑 공격력 주문서 10%" width="28" height="28"><b>장공 10%</b></span><span class="sr-only">장갑 공격력 주문서 10%</span></span>
+    <span class="q-row-pl pos"><b>+372만</b></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-sakura.png" alt="" loading="lazy" width="154" height="108">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">보상 고정</span></div>
+      <h3><span class="q-lv">Lv.45</span> 사쿠라와 물개 인형</h3>
+      <p class="q-npcline">사쿠라 <span>([일본] 쇼와 마을)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=421s" target="_blank" rel="noopener">▶ 영상에서 보기 07:01</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000154.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000154">아기 물개 인형</a> <b>×200</b></span><em>38만</em></li></ul><p class="q-cost">합계 38만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="장갑 공격력 주문서 10%"><img src="../images/item/2040805.png" alt="장갑 공격력 주문서 10%" width="28" height="28"><b>10%</b></span></div><span>장갑 공격력 주문서 10%</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+372만</p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 <b>+410만</b></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>사쿠라에게 받고 완료해요.</li><li>재료: 아기 물개 인형 200개</li></ol><p class="q-tip">보상이 장갑 공격력 10% 고정이라 일본에서 가장 확실하게 남아요. Lv.45가 되면 꼭 하세요.</p></div>
+  <details class="q-steps"><summary>단계별 보기 (퀘스트 1개)</summary><ol><li class="is-reward"><b>Lv.45 사쿠라와 물개 인형</b> <span>— 사쿠라</span><div>재료: <a href="../item/4000154">아기 물개 인형</a> 200개</div><div class="q-step-rew">보상: 장갑 공격력 주문서 10%</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="추천" data-mid="336000" id="q-8052">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.75</span>
+    <span class="q-row-name">우미의 채소 장아찌</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="8052"></label>
+    <span class="q-row-rew" title="신발 민첩 주문서 10%"><span class="q-chip" title="신발 민첩 주문서 10%"><img src="../images/item/2040001.png" alt="신발 민첩 주문서 10%" width="28" height="28"><b>신민 10%</b></span><span class="sr-only">신발 민첩 주문서 10%</span></span>
+    <span class="q-row-pl pos"><b>+33.6만</b></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">보상 고정</span></div>
+      <h3><span class="q-lv">Lv.75</span> 우미의 채소 장아찌</h3>
+      <p class="q-npcline">우미 <span>([일본] 쇼와 마을 골목길)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=450s" target="_blank" rel="noopener">▶ 영상에서 보기 07:30</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000131.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000131">딥 버푼의 돌조각</a> <b>×80</b></span><em>6.4만</em></li></ul><p class="q-cost">합계 6.4만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="신발 민첩 주문서 10%"><img src="../images/item/2040001.png" alt="신발 민첩 주문서 10%" width="28" height="28"><b>10%</b></span></div><span>신발 민첩 주문서 10%</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+33.6만</p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 <b>+40만</b></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>쇼와 마을 가운데 골목길 포탈로 들어가면 맵 왼쪽 채소가게 앞에 우미가 있어요.</li><li>재료: 딥 버푼의 돌조각 80개</li></ol></div>
+  <details class="q-photos"><summary>동선 사진 보기 (1장)</summary><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/showa-alley.webp" target="_blank" rel="noopener" data-x="0.22" title="눌러서 원본 크기로 보기"><img src="../images/quest/showa-alley.webp" alt="쇼와 마을 골목길: 왼쪽 채소가게 앞 우미" loading="lazy" width="1882" height="320" style="width:1882px;height:320px"></a><figcaption>쇼와 마을 골목길: 왼쪽 채소가게 앞 우미 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 1개)</summary><ol><li class="is-reward"><b>Lv.75 우미의 채소 장아찌</b> <span>— 우미</span><div>재료: <a href="../item/4000131">딥 버푼의 돌조각</a> 80개</div><div class="q-step-rew">보상: 신발 민첩 주문서 10%</div></li></ol></details>  </div>
+</details>
+</section>
+<section class="q-region" id="victoria">
+  <div class="q-region-head">
+    <h2 class="sub-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>빅토리아 아일랜드 <small>6개</small><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=524s" target="_blank" rel="noopener">▶ 영상 08:44</a></h2>
+    <p class="q-region-sum"><span class="only-rec">추천 3개 다 사면 보통 <b class="pos">+463.6만</b> <span class="q-tri-range">(+373.7만 ~ +828.2만)</span></span><span class="only-all">추천 + 고려 6개 다 사면 보통 <b class="pos">+715.1만</b> <span class="q-tri-range">(+431.8만 ~ +2,609.3만)</span></span></p>
+  </div>
+  <div class="q-way"><p><b>미리 받아 두기</b> 뒤 챕터 퀘스트의 선행을 같이 받아 두면 편해요. 헤네시스 장로 스탄에게 &#39;장로스탄의 편지&#39;를 받아 두면 지구방위본부 &#39;훈이의 이 통증&#39;으로, 엘리니아 아래쪽 오른편 요정 윙에게 &#39;새로운 세계로&#39;를 받아 두면 오르비스 &#39;크리엘 도와주기&#39;로 이어져요. 필요한 켈벨로스의 눈물은 윙이 바로 줘요.</p></div><details class="card q-card" data-label="추천" data-mid="290000" id="q-2009">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.20</span>
+    <span class="q-row-name">피아와 파란버섯</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="2009"></label>
+    <span class="q-row-rew" title="투구 방어력 주문서 10/60/100% 중 1개"><span class="q-chip" title="투구 방어력 주문서 100%, 투구 방어력 주문서 60%, 투구 방어력 주문서 10%"><img src="../images/item/2040001.png" alt="투구 방어력 주문서 100%, 투구 방어력 주문서 60%, 투구 방어력 주문서 10%" width="28" height="28"><b>투방 10·60·100%</b></span><span class="sr-only">투구 방어력 주문서 10/60/100% 중 1개</span></span>
+    <span class="q-row-pl pos"><b>+29만</b><small>−10.5만 ~ +29만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-pia.png" alt="" loading="lazy" width="106" height="116">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.20</span> 피아와 파란버섯</h3>
+      <p class="q-npcline">피아 <span>(헤네시스: 헤네시스공원)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=581s" target="_blank" rel="noopener">▶ 영상에서 보기 09:41</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000009.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000009">파란버섯의 갓</a> <b>×40</b></span><em>6만</em></li><li><img src="../images/item/4000012.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000012">초록버섯의 갓</a> <b>×40</b></span><em>5만</em></li></ul><p class="q-cost">합계 11만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="투구 방어력 주문서 100%"><img src="../images/item/2040001.png" alt="투구 방어력 주문서 100%" width="28" height="28"><b>100%</b></span><span class="q-chip" title="투구 방어력 주문서 60%"><img src="../images/item/2040001.png" alt="투구 방어력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="투구 방어력 주문서 10%"><img src="../images/item/2040002.png" alt="투구 방어력 주문서 10%" width="28" height="28"><b>10%</b></span></div><span>투구 방어력 주문서 10/60/100% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+29만</p><p class="q-range"><span>제일 안 좋게 −10.5만</span> <span>제일 좋게 +29만</span></p><p class="q-verdict">운에 따라</p><p class="q-self">직접 모으면 보통 <b>+40만</b> <span>(+5,000 ~ +40만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>헤네시스 마을의 빨간 포탈로 헤네시스 공원에 들어가면 피아가 있어요.</li><li>재료: 파란버섯의 갓 · 초록버섯의 갓 각 40개</li></ol><p class="q-tip">10%나 60%가 나오면 이득, 100%가 나오면 조금 손해예요.</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (1장)</summary><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/hene-park.webp" target="_blank" rel="noopener" data-x="0.64" title="눌러서 원본 크기로 보기"><img src="../images/quest/hene-park.webp" alt="헤네시스 공원 포탈" loading="lazy" width="1928" height="320" style="width:1928px;height:320px"></a><figcaption>헤네시스 공원 포탈 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 1개)</summary><ol><li class="is-reward"><b>Lv.20 피아와 파란버섯</b> <span>— 피아</span><div>재료: <a href="../item/4000009">파란버섯의 갓</a> 40개, <a href="../item/4000012">초록버섯의 갓</a> 40개</div><div class="q-step-rew">보상: 투구 방어력 주문서 중 1 랜덤</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="추천" data-mid="1158550" id="q-2010">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.25</span>
+    <span class="q-row-name">제인과 와일드보어 ~ 연금술사 제인 1~3</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="2010"></label>
+    <span class="q-row-rew" title="무기 주문서 60% 중 랜덤 1개 + 장갑 공격력 주문서 10/60% 중 1개"><span class="q-chip" title="폴암 공격력 주문서 60%"><img src="../images/item/2044401.png" alt="폴암 공격력 주문서 60%" width="28" height="28"><b>폴암공 60%</b></span><span class="q-chip" title="완드 마력 주문서 60%"><img src="../images/item/2043701.png" alt="완드 마력 주문서 60%" width="28" height="28"><b>완드마 60%</b></span><i class="q-chip-plus" aria-hidden="true">+</i><span class="q-chip" title="장갑 공격력 주문서 60%, 장갑 공격력 주문서 10%"><img src="../images/item/2040804.png" alt="장갑 공격력 주문서 60%, 장갑 공격력 주문서 10%" width="28" height="28"><b>장공 10·60%</b></span><span class="sr-only">무기 주문서 60% 중 랜덤 1개 + 장갑 공격력 주문서 10/60% 중 1개</span></span>
+    <span class="q-row-pl pos"><b>+115.9만</b><small>+90.9만 ~ +450.9만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-jane.png" alt="" loading="lazy" width="130" height="148">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">랜덤 1개 · 보상 고정</span></div>
+      <h3><span class="q-lv">Lv.25 · 40</span> 제인과 와일드보어 → 연금술사 제인 1~3</h3>
+      <p class="q-npcline">제인 <span>(리스항구)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=609s" target="_blank" rel="noopener">▶ 영상에서 보기 10:09</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000015.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000015">뿔버섯의 갓</a> <b>×100</b></span><em>8,800</em></li><li><img src="../images/item/4000020.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000020">와일드보어의 송곳니</a> <b>×80</b></span><em>20만</em></li><li><img src="../images/item/2022000.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/2022000">맑은 물</a> <b>×1</b></span><em>1,650 · 상점</em></li><li><img src="../images/item/4000041.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000041">멜러디의 실험용 개구리</a> <b>×50</b></span><em>9.2만</em></li><li><img src="../images/item/4000036.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000036">이상한 느낌의 약</a> <b>×130</b></span><em>22.8만</em></li><li><img src="../images/item/2012000.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/2012000">드레이크의 피</a> <b>×3</b></span><em>4.2만</em></li><li><img src="../images/item/4000040.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000040">머쉬맘의 포자</a> <b>×1</b></span><em>6,000</em></li><li><img src="../images/item/4000030.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000030">용의 가죽</a> <b>×20</b></span><em>9.6만</em></li><li><img src="../images/item/4011007.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4011007">달의 돌</a> <b>×1</b></span><em>8만</em></li><li><img src="../images/item/2012002.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/2012002">고목 나무의 수액</a> <b>×10</b></span><em>1.8만</em></li></ul><p class="q-cost">합계 77.1만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="폴암 공격력 주문서 60%"><img src="../images/item/2044401.png" alt="폴암 공격력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="완드 마력 주문서 60%"><img src="../images/item/2043701.png" alt="완드 마력 주문서 60%" width="28" height="28"><b>60%</b></span></div><span><small>제인과 와일드보어</small>무기 주문서 60% 중 랜덤 1개</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="엘릭서 10개"><img src="../images/item/2000004.png" alt="엘릭서" width="28" height="28"><b>×10</b></span></div><span><small>연금술사 제인 1</small>엘릭서 10개</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="파워엘릭서 15개"><img src="../images/item/2000005.png" alt="파워엘릭서" width="28" height="28"><b>×15</b></span></div><span><small>연금술사 제인 2</small>파워엘릭서 15개</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="장갑 공격력 주문서 60%"><img src="../images/item/2040804.png" alt="장갑 공격력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="장갑 공격력 주문서 10%"><img src="../images/item/2040805.png" alt="장갑 공격력 주문서 10%" width="28" height="28"><b>10%</b></span></div><span><small>연금술사 제인 3</small>장갑 공격력 주문서 10/60% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+115.9만</p><p class="q-range"><span>제일 안 좋게 +90.9만</span> <span>제일 좋게 +450.9만</span></p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 보통 <b>+192.8만</b> <span>(+167.8만 ~ +527.8만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>제인은 리스항구 티켓 건물 옆에 있고, 네 퀘스트 모두 제인에게 받고 완료해요.</li><li>제인과 와일드보어 (Lv.25): 뿔버섯의 갓 100개 · 와일드보어의 송곳니 80개</li><li>연금술사 제인 1 · 2: 엘릭서 · 파워 엘릭서를 줘서 조금 손해지만 3을 받으려면 거쳐야 해요.</li><li>연금술사 제인 3: 용의 가죽 20개 · 달의 돌 1개 · 고목 나무의 수액 10개</li></ol><p class="q-tip">3까지 깨면 제인의 상점도 열려요.</p></div>
+  <details class="q-steps"><summary>단계별 보기 (퀘스트 4개)</summary><ol><li class="is-reward"><b>Lv.25 제인과 와일드보어</b> <span>— 제인</span><div>재료: <a href="../item/4000015">뿔버섯의 갓</a> 100개, <a href="../item/4000020">와일드보어의 송곳니</a> 80개</div><div class="q-step-rew">보상: 무기 주문서 60% 중 랜덤 1개</div></li><li class="is-reward"><b>Lv.40 연금술사 제인 1</b> <span>— 제인</span><div>재료: <a href="../item/2022000">맑은 물</a> 1개, <a href="../item/4000041">멜러디의 실험용 개구리</a> 20개, <a href="../item/4000036">이상한 느낌의 약</a> 30개</div><div class="q-step-rew">보상: 엘릭서</div></li><li class="is-reward"><b>Lv.40 연금술사 제인 2</b> <span>— 제인</span><div>재료: <a href="../item/2012000">드레이크의 피</a> 3개, <a href="../item/4000040">머쉬맘의 포자</a> 1개, <a href="../item/4000041">멜러디의 실험용 개구리</a> 30개, <a href="../item/4000036">이상한 느낌의 약</a> 100개</div><div class="q-step-rew">보상: 파워엘릭서</div></li><li class="is-reward"><b>Lv.40 연금술사 제인 3</b> <span>— 제인</span><div>재료: <a href="../item/4000030">용의 가죽</a> 20개, <a href="../item/4011007">달의 돌</a> 1개, <a href="../item/2012002">고목 나무의 수액</a> 10개</div><div class="q-step-rew">보상: 장갑 공격력 주문서 60%, 10% 중 랜덤 1개</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="고려" data-mid="446400" id="q-2087">
+  <summary class="q-row">
+    <span class="q-label is-con">고려</span>
+    <span class="q-row-lv">Lv.42</span>
+    <span class="q-row-name">심심해요 ~ 이카루스의 하늘을 나는 약</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="2087"></label>
+    <span class="q-row-rew" title="이카루스의 망토(회피/이속/점프) 중 1개 랜덤"><span class="q-chip" title="이카루스의 망토(회피)"><img src="../images/quest/item/1102054.png" alt="이카루스의 망토(회피)" width="28" height="28"></span><span class="q-chip" title="이카루스의 망토(이속)"><img src="../images/quest/item/1102054.png" alt="이카루스의 망토(이속)" width="28" height="28"></span><span class="q-chip" title="이카루스의 망토(점프)"><img src="../images/quest/item/1102054.png" alt="이카루스의 망토(점프)" width="28" height="28"></span><span class="sr-only">이카루스의 망토(회피/이속/점프) 중 1개 랜덤</span></span>
+    <span class="q-row-pl pos"><b>+44.6만</b><small>−35.4만 ~ +104.6만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc is-pixel" src="../images/quest/npc-icarus.png" alt="" loading="lazy" width="90" height="108">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-con">고려</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.42</span> 심심해요 ~ 이카루스의 하늘을 나는 약</h3>
+      <p class="q-npcline">요정 윙 <span>(엘리니아)</span> · 이카루스 <span>(커닝시티)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=663s" target="_blank" rel="noopener">▶ 영상에서 보기 11:03</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000010.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000010">슬라임의 방울</a> <b>×10</b></span><em>9.3만</em></li><li><img src="../images/item/4000003.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000003">나뭇가지</a> <b>×70</b></span><em>7만</em></li><li><img src="../images/item/4000004.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000004">물컹물컹한 액체</a> <b>×70</b></span><em>5,600</em></li><li><img src="../images/item/4003001.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4003001">가공된 나무</a> <b>×10</b></span><em>3만</em></li><li><img src="../images/item/4000042.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000042">스티지의 날개</a> <b>×50</b></span><em>5.5만</em></li><li><img src="../images/item/4003004.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4003004">뻣뻣한 깃털</a> <b>×50</b></span><em>2,500</em></li><li><img src="../images/item/4031164.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031164">악어가죽 주머니</a> <b>×10</b></span><em>직접 사냥</em></li><li><img src="../images/item/4000035.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000035">식탁보</a> <b>×100</b></span><em>11만</em></li><li><img src="../images/quest/item/n155e1252.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031165">마녀풀의 잎사귀</a> <b>×20</b></span><em>직접 사냥</em></li><li><img src="../images/item/4000036.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000036">이상한 느낌의 약</a> <b>×50</b></span><em>8.8만</em></li><li><img src="../images/quest/item/n9a051929.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031163">비상의 비약</a> <b>×1</b></span><em>직접 사냥</em></li></ul><p class="q-cost">합계 45.4만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="이카루스의 망토(회피)"><img src="../images/quest/item/1102054.png" alt="이카루스의 망토(회피)" width="28" height="28"></span></div><span>이카루스의 망토(회피/이속/점프) 중 1개 랜덤</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+44.6만</p><p class="q-range"><span>제일 안 좋게 −35.4만</span> <span>제일 좋게 +104.6만</span></p><p class="q-verdict">운에 따라</p><p class="q-self">직접 모으면 보통 <b>+90만</b> <span>(+10만 ~ +150만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>엘리니아 요정 윙과 커닝시티 이카루스를 오가며 Lv.10부터 Lv.42까지 퀘스트 8개를 깨요.</li><li>재료는 대부분 경매장에서 사고, 세 가지만 직접 구해요.</li><li>악어가죽 주머니: 커닝시티 빨간 하수구 → 방황의 늪 1에서 리게이터</li><li>마녀풀의 잎사귀: 방황의 늪 1 곳곳의 보라색 꽃을 오른쪽에서 왼쪽으로 기본 공격</li><li>비상의 비약: 요정 윙에게 받아서 이카루스에게</li></ol><p class="q-tip">보상은 이카루스의 망토 회피 · 이동속도 · 점프 중 하나예요. 회피나 이동속도면 이득, 점프가 나오면 손해예요.</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (2장)</summary><figure class="q-photo"><a href="../images/quest/kerning-sewer.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/kerning-sewer.webp" alt="커닝시티 빨간 하수구 = 방황의 늪 1" loading="lazy"></a><figcaption>커닝시티 빨간 하수구 = 방황의 늪 1</figcaption></figure><figure class="q-photo"><a href="../images/quest/obj-witchgrass.png" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/obj-witchgrass.png" alt="마녀풀 (보라색 꽃)" loading="lazy"></a><figcaption>마녀풀 (보라색 꽃)</figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 8개)</summary><ol><li class=""><b>Lv.10 숙제 좀 도와줘</b> <span>— 요정 윙</span><div>재료: <a href="../item/4000010">슬라임의 방울</a> 10개, <a href="../item/4000003">나뭇가지</a> 30개, <a href="../item/4000004">물컹물컹한 액체</a> 30개</div></li><li class=""><b>Lv.10 심심해요 1</b> <span>— 이카루스</span></li><li class=""><b>Lv.10 심심해요 2</b> <span>— 이카루스</span><div>재료: <a href="../item/4000003">나뭇가지</a> 40개, <a href="../item/4000004">물컹물컹한 액체</a> 40개</div></li><li class=""><b>Lv.32 이카루스의 행글라이더</b> <span>— 이카루스</span><div>재료: <a href="../item/4003001">가공된 나무</a> 10개, <a href="../item/4000042">스티지의 날개</a> 50개, <a href="../item/4003004">뻣뻣한 깃털</a> 50개</div></li><li class=""><b>Lv.37 이카루스의 열기구</b> <span>— 이카루스</span><div>재료: <a href="../item/4031164">악어가죽 주머니</a> 10개, <a href="../item/4000035">식탁보</a> 100개</div></li><li class=""><b>Lv.42 요정 윙을 찾아서…</b> <span>— 이카루스 → 요정 윙</span></li><li class=""><b>Lv.42 하늘을 나는 약의 재료</b> <span>— 요정 윙</span><div>재료: <a href="../item/4031165">마녀풀의 잎사귀</a> 20개, <a href="../item/4000036">이상한 느낌의 약</a> 50개</div></li><li class="is-reward"><b>Lv.42 이카루스의 하늘을 나는 약</b> <span>— 요정 윙 → 이카루스</span><div>재료: <a href="../item/4031163">비상의 비약</a> 1개</div><div class="q-step-rew">보상: 이카루스의 망토(회피/이속/점프) 중 1개 랜덤</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="추천" data-mid="3187000" id="q-2094">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.52</span>
+    <span class="q-row-name">악어 퇴치 1 ~ 악어 퇴치 2</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="2094"></label>
+    <span class="q-row-rew" title="직업별 무기 주문서 10% 중 택 1 + 망토 힘·지력·민첩·행운 주문서 60% 중 골라서 1개"><span class="q-chip" title="직업별 무기 주문서 10%"><img src="../images/item/2040001.png" alt="직업별 무기 주문서 10%" width="28" height="28"><b>직업별무기 10%</b></span><i class="q-chip-plus" aria-hidden="true">+</i><span class="q-chip" title="망토 힘 주문서 60%"><img src="../images/item/2041013.png" alt="망토 힘 주문서 60%" width="28" height="28"><b>망힘 60%</b></span><span class="q-chip" title="망토 지력 주문서 60%"><img src="../images/item/2041016.png" alt="망토 지력 주문서 60%" width="28" height="28"><b>망지 60%</b></span><span class="q-chip-more">+2</span><span class="sr-only">직업별 무기 주문서 10% 중 택 1 + 망토 힘·지력·민첩·행운 주문서 60% 중 골라서 1개</span></span>
+    <span class="q-row-pl pos"><b>+318.7만</b><small>+293.3만 ~ +348.3만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc is-pixel" src="../images/quest/npc-iyan.png" alt="" loading="lazy" width="106" height="148">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">골라서 1개</span></div>
+      <h3><span class="q-lv">Lv.52 · 52</span> 악어 퇴치 1 → 악어 퇴치 2</h3>
+      <p class="q-npcline">브루스 <span>(헤네시스)</span> · 이얀 <span>(페리온)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=715s" target="_blank" rel="noopener">▶ 영상에서 보기 11:55</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000001.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000001">주황버섯의 갓</a> <b>×40</b></span><em>6.8만</em></li><li><img src="../images/item/4000011.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000011">버섯의 포자</a> <b>×10</b></span><em>2만</em></li><li><img src="../images/quest/item/4031174.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031174">장난감 칼</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/quest/item/4031173.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031173">이얀의 편지</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/item/4000034.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000034">주니어 네키의 가죽</a> <b>×20</b></span><em>1.8만</em></li><li><img src="../images/item/4000033.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000033">크로코의 가죽</a> <b>×50</b></span><em>1.1만</em></li></ul><p class="q-cost">합계 11.7만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="직업별 무기 주문서 10%"><img src="../images/item/2040001.png" alt="직업별 무기 주문서 10%" width="28" height="28"><b>10%</b></span></div><span><small>악어 퇴치 1</small>직업별 무기 주문서 10% 중 택 1</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="망토 힘 주문서 60%"><img src="../images/item/2041013.png" alt="망토 힘 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="망토 지력 주문서 60%"><img src="../images/item/2041016.png" alt="망토 지력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="망토 민첩 주문서 60%"><img src="../images/item/2041019.png" alt="망토 민첩 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="망토 행운 주문서 60%"><img src="../images/item/2041022.png" alt="망토 행운 주문서 60%" width="28" height="28"><b>60%</b></span></div><span><small>악어 퇴치 2</small>망토 힘·지력·민첩·행운 주문서 60% 중 골라서 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+318.7만</p><p class="q-range"><span>제일 안 좋게 +293.3만</span> <span>제일 좋게 +348.3만</span></p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 보통 <b>+330.4만</b> <span>(+305만 ~ +360만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>선행: 헤네시스 브루스 &#39;버섯 몬스터를 연구하는 이유&#39; → 페리온 가운데 이얀 &#39;스텀프는 무서워&#39; (스텀프는 페리온 오른쪽 포탈 → 동쪽 길목 → 동쪽 바위산 1)</li><li>브루스에게 &#39;내 딸을 찾고 싶어&#39;를 받아 이얀에게 갔다가 다시 브루스에게 오면 선행 끝</li><li>악어 퇴치 1: 방황의 늪 1에서 리게이터 250마리 · 주니어 네키 40마리 → 직업별 무기 공격력 10% 골라서 1개</li><li>악어 퇴치 2: 방황의 늪 1에서 오른쪽으로 쭉 가면 나오는 위험한 크로코에서 크로코 120마리 (위험한 크로코 2가 크로코만 나와서 편해요) → 망토 힘·지력·민첩·행운 60% 골라서 1개</li></ol><p class="q-tip">재료값이 거의 안 들고 사냥만 하면 300만 메소 가까이 남는 효자 퀘스트예요. Lv.52가 되면 꼭 하세요.</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (1장)</summary><figure class="q-photo"><a href="../images/quest/kerning-sewer.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/kerning-sewer.webp" alt="커닝시티 빨간 하수구 = 방황의 늪 1" loading="lazy"></a><figcaption>커닝시티 빨간 하수구 = 방황의 늪 1</figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 6개)</summary><ol><li class=""><b>Lv.10 버섯 몬스터를 연구하는 이유</b> <span>— 브루스</span><div>재료: <a href="../item/4000001">주황버섯의 갓</a> 40개, <a href="../item/4000011">버섯의 포자</a> 10개</div></li><li class=""><b>Lv.10 스텀프는 무서워</b> <span>— 이얀</span><div>처치: <a href="../mob/130100">스텀프</a> 50마리</div></li><li class=""><b>Lv.10 내 딸을 찾고 싶어 1</b> <span>— 브루스 → 이얀</span><div>재료: <a href="../item/4031174">장난감 칼</a> 1개</div></li><li class=""><b>Lv.10 내 딸을 찾고 싶어 2</b> <span>— 이얀 → 브루스</span><div>재료: <a href="../item/4031173">이얀의 편지</a> 1개</div></li><li class="is-reward"><b>Lv.52 악어 퇴치 1</b> <span>— 이얀</span><div>처치: <a href="../mob/2130103">주니어 네키</a> 40마리, <a href="../mob/3110100">리게이터</a> 250마리</div><div>재료: <a href="../item/4000034">주니어 네키의 가죽</a> 20개</div><div class="q-step-rew">보상: 직업별 무기 주문서 10% 중 택 1</div></li><li class="is-reward"><b>Lv.52 악어 퇴치 2</b> <span>— 이얀</span><div>처치: <a href="../mob/5130103">크로코</a> 120마리</div><div>재료: <a href="../item/4000033">크로코의 가죽</a> 50개</div><div class="q-step-rew">보상: 망토 힘/지력/민첩/행운 주문서 60% 중 택 1</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="고려" data-mid="1394000" id="q-8062">
+  <summary class="q-row">
+    <span class="q-label is-con">고려</span>
+    <span class="q-row-lv">Lv.55</span>
+    <span class="q-row-name">어둠 속의 봉제인형 ~ 어둠으로부터의 해방</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="8062"></label>
+    <span class="q-row-rew" title="투구 · 상의 · 하의 · 망토 · 방패 주문서 10% 중 1개 + 전신 · 장갑 · 하의 · 신발 · 망토 · 귀고리 주문서 10% 중 1개 + 두손검 · 두손도끼 · 두손둔기 · 망토 · 방패 주문서 10% 중 1개 + 무기 공격력 · 장갑 공격력 주문서 10% 중 1개"><span class="q-chip" title="하의 방어력 주문서 10%"><img src="../images/item/2040602.png" alt="하의 방어력 주문서 10%" width="28" height="28"><b>하방 10%</b></span><i class="q-chip-plus" aria-hidden="true">+</i><span class="q-chip" title="하의 방어력 주문서 10%"><img src="../images/item/2040602.png" alt="하의 방어력 주문서 10%" width="28" height="28"><b>하방 10%</b></span><i class="q-chip-plus" aria-hidden="true">+</i><span class="q-chip" title="10% 주문서 랜덤"><img src="../images/item/2040001.png" alt="10% 주문서 랜덤" width="28" height="28"></span><i class="q-chip-plus" aria-hidden="true">+</i><span class="q-chip" title="10% 주문서 랜덤"><img src="../images/item/2040001.png" alt="10% 주문서 랜덤" width="28" height="28"></span><span class="sr-only">투구 · 상의 · 하의 · 망토 · 방패 주문서 10% 중 1개 + 전신 · 장갑 · 하의 · 신발 · 망토 · 귀고리 주문서 10% 중 1개 + 두손검 · 두손도끼 · 두손둔기 · 망토 · 방패 주문서 10% 중 1개 + 무기 공격력 · 장갑 공격력 주문서 10% 중 1개</span></span>
+    <span class="q-row-pl pos"><b>+139.4만</b><small>+51.4만 ~ +1,579.4만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc is-pixel" src="../images/quest/npc-jay.png" alt="" loading="lazy" width="86" height="142">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-con">고려</span><span class="q-type">랜덤 1개 · 보상 고정</span></div>
+      <h3><span class="q-lv">Lv.55 · 70 · 90 · 90</span> 어둠 속의 봉제인형 → 어둠에 사로잡힌 영혼 → 영혼의 행방 → 어둠으로부터의 해방</h3>
+      <p class="q-npcline">제이 <span>(헤네시스)</span> · 보좌관 티군 <span>(루디브리엄: 에오스탑 입구)</span> · 사쿠라 <span>([일본] 쇼와 마을)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=785s" target="_blank" rel="noopener">▶ 영상에서 보기 13:05</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/quest/item/vdeb3e1f0.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031157">메이플 고서 上</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/quest/item/vecc7a88b.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031158">메이플 고서 中</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/item/4031159.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031159">메이플 고서 下</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/quest/item/4031160.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031160">명예의 훈장</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/item/4000143.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000143">좀비테니 인형</a> <b>×100</b></span><em>4만</em></li><li><img src="../images/item/4000144.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000144">자유로운 영혼</a> <b>×100</b></span><em>65만</em></li><li><img src="../images/item/4000147.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000147">봉인된 테니인형</a> <b>×100</b></span><em>3만</em></li><li><img src="../images/item/4000148.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000148">속박의 굴레</a> <b>×100</b></span><em>30만</em></li></ul><p class="q-cost">합계 102만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="하의 방어력 주문서 10%"><img src="../images/item/2040602.png" alt="하의 방어력 주문서 10%" width="28" height="28"><b>10%</b></span></div><span><small>어둠 속의 봉제인형</small>투구 · 상의 · 하의 · 망토 · 방패 주문서 10% 중 1개</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="하의 방어력 주문서 10%"><img src="../images/item/2040602.png" alt="하의 방어력 주문서 10%" width="28" height="28"><b>10%</b></span></div><span><small>어둠에 사로잡힌 영혼</small>전신 · 장갑 · 하의 · 신발 · 망토 · 귀고리 주문서 10% 중 1개</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="엘릭서"><img src="../images/item/2000004.png" alt="엘릭서" width="28" height="28"></span></div><span><small>영혼의 행방</small>엘릭서</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="엘릭서"><img src="../images/item/2000004.png" alt="엘릭서" width="28" height="28"></span></div><span><small>꼭두각시</small>엘릭서</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="10% 주문서 랜덤"><img src="../images/item/2040001.png" alt="10% 주문서 랜덤" width="28" height="28"></span></div><span><small>건드려버린 마음</small>두손검 · 두손도끼 · 두손둔기 · 망토 · 방패 주문서 10% 중 1개</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="10% 주문서 랜덤"><img src="../images/item/2040001.png" alt="10% 주문서 랜덤" width="28" height="28"></span></div><span><small>어둠으로부터의 해방</small>무기 공격력 · 장갑 공격력 주문서 10% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+139.4만</p><p class="q-range"><span>제일 안 좋게 +51.4만</span> <span>제일 좋게 +1,579.4만</span></p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 보통 <b>+241.4만</b> <span>(+153.4만 ~ +1,681.4만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>선행 1: 일본 &#39;사쿠라와 곰 인형&#39;</li><li>선행 2: 헤네시스 제이 &#39;메이플 고서를 되찾아라&#39; — 고서 上·中·下 세 권 (순서는 中 → 上 → 下 추천)</li><li>中: 엘리니아 맨 위 포탈로 마법 도서관 → 빨간 상자 부수기</li><li>上: 엘리니아 → 오르비스 배 선실 빨간 상자 (오르비스에 가기 싫으면 재접속하면 엘리니아로 돌아와요)</li><li>下: 루디브리엄 시간의 길 2·3 크로노스</li><li>세 권을 모아 루디브리엄 → 왼쪽 → 루디브리엄 마을 → 에오스탑 입구 보좌관 티군에게 명예의 훈장을 받고 제이에게</li><li>Lv.55: 제이 → 보좌관 티군 → 좀비테니 인형 100개를 제이에게</li><li>Lv.70: 자유로운 영혼 100개</li><li>Lv.90: 헤네시스 제이 ↔ 쇼와 마을 사쿠라를 오가며 봉인된 테니인형 · 속박의 굴레 각 100개를 사쿠라에게, 마지막으로 제이에게</li></ol><p class="q-tip">레벨 55부터 90까지 이어지는 긴 연계라 고려로 넣었어요. 10% 주문서를 모두 네 장 받아요.</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (5장)</summary><figure class="q-photo"><a href="../images/quest/ellinia-top.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/ellinia-top.webp" alt="엘리니아 맨 위 건물" loading="lazy"></a><figcaption>엘리니아 맨 위 건물</figcaption></figure><figure class="q-photo"><a href="../images/quest/library-box.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/library-box.webp" alt="마법 도서관 빨간 상자 (고서 中)" loading="lazy"></a><figcaption>마법 도서관 빨간 상자 (고서 中)</figcaption></figure><figure class="q-photo"><a href="../images/quest/ship-cabin.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/ship-cabin.webp" alt="엘리니아 → 오르비스 배 선실 입구" loading="lazy"></a><figcaption>엘리니아 → 오르비스 배 선실 입구</figcaption></figure><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/ship-box.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/ship-box.webp" alt="배 선실 빨간 상자 (고서 上)" loading="lazy" width="757" height="228" style="width:757px;height:228px"></a><figcaption>배 선실 빨간 상자 (고서 上) <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure><figure class="q-photo"><a href="../images/quest/time-road.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/time-road.webp" alt="시간의 길: 크로노스 (고서 下)" loading="lazy"></a><figcaption>시간의 길: 크로노스 (고서 下)</figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 9개)</summary><ol><li class=""><b>Lv.25 메이플 고서를 되찾아라 1</b> <span>— 제이 → 보좌관 티군</span><div>재료: <a href="../item/4031157">메이플 고서 上</a> 1개, <a href="../item/4031158">메이플 고서 中</a> 1개, <a href="../item/4031159">메이플 고서 下</a> 1개</div></li><li class=""><b>Lv.25 메이플 고서를 되찾아라 2</b> <span>— 보좌관 티군 → 제이</span><div>재료: <a href="../item/4031160">명예의 훈장</a> 1개</div></li><li class=""><b>Lv.55 어둠 속의 봉제인형</b> <span>— 제이 → 보좌관 티군</span></li><li class="is-reward"><b>Lv.55 어둠 속의 봉제인형</b> <span>— 보좌관 티군 → 제이</span><div>재료: <a href="../item/4000143">좀비테니 인형</a> 100개</div><div class="q-step-rew">보상: 투구 / 상의 / 하의 / 망토 / 방패 주문서 10% 중 1개 랜덤</div></li><li class="is-reward"><b>Lv.70 어둠에 사로잡힌 영혼</b> <span>— 제이</span><div>재료: <a href="../item/4000144">자유로운 영혼</a> 100개</div><div class="q-step-rew">보상: 전신 / 장갑 / 하의 / 신발 / 망토 주문서 10% 중 1개 랜덤</div></li><li class="is-reward"><b>Lv.90 영혼의 행방</b> <span>— 제이 → 사쿠라</span><div class="q-step-rew">보상: 엘릭서</div></li><li class="is-reward"><b>Lv.90 꼭두각시</b> <span>— 사쿠라 → 제이</span><div class="q-step-rew">보상: 엘릭서</div></li><li class="is-reward"><b>Lv.90 건드려버린 마음</b> <span>— 제이 → 사쿠라</span><div>재료: <a href="../item/4000147">봉인된 테니인형</a> 100개, <a href="../item/4000148">속박의 굴레</a> 100개</div><div class="q-step-rew">보상: 10% 주문서 랜덤 1개</div></li><li class="is-reward"><b>Lv.90 어둠으로부터의 해방</b> <span>— 사쿠라 → 제이</span><div class="q-step-rew">보상: 10% 주문서 랜덤 1개</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="고려" data-mid="675200" id="q-2119">
+  <summary class="q-row">
+    <span class="q-label is-con">고려</span>
+    <span class="q-row-lv">Lv.60</span>
+    <span class="q-row-name">유적 발굴단의 공고문</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="2119"></label>
+    <span class="q-row-rew" title="직업별 무기 주문서 10% 중 택 1"><span class="q-chip" title="직업별 무기 주문서 10%"><img src="../images/item/2040001.png" alt="직업별 무기 주문서 10%" width="28" height="28"><b>직업별무기 10%</b></span><span class="sr-only">직업별 무기 주문서 10% 중 택 1</span></span>
+    <span class="q-row-pl pos"><b>+67.5만</b><small>+42.1만 ~ +97.1만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-board.png" alt="" loading="lazy" width="126" height="152">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-con">고려</span><span class="q-type">골라서 1개</span></div>
+      <h3><span class="q-lv">Lv.60</span> 유적 발굴단의 공고문</h3>
+      <p class="q-npcline">유적발굴단 게시판 <span>(빅토리아로드: 유적발굴단 캠프)</span> · 샨</p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=906s" target="_blank" rel="noopener">▶ 영상에서 보기 15:06</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000206.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000206">갈비뼈</a> <b>×60</b></span><em>4,800</em></li><li><img src="../images/item/4000207.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000207">골반뼈</a> <b>×40</b></span><em>2만</em></li><li><img src="../images/item/4000208.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000208">말 머리뼈</a> <b>×20</b></span><em>4,000</em></li></ul><p class="q-cost">합계 2.9만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="직업별 무기 주문서 10%"><img src="../images/item/2040001.png" alt="직업별 무기 주문서 10%" width="28" height="28"><b>10%</b></span></div><span>직업별 무기 주문서 10% 중 택 1</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+67.5만</p><p class="q-range"><span>제일 안 좋게 +42.1만</span> <span>제일 좋게 +97.1만</span></p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 보통 <b>+70.4만</b> <span>(+45만 ~ +100만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>페리온 동쪽 바위산 1에서 더 오른쪽 바위길 3 → 위쪽 빨간 포탈 → 유적 발굴지 1·2·3 → 유적발굴단 캠프</li><li>캠프 게시판에서 받고, 완료는 샨에게</li><li>스켈레톤 사병 200 · 장교 100 · 지휘관 40마리</li><li>유적의 무덤 1·2를 지나 유적의 무덤 3의 빨간 입구 → 제2군영에서 사병 · 장교</li><li>사병을 다 잡으면 유적의 무덤 4에서 장교 · 지휘관</li></ol><p class="q-tip">보상은 직업별 무기 공격력 10% 골라서 1개라 직업마다 남는 돈이 달라요. 사냥이 340마리라 고려로 넣었어요.</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (2장)</summary><figure class="q-photo"><a href="../images/quest/rocky3.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/rocky3.webp" alt="바위길 3 위쪽 포탈" loading="lazy"></a><figcaption>바위길 3 위쪽 포탈</figcaption></figure><figure class="q-photo"><a href="../images/quest/tomb3.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/tomb3.webp" alt="유적의 무덤 3: 제2군영 입구" loading="lazy"></a><figcaption>유적의 무덤 3: 제2군영 입구</figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 1개)</summary><ol><li class="is-reward"><b>Lv.60 유적 발굴단의 공고문</b> <span>— 유적발굴단 게시판 → 샨</span><div>처치: <a href="../mob/6230602">스켈레톤 장교</a> 100마리, <a href="../mob/7130103">스켈레톤 지휘관</a> 40마리, <a href="../mob/5150001">스켈레톤 사병</a> 200마리</div><div>재료: <a href="../item/4000206">갈비뼈</a> 60개, <a href="../item/4000207">골반뼈</a> 40개, <a href="../item/4000208">말 머리뼈</a> 20개</div><div class="q-step-rew">보상: 직업별 무기 주문서 10% 중 택 1</div></li></ol></details>  </div>
+</details>
+</section>
+<section class="q-region" id="orbis">
+  <div class="q-region-head">
+    <h2 class="sub-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>오르비스 <small>4개</small><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1004s" target="_blank" rel="noopener">▶ 영상 16:44</a></h2>
+    <p class="q-region-sum"><span class="only-rec">추천 4개 다 사면 보통 <b class="pos">+115.8만</b> <span class="q-tri-range">(+113.8만 ~ +363.8만)</span></span><span class="only-all">추천 + 고려 4개 다 사면 보통 <b class="pos">+115.8만</b> <span class="q-tri-range">(+113.8만 ~ +363.8만)</span></span></p>
+  </div>
+  <div class="q-way"><p><b>가는 법</b> 엘리니아에서 오르비스로 가는 배는 15분마다 떠서 기다려야 할 수 있어요. 엘리니아에서 에델슈타인을 거쳐 가면 기다리는 시간이 없어서 이쪽을 추천해요.</p><p><b>미리 받아 두기</b> 오르비스에 도착하면 리사에게 &#39;리사의 소개&#39;를 미리 받아 두세요. 엘나스 &#39;스카두르의 새로운 모피&#39;의 선행이에요.</p><p><b>NPC 위치</b> 봉달이는 오르비스 가운데 아래, 리사는 그 오른쪽에 있어요. 요정 크리엘은 오르비스 잡화상점에 있어요.</p><details class="q-photos"><summary>가는 길 · 맵 사진 보기 (1장)</summary><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/orbis-npcs.webp" target="_blank" rel="noopener" data-x="0.234" title="눌러서 원본 크기로 보기"><img src="../images/quest/orbis-npcs.webp" alt="오르비스: 찰리중사 · 봉달이 · 리사" loading="lazy" width="779" height="320" style="width:779px;height:320px"></a><figcaption>오르비스: 찰리중사 · 봉달이 · 리사 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure></details></div><details class="card q-card" data-label="추천" data-mid="565100" id="q-3054">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.30</span>
+    <span class="q-row-name">외로운 봉달이 ~ 리사의 특수 치료제</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3054"></label>
+    <span class="q-row-rew" title="펫장비 이동속도 주문서 60%"><span class="q-chip" title="펫장비 이동속도 주문서 60%"><img src="../images/item/2048001.png" alt="펫장비 이동속도 주문서 60%" width="28" height="28"><b>펫장비이속 60%</b></span><span class="sr-only">펫장비 이동속도 주문서 60%</span></span>
+    <span class="q-row-pl pos"><b>+56.5만</b></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-bongdal.png" alt="" loading="lazy" width="118" height="110">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">보상 고정</span></div>
+      <h3><span class="q-lv">Lv.30</span> 외로운 봉달이 ~ 리사의 특수 치료제</h3>
+      <p class="q-npcline">봉달이 <span>(스카이로드: 오르비스)</span> · 리사 <span>(스카이로드: 오르비스)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1042s" target="_blank" rel="noopener">▶ 영상에서 보기 17:22</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000073.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000073">단단한 뿔</a> <b>×80</b></span><em>3.6만</em></li><li><img src="../images/item/4003004.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4003004">뻣뻣한 깃털</a> <b>×15</b></span><em>750</em></li><li><img src="../images/item/4000021.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000021">동물의 가죽</a> <b>×5</b></span><em>500</em></li><li><img src="../images/item/2000001.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/2000001">주황 포션</a> <b>×40</b></span><em>6,400 · 상점</em></li><li><img src="../images/item/2000003.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/2000003">파란 포션</a> <b>×20</b></span><em>4,000 · 상점</em></li><li><img src="../images/item/2050000.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/2050000">해독제</a> <b>×1</b></span><em>250 · 상점</em></li><li><img src="../images/item/4000068.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000068">페어리의 더듬이</a> <b>×1</b></span><em>1,500</em></li></ul><p class="q-cost">합계 4.9만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="뿔피리"><img src="../images/quest/item/n94837cf8.png" alt="뿔피리" width="28" height="28"></span><span class="q-chip" title="블루 문"><img src="../images/item/1032011.png" alt="블루 문" width="28" height="28"></span><span class="q-chip" title="만병통치약 10개"><img src="../images/item/2050004.png" alt="만병통치약" width="28" height="28"><b>×10</b></span></div><span><small>요정의 뿔피리</small>뿔피리, 블루 문, 만병통치약 10개</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="펫장비 이동속도 주문서 60%"><img src="../images/item/2048001.png" alt="펫장비 이동속도 주문서 60%" width="28" height="28"><b>60%</b></span></div><span><small>리사의 특수치료제 Ⅱ</small>펫장비 이동속도 주문서 60%</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+56.5만</p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 <b>+60.4만</b></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>오르비스 가운데 아래 봉달이에게 시작하고, 나머지는 대부분 오른쪽 리사에게 받고 완료해요.</li><li>요정의 뿔피리: 단단한 뿔 80개 · 뻣뻣한 깃털 15개 · 동물의 가죽 5개</li><li>리사의 특수 치료제: 주황 포션 40개 · 파란 포션 20개 · 해독제 1개 · 페어리의 더듬이 1개</li></ol><p class="q-tip">재료값이 5만 메소도 안 들고 보상이 고정이라 꼭 하세요.</p></div>
+  <details class="q-steps"><summary>단계별 보기 (퀘스트 5개)</summary><ol><li class=""><b>Lv.30 외로운 봉달이</b> <span>— 봉달이 → 리사</span></li><li class="is-reward"><b>Lv.30 요정의 뿔피리</b> <span>— 리사</span><div>재료: <a href="../item/4000073">단단한 뿔</a> 80개, <a href="../item/4003004">뻣뻣한 깃털</a> 15개, <a href="../item/4000021">동물의 가죽</a> 5개</div><div class="q-step-rew">보상: 뿔피리, 블루 문, 만병통치약</div></li><li class=""><b>Lv.30 요정의 뿔피리 Ⅱ</b> <span>— 리사 → 봉달이</span><div>재료: <a href="../item/4031190">뿔피리</a> 1개</div></li><li class=""><b>Lv.30 리사의 특수 치료제</b> <span>— 봉달이 → 리사</span></li><li class="is-reward"><b>Lv.30 리사의 특수치료제 Ⅱ</b> <span>— 리사</span><div>재료: <a href="../item/2000001">주황 포션</a> 40개, <a href="../item/2000003">파란 포션</a> 20개, <a href="../item/2050000">해독제</a> 1개, <a href="../item/4000068">페어리의 더듬이</a> 1개</div><div class="q-step-rew">보상: 펫장비 이동속도 주문서 60%</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="추천" data-mid="380000" id="q-3091">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.30</span>
+    <span class="q-row-name">바다의 풍경</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3091"></label>
+    <span class="q-row-rew" title="신발 점프력·이동속도 주문서 10/60% 중 1개"><span class="q-chip" title="신발 점프력 주문서 10%, 신발 점프력 주문서 60%"><img src="../images/item/2040705.png" alt="신발 점프력 주문서 10%, 신발 점프력 주문서 60%" width="28" height="28"><b>신점 10·60%</b></span><span class="q-chip" title="신발 이동속도 주문서 60%, 신발 이동속도 주문서 10%"><img src="../images/item/2040707.png" alt="신발 이동속도 주문서 60%, 신발 이동속도 주문서 10%" width="28" height="28"><b>신이속 10·60%</b></span><span class="sr-only">신발 점프력·이동속도 주문서 10/60% 중 1개</span></span>
+    <span class="q-row-pl pos"><b>+38만</b><small>+38만 ~ +170만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-kriel.png" alt="" loading="lazy" width="75" height="98">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.30</span> 바다의 풍경</h3>
+      <p class="q-npcline">요정 크리엘 <span>(오르비스: 오르비스잡화상점)</span> · 뮤즈 <span>(아쿠아리움: 동물원)</span> · 알케스터 <span>(엘나스: 엘나스시장)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1082s" target="_blank" rel="noopener">▶ 영상에서 보기 18:02</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/quest/item/nb83276f7.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031310">아쿠아로드 사진첩</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/item/4031311.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031311">눈송이 결정</a> <b>×100</b></span><em>직접 사냥</em></li><li><img src="../images/quest/item/n910ab82b.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031312">눈결정의 마법구</a> <b>×1</b></span><em>직접 사냥</em></li></ul><p class="q-cost">합계 0메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="신발 점프력 주문서 10%"><img src="../images/item/2040705.png" alt="신발 점프력 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="신발 점프력 주문서 60%"><img src="../images/item/2040704.png" alt="신발 점프력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="신발 이동속도 주문서 60%"><img src="../images/item/2040707.png" alt="신발 이동속도 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="신발 이동속도 주문서 10%"><img src="../images/item/2040708.png" alt="신발 이동속도 주문서 10%" width="28" height="28"><b>10%</b></span></div><span>신발 점프력·이동속도 주문서 10/60% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+38만</p><p class="q-range"><span>제일 안 좋게 +38만</span> <span>제일 좋게 +170만</span></p><p class="q-verdict">확정 이득</p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>오르비스 잡화상점 요정 크리엘에게 받기</li><li>아쿠아리움 뮤즈에게 사진첩 퀘스트 받기</li><li>엘나스 알케스터에게 눈송이 결정 100개 → 눈결정의 마법구 (눈송이 결정은 오르비스탑 7층 리티, 3층 다크 리티)</li><li>마법구를 뮤즈에게 → 아쿠아로드 사진첩</li><li>사진첩을 크리엘에게 가져가면 완료</li></ol><p class="q-tip">오르비스 ↔ 엘나스는 마법석 활성화 주문서로 오르비스 마법석을 타면 빨라요. 오르비스 → 아쿠아리움은 오르비스탑 지하 1·2층 → 바다나들목에서 마을 귀환 주문서, 또는 학으로 무릉 → 백초마을 → 맨 왼쪽 포탈 돌고래. 뮤즈에게 받은 사진첩을 한 번 버리고 다시 받으면 히든 퀘스트 &#39;잃어버린 사진첩&#39;이 나와요 (스페셜 퀘스트용).</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (3장)</summary><figure class="q-photo"><a href="../images/quest/obj-orbis-stone.png" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/obj-orbis-stone.png" alt="오르비스 마법석" loading="lazy"></a><figcaption>오르비스 마법석</figcaption></figure><figure class="q-photo"><a href="../images/quest/orbis-tower1.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/orbis-tower1.webp" alt="오르비스탑 1층 지하 포탈" loading="lazy"></a><figcaption>오르비스탑 1층 지하 포탈</figcaption></figure><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/herb-dolphin.webp" target="_blank" rel="noopener" data-x="0.021" title="눌러서 원본 크기로 보기"><img src="../images/quest/herb-dolphin.webp" alt="백초마을 돌고래 포탈" loading="lazy" width="1435" height="320" style="width:1435px;height:320px"></a><figcaption>백초마을 돌고래 포탈 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 5개)</summary><ol><li class="is-reward"><b>Lv.30 바다의 풍경</b> <span>— 요정 크리엘</span><div>재료: <a href="../item/4031310">아쿠아로드 사진첩</a> 1개</div><div class="q-step-rew">보상: 신발 점프력/이동속도 주문서 10%, 60% 중 1개 랜덤</div></li><li class=""><b>Lv.30 아쿠아로드 사진첩</b> <span>— 뮤즈 → 알케스터</span></li><li class=""><b>Lv.30 눈의 결정1</b> <span>— 알케스터</span><div>재료: <a href="../item/4031311">눈송이 결정</a> 100개</div></li><li class=""><b>Lv.30 눈의 결정2</b> <span>— 알케스터 → 뮤즈</span><div>재료: <a href="../item/4031312">눈결정의 마법구</a> 1개</div></li><li class=""><b>Lv.30 잃어버린 사진첩</b> <span>— 뮤즈</span></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="추천" data-mid="-12500" id="q-3064">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.35</span>
+    <span class="q-row-name">네로를 지켜라</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3064"></label>
+    <span class="q-row-rew" title="펫장비 이동속도 주문서 10/60% 중 1개"><span class="q-chip" title="펫장비 이동속도 주문서 10%, 펫장비 이동속도 주문서 60%"><img src="../images/item/2048002.png" alt="펫장비 이동속도 주문서 10%, 펫장비 이동속도 주문서 60%" width="28" height="28"><b>펫장비이속 10·60%</b></span><span class="sr-only">펫장비 이동속도 주문서 10/60% 중 1개</span></span>
+    <span class="q-row-pl neg"><b>−1.3만</b><small>−1.3만 ~ +53.8만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-ericsson.png" alt="" loading="lazy" width="66" height="106">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.35</span> 네로를 지켜라</h3>
+      <p class="q-npcline">에릭손 <span>(오르비스: 오르비스공원)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1158s" target="_blank" rel="noopener">▶ 영상에서 보기 19:18</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000073.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000073">단단한 뿔</a> <b>×50</b></span><em>2.3만</em></li><li><img src="../images/quest/item/n502f78a5.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031191">금방울</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/quest/item/nae1c76fe.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031192">빨간 리본끈</a> <b>×1</b></span><em>직접 사냥</em></li></ul><p class="q-cost">합계 2.3만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="펫장비 이동속도 주문서 10%"><img src="../images/item/2048002.png" alt="펫장비 이동속도 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="펫장비 이동속도 주문서 60%"><img src="../images/item/2048001.png" alt="펫장비 이동속도 주문서 60%" width="28" height="28"><b>60%</b></span></div><span>펫장비 이동속도 주문서 10/60% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit neg"><h4>다 사면</h4><p class="q-big">−1.3만</p><p class="q-range"><span>제일 안 좋게 −1.3만</span> <span>제일 좋게 +53.8만</span></p><p class="q-verdict">보통은 손해</p><p class="q-self">직접 모으면 보통 <b>+1만</b> <span>(+1만 ~ +56만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>오르비스 공원 에릭손에게 받아요.</li><li>선행 &#39;네로의 목걸이&#39;: 금방울(캐시샵 펫 탭) · 빨간 리본끈(캐시샵 기타 탭 게임 칸), 둘 다 1메소</li><li>주니어 샐리온 · 주니어 라이오너 · 주니어 그류핀 각 50마리 + 단단한 뿔 50개</li><li>오르비스 → 구름공원 1 → 위쪽 포탈 &#39;세 가지 빛 정원으로 가는 길&#39;: 빨간 포탈 샐리온, 주황 포탈 라이오너, 파란 포탈 그류핀</li></ol><p class="q-tip">10%가 나오면 조금 손해, 60%가 나오면 50만 메소 넘게 남아요.</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (3장)</summary><figure class="q-photo"><a href="../images/quest/orbis-park.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/orbis-park.webp" alt="오르비스 공원: 에릭손" loading="lazy"></a><figcaption>오르비스 공원: 에릭손</figcaption></figure><figure class="q-photo"><a href="../images/quest/cloud1.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/cloud1.webp" alt="구름공원 1 위쪽 포탈" loading="lazy"></a><figcaption>구름공원 1 위쪽 포탈</figcaption></figure><figure class="q-photo"><a href="../images/quest/light-garden.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/light-garden.webp" alt="세 가지 빛 정원으로 가는 길 (빨강 · 주황 · 파랑 포탈)" loading="lazy"></a><figcaption>세 가지 빛 정원으로 가는 길 (빨강 · 주황 · 파랑 포탈)</figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 2개)</summary><ol><li class="is-reward"><b>Lv.35 네로를 지켜라</b> <span>— 에릭손</span><div>처치: <a href="../mob/3210200">주니어 샐리온</a> 50마리, <a href="../mob/3210201">주니어 라이오너</a> 50마리, <a href="../mob/3210202">주니어 그류핀</a> 50마리</div><div>재료: <a href="../item/4000073">단단한 뿔</a> 50개</div><div class="q-step-rew">보상: 펫장비 이동속도 10%, 60% 중 1개 랜덤</div></li><li class=""><b>Lv.20 네로의 목걸이</b> <span>— 에릭손</span><div>재료: <a href="../item/4031191">금방울</a> 1개, <a href="../item/4031192">빨간 리본끈</a> 1개</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="추천" data-mid="225000" id="q-3043">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.40</span>
+    <span class="q-row-name">크리엘 도와주기</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3043"></label>
+    <span class="q-row-rew" title="무기 주문서 60% or 장갑공격력 주문서 60% 중 1개 랜덤"><span class="q-chip" title="무기 주문서 60%"><img src="../images/item/2040001.png" alt="무기 주문서 60%" width="28" height="28"><b>무기 60%</b></span><span class="q-chip" title="장갑 공격력 주문서 60%"><img src="../images/item/2040804.png" alt="장갑 공격력 주문서 60%" width="28" height="28"><b>장공 60%</b></span><span class="sr-only">무기 주문서 60% or 장갑공격력 주문서 60% 중 1개 랜덤</span></span>
+    <span class="q-row-pl pos"><b>+22.5만</b><small>+20.5만 ~ +83.5만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-kriel.png" alt="" loading="lazy" width="75" height="98">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.40</span> 크리엘 도와주기</h3>
+      <p class="q-npcline">요정 윙 <span>(엘리니아)</span> · 요정 크리엘 <span>(오르비스: 오르비스잡화상점)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1211s" target="_blank" rel="noopener">▶ 영상에서 보기 20:11</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/quest/item/4031197.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031197">켈벨로스의 눈물</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/item/4000073.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000073">단단한 뿔</a> <b>×200</b></span><em>9만</em></li><li><img src="../images/quest/item/n05d74301.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031198">빈 물약병</a> <b>×20</b></span><em>직접 사냥</em></li><li><img src="../images/item/4000058.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000058">네펜데스의 씨앗</a> <b>×50</b></span><em>7.5만</em></li></ul><p class="q-cost">합계 16.5만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="무기 주문서 60%"><img src="../images/item/2040001.png" alt="무기 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="장갑 공격력 주문서 60%"><img src="../images/item/2040804.png" alt="장갑 공격력 주문서 60%" width="28" height="28"><b>60%</b></span></div><span>무기 주문서 60% or 장갑공격력 주문서 60% 중 1개 랜덤</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+22.5만</p><p class="q-range"><span>제일 안 좋게 +20.5만</span> <span>제일 좋게 +83.5만</span></p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 보통 <b>+39만</b> <span>(+37만 ~ +100만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>빅토리아에서 요정 윙에게 받아 둔 &#39;새로운 세계로&#39;가 선행이고, 오르비스 잡화상점 요정 크리엘에게 완료해요.</li><li>재료: 단단한 뿔 200개 · 네펜데스의 씨앗 50개</li><li>빈 물약병 20개: 오르비스 · 오르비스 공원 곳곳의 상자를 기본 공격으로 부수기</li></ol></div>
+  <details class="q-steps"><summary>단계별 보기 (퀘스트 2개)</summary><ol><li class=""><b>Lv.40 새로운 세계로</b> <span>— 요정 윙 → 요정 크리엘</span><div>재료: <a href="../item/4031197">켈벨로스의 눈물</a> 1개</div></li><li class="is-reward"><b>Lv.40 크리엘 도와주기</b> <span>— 요정 크리엘</span><div>재료: <a href="../item/4000073">단단한 뿔</a> 200개, <a href="../item/4031198">빈 물약병</a> 20개, <a href="../item/4000058">네펜데스의 씨앗</a> 50개</div><div class="q-step-rew">보상: 무기 주문서 60% or 장갑공격력 주문서 60% 중 1개 랜덤</div></li></ol></details>  </div>
+</details>
+</section>
+<section class="q-region" id="elnath">
+  <div class="q-region-head">
+    <h2 class="sub-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>엘나스 <small>3개</small><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1276s" target="_blank" rel="noopener">▶ 영상 21:16</a></h2>
+    <p class="q-region-sum"><span class="only-rec">추천 3개 다 사면 보통 <b class="pos">+100.2만</b> <span class="q-tri-range">(+87.2만 ~ +541.2만)</span></span><span class="only-all">추천 + 고려 3개 다 사면 보통 <b class="pos">+100.2만</b> <span class="q-tri-range">(+87.2만 ~ +541.2만)</span></span></p>
+  </div>
+  <div class="q-way"><p><b>가는 법</b> 오르비스 마법석(마법석 활성화 주문서)으로 오르비스탑 1층에 내려가서, 눈덮인 언덕에서 마을 귀환 주문서를 쓰면 엘나스예요.</p><p><b>NPC 위치</b> 폭스상사는 엘나스 마켓 앞, 스카두르는 폭스상사 왼쪽, 샤모스는 장로의 관저 안 아래층에 있어요.</p><details class="q-photos"><summary>가는 길 · 맵 사진 보기 (2장)</summary><figure class="q-photo"><a href="../images/quest/obj-orbis-stone.png" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/obj-orbis-stone.png" alt="오르비스 마법석" loading="lazy"></a><figcaption>오르비스 마법석</figcaption></figure><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/elnath-fox.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/elnath-fox.webp" alt="엘나스: 폭스상사" loading="lazy" width="787" height="320" style="width:787px;height:320px"></a><figcaption>엘나스: 폭스상사 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure></details></div><details class="card q-card" data-label="추천" data-mid="346000" id="q-3003">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.40</span>
+    <span class="q-row-name">찰리중사의 행방</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3003"></label>
+    <span class="q-row-rew" title="신발 점프력·이동속도 주문서 10/60% 중 1개"><span class="q-chip" title="신발 점프력 주문서 60%, 신발 점프력 주문서 10%"><img src="../images/item/2040704.png" alt="신발 점프력 주문서 60%, 신발 점프력 주문서 10%" width="28" height="28"><b>신점 10·60%</b></span><span class="q-chip" title="신발 이동속도 주문서 60%, 신발 이동속도 주문서 10%"><img src="../images/item/2040707.png" alt="신발 이동속도 주문서 60%, 신발 이동속도 주문서 10%" width="28" height="28"><b>신이속 10·60%</b></span><span class="sr-only">신발 점프력·이동속도 주문서 10/60% 중 1개</span></span>
+    <span class="q-row-pl pos"><b>+34.6만</b><small>+34.6만 ~ +166.6만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc is-pixel" src="../images/quest/npc-fox.png" alt="" loading="lazy" width="90" height="132">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.40</span> 찰리중사의 행방</h3>
+      <p class="q-npcline">폭스상사 <span>(엘나스산맥: 엘나스)</span> · 찰리중사 <span>(스카이로드: 오르비스)</span> · 브라보하사 <span>(엘나스산맥: 차디찬벌판)</span> · 이지병장 <span>(스카이로드: 구름공원6)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1301s" target="_blank" rel="noopener">▶ 영상에서 보기 21:41</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/quest/item/nf3a92474.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4011005">오리할콘</a> <b>×2</b></span><em>8,400</em></li><li><img src="../images/quest/item/n4248c46b.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4011003">아다만티움</a> <b>×2</b></span><em>5,600</em></li><li><img src="../images/quest/item/n856ea4b1.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4021005">사파이어</a> <b>×2</b></span><em>2만</em></li><li><img src="../images/quest/item/n4cfe7f57.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031049">고대문서 조각</a> <b>×3</b></span><em>직접 사냥</em></li></ul><p class="q-cost">합계 3.4만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="신발 점프력 주문서 60%"><img src="../images/item/2040704.png" alt="신발 점프력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="신발 점프력 주문서 10%"><img src="../images/item/2040705.png" alt="신발 점프력 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="신발 이동속도 주문서 60%"><img src="../images/item/2040707.png" alt="신발 이동속도 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="신발 이동속도 주문서 10%"><img src="../images/item/2040708.png" alt="신발 이동속도 주문서 10%" width="28" height="28"><b>10%</b></span></div><span>신발 점프력·이동속도 주문서 10/60% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+34.6만</p><p class="q-range"><span>제일 안 좋게 +34.6만</span> <span>제일 좋게 +166.6만</span></p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 보통 <b>+38만</b> <span>(+38만 ~ +170만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>알파소대 연락망으로도 알려진 연계예요. 엘나스 마켓 앞 폭스상사에게 받기</li><li>오르비스 찰리중사에게 오리할콘 2개</li><li>엘나스 오른쪽 포탈 → 빙판 조심 1·2 → 차가운 벌판 1 → 차가운 벌판 2 오른쪽 아래 빨간 포탈 → 차디찬 벌판 브라보하사에게 아다만티움 2개</li><li>오르비스 → 구름공원 1~5 → 구름공원 6 이지병장에게 사파이어 2개</li><li>그동안 모인 고대문서 조각 3개를 폭스상사에게 가져가면 완료</li></ol></div>
+  <details class="q-photos"><summary>동선 사진 보기 (3장)</summary><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/cold2.webp" target="_blank" rel="noopener" data-x="0.95" title="눌러서 원본 크기로 보기"><img src="../images/quest/cold2.webp" alt="차가운 벌판 2 오른쪽 아래 포탈" loading="lazy" width="773" height="320" style="width:773px;height:320px"></a><figcaption>차가운 벌판 2 오른쪽 아래 포탈 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/freezing-bravo.webp" target="_blank" rel="noopener" data-x="0.436" title="눌러서 원본 크기로 보기"><img src="../images/quest/freezing-bravo.webp" alt="차디찬 벌판: 브라보하사" loading="lazy" width="709" height="320" style="width:709px;height:320px"></a><figcaption>차디찬 벌판: 브라보하사 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure><figure class="q-photo"><a href="../images/quest/cloud6-easy.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/cloud6-easy.webp" alt="구름공원 6: 이지병장" loading="lazy"></a><figcaption>구름공원 6: 이지병장</figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 7개)</summary><ol><li class=""><b>Lv.40 찰리중사의 행방</b> <span>— 폭스상사 → 찰리중사</span></li><li class=""><b>Lv.40 찰리중사의 부탁</b> <span>— 찰리중사</span><div>재료: <a href="../item/4011005">오리할콘</a> 2개</div></li><li class=""><b>Lv.40 브라보하사의 행방</b> <span>— 찰리중사 → 브라보하사</span></li><li class=""><b>Lv.40 브라보하사의 부탁</b> <span>— 브라보하사</span><div>재료: <a href="../item/4011003">아다만티움</a> 2개</div></li><li class=""><b>Lv.40 이지병장의 행방</b> <span>— 브라보하사 → 이지병장</span></li><li class=""><b>Lv.40 이지병장의 부탁</b> <span>— 이지병장</span><div>재료: <a href="../item/4021005">사파이어</a> 2개</div></li><li class="is-reward"><b>Lv.40 찰리중사의 행방</b> <span>— 이지병장 → 폭스상사</span><div>재료: <a href="../item/4031049">고대문서 조각</a> 3개</div><div class="q-step-rew">보상: 신발 점프력/이동속도 주문서 10%, 60% 중 1개 랜덤</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="추천" data-mid="390000" id="q-3071">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.55</span>
+    <span class="q-row-name">샤모스의 부탁</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3071"></label>
+    <span class="q-row-rew" title="신발 이동속도 · 점프력 · 민첩성 주문서 10/60% 중 1개"><span class="q-chip" title="신발 점프력 주문서 60%, 신발 점프력 주문서 10%"><img src="../images/item/2040704.png" alt="신발 점프력 주문서 60%, 신발 점프력 주문서 10%" width="28" height="28"><b>신점 10·60%</b></span><span class="q-chip" title="신발 이동속도 주문서 60%, 신발 이동속도 주문서 10%"><img src="../images/item/2040707.png" alt="신발 이동속도 주문서 60%, 신발 이동속도 주문서 10%" width="28" height="28"><b>신이속 10·60%</b></span><span class="sr-only">신발 이동속도 · 점프력 · 민첩성 주문서 10/60% 중 1개</span></span>
+    <span class="q-row-pl pos"><b>+39만</b><small>+38만 ~ +170만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc is-pixel" src="../images/quest/npc-shamos.png" alt="" loading="lazy" width="154" height="132">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.55</span> 샤모스의 부탁</h3>
+      <p class="q-npcline">샤모스 <span>(엘나스: 장로의관저)</span> · 만지 <span>(페리온)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1364s" target="_blank" rel="noopener">▶ 영상에서 보기 22:44</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4031218.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031218">어둠의 계약서</a> <b>×1</b></span><em>직접 사냥</em></li></ul><p class="q-cost">합계 0메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="신발 점프력 주문서 60%"><img src="../images/item/2040704.png" alt="신발 점프력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="신발 점프력 주문서 10%"><img src="../images/item/2040705.png" alt="신발 점프력 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="신발 이동속도 주문서 60%"><img src="../images/item/2040707.png" alt="신발 이동속도 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="신발 이동속도 주문서 10%"><img src="../images/item/2040708.png" alt="신발 이동속도 주문서 10%" width="28" height="28"><b>10%</b></span></div><span>신발 이동속도 · 점프력 · 민첩성 주문서 10/60% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+39만</p><p class="q-range"><span>제일 안 좋게 +38만</span> <span>제일 좋게 +170만</span></p><p class="q-verdict">확정 이득</p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>엘나스 장로의 관저에 들어가 아래로 내려가면 샤모스가 있어요.</li><li>샤모스에게 받은 다음 페리온 왼쪽 위 만지와 대화를 끝까지 진행</li><li>엘나스로 돌아와 쿨리 좀비를 잡아 어둠의 계약서 1개 (마을 총알택시 → 죽은 나무의 숲 4가 편해요)</li><li>어둠의 계약서를 샤모스에게 가져가면 완료 (인기도 −2)</li></ol><p class="q-tip">재료값이 하나도 안 들어서 Lv.55가 되면 바로 하세요.</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (3장)</summary><figure class="q-photo"><a href="../images/quest/elnath-chief.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/elnath-chief.webp" alt="엘나스 장로의 관저" loading="lazy"></a><figcaption>엘나스 장로의 관저</figcaption></figure><figure class="q-photo"><a href="../images/quest/perion.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/perion.webp" alt="페리온: 만지 (왼쪽 위)" loading="lazy"></a><figcaption>페리온: 만지 (왼쪽 위)</figcaption></figure><figure class="q-photo"><a href="../images/quest/obj-taxi.png" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/obj-taxi.png" alt="총알택시" loading="lazy"></a><figcaption>총알택시</figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 2개)</summary><ol><li class=""><b>Lv.55 샤모스의 부탁</b> <span>— 샤모스 → 만지</span></li><li class="is-reward"><b>Lv.55 샤모스의 부탁</b> <span>— 만지 → 샤모스</span><div>재료: <a href="../item/4031218">어둠의 계약서</a> 1개</div><div class="q-step-rew">보상: 신발 주문서 10%, 60% 중 1개 랜덤</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="추천" data-mid="265700" id="q-3052">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.60</span>
+    <span class="q-row-name">리사의 소개 ~ 스카두르의 새로운 모피</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3052"></label>
+    <span class="q-row-rew" title="전신 갑옷 방어력·민첩·행운·지력 주문서 60% 중 1개"><span class="q-chip" title="전신 갑옷 방어력 주문서 60%"><img src="../images/item/2040504.png" alt="전신 갑옷 방어력 주문서 60%" width="28" height="28"><b>전방 60%</b></span><span class="q-chip" title="전신 갑옷 민첩 주문서 60%"><img src="../images/item/2040501.png" alt="전신 갑옷 민첩 주문서 60%" width="28" height="28"><b>전민 60%</b></span><span class="q-chip" title="전신 갑옷 행운 주문서 60%"><img src="../images/item/2040516.png" alt="전신 갑옷 행운 주문서 60%" width="28" height="28"><b>전행 60%</b></span><span class="q-chip" title="전신 갑옷 지력 주문서 60%"><img src="../images/item/2040513.png" alt="전신 갑옷 지력 주문서 60%" width="28" height="28"><b>전지 60%</b></span><span class="sr-only">전신 갑옷 방어력·민첩·행운·지력 주문서 60% 중 1개</span></span>
+    <span class="q-row-pl pos"><b>+26.6만</b><small>+14.6만 ~ +204.6만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc is-pixel" src="../images/quest/npc-scadur.png" alt="" loading="lazy" width="162" height="144">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.60</span> 리사의 소개 ~ 스카두르의 새로운 모피</h3>
+      <p class="q-npcline">리사 <span>(스카이로드: 오르비스)</span> · 스카두르 <span>(엘나스산맥: 엘나스)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1410s" target="_blank" rel="noopener">▶ 영상에서 보기 23:30</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/quest/item/4031204.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031204">리사의 소개장</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/item/4020005.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4020005">사파이어의 원석</a> <b>×50</b></span><em>3.8만</em></li><li><img src="../images/item/4000049.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000049">예티의 뿔</a> <b>×80</b></span><em>1.7만</em></li><li><img src="../images/item/4000051.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000051">헥터의 꼬리</a> <b>×250</b></span><em>13.8만</em></li><li><img src="../images/item/4000052.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000052">화이트팽의 꼬리</a> <b>×250</b></span><em>6.3만</em></li></ul><p class="q-cost">합계 25.4만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="전신 갑옷 방어력 주문서 60%"><img src="../images/item/2040504.png" alt="전신 갑옷 방어력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="전신 갑옷 민첩 주문서 60%"><img src="../images/item/2040501.png" alt="전신 갑옷 민첩 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="전신 갑옷 행운 주문서 60%"><img src="../images/item/2040516.png" alt="전신 갑옷 행운 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="전신 갑옷 지력 주문서 60%"><img src="../images/item/2040513.png" alt="전신 갑옷 지력 주문서 60%" width="28" height="28"><b>60%</b></span></div><span>전신 갑옷 방어력·민첩·행운·지력 주문서 60% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+26.6만</p><p class="q-range"><span>제일 안 좋게 +14.6만</span> <span>제일 좋게 +204.6만</span></p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 보통 <b>+52만</b> <span>(+40만 ~ +230만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>오르비스 리사에게 미리 받아 둔 &#39;리사의 소개&#39;가 선행이에요.</li><li>엘나스 폭스상사 왼쪽 스카두르에게 받고 완료</li><li>재료: 헥터의 꼬리 · 화이트팽의 꼬리 각 250개, 사파이어의 원석 50개, 예티의 뿔 80개</li></ol><p class="q-tip">전신 갑옷 행운이나 지력 60%가 나오면 200만 메소가 넘어요.</p></div>
+  <details class="q-steps"><summary>단계별 보기 (퀘스트 2개)</summary><ol><li class=""><b>Lv.60 리사의 소개</b> <span>— 리사 → 스카두르</span><div>재료: <a href="../item/4031204">리사의 소개장</a> 1개</div></li><li class="is-reward"><b>Lv.60 스카두르의 새로운 모피</b> <span>— 스카두르</span><div>재료: <a href="../item/4020005">사파이어의 원석</a> 50개, <a href="../item/4000049">예티의 뿔</a> 80개, <a href="../item/4000051">헥터의 꼬리</a> 250개, <a href="../item/4000052">화이트팽의 꼬리</a> 250개</div><div class="q-step-rew">보상: 전신 갑옷 주문서 60% 중 1개 랜덤</div></li></ol></details>  </div>
+</details>
+</section>
+<section class="q-region" id="ludibrium">
+  <div class="q-region-head">
+    <h2 class="sub-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>루디브리엄 <small>3개</small><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1477s" target="_blank" rel="noopener">▶ 영상 24:37</a></h2>
+    <p class="q-region-sum"><span class="only-rec">추천 2개 다 사면 보통 <b class="pos">+239만</b> <span class="q-tri-range">(+217만 ~ +631만)</span></span><span class="only-all">추천 + 고려 3개 다 사면 보통 <b class="pos">+277만</b> <span class="q-tri-range">(+255만 ~ +801만)</span></span></p>
+  </div>
+  <div class="q-way"><p><b>이동 팁</b> 에오스탑을 많이 오르내리니 이동 팁부터: 에오스탑 100층 · 71층 · 41층 · 1층의 에오스의 돌에 에오스의 돌 활성화 주문서(경매장 약 2,500메소)를 쓰면 층 사이를 바로 이동해요. 마을 귀환 주문서는 56층 위에서 쓰면 루디브리엄, 55층 아래에서 쓰면 지구방위본부로 가요. 루디브리엄 워프 캡슐(약 9만 메소)은 루디브리엄 지역이나 지구방위본부 어디서 써도 루디브리엄으로 돌아가요.</p><details class="q-photos"><summary>가는 길 · 맵 사진 보기 (1장)</summary><figure class="q-photo"><a href="../images/quest/obj-eos-stone.png" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/obj-eos-stone.png" alt="에오스의 돌" loading="lazy"></a><figcaption>에오스의 돌</figcaption></figure></details></div><details class="card q-card" data-label="고려" data-mid="380000" id="q-3239">
+  <summary class="q-row">
+    <span class="q-label is-con">고려</span>
+    <span class="q-row-lv">Lv.30</span>
+    <span class="q-row-name">정비 부품의 행방</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3239"></label>
+    <span class="q-row-rew" title="신발 이동속도·점프력 주문서 10/60% 중 1개"><span class="q-chip" title="신발 이동속도 주문서 60%, 신발 이동속도 주문서 10%"><img src="../images/item/2040707.png" alt="신발 이동속도 주문서 60%, 신발 이동속도 주문서 10%" width="28" height="28"><b>신이속 10·60%</b></span><span class="q-chip" title="신발 점프력 주문서 60%, 신발 점프력 주문서 10%"><img src="../images/item/2040704.png" alt="신발 점프력 주문서 60%, 신발 점프력 주문서 10%" width="28" height="28"><b>신점 10·60%</b></span><span class="sr-only">신발 이동속도·점프력 주문서 10/60% 중 1개</span></span>
+    <span class="q-row-pl pos"><b>+38만</b><small>+38만 ~ +170만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-chang.png" alt="" loading="lazy" width="93" height="137">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-con">고려</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.30</span> 정비 부품의 행방</h3>
+      <p class="q-npcline">조교 챙 <span>(루디브리엄성: 장난감공장&lt;1공정&gt;1구역)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1541s" target="_blank" rel="noopener">▶ 영상에서 보기 25:41</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/quest/item/n0be416fe.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031092">기계 부품</a> <b>×10</b></span><em>직접 사냥</em></li></ul><p class="q-cost">합계 0메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="신발 이동속도 주문서 60%"><img src="../images/item/2040707.png" alt="신발 이동속도 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="신발 이동속도 주문서 10%"><img src="../images/item/2040708.png" alt="신발 이동속도 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="신발 점프력 주문서 60%"><img src="../images/item/2040704.png" alt="신발 점프력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="신발 점프력 주문서 10%"><img src="../images/item/2040705.png" alt="신발 점프력 주문서 10%" width="28" height="28"><b>10%</b></span></div><span>신발 이동속도·점프력 주문서 10/60% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+38만</p><p class="q-range"><span>제일 안 좋게 +38만</span> <span>제일 좋게 +170만</span></p><p class="q-verdict">확정 이득</p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>루디브리엄 시계탑 아래 포탈 → 테라스홀 빨간 포탈 → 장난감공장</li><li>메인공정 1에서 쭉 왼쪽 → 1공정 3구역 · 2구역 → 1구역 조교 챙에게 받기</li><li>장난감공장 4구역 점프맵의 상자들에서 기계 부품 10개 찾기 (거미가 위아래로 움직이고, 컨베이어는 빨간 박스면 오른쪽 · 파란 박스면 왼쪽)</li></ol><p class="q-tip">재료값은 안 들지만 점프맵이라 고려로 넣었어요.</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (3장)</summary><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/ludi-terrace.webp" target="_blank" rel="noopener" data-x="0.58" title="눌러서 원본 크기로 보기"><img src="../images/quest/ludi-terrace.webp" alt="루디브리엄: 테라스홀 포탈" loading="lazy" width="1432" height="320" style="width:1432px;height:320px"></a><figcaption>루디브리엄: 테라스홀 포탈 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/terrace-factory.webp" target="_blank" rel="noopener" data-x="0.546" title="눌러서 원본 크기로 보기"><img src="../images/quest/terrace-factory.webp" alt="테라스홀: 장난감공장 포탈" loading="lazy" width="878" height="320" style="width:878px;height:320px"></a><figcaption>테라스홀: 장난감공장 포탈 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/factory4-jump.webp" target="_blank" rel="noopener" data-x="0.748" title="눌러서 원본 크기로 보기"><img src="../images/quest/factory4-jump.webp" alt="장난감공장 4구역 점프맵 · 빨간색 컨베이어 = 오른쪽 이동, 파란색 컨베이어 = 왼쪽 이동" loading="lazy" width="2000" height="182" style="width:2000px;height:182px"></a><figcaption>장난감공장 4구역 점프맵 · 빨간색 컨베이어 = 오른쪽 이동, 파란색 컨베이어 = 왼쪽 이동 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 1개)</summary><ol><li class="is-reward"><b>Lv.30 정비 부품의 행방</b> <span>— 조교 챙</span><div>재료: <a href="../item/4031092">기계 부품</a> 10개</div><div class="q-step-rew">보상: 신발 이동속도, 점프력 60%, 10% 주문서 중 랜덤 1개</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="추천" data-mid="590000" id="q-3233">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.33</span>
+    <span class="q-row-name">장난감 병정의 호두 ~ 망가진 시계탑</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3233"></label>
+    <span class="q-row-rew" title="직업별 무기 공격력 주문서 60% 중 1개 선택"><span class="q-chip" title="단검 공격력 주문서 60%"><img src="../images/item/2043301.png" alt="단검 공격력 주문서 60%" width="28" height="28"><b>단검공 60%</b></span><span class="q-chip" title="아대 공격력 주문서 60%"><img src="../images/item/2044701.png" alt="아대 공격력 주문서 60%" width="28" height="28"><b>아대공 60%</b></span><span class="sr-only">직업별 무기 공격력 주문서 60% 중 1개 선택</span></span>
+    <span class="q-row-pl pos"><b>+59만</b><small>+39만 ~ +90만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-delv.png" alt="" loading="lazy" width="45" height="156">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">골라서 1개</span></div>
+      <h3><span class="q-lv">Lv.33</span> 장난감 병정의 호두 ~ 망가진 시계탑</h3>
+      <p class="q-npcline">장난감병정 델브 <span>(에오스탑: 에오스탑100층)</span> · 장난감병정 올슨 <span>(에오스탑: 에오스탑100층)</span> · 괘종시계 <span>(루디브리엄성: 잃어버린시간&lt;1&gt;)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1588s" target="_blank" rel="noopener">▶ 영상에서 보기 26:28</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4031093.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031093">맛있는 호두</a> <b>×20</b></span><em>직접 사냥</em></li><li><img src="../images/quest/item/nb76af97e.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031094">시계추</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/item/4031098.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031098">만능 시계 태엽</a> <b>×1</b></span><em>직접 사냥</em></li></ul><p class="q-cost">합계 0메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="단검 공격력 주문서 60%"><img src="../images/item/2043301.png" alt="단검 공격력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="아대 공격력 주문서 60%"><img src="../images/item/2044701.png" alt="아대 공격력 주문서 60%" width="28" height="28"><b>60%</b></span></div><span>직업별 무기 공격력 주문서 60% 중 1개 선택</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+59만</p><p class="q-range"><span>제일 안 좋게 +39만</span> <span>제일 좋게 +90만</span></p><p class="q-verdict">확정 이득</p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>에오스탑 100층 장난감병정 델브에게 받고, 95 · 96층 블랙 라츠를 잡아 맛있는 호두 20개</li><li>같은 층 장난감병정 올슨에게 말을 걸면 인형의 집으로 가요. 손잡이가 평평한 집 말고 입체적인 집이 정답</li><li>루디브리엄성 잃어버린 시간 1의 괘종시계에게 가기. 바로 전 맵 시간의 소용돌이에서 틱톡을 잡으면 만능 시계 태엽</li><li>태엽을 괘종시계에게 → 올슨에게 가면 완료</li></ol><p class="q-tip">재료가 전부 직접 모으는 퀘스트템이라 재료값이 안 들어요. 보상은 직업별 무기 공격력 60% 골라서 1개예요.</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (3장)</summary><figure class="q-photo"><a href="../images/quest/obj-doll-wrong.png" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/obj-doll-wrong.png" alt="인형의 집: 평평한 손잡이 (오답)" loading="lazy"></a><figcaption>인형의 집: 평평한 손잡이 (오답)</figcaption></figure><figure class="q-photo"><a href="../images/quest/obj-doll-right.png" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/obj-doll-right.png" alt="인형의 집: 입체적인 손잡이 (정답)" loading="lazy"></a><figcaption>인형의 집: 입체적인 손잡이 (정답)</figcaption></figure><figure class="q-photo"><a href="../images/quest/lost-time1.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/lost-time1.webp" alt="잃어버린 시간 1: 괘종시계" loading="lazy"></a><figcaption>잃어버린 시간 1: 괘종시계</figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 5개)</summary><ol><li class=""><b>Lv.25 장난감 병정의 호두</b> <span>— 장난감병정 델브</span><div>재료: <a href="../item/4031093">맛있는 호두</a> 20개</div></li><li class=""><b>Lv.25 인형의 집</b> <span>— 장난감병정 델브</span></li><li class=""><b>Lv.33 망가진 시계탑</b> <span>— 장난감병정 올슨 → 괘종시계</span><div>재료: <a href="../item/4031094">시계추</a> 1개</div></li><li class=""><b>Lv.33 괘종시계의 위기</b> <span>— 괘종시계</span><div>재료: <a href="../item/4031098">만능 시계 태엽</a> 1개</div></li><li class="is-reward"><b>Lv.33 장난감 병정의 호두 ~ 망가진 시계탑</b> <span>— 괘종시계 → 장난감병정 올슨</span><div class="q-step-rew">보상: 직업별 무기 공격력 주문서 60% 중 1개 선택</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="추천" data-mid="1800400" id="q-3200">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.40</span>
+    <span class="q-row-name">에오스탑 청소 ~ 에오스탑의 평화</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3200"></label>
+    <span class="q-row-rew" title="무기 공격력 주문서 60% 중 랜덤 1개 + 장갑 공격력 주문서 10/60% 중 1개"><span class="q-chip" title="활 공격력 주문서 60%"><img src="../images/item/2044501.png" alt="활 공격력 주문서 60%" width="28" height="28"><b>활공 60%</b></span><span class="q-chip" title="완드 마력 주문서 60%"><img src="../images/item/2043701.png" alt="완드 마력 주문서 60%" width="28" height="28"><b>완드마 60%</b></span><span class="q-chip-more">+2</span><i class="q-chip-plus" aria-hidden="true">+</i><span class="q-chip" title="장갑 공격력 주문서 60%, 장갑 공격력 주문서 10%"><img src="../images/item/2040804.png" alt="장갑 공격력 주문서 60%, 장갑 공격력 주문서 10%" width="28" height="28"><b>장공 10·60%</b></span><span class="sr-only">무기 공격력 주문서 60% 중 랜덤 1개 + 장갑 공격력 주문서 10/60% 중 1개</span></span>
+    <span class="q-row-pl pos"><b>+180만</b><small>+178만 ~ +541만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-marcel.png" alt="" loading="lazy" width="56" height="105">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">보상 고정 · 랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.40</span> 에오스탑 청소 ~ 에오스탑의 평화</h3>
+      <p class="q-npcline">마르셀 <span>(루디브리엄성: 루디브리엄)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1646s" target="_blank" rel="noopener">▶ 영상에서 보기 27:26</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료</h4><p class="q-none">재료 없음</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="주황 포션 알약 50개"><img src="../images/quest/item/2000008.png" alt="주황 포션 알약" width="28" height="28"><b>×50</b></span><span class="q-chip" title="파란 포션 알약 50개"><img src="../images/item/2000010.png" alt="파란 포션 알약" width="28" height="28"><b>×50</b></span></div><span><small>에오스탑 청소</small>주황 포션 알약 50개, 파란 포션 알약 50개</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="하얀 포션 알약 50개"><img src="../images/item/2000009.png" alt="하얀 포션 알약" width="28" height="28"><b>×50</b></span><span class="q-chip" title="마나 엘릭서 알약 50개"><img src="../images/item/2000011.png" alt="마나 엘릭서 알약" width="28" height="28"><b>×50</b></span></div><span><small>에오스탑 깊은곳 청소</small>하얀 포션 알약 50개, 마나 엘릭서 알약 50개</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="엘릭서 50개"><img src="../images/item/2000004.png" alt="엘릭서" width="28" height="28"><b>×50</b></span></div><span><small>에오스탑 외부 청소</small>엘릭서 50개</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="활 공격력 주문서 60%"><img src="../images/item/2044501.png" alt="활 공격력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="완드 마력 주문서 60%"><img src="../images/item/2043701.png" alt="완드 마력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="스태프 마력 주문서 60%"><img src="../images/item/2043801.png" alt="스태프 마력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="아대 공격력 주문서 60%"><img src="../images/item/2044701.png" alt="아대 공격력 주문서 60%" width="28" height="28"><b>60%</b></span></div><span><small>에오스탑의 위협</small>무기 공격력 주문서 60% 중 랜덤 1개</span></li><li class="q-rew"><div class="q-chips"><span class="q-chip" title="장갑 공격력 주문서 60%"><img src="../images/item/2040804.png" alt="장갑 공격력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="장갑 공격력 주문서 10%"><img src="../images/item/2040805.png" alt="장갑 공격력 주문서 10%" width="28" height="28"><b>10%</b></span></div><span><small>에오스탑의 평화</small>장갑 공격력 주문서 10/60% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+180만</p><p class="q-range"><span>제일 안 좋게 +178만</span> <span>제일 좋게 +541만</span></p><p class="q-verdict">확정 이득</p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>루디브리엄 마을 오른쪽 위 마르셀에게 받고 완료, 재료 없이 사냥만 해요.</li><li>1. 100층 라츠 50마리</li><li>2. 93 · 94층 트릭스터 · 블랙 라츠 각 40마리</li><li>3. 59층 핑크세이버 · 7층 트위터 각 25마리 (여기까지 포션 알약 · 엘릭서)</li><li>4. 5층 킹 블록골렘 12마리 · 블록골렘 20마리 → 무기 공격력 60% 중 1개</li><li>5. 롬바드: 8층 숨겨진 탑 포탈로 들어가면 위나 아래에 있어요 → 장갑 공격력 60% · 10% 중 1개</li></ol><p class="q-tip">롬바드가 없으면 채널을 옮겨 가며 찾고, 블록골렘을 한두 마리씩 잡아 젠을 돌려 보세요. Lv.40이 되면 꼭 하세요.</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (2장)</summary><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/ludi-marcel.webp" target="_blank" rel="noopener" data-x="0.765" title="눌러서 원본 크기로 보기"><img src="../images/quest/ludi-marcel.webp" alt="루디브리엄: 마르셀" loading="lazy" width="1432" height="320" style="width:1432px;height:320px"></a><figcaption>루디브리엄: 마르셀 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure><figure class="q-photo"><a href="../images/quest/eos5-hidden.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/eos5-hidden.webp" alt="에오스탑 8층: 숨겨진 탑 포탈" loading="lazy"></a><figcaption>에오스탑 8층: 숨겨진 탑 포탈</figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 5개)</summary><ol><li class="is-reward"><b>Lv.40 에오스탑 청소</b> <span>— 마르셀</span><div>처치: <a href="../mob/3110102">라츠</a> 50마리</div><div class="q-step-rew">보상: 주황 포션 알약, 파란 포션 알약</div></li><li class="is-reward"><b>Lv.40 에오스탑 깊은곳 청소</b> <span>— 마르셀</span><div>처치: <a href="../mob/2230103">트릭스터</a> 40마리, <a href="../mob/3210205">블랙 라츠</a> 40마리</div><div class="q-step-rew">보상: 하얀 포션 알약, 마나 엘릭서 알약</div></li><li class="is-reward"><b>Lv.40 에오스탑 외부 청소</b> <span>— 마르셀</span><div>처치: <a href="../mob/3230303">핑크세이버</a> 25마리, <a href="../mob/3230308">트위터</a> 25마리</div><div class="q-step-rew">보상: 엘릭서</div></li><li class="is-reward"><b>Lv.40 에오스탑의 위협</b> <span>— 마르셀</span><div>처치: <a href="../mob/4230110">킹 블록골렘</a> 12마리, <a href="../mob/4230109">블록골렘</a> 20마리</div><div class="q-step-rew">보상: 무기 공격력 주문서 60% 중 랜덤 1개</div></li><li class="is-reward"><b>Lv.40 에오스탑의 평화</b> <span>— 마르셀</span><div>처치: <a href="../mob/4130103">롬바드</a> 1마리</div><div class="q-step-rew">보상: 장갑 공격력 주문서 60%, 장갑 공격력 주문서 10%</div></li></ol></details>  </div>
+</details>
+</section>
+<section class="q-region" id="omega">
+  <div class="q-region-head">
+    <h2 class="sub-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>지구방위본부 <small>2개</small><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1749s" target="_blank" rel="noopener">▶ 영상 29:09</a></h2>
+    <p class="q-region-sum"><span class="only-rec">추천 1개 다 사면 <b class="pos">+167.4만</b></span><span class="only-all">추천 + 고려 2개 다 사면 보통 <b class="pos">+363.9만</b> <span class="q-tri-range">(+215.9만 ~ +853.9만)</span></span></p>
+  </div>
+  <details class="card q-card" data-label="추천" data-mid="1673700" id="q-3410">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.31</span>
+    <span class="q-row-name">훈이의 이 통증</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3410"></label>
+    <span class="q-row-rew" title="펫장비 이동속도 주문서 60% 3개"><span class="q-chip" title="펫장비 이동속도 주문서 60% 3개"><img src="../images/item/2048001.png" alt="펫장비 이동속도 주문서 60%" width="28" height="28"><b>×3</b></span><span class="sr-only">펫장비 이동속도 주문서 60% 3개</span></span>
+    <span class="q-row-pl pos"><b>+167.4만</b></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc" src="../images/quest/npc-huni.png" alt="" loading="lazy" width="100" height="124">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">보상 고정</span></div>
+      <h3><span class="q-lv">Lv.31</span> 훈이의 이 통증</h3>
+      <p class="q-npcline">장로 스탄 <span>(헤네시스)</span> · 김박사 <span>(지구방위본부: 사령실)</span> · 철이 <span>(지구방위본부: 격납고)</span> · 훈이 <span>(루더스호수: 로스웰초원3)</span> · 건이 <span>(로스웰초원5)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1771s" target="_blank" rel="noopener">▶ 영상에서 보기 29:31</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/quest/item/v683a077f.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031099">봉인된 편지</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/quest/item/na9de7b4a.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031100">설계도</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/item/4000117.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000117">우주 식량</a> <b>×20</b></span><em>5,000</em></li><li><img src="../images/quest/item/na711ab2b.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031101">레이저 총</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/item/2002011.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/2002011">통증 완화제</a> <b>×1</b></span><em>1,300 · 상점</em></li></ul><p class="q-cost">합계 6,300메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="펫장비 이동속도 주문서 60% 3개"><img src="../images/item/2048001.png" alt="펫장비 이동속도 주문서 60%" width="28" height="28"><b>×3</b></span></div><span>펫장비 이동속도 주문서 60% 3개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+167.4만</p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 <b>+167.9만</b></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>헤네시스 장로 스탄에게 봉인된 편지 받기</li><li>사령실 워프캡슐(루디브리엄 경매장 약 8천 메소)로 사령실 → 김박사에게 편지 전달, &#39;신형 로봇의 설계도&#39;를 받으면 설계도를 줘요</li><li>사령실에서 나와 1번 포탈 타고 위로 → 철이. 이쯤에서 우주 식량 20개 · 통증 완화제 1개를 미리 사 두기</li><li>마을 귀환 주문서로 지구방위본부 → 빨간 포탈로 통제구역 → 왼쪽 위 포탈로 로스웰초원 1 → 왼쪽으로 쭉 로스웰초원 3 훈이에게 우주 식량 20개 → 레이저 총</li><li>계속 왼쪽으로 가면 건이</li><li>지구방위본부로 돌아와 사령실 김박사에게 완료 → 마지막으로 훈이에게 통증 완화제</li></ol><p class="q-tip">보상이 펫장비 이동속도 60% 세 장 고정이고 어렵지 않아서 Lv.31이 되면 꼭 하세요.</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (6장)</summary><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/hene-npcs.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/hene-npcs.webp" alt="헤네시스: 장로 스탄" loading="lazy" width="1951" height="320" style="width:1951px;height:320px"></a><figcaption>헤네시스: 장로 스탄 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure><figure class="q-photo"><a href="../images/quest/hq-command.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/hq-command.webp" alt="본부: 사령실 포탈" loading="lazy"></a><figcaption>본부: 사령실 포탈</figcaption></figure><figure class="q-photo"><a href="../images/quest/hq-command-out.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/hq-command-out.webp" alt="사령실에서 나가는 포탈" loading="lazy"></a><figcaption>사령실에서 나가는 포탈</figcaption></figure><figure class="q-photo"><a href="../images/quest/chulyi.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/chulyi.webp" alt="철이가 있는 맵" loading="lazy"></a><figcaption>철이가 있는 맵</figcaption></figure><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/omega-control.webp" target="_blank" rel="noopener" data-x="0.014" title="눌러서 원본 크기로 보기"><img src="../images/quest/omega-control.webp" alt="지구방위본부: 통제구역 포탈" loading="lazy" width="1527" height="320" style="width:1527px;height:320px"></a><figcaption>지구방위본부: 통제구역 포탈 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/control-roswell.webp" target="_blank" rel="noopener" data-x="0.02" title="눌러서 원본 크기로 보기"><img src="../images/quest/control-roswell.webp" alt="통제구역: 로스웰초원 포탈 (왼쪽 위)" loading="lazy" width="1461" height="320" style="width:1461px;height:320px"></a><figcaption>통제구역: 로스웰초원 포탈 (왼쪽 위) <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 6개)</summary><ol><li class=""><b>Lv.10 장로스탄의 편지</b> <span>— 장로 스탄 → 김박사</span><div>재료: <a href="../item/4031099">봉인된 편지</a> 1개</div></li><li class=""><b>Lv.30 신형 로봇의 설계도</b> <span>— 김박사 → 철이</span><div>재료: <a href="../item/4031100">설계도</a> 1개</div></li><li class=""><b>Lv.30 철이와의 만남</b> <span>— 철이 → 훈이</span><div>재료: <a href="../item/4000117">우주 식량</a> 20개</div></li><li class=""><b>Lv.30 훈이와의 만남</b> <span>— 훈이 → 건이</span><div>재료: <a href="../item/4031101">레이저 총</a> 1개</div></li><li class=""><b>Lv.30 건이와의 만남</b> <span>— 건이 → 김박사</span></li><li class="is-reward"><b>Lv.31 훈이의 이 통증</b> <span>— 훈이</span><div>재료: <a href="../item/2002011">통증 완화제</a> 1개</div><div class="q-step-rew">보상: 펫장비 이동속도 주문서 60% x3</div></li></ol></details>  </div>
+</details>
+<details class="card q-card" data-label="고려" data-mid="1965000" id="q-3440">
+  <summary class="q-row">
+    <span class="q-label is-con">고려</span>
+    <span class="q-row-lv">Lv.31</span>
+    <span class="q-row-name">어둠의 힘 소멸</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3440"></label>
+    <span class="q-row-rew" title="전신 갑옷 민첩·지력·행운 주문서 10/60% 중 1개"><span class="q-chip" title="전신 갑옷 민첩 주문서 60%, 전신 갑옷 민첩 주문서 10%"><img src="../images/item/2040501.png" alt="전신 갑옷 민첩 주문서 60%, 전신 갑옷 민첩 주문서 10%" width="28" height="28"><b>전민 10·60%</b></span><span class="q-chip" title="전신 갑옷 지력 주문서 60%, 전신 갑옷 지력 주문서 10%"><img src="../images/item/2040513.png" alt="전신 갑옷 지력 주문서 60%, 전신 갑옷 지력 주문서 10%" width="28" height="28"><b>전지 10·60%</b></span><span class="q-chip" title="전신 갑옷 행운 주문서 60%, 전신 갑옷 행운 주문서 10%"><img src="../images/item/2040516.png" alt="전신 갑옷 행운 주문서 60%, 전신 갑옷 행운 주문서 10%" width="28" height="28"><b>전행 10·60%</b></span><span class="sr-only">전신 갑옷 민첩·지력·행운 주문서 10/60% 중 1개</span></span>
+    <span class="q-row-pl pos"><b>+196.5만</b><small>+48.5만 ~ +686.5만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc is-pixel" src="../images/quest/npc-maester.png" alt="" loading="lazy" width="100" height="144">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-con">고려</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.31</span> 어둠의 힘 소멸</h3>
+      <p class="q-npcline">마에스터 장군 <span>(루더스호수: 지구방위본부)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1847s" target="_blank" rel="noopener">▶ 영상에서 보기 30:47</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4031135.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031135">빛을 잃은 크리스탈</a> <b>×50</b></span><em>직접 사냥</em></li><li><img src="../images/quest/item/na2b0db50.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031136">외계인 그레이의 문서</a> <b>×1</b></span><em>직접 사냥</em></li><li><img src="../images/item/4004004.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4004004">어둠의 크리스탈 원석</a> <b>×10</b></span><em>3.5만</em></li></ul><p class="q-cost">합계 3.5만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="전신 갑옷 민첩 주문서 60%"><img src="../images/item/2040501.png" alt="전신 갑옷 민첩 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="전신 갑옷 민첩 주문서 10%"><img src="../images/item/2040502.png" alt="전신 갑옷 민첩 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="전신 갑옷 지력 주문서 60%"><img src="../images/item/2040513.png" alt="전신 갑옷 지력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="전신 갑옷 지력 주문서 10%"><img src="../images/item/2040514.png" alt="전신 갑옷 지력 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="전신 갑옷 행운 주문서 60%"><img src="../images/item/2040516.png" alt="전신 갑옷 행운 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="전신 갑옷 행운 주문서 10%"><img src="../images/item/2040517.png" alt="전신 갑옷 행운 주문서 10%" width="28" height="28"><b>10%</b></span></div><span>전신 갑옷 민첩·지력·행운 주문서 10/60% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+196.5만</p><p class="q-range"><span>제일 안 좋게 +48.5만</span> <span>제일 좋게 +686.5만</span></p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 보통 <b>+200만</b> <span>(+52만 ~ +690만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>지구방위본부 가운데 빨간 계단 건물 위 마에스터 장군에게 받고 완료하는 3개 연계예요.</li><li>1. 빛을 잃은 크리스탈 20개: 북치는 토끼 (에오스탑 76~90층 북치는 토끼 미니던전이 빨라요)</li><li>2. 외계인 그레이의 문서: 통제구역 아래 포탈 → 쿨란초원 1 → 쿨란초원 2 곳곳의 상자를 기본 공격 (안 나오면 채널 이동)</li><li>3. 빛을 잃은 크리스탈 30개 + 어둠의 크리스탈 원석 10개</li></ol><p class="q-tip">행운 10%가 나오면 크게 남지만 보상이 랜덤이라 고려로 넣었어요.</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (4장)</summary><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/omega-general.webp" target="_blank" rel="noopener" data-x="0.6" title="눌러서 원본 크기로 보기"><img src="../images/quest/omega-general.webp" alt="지구방위본부: 마에스터 장군" loading="lazy" width="1535" height="320" style="width:1535px;height:320px"></a><figcaption>지구방위본부: 마에스터 장군 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure><figure class="q-photo"><a href="../images/quest/eos-drum-bunny.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/eos-drum-bunny.webp" alt="에오스탑 76~90층 북치는 토끼 미니던전" loading="lazy"></a><figcaption>에오스탑 76~90층 북치는 토끼 미니던전</figcaption></figure><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/control-kulan.webp" target="_blank" rel="noopener" data-x="0.022" title="눌러서 원본 크기로 보기"><img src="../images/quest/control-kulan.webp" alt="통제구역: 쿨란초원 포탈" loading="lazy" width="1465" height="320" style="width:1465px;height:320px"></a><figcaption>통제구역: 쿨란초원 포탈 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure><figure class="q-photo"><a href="../images/quest/obj-grey-box.png" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/obj-grey-box.png" alt="그레이 문서 상자" loading="lazy"></a><figcaption>그레이 문서 상자</figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 3개)</summary><ol><li class=""><b>Lv.31 어둠의 크리스탈 원석</b> <span>— 마에스터 장군</span><div>재료: <a href="../item/4031135">빛을 잃은 크리스탈</a> 20개</div></li><li class=""><b>Lv.31 힘의 원천은?</b> <span>— 마에스터 장군</span><div>재료: <a href="../item/4031136">외계인 그레이의 문서</a> 1개</div></li><li class="is-reward"><b>Lv.31 어둠의 힘 소멸</b> <span>— 마에스터 장군</span><div>재료: <a href="../item/4031135">빛을 잃은 크리스탈</a> 30개, <a href="../item/4004004">어둠의 크리스탈 원석</a> 10개</div><div class="q-step-rew">보상: 전신 갑옷 주문서(힘/지력/민첩/행운) 60% 중 랜덤 1개</div></li></ol></details>  </div>
+</details>
+</section>
+<section class="q-region" id="aquarium">
+  <div class="q-region-head">
+    <h2 class="sub-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>아쿠아리움 <small>1개</small><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1943s" target="_blank" rel="noopener">▶ 영상 32:23</a></h2>
+    <p class="q-region-sum"><span class="only-rec">추천 1개 다 사면 <b class="pos">+351만</b></span><span class="only-all">추천 + 고려 1개 다 사면 <b class="pos">+351만</b></span></p>
+  </div>
+  <div class="q-way"><p><b>가는 법</b> 오르비스에서는 오르비스탑 지하 1·2층을 지나 바다나들목에서 마을 귀환 주문서를 쓰거나, 오르비스 정거장에서 학을 타고 무릉 → 다시 학으로 백초마을 → 맨 왼쪽 포탈의 돌고래를 타면 돼요.</p></div><details class="card q-card" data-label="추천" data-mid="3510000" id="q-3085">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.95</span>
+    <span class="q-row-name">나누크의 요리재료</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3085"></label>
+    <span class="q-row-rew" title="장갑 공격력 주문서 10%"><span class="q-chip" title="장갑 공격력 주문서 10%"><img src="../images/item/2040805.png" alt="장갑 공격력 주문서 10%" width="28" height="28"><b>장공 10%</b></span><span class="sr-only">장갑 공격력 주문서 10%</span></span>
+    <span class="q-row-pl pos"><b>+351만</b></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc is-pixel" src="../images/quest/npc-nanuk.png" alt="" loading="lazy" width="214" height="128">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">보상 고정</span></div>
+      <h3><span class="q-lv">Lv.95</span> 나누크의 요리재료</h3>
+      <p class="q-npcline">나누크 <span>(아쿠아로드: 눈 덮인 고래섬)</span> · 뮤즈 <span>(아쿠아리움: 동물원)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=1953s" target="_blank" rel="noopener">▶ 영상에서 보기 32:33</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000181.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000181">냉동포장 샥스핀</a> <b>×80</b></span><em>2만</em></li><li><img src="../images/item/4000183.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000183">먹물병</a> <b>×150</b></span><em>57만</em></li><li><img src="../images/quest/item/n5f1752f9.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4031281">뮤즈의 요리</a> <b>×1</b></span><em>직접 사냥</em></li></ul><p class="q-cost">합계 59만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="장갑 공격력 주문서 10%"><img src="../images/item/2040805.png" alt="장갑 공격력 주문서 10%" width="28" height="28"><b>10%</b></span></div><span>장갑 공격력 주문서 10%</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+351만</p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 <b>+410만</b></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>아쿠아리움에서 왼쪽 → 서쪽 바다 갈림길 → 소라껍질 언덕 → 붉은 산호 숲, 위쪽 고래로 이동하면 나누크</li><li>나누크에게 &#39;나누크의 요리 재료&#39; 받기: 냉동포장 샥스핀 80개 · 먹물병 150개</li><li>아쿠아리움 마을 두 번째 빨간 포탈 → 맨 위 뮤즈에게 &#39;뮤즈의 요리&#39; 받기</li><li>다시 나누크에게 가면 완료</li></ol><p class="q-tip">장갑 공격력 10% 고정 보상이라 Lv.95가 되면 꼭 하세요.</p></div>
+  <details class="q-photos"><summary>동선 사진 보기 (2장)</summary><figure class="q-photo"><a href="../images/quest/coral-nanuk.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/coral-nanuk.webp" alt="붉은 산호 숲 위쪽 고래: 나누크" loading="lazy"></a><figcaption>붉은 산호 숲 위쪽 고래: 나누크</figcaption></figure><figure class="q-photo"><a href="../images/quest/aqua-portal2.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/aqua-portal2.webp" alt="아쿠아리움 두 번째 빨간 포탈 (뮤즈)" loading="lazy"></a><figcaption>아쿠아리움 두 번째 빨간 포탈 (뮤즈)</figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 2개)</summary><ol><li class=""><b>Lv.95 나누크의 요리 재료</b> <span>— 나누크 → 뮤즈</span><div>재료: <a href="../item/4000181">냉동포장 샥스핀</a> 80개, <a href="../item/4000183">먹물병</a> 150개</div></li><li class="is-reward"><b>Lv.95 나누크의 요리재료</b> <span>— 뮤즈 → 나누크</span><div>재료: <a href="../item/4031281">뮤즈의 요리</a> 1개</div><div class="q-step-rew">보상: 장갑 공격력 주문서 10%</div></li></ol></details>  </div>
+</details>
+</section>
+<section class="q-region" id="mureung">
+  <div class="q-region-head">
+    <h2 class="sub-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>무릉 <small>1개</small><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=2022s" target="_blank" rel="noopener">▶ 영상 33:42</a></h2>
+    <p class="q-region-sum"><span class="only-rec">추천 1개 다 사면 <b class="pos">+77.5만</b></span><span class="only-all">추천 + 고려 1개 다 사면 <b class="pos">+77.5만</b></span></p>
+  </div>
+  <details class="card q-card" data-label="추천" data-mid="775000" id="q-3833">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.56</span>
+    <span class="q-row-name">모자란 약재 구하기</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3833"></label>
+    <span class="q-row-rew" title="전신 갑옷 민첩 주문서 10%, 순록의 우유 50개"><span class="q-chip" title="전신 갑옷 민첩 주문서 10%"><img src="../images/item/2040502.png" alt="전신 갑옷 민첩 주문서 10%" width="28" height="28"><b>전민 10%</b></span><span class="q-chip" title="순록의 우유 50개"><img src="../images/item/2020013.png" alt="순록의 우유" width="28" height="28"><b>×50</b></span><span class="sr-only">전신 갑옷 민첩 주문서 10%, 순록의 우유 50개</span></span>
+    <span class="q-row-pl pos"><b>+77.5만</b></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc is-pixel" src="../images/quest/npc-gu.png" alt="" loading="lazy" width="170" height="134">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">보상 고정</span></div>
+      <h3><span class="q-lv">Lv.56</span> 모자란 약재 구하기</h3>
+      <p class="q-npcline">구영감 <span>(무릉도원: 백초마을)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=2031s" target="_blank" rel="noopener">▶ 영상에서 보기 33:51</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000294.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000294">100년 묵은 도라지</a> <b>×900</b></span><em>90만</em></li></ul><p class="q-cost">합계 90만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="전신 갑옷 민첩 주문서 10%"><img src="../images/item/2040502.png" alt="전신 갑옷 민첩 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="순록의 우유 50개"><img src="../images/item/2020013.png" alt="순록의 우유" width="28" height="28"><b>×50</b></span></div><span>전신 갑옷 민첩 주문서 10%, 순록의 우유 50개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+77.5만</p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 <b>+167.5만</b></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>무릉도원 백초마을 구영감에게 받고 완료해요.</li><li>100년 묵은 도라지를 가져다주는데, 내는 개수에 따라 보상이 달라요.</li><li>900개: 전신 갑옷 민첩 10% + 순록의 우유 50개</li><li>1000개: 전신 갑옷 민첩 60% + 파워 엘릭서 50개</li></ol><p class="q-tip">900개 쪽이 약 55만 메소 더 이득이라, 도라지는 1000개가 아니라 900개만 내세요.</p></div>
+  <details class="q-steps"><summary>단계별 보기 (퀘스트 1개)</summary><ol><li class="is-reward"><b>Lv.56 모자란 약재 구하기</b> <span>— 구영감</span><div>재료: <a href="../item/4000294">100년 묵은 도라지</a> 900개</div><div class="q-step-rew">보상: [900개] 전민 10% + 순록의 우유 50개</div></li></ol></details>  </div>
+</details>
+</section>
+<section class="q-region" id="leafre">
+  <div class="q-region-head">
+    <h2 class="sub-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>리프레 <small>1개</small><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=2098s" target="_blank" rel="noopener">▶ 영상 34:58</a></h2>
+    <p class="q-region-sum"><span class="only-rec">추천 1개 다 사면 보통 <b class="pos">+33만</b> <span class="q-tri-range">(+33만 ~ +165만)</span></span><span class="only-all">추천 + 고려 1개 다 사면 보통 <b class="pos">+33만</b> <span class="q-tri-range">(+33만 ~ +165만)</span></span></p>
+  </div>
+  <details class="card q-card" data-label="추천" data-mid="330000" id="q-3703">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.78</span>
+    <span class="q-row-name">팜의 부탁</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="3703"></label>
+    <span class="q-row-rew" title="신발 점프력·이동속도 주문서 10/60% 중 1개"><span class="q-chip" title="신발 점프력 주문서 60%, 신발 점프력 주문서 10%"><img src="../images/item/2040704.png" alt="신발 점프력 주문서 60%, 신발 점프력 주문서 10%" width="28" height="28"><b>신점 10·60%</b></span><span class="q-chip" title="신발 이동속도 주문서 60%, 신발 이동속도 주문서 10%"><img src="../images/item/2040707.png" alt="신발 이동속도 주문서 60%, 신발 이동속도 주문서 10%" width="28" height="28"><b>신이속 10·60%</b></span><span class="sr-only">신발 점프력·이동속도 주문서 10/60% 중 1개</span></span>
+    <span class="q-row-pl pos"><b>+33만</b><small>+33만 ~ +165만</small></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc is-pixel" src="../images/quest/npc-pam.png" alt="" loading="lazy" width="104" height="108">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">랜덤 1개</span></div>
+      <h3><span class="q-lv">Lv.78</span> 팜의 부탁</h3>
+      <p class="q-npcline">팜 <span>(리프레: 팜의 집)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=2110s" target="_blank" rel="noopener">▶ 영상에서 보기 35:10</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료 (경매장)</h4><ul class="q-items"><li><img src="../images/item/4000231.png" alt="" width="28" height="28" loading="lazy"><span><a href="../item/4000231">헹키의 팬플룻</a> <b>×50</b></span><em>5만</em></li></ul><p class="q-cost">합계 5만메소</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="신발 점프력 주문서 60%"><img src="../images/item/2040704.png" alt="신발 점프력 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="신발 점프력 주문서 10%"><img src="../images/item/2040705.png" alt="신발 점프력 주문서 10%" width="28" height="28"><b>10%</b></span><span class="q-chip" title="신발 이동속도 주문서 60%"><img src="../images/item/2040707.png" alt="신발 이동속도 주문서 60%" width="28" height="28"><b>60%</b></span><span class="q-chip" title="신발 이동속도 주문서 10%"><img src="../images/item/2040708.png" alt="신발 이동속도 주문서 10%" width="28" height="28"><b>10%</b></span></div><span>신발 점프력·이동속도 주문서 10/60% 중 1개</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+33만</p><p class="q-range"><span>제일 안 좋게 +33만</span> <span>제일 좋게 +165만</span></p><p class="q-verdict">확정 이득</p><p class="q-self">직접 모으면 보통 <b>+38만</b> <span>(+38만 ~ +170만)</span></p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>리프레 마을 위쪽 빨간 포탈로 들어가면 팜의 집이에요. 팜에게 받고 완료</li><li>재료: 헹키의 팬플룻 50개</li></ol></div>
+  <details class="q-photos"><summary>동선 사진 보기 (1장)</summary><figure class="q-photo is-wide"><a class="q-pan" href="../images/quest/leafre-pam.webp" target="_blank" rel="noopener" data-x="0.318" title="눌러서 원본 크기로 보기"><img src="../images/quest/leafre-pam.webp" alt="리프레: 팜의 집 포탈" loading="lazy" width="1187" height="320" style="width:1187px;height:320px"></a><figcaption>리프레: 팜의 집 포탈 <span>← 옆으로 밀어서 보기 · 눌러서 크게</span></figcaption></figure></details><details class="q-steps"><summary>단계별 보기 (퀘스트 1개)</summary><ol><li class="is-reward"><b>Lv.78 팜의 부탁</b> <span>— 팜</span><div>재료: <a href="../item/4000231">헹키의 팬플룻</a> 50개</div><div class="q-step-rew">보상: 신발 점프력/이동속도 주문서 10%, 60% 중 1개 랜덤</div></li></ol></details>  </div>
+</details>
+</section>
+<section class="q-region" id="nlc">
+  <div class="q-region-head">
+    <h2 class="sub-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>뉴 리프 시티 <small>1개</small><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=2154s" target="_blank" rel="noopener">▶ 영상 35:54</a></h2>
+    <p class="q-region-sum"><span class="only-rec">추천 1개 다 사면 <b class="pos">+100만</b></span><span class="only-all">추천 + 고려 1개 다 사면 <b class="pos">+100만</b></span></p>
+  </div>
+  <div class="q-way"><p><b>가는 법</b> 커닝시티 지하철역에서 뉴 리프 시티행 지하철을 타요. 매시 00·10·20·30·40·50분에 출발하고, 출발 5분 전부터 탈 수 있어요. 도착하면 왼쪽 시계탑의 히든 포탈들을 타고 맨 위까지 올라간 뒤, 맨 위 히든 포탈로 시계탑 안에 들어가서 히든 포탈들을 타고 맨 아래까지 내려가면 존 바리케이드가 있어요.</p><details class="q-photos"><summary>가는 길 · 맵 사진 보기 (4장)</summary><figure class="q-photo"><a href="../images/quest/kerning-subway.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/kerning-subway.webp" alt="커닝시티 지하철역" loading="lazy"></a><figcaption>커닝시티 지하철역</figcaption></figure><figure class="q-photo"><a href="../images/quest/nlc-tower.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/nlc-tower.webp" alt="뉴 리프 시티 왼쪽 시계탑" loading="lazy"></a><figcaption>뉴 리프 시티 왼쪽 시계탑</figcaption></figure><figure class="q-photo"><a href="../images/quest/nlc-tower-hidden.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/nlc-tower-hidden.webp" alt="시계탑 바깥 히든 포탈 (맨 위까지)" loading="lazy"></a><figcaption>시계탑 바깥 히든 포탈 (맨 위까지)</figcaption></figure><figure class="q-photo"><a href="../images/quest/nlc-inside.webp" target="_blank" rel="noopener" title="눌러서 원본 크기로 보기"><img src="../images/quest/nlc-inside.webp" alt="시계탑 안 히든 포탈 (맨 아래 존 바리케이드)" loading="lazy"></a><figcaption>시계탑 안 히든 포탈 (맨 아래 존 바리케이드)</figcaption></figure></details></div><details class="card q-card" data-label="추천" data-mid="1000000" id="q-4913">
+  <summary class="q-row">
+    <span class="q-label is-rec">추천</span>
+    <span class="q-row-lv">Lv.40</span>
+    <span class="q-row-name">수바니의 유산: 발견</span>
+    <label class="q-row-done" title="깬 퀘스트로 표시 (이 브라우저에만 저장)"><span>완료</span><input type="checkbox" data-q="4913"></label>
+    <span class="q-row-rew" title="장갑 공격력 주문서 60%"><span class="q-chip" title="장갑 공격력 주문서 60%"><img src="../images/item/2040804.png" alt="장갑 공격력 주문서 60%" width="28" height="28"><b>장공 60%</b></span><span class="sr-only">장갑 공격력 주문서 60%</span></span>
+    <span class="q-row-pl pos"><b>+100만</b></span>
+    <span class="q-row-more" aria-hidden="true"><span class="q-open-t">펼치기</span><span class="q-close-t">접기</span><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="q-body">
+  <header class="q-head">
+    <img class="q-npc is-pixel" src="../images/quest/npc-john.png" alt="" loading="lazy" width="138" height="150">
+    <div class="q-title">
+      <div class="q-tags"><span class="q-label is-rec">추천</span><span class="q-type">보상 고정</span></div>
+      <h3><span class="q-lv">Lv.40</span> 수바니의 유산: 발견</h3>
+      <p class="q-npcline">존 바리케이드 <span>(비거 벤 로비)</span></p><p class="q-vline"><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=2193s" target="_blank" rel="noopener">▶ 영상에서 보기 36:33</a></p>
+    </div>
+  </header>
+  <div class="q-flow">
+    <div class="q-box"><h4>재료</h4><p class="q-none">재료 없음</p></div>
+    <div class="q-box"><h4>보상</h4><ul class="q-items"><li class="q-rew"><div class="q-chips"><span class="q-chip" title="장갑 공격력 주문서 60%"><img src="../images/item/2040804.png" alt="장갑 공격력 주문서 60%" width="28" height="28"><b>60%</b></span></div><span>장갑 공격력 주문서 60%</span></li></ul></div>
+    <div class="q-box q-profit pos"><h4>다 사면</h4><p class="q-big">+100만</p><p class="q-verdict">확정 이득</p></div>
+  </div>
+  <div class="q-guide"><h4>하는 법</h4><ol class="q-how"><li>존 바리케이드에게 받고 완료해요.</li><li>킬라 비비 50마리 · 마이티 메이플 이터 30마리 · 파이어 터스크 40마리</li><li>존 바리케이드 왼쪽 포탈로 가면 나오는 신의 방에서 잡으면 돼요.</li></ol><p class="q-tip">재료값이 안 들고 보상이 고정이라 사냥만 하면 돼요.</p></div>
+  <details class="q-steps"><summary>단계별 보기 (퀘스트 1개)</summary><ol><li class="is-reward"><b>Lv.40 수바니의 유산: 발견</b> <span>— 존 바리케이드</span><div>처치: 킬라 비비 50마리, <a href="../mob/9400548">마이티 메이플 이터</a> 30마리, <a href="../mob/9400542">파이어 터스크</a> 40마리</div><div class="q-step-rew">보상: 장갑 공격력 주문서 60%</div></li></ol></details>  </div>
+</details>
+</section>
+  <section class="q-region" id="party">
+  <div class="q-region-head"><h2 class="sub-title"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#leaf"/></svg>파티 퀘스트 <small>선택</small><a class="q-vlink" href="https://www.youtube.com/watch?v=SthFupti0O8&amp;t=2238s" target="_blank" rel="noopener">▶ 영상 37:18</a></h2><p class="q-region-sum">세 곳 다 하면 보통 <b class="pos">+489.6만</b> <span class="q-tri-range">(+414.4만 ~ +1,059.5만)</span> · 전체 합계에는 안 넣었어요</p></div>
+  <div class="card q-party"><div class="table-scroll"><table class="q-table"><thead><tr><th>파티 퀘스트</th><th>레벨</th><th>퀘스트</th><th>다 사면 (보통)</th></tr></thead><tbody><tr><td><b>오르비스 파티 퀘스트</b></td><td>Lv.51~70</td><td>스피루나의 고민</td><td class="pos"><b>+39.7만</b></td></tr><tr><td><b>무릉 데비존 파티 퀘스트</b></td><td>Lv.55~100</td><td>해적 퇴치<br>바다의 무법자<br>해적선장 데비존<br>태상의 부탁 ~ 캡틴을 해치운 증거</td><td class="pos"><b>+266만</b></td></tr><tr><td><b>마가티아 파티 퀘스트</b></td><td>Lv.71~100</td><td>로미오의 선물 ~ 로미오의 청혼<br>키니의 로이드 연구 ~ 키니의 D 로이드 연구<br>키니의 프랑켄로이드 연구 1, 2</td><td class="pos"><b>+183.9만</b></td></tr></tbody></table></div></div>
+</section>
+</main>
+<script>
+(function(){
+  var page=document.querySelector('.quest-page');
+  var btns=page.querySelectorAll('[data-view]');
+  function setView(v){
+    page.classList.toggle('view-rec',v==='rec');
+    for(var i=0;i<btns.length;i++){var on=btns[i].getAttribute('data-view')===v;btns[i].classList.toggle('active',on);btns[i].setAttribute('aria-pressed',on?'true':'false');}
+    try{localStorage.setItem('maple_quest_view_v1',v);}catch(e){}
+    if(typeof progress==='function'&&cards)progress();
+  }
+  for(var i=0;i<btns.length;i++)btns[i].addEventListener('click',function(){setView(this.getAttribute('data-view'));});
+  try{if(localStorage.getItem('maple_quest_view_v1')==='rec')setView('rec');}catch(e){}
+  // 모두 펼치기 / 접기
+  var cards=page.querySelectorAll('.q-card');
+  var allBtn=document.getElementById('qToggleAll');
+  allBtn.addEventListener('click',function(){
+    var open=allBtn.getAttribute('aria-pressed')!=='true';
+    for(var k=0;k<cards.length;k++)cards[k].open=open;
+    allBtn.setAttribute('aria-pressed',open?'true':'false');
+    allBtn.textContent=open?'모두 접기':'모두 펼치기';
+  });
+  // 사진을 펼치면 가로로 긴 맵은 표시 위치(data-x)가 가운데 오게
+  page.addEventListener('toggle',function(e){
+    var d=e.target;if(!d.open||!d.querySelectorAll)return;
+    var pans=d.querySelectorAll('.q-pan[data-x]');
+    for(var p=0;p<pans.length;p++){var el=pans[p];if(el.getAttribute('data-done'))continue;el.setAttribute('data-done','1');el.scrollLeft=Math.max(0,parseFloat(el.getAttribute('data-x'))*el.scrollWidth-el.clientWidth/2);}
+  },true);
+  // 체크리스트 등에서 #q-번호로 오면 그 카드를 펼쳐서 보여 주기
+  function openFromHash(){
+    var id=location.hash.slice(1);
+    if(id.indexOf('q-')!==0)return;
+    var el=document.getElementById(id);
+    if(el&&el.tagName==='DETAILS'){el.open=true;el.scrollIntoView({block:'start'});}
+  }
+  window.addEventListener('hashchange',openFromHash);
+  openFromHash();
+  var done={};
+  try{done=JSON.parse(localStorage.getItem('maple_quest_done_v1')||'{}')||{};}catch(e){}
+  // 깬 퀘스트: 체크리스트와 카드 안 체크가 같이 움직이고, 카드 접힌 줄에 ✓ 표시
+  var boxes=page.querySelectorAll('[data-q]');
+  function paint(){
+    for(var j=0;j<boxes.length;j++)boxes[j].checked=!!done[boxes[j].getAttribute('data-q')];
+    for(var k=0;k<cards.length;k++)cards[k].classList.toggle('is-done',!!done[cards[k].id.slice(2)]);
+    var n=0;for(var key in done)n++;
+    var cnt=document.getElementById('qDoneCount');if(cnt)cnt.textContent=n?'('+n+')':'';
+    progress();
+  }
+  // 깬 퀘스트를 빼고 남은 퀘스트 수와 남은 수익(다 사면 · 보통). 지금 보기(추천만 / 추천+고려) 기준
+  function man(v){var s=v>0?'+':v<0?'−':'',a=Math.abs(v);return a>=10000?s+(Math.round(a/1000)/10).toLocaleString('ko-KR')+'만':s+Math.round(a).toLocaleString('ko-KR');}
+  function progress(){
+    var el=document.getElementById('qProgress');if(!el)return;
+    var rec=page.classList.contains('view-rec'),total=0,left=0,doneN=0,sum=0;
+    for(var k=0;k<cards.length;k++){var c=cards[k];if(rec&&c.getAttribute('data-label')!=='추천')continue;total++;
+      if(done[c.id.slice(2)]){doneN++;continue;}left++;sum+=Number(c.getAttribute('data-mid'))||0;}
+    el.innerHTML=doneN?'<b>'+doneN+'개 깼어요</b> · 남은 퀘스트 '+left+'개 · 남은 수익 <b class="'+(sum<0?'neg':'pos')+'">'+man(sum)+'</b> <small>(다 사면 · 보통)</small>'
+      :'완료칸에 체크하면 남은 퀘스트와 남은 수익을 계산해 줘요. 지금 '+(rec?'추천':'추천 + 고려')+' '+total+'개 · <b class="'+(sum<0?'neg':'pos')+'">'+man(sum)+'</b> <small>(다 사면 · 보통)</small>';
+  }
+  for(var j=0;j<boxes.length;j++){
+    boxes[j].addEventListener('change',function(){
+      if(this.checked)done[this.getAttribute('data-q')]=1;else delete done[this.getAttribute('data-q')];
+      try{localStorage.setItem('maple_quest_done_v1',JSON.stringify(done));}catch(e){}
+      paint();
+    });
+  }
+  paint();
+  // 깬 퀘스트 숨기기
+  var hideBtn=document.getElementById('qHideDone');
+  function setHide(on){page.classList.toggle('hide-done',on);hideBtn.setAttribute('aria-pressed',on?'true':'false');hideBtn.classList.toggle('active',on);try{localStorage.setItem('maple_quest_hide_v1',on?'1':'');}catch(e){}}
+  hideBtn.addEventListener('click',function(){setHide(hideBtn.getAttribute('aria-pressed')!=='true');});
+  try{if(localStorage.getItem('maple_quest_hide_v1')==='1')setHide(true);}catch(e){}
+  // 수익 높은 순: 카드를 지역에서 꺼내 한 줄로 세우고, 다시 누르면 원래 지역으로 돌려놓는다 (파티 퀘스트는 그대로)
+  var sortBtn=document.getElementById('qSortProfit'),sorted=document.getElementById('qSorted'),homes=[];
+  for(var h=0;h<cards.length;h++)homes.push({card:cards[h],parent:cards[h].parentNode,next:cards[h].nextSibling});
+  function setSort(on){
+    sortBtn.setAttribute('aria-pressed',on?'true':'false');sortBtn.classList.toggle('active',on);page.classList.toggle('sort-profit',on);
+    if(on){var list=homes.slice().sort(function(a,b){return (Number(b.card.getAttribute('data-mid'))||0)-(Number(a.card.getAttribute('data-mid'))||0);});
+      for(var i=0;i<list.length;i++)sorted.appendChild(list[i].card);sorted.hidden=false;}
+    else{for(var j=homes.length-1;j>=0;j--)homes[j].parent.insertBefore(homes[j].card,homes[j].next&&homes[j].next.parentNode===homes[j].parent?homes[j].next:null);sorted.hidden=true;}
+    try{localStorage.setItem('maple_quest_sort_v1',on?'1':'');}catch(e){}
+  }
+  sortBtn.addEventListener('click',function(){setSort(sortBtn.getAttribute('aria-pressed')!=='true');});
+  try{if(localStorage.getItem('maple_quest_sort_v1')==='1')setSort(true);}catch(e){}
+})();
+</script>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-brand"><img class="brand-logo" src="../brand/logo.svg" alt="" width="34" height="34">단풍수첩</div>
+    <p>메이플랜드 비공식 팬 도구예요. 데이터와 공식은 게임 업데이트에 따라 달라질 수 있어요.</p>
+    <p>능력치·출현 맵: <a href="https://maplestory.io/" target="_blank" rel="noopener">MapleStory.io</a> 원본 게임 데이터 (GMS 83, 맵 이름 KMS)</p>
+    <p>몬스터·아이템·맵 이미지: <a href="https://maplestory.io/" target="_blank" rel="noopener">MapleStory.io</a> · 메이플스토리 서체 · ⓒ NEXON</p>
+    <p>단풍노트의 데이터, 안내 문구, 화면 구성의 무단 복제를 금지합니다.</p>
+    <p>이메일: <a href="mailto:dangpungnote@gmail.com">dangpungnote@gmail.com</a> · <a href="../privacy/">개인정보처리방침</a></p>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById("themeToggle");
+  function sync(){var dark=document.documentElement.dataset.theme==="dark";b.setAttribute("aria-label",dark?"라이트 모드로 전환":"다크 모드로 전환");b.setAttribute("aria-pressed",String(dark))}
+  b.addEventListener("click",function(){var next=document.documentElement.dataset.theme==="dark"?"light":"dark";document.documentElement.dataset.theme=next;try{localStorage.setItem("maple-theme",next)}catch(e){}sync()});
+  sync();
+})();
+</script>
+</body>
+</html>
