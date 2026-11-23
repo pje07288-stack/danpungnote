@@ -723,3 +723,10 @@ body:has(#buffPill:checked) .buff-included,body:has(#buffBless:checked) .buff-in
 
 /* 준비 중 카드는 누를 수 없다 */
 .tool-card.is-soon{cursor:default;user-select:none}
+/* 계산기 아래 쓰는 법·자주 묻는 질문, 사이트 소개 (2026-11-23) */
+.guide{margin-top:20px}
+.guide ol{margin:6px 0 0;padding-left:20px}
+.guide ol li{color:var(--text-sub);line-height:1.75}
+.guide-q{margin:16px 0 4px;font-size:15px;font-weight:700;color:var(--text)}
+.guide-q+p{margin-top:0}
+.about-log b{color:var(--text);margin-right:6px}

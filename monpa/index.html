@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=bfe5dc02">
+<link rel="stylesheet" href="../assets/site.css?v=101d730e">
 <script src="../assets/search.js?v=f9609323" defer></script>
 <script src="../assets/sprite.js?v=f9609323" defer></script>
 <script src="../assets/nav.js?v=f9609323" defer></script>
@@ -158,6 +158,33 @@
     <p class="notice">몬파 이벤트(<span data-event-end>2026년 11월 30일</span>까지) 기준이에요. 1판 경험치: 까막산 418,840 · 자경구 2,898,000 · 용둥 6,289,000. 실제 보상·이벤트에 따라 차이가 날 수 있어요.</p>
   </section>
 
+<section class="card policy-body guide" aria-labelledby="guideMonpa">
+  <h2 class="sub-title policy-h" id="guideMonpa">몬파 계산기 쓰는 법</h2>
+  <ol>
+    <li><b>현재 상태</b>: 게임 화면에 나오는 레벨과 경험치 %를 그대로 넣어요.</li>
+    <li><b>기간</b>: 몬파를 돌릴 시작일과 목표일을 골라요. 두 날짜를 모두 포함해서 하루 2판씩 돈다고 계산해요.</li>
+    <li><b>결과</b>: 목표일에 몇 레벨 몇 %가 되는지, 모두 몇 판을 돌고 경험치를 얼마나 얻는지 나와요. "날짜별 결과"를 펼치면 그날 어느 몬파에 들어가고 하루가 끝날 때 몇 레벨인지 볼 수 있어요.</li>
+  </ol>
+
+  <h2 class="sub-title policy-h">이렇게 계산해요</h2>
+  <ul>
+    <li>한 판에 들어갈 때마다 그때 레벨로 몬파를 정해요: 70레벨까지 까막산, 71~100레벨 자경구, 101레벨부터 용둥이에요.</li>
+    <li>한 판 경험치는 까막산 418,840, 자경구 2,898,000, 용둥 6,289,000으로 넣었어요. 이 경험치를 레벨별 필요 경험치에 차례로 더해서 레벨업을 계산해요.</li>
+    <li>그래서 100레벨에서 101레벨이 되는 순간처럼 몬파가 바뀌는 지점을 지나면 하루에 오르는 양이 크게 달라져요. 날짜별 결과에서 바뀌는 날을 확인해 보세요.</li>
+    <li>사냥·퀘스트 경험치는 넣지 않았어요. 몬파만 돌린다고 가정한 값이라, 사냥을 함께 하면 실제로는 더 빨리 올라요.</li>
+  </ul>
+
+  <h2 class="sub-title policy-h">주차 계산기는 거꾸로 계산해요</h2>
+  <p>"목표일에 딱 110레벨로 끝내고 싶다"처럼 끝나는 레벨을 정하면, 시작일에 최소 몇 레벨 몇 %여야 하는지를 0.01% 단위로 찾아요. 목표 레벨을 여러 개 골라서 한 번에 비교할 수 있어요. 시작 조건보다 낮으면 목표에 못 미치고, 많이 높으면 목표를 지나치니 그 사이에서 사냥량을 조절하면 돼요.</p>
+
+  <h2 class="sub-title policy-h">자주 묻는 질문</h2>
+  <h3 class="guide-q">이벤트가 끝나면 어떻게 되나요?</h3>
+  <p>지금 값은 몬파 이벤트 보상 기준이에요. 이벤트가 끝나면 계산기를 잠시 닫고, 다음 이벤트 일정과 보상이 나오면 그 값으로 바꿔서 다시 열어요.</p>
+  <h3 class="guide-q">오늘 이미 1판을 돌았다면요?</h3>
+  <p>계산기는 시작일에도 2판을 돈다고 보니, 오늘 일부를 돌았다면 지금 경험치를 넣고 시작일을 내일로 잡으면 더 정확해요.</p>
+  <h3 class="guide-q">130레벨이 넘으면요?</h3>
+  <p>몬파 경험치표가 129레벨까지라 130레벨에 닿으면 계산을 멈춰요.</p>
+</section>
 </main>
 
 <footer class="site-footer">
@@ -167,7 +194,7 @@
     <p>능력치·출현 맵: <a href="https://maplestory.io/" target="_blank" rel="noopener">MapleStory.io</a> 원본 게임 데이터 (GMS 83, 맵 이름 KMS)</p>
     <p>몬스터·아이템·맵 이미지: <a href="https://maplestory.io/" target="_blank" rel="noopener">MapleStory.io</a> · 메이플스토리 서체 · ⓒ NEXON</p>
     <p>단풍노트의 데이터, 안내 문구, 화면 구성의 무단 복제를 금지합니다.</p>
-    <p>이메일: <a href="mailto:dangpungnote@gmail.com">dangpungnote@gmail.com</a> · <a href="../privacy/">개인정보처리방침</a></p>
+    <p>이메일: <a href="mailto:dangpungnote@gmail.com">dangpungnote@gmail.com</a> · <a href="../about/">사이트 소개</a> · <a href="../privacy/">개인정보처리방침</a></p>
   </div>
 </footer>
 <script>
